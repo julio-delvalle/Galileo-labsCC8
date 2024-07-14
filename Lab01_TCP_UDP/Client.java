@@ -3,6 +3,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 
@@ -57,6 +59,9 @@ public class Client {
             //Scanner for reading keyboard input:
             Scanner keyboard = new Scanner(System.in);
             
+            //For formating date and time:
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+
 
 
 
@@ -65,21 +70,27 @@ public class Client {
             if(protocol == 1){
                 Socket socket = new Socket();
                 socket.connect(new InetSocketAddress(server, port), 2000);
+                String socketIP = socket.getInetAddress().getHostAddress();
+
                 System.out.println("Conexión exitosa!");   
         
                 DataInputStream dataIn = new DataInputStream(socket.getInputStream());
                 DataOutputStream dataOut = new DataOutputStream(socket.getOutputStream());
                 // dataOut.writeUTF("Hello, This is coming from Client!");
-                // String serverMessage = dataIn.readUTF();
-                // System.out.println(serverMessage);
                 
                 String userInput = "";
                 while (true) { 
-                    System.out.println("Ingrese la operación a realizar: ");
+                    System.out.print("Ingrese la operación a realizar: ");
                     userInput = keyboard.nextLine();
                     dataOut.writeUTF(userInput);
-                    
-                    if(userInput.equals("EXIT")){break;}
+                    System.out.println("< "+socketIP+" client ["+dtf.format(LocalDateTime.now())+"] TCP: "+userInput);
+
+                    String serverMessage = dataIn.readUTF();
+                    System.out.println("> "+server+" server ["+dtf.format(LocalDateTime.now())+"] TCP: "+serverMessage);
+
+                    if("EXIT".equals(userInput) || "exit".equals(userInput) || "Exit".equals(userInput)){
+                        break;
+                    }
                 }
                 System.out.println("...Bye!");
                 

@@ -2,6 +2,8 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 
 public class Server  {
@@ -48,25 +50,77 @@ public class Server  {
                 ServerSocket serverSocket = new ServerSocket(port);
                 System.out.println("Using TCP. Listening for clients on port "+port+"...");
                 Socket clientSocket = serverSocket.accept();
-                String clientSocketIP = clientSocket.getInetAddress().toString();
+                String clientSocketInetAddr = clientSocket.getInetAddress().toString();
+                String clientSocketIP = clientSocket.getInetAddress().getHostAddress();
+                String serverSocketIP = serverSocket.getInetAddress().getHostAddress();
                 int clientSocketPort = clientSocket.getPort();
-                System.out.println("[IP: " + clientSocketIP + " ,Port: " + clientSocketPort +"]  " + "Client Connection Successful!");
+                System.out.println("[IP: " + clientSocketInetAddr + " ,Port: " + clientSocketPort +"]  " + "Client Connection Successful!");
                 
         
                 DataInputStream dataIn = new DataInputStream(clientSocket.getInputStream());
                 DataOutputStream dataOut = new DataOutputStream(clientSocket.getOutputStream());
 
+
+                char operator = ' ';
+                int operatorIndex = -1;
+                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+
+
+
                 while(true){
-                    System.out.println("< Esperando mensaje.");
                     dataIn = new DataInputStream(clientSocket.getInputStream());
                     String clientMessage = dataIn.readUTF();
-                    System.out.println(clientMessage);
-                    String serverMessage = "Hi this is coming from Server!";
-                    dataOut.writeUTF(serverMessage);
-                    if("EXIT".equals(clientMessage)){
+                    System.out.println("> "+clientSocketIP+" client ["+dtf.format(LocalDateTime.now())+"] TCP: "+clientMessage);
+                    
+                    if("EXIT".equals(clientMessage) || "exit".equals(clientMessage) || "Exit".equals(clientMessage)){
+                        dataOut.writeUTF(clientMessage);
+                        System.out.println("< "+serverSocketIP+" server ["+dtf.format(LocalDateTime.now())+"] TCP: "+clientMessage);
                         break;
                     }
+
+                    try {
+                        for (int i = 0; i < clientMessage.length(); i++) {
+                            char ch = clientMessage.charAt(i);
+                            if(ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '%'){
+                                operator = ch;
+                                operatorIndex = i;
+                                break;
+                            }
+                        }
+
+                        float num1 = Float.parseFloat(clientMessage.substring(0,operatorIndex));
+                        float num2 = Float.parseFloat(clientMessage.substring(operatorIndex+1)); //número 2 comienza después de operatorIndex hasta el final
+
+                        float result = 0F;
+                        switch (operator) {
+                            case '+':
+                                result = num1 + num2;
+                                break;
+                            case '-':
+                                result = num1 - num2;
+                                break;
+                            case '*':
+                                result = num1 * num2;
+                                break;
+                            case '/':
+                                result = num1 / num2;
+                                break;
+                            case '%':
+                                result = num1 % num2;
+                                break;
+                        
+                            default:
+                                break;
+                        }
+
+                        dataOut.writeUTF(Float.toString(result));
+                        System.out.println("< "+serverSocketIP+" server ["+dtf.format(LocalDateTime.now())+"] TCP: "+Float.toString(result));
+
+                    } catch (Exception e) {
+                        dataOut.writeUTF("Operación no válida!");
+                    }
                 }
+                System.out.println("...Bye!");
                 
                 
                 dataIn.close();
