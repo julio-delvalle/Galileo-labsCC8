@@ -55,11 +55,19 @@ public class Server  {
         
                 DataInputStream dataIn = new DataInputStream(clientSocket.getInputStream());
                 DataOutputStream dataOut = new DataOutputStream(clientSocket.getOutputStream());
+
+                while(true){
+                    System.out.println("< Esperando mensaje.");
+                    dataIn = new DataInputStream(clientSocket.getInputStream());
+                    String clientMessage = dataIn.readUTF();
+                    System.out.println(clientMessage);
+                    String serverMessage = "Hi this is coming from Server!";
+                    dataOut.writeUTF(serverMessage);
+                    if("EXIT".equals(clientMessage)){
+                        break;
+                    }
+                }
                 
-                String clientMessage = dataIn.readUTF();
-                System.out.println(clientMessage);
-                String serverMessage = "Hi this is coming from Server!";
-                dataOut.writeUTF(serverMessage);
                 
                 dataIn.close();
                 dataOut.close();

@@ -3,6 +3,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.util.Scanner;
 
 
 public class Client {
@@ -52,23 +53,41 @@ public class Client {
 
 
 
+            
+            //Scanner for reading keyboard input:
+            Scanner keyboard = new Scanner(System.in);
+            
+
+
 
 
 
             if(protocol == 1){
                 Socket socket = new Socket();
                 socket.connect(new InetSocketAddress(server, port), 2000);
-                System.out.println("Connection Successful!");   
+                System.out.println("Conexión exitosa!");   
         
                 DataInputStream dataIn = new DataInputStream(socket.getInputStream());
                 DataOutputStream dataOut = new DataOutputStream(socket.getOutputStream());
-                dataOut.writeUTF("Hello, This is coming from Client!");
-                String serverMessage = dataIn.readUTF();
-                System.out.println(serverMessage);
-        
+                // dataOut.writeUTF("Hello, This is coming from Client!");
+                // String serverMessage = dataIn.readUTF();
+                // System.out.println(serverMessage);
+                
+                String userInput = "";
+                while (true) { 
+                    System.out.println("Ingrese la operación a realizar: ");
+                    userInput = keyboard.nextLine();
+                    dataOut.writeUTF(userInput);
+                    
+                    if(userInput.equals("EXIT")){break;}
+                }
+                System.out.println("...Bye!");
+                
                 dataIn.close();
                 dataOut.close();
                 socket.close();
+                keyboard.close();
+
             }else if(protocol == 2){
                 System.out.println("Using UDP. Listening for clients...");
 
