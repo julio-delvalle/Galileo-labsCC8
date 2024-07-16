@@ -1,8 +1,13 @@
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.net.ConnectException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.net.SocketTimeoutException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
@@ -19,9 +24,9 @@ public class Client {
             String server = "127.0.0.1"; /*Default server localhost.*/
             for (int i = 0; i < args.length; i++) {
                 if("protocol".equals(args[i])){
-                    if("TCP".equals(args[i+1])){
+                    if("TCP".equals(args[i+1]) || "tcp".equals(args[i+1])){
                         protocol = 1;
-                    }else if("UDP".equals(args[i+1])){
+                    }else if("UDP".equals(args[i+1]) || "udp".equals(args[i+1])){
                         protocol = 2;
                     }else{
                         System.out.println("Select a valid Protocol! Using TCP as default.");
@@ -45,11 +50,13 @@ public class Client {
                     }
                 }
                 
-                try {
-                    server = args[i+1];
-                } catch (ArrayIndexOutOfBoundsException e) {
-                    System.out.println("Server not defined! Using default server 127.0.0.1");
-                    server = "127.0.0.1";
+                if("server".equals(args[i])){
+                    try {
+                        server = args[i+1];
+                    } catch (ArrayIndexOutOfBoundsException e) {
+                        System.out.println("Server not defined! Using default server 127.0.0.1");
+                        server = "127.0.0.1";
+                    }
                 }
             }
 
@@ -58,6 +65,8 @@ public class Client {
             
             //Scanner for reading keyboard input:
             Scanner keyboard = new Scanner(System.in);
+            String userInput = "";
+
             
             //For formating date and time:
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
@@ -78,7 +87,7 @@ public class Client {
                 DataOutputStream dataOut = new DataOutputStream(socket.getOutputStream());
                 // dataOut.writeUTF("Hello, This is coming from Client!");
                 
-                String userInput = "";
+                userInput = "";
                 while (true) { 
                     System.out.print("Ingrese la operación a realizar: ");
                     userInput = keyboard.nextLine();
@@ -100,14 +109,52 @@ public class Client {
                 keyboard.close();
 
             }else if(protocol == 2){
-                System.out.println("Using UDP. Listening for clients...");
+                DatagramPacket sendPacket;
+                byte[] sendData;
 
+                // UDP usa DatagramSocket
+                DatagramSocket clientSocket = new DatagramSocket();
+                // Set client timeout to be 2 seconds
+                clientSocket.setSoTimeout(2000);
+
+
+                String myIP = InetAddress.getLocalHost().getHostAddress();
+
+                //Para recibir respuesta de server:
+                byte[] receiveData = new byte[1024];
+                DatagramPacket receivePacket;
+
+                userInput = "";
+                while (true) {
+                    System.out.print("Ingrese la operación a realizar: ");
+                    userInput = keyboard.nextLine();
+
+                    sendData = userInput.getBytes();
+                    sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName(server), port);
+                    clientSocket.send(sendPacket);
+                    System.out.println("< "+myIP+" client ["+dtf.format(LocalDateTime.now())+"] UDP: "+userInput);
+
+                    receivePacket = new DatagramPacket(receiveData, receiveData.length);
+                    clientSocket.receive(receivePacket);
+                    String serverMessage = new String(receivePacket.getData(),0,receivePacket.getLength());
+                    System.out.println("> "+server+" server ["+dtf.format(LocalDateTime.now())+"] UDP: "+serverMessage);
+
+                    if("EXIT".equals(userInput) || "exit".equals(userInput) || "Exit".equals(userInput)){
+                        clientSocket.close();
+                        System.exit(1);
+                        break;
+                    }
+                    
+                }
 
                 
             }
+        } catch (ConnectException e) {
+            System.out.println("No se pudo establecer la conexión.");
+        } catch (SocketTimeoutException e) {
+            System.out.println("El servidor tardó mucho en responder. Saliendo.");
         } catch (Exception e) {
-            System.out.println("Exception! "+e);
-        
+            System.out.println("Ocurrió un error inesperado ("+e.getClass().getSimpleName()+"). Saliendo. ");
         }
         
     }

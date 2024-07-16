@@ -15,9 +15,9 @@ public class Server  {
             int protocol = 1; /*1 = TCP, 2 = UDP */
             for (int i = 0; i < args.length; i++) {
                 if("protocol".equals(args[i])){
-                    if("TCP".equals(args[i+1])){
+                    if("TCP".equals(args[i+1]) || "tcp".equals(args[i+1])){
                         protocol = 1;
-                    }else if("UDP".equals(args[i+1])){
+                    }else if("UDP".equals(args[i+1]) || "udp".equals(args[i+1])){
                         protocol = 2;
                     }else{
                         System.out.println("Select a valid Protocol! Using TCP as default.");
@@ -44,6 +44,13 @@ public class Server  {
             }
 
 
+
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+
+
+
+
+
             if(protocol == 1){
                 //USANDO TCP protocol = 1
                 // serverSocket is for TCP
@@ -63,9 +70,7 @@ public class Server  {
 
                 char operator = ' ';
                 int operatorIndex = -1;
-                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
-
-
+                
 
                 while(true){
                     dataIn = new DataInputStream(clientSocket.getInputStream());
@@ -88,36 +93,40 @@ public class Server  {
                             }
                         }
 
-                        float num1 = Float.parseFloat(clientMessage.substring(0,operatorIndex));
-                        float num2 = Float.parseFloat(clientMessage.substring(operatorIndex+1)); //número 2 comienza después de operatorIndex hasta el final
+                        float num1 = 0.0F;
+                        float num2 = 0.0F;
+
+                        if(operator == ' '){
+                            num1 = Float.parseFloat(clientMessage);
+                        }else{
+                            num1 = Float.parseFloat(clientMessage.substring(0,operatorIndex));
+                            num2 = Float.parseFloat(clientMessage.substring(operatorIndex+1)); //número 2 comienza después de operatorIndex hasta el final
+                        }
 
                         float result = 0F;
                         switch (operator) {
-                            case '+':
-                                result = num1 + num2;
-                                break;
-                            case '-':
-                                result = num1 - num2;
-                                break;
-                            case '*':
-                                result = num1 * num2;
-                                break;
-                            case '/':
-                                result = num1 / num2;
-                                break;
-                            case '%':
-                                result = num1 % num2;
-                                break;
+                            case '+' -> result = num1 + num2;
+                            case '-' -> result = num1 - num2;
+                            case '*' -> result = num1 * num2;
+                            case '/' -> result = num1 / num2;
+                            case '%' -> result = num1 % num2;
+                            case ' ' -> result = num1;
                         
-                            default:
-                                break;
+                            default -> {
+                            }
                         }
 
-                        dataOut.writeUTF(Float.toString(result));
-                        System.out.println("< "+serverSocketIP+" server ["+dtf.format(LocalDateTime.now())+"] TCP: "+Float.toString(result));
+                        if(operator == ' '){
+                            dataOut.writeUTF(Float.toString(result));
+                            System.out.println("< "+serverSocketIP+" server ["+dtf.format(LocalDateTime.now())+"] TCP: "+Float.toString(result));
+                        }else{
+                            dataOut.writeUTF(Float.toString(result));
+                            System.out.println("< "+serverSocketIP+" server ["+dtf.format(LocalDateTime.now())+"] TCP: "+Float.toString(result));
+                        }
 
                     } catch (Exception e) {
                         dataOut.writeUTF("Operación no válida!");
+                        System.out.println("< "+serverSocketIP+" server ["+dtf.format(LocalDateTime.now())+"] TCP: "+"Operación no válida!");
                     }
                 }
                 System.out.println("...Bye!");
@@ -127,18 +136,112 @@ public class Server  {
                 dataOut.close();
                 serverSocket.close();
                 clientSocket.close();
+
+
+
+
+
+
+
             }else if(protocol == 2){
-                System.out.println("Using UDP. Listening for clients...");
+                DatagramSocket serverSocket = new DatagramSocket(port);
+                System.out.println("Using UDP. Listening for clients on port "+port+"...");
+
+                //String serverSocketIP = serverSocket.getLocalAddress().getHostAddress();
+                String serverSocketIP = InetAddress.getLocalHost().getHostAddress();
+                
+                // Assume messages are not over 1024 bytes
+                byte[] receiveData = new byte[1024];
+                DatagramPacket receivePacket;
+                DatagramPacket sendPacket;
+                byte[] sendData;
+                
+                while (true) {
+                    // Server waiting for clients message
+                    receivePacket = new DatagramPacket(receiveData, receiveData.length);
+                    serverSocket.receive(receivePacket);
+
+                    // Get the clients IP
+                    String clientIPAddress = receivePacket.getAddress().getHostAddress();
+                    int clientPort = receivePacket.getPort();
+
+                    String clientMessage = new String(receivePacket.getData(),0,receivePacket.getLength());
+                    System.out.println("> "+clientIPAddress+" client ["+dtf.format(LocalDateTime.now())+"] UDP: "+clientMessage);
+
+                    if("EXIT".equals(clientMessage) || "exit".equals(clientMessage) || "Exit".equals(clientMessage)){
+                        
+                        sendData = clientMessage.getBytes();
+                        sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName(clientIPAddress), clientPort);
+                        serverSocket.send(sendPacket);
+
+                        System.out.println("< "+clientIPAddress+" server ["+dtf.format(LocalDateTime.now())+"] UDP: "+clientMessage);
+                        break;
+                    }
 
 
+                    char operator = ' ';
+                    int operatorIndex = -1;
+
+                    try {
+                        for (int i = 0; i < clientMessage.length(); i++) {
+                            char ch = clientMessage.charAt(i);
+                            if(ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '%'){
+                                operator = ch;
+                                operatorIndex = i;
+                                break;
+                            }
+                        }
+
+                        float num1 = 0.0F;
+                        float num2 = 0.0F;
+
+                        if(operator == ' '){
+                            num1 = Float.parseFloat(clientMessage);
+                        }else{
+                            num1 = Float.parseFloat(clientMessage.substring(0,operatorIndex));
+                            num2 = Float.parseFloat(clientMessage.substring(operatorIndex+1)); //número 2 comienza después de operatorIndex hasta el final
+                        }
+
+                        float result = 0F;
+                        switch (operator) {
+                            case '+' -> result = num1 + num2;
+                            case '-' -> result = num1 - num2;
+                            case '*' -> result = num1 * num2;
+                            case '/' -> result = num1 / num2;
+                            case '%' -> result = num1 % num2;
+                            case ' ' -> result = num1;
+                        
+                            default -> {
+                            }
+                        }
+
+                        sendData = Float.toString(result).getBytes();
+                        sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName(clientIPAddress), clientPort);
+                        serverSocket.send(sendPacket);
+
+                        System.out.println("< "+serverSocketIP+" server ["+dtf.format(LocalDateTime.now())+"] UDP: "+Float.toString(result));
+
+                    } catch (Exception e) {
+                        sendData = "Operación no válida!".getBytes();
+                        sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName(clientIPAddress), clientPort);
+                        serverSocket.send(sendPacket);
+                        System.out.println("< "+serverSocketIP+" server ["+dtf.format(LocalDateTime.now())+"] UDP: "+"Operación no válida!");
+                    }
+
+
+                }
+
+                serverSocket.close();
                 
             }
 
 
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Falta un parámetro!");
+        } catch (SocketException e) {
+            System.out.println("Se perdió la conexión! ");
         } catch (Exception e) {
-            System.out.println("Exception! "+e);
+            System.out.println("Ocurrió un error inesperado ("+e.getClass().getSimpleName()+"). Saliendo. ");
         }
     }
 }
