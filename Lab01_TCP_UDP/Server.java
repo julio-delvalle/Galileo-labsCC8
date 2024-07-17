@@ -162,21 +162,24 @@ public class Server  {
                     serverSocket.receive(receivePacket);
 
                     // Get the clients IP
-                    String clientIPAddress = receivePacket.getAddress().getHostAddress();
+                    //String clientIPAddress = receivePacket.getAddress().getHostAddress();
                     int clientPort = receivePacket.getPort();
 
-                    String clientMessage = new String(receivePacket.getData(),0,receivePacket.getLength());
-                    System.out.println("> "+clientIPAddress+" client ["+dtf.format(LocalDateTime.now())+"] UDP: "+clientMessage);
 
+                    String clientMessage = new String(receivePacket.getData(),0,receivePacket.getLength());
+                    System.out.println("> "+receivePacket.getAddress()+" client ["+dtf.format(LocalDateTime.now())+"] UDP: "+clientMessage);
+
+                    /*  ====== UDP NO SE CIERRA AL RECIBIR EXIT ========
+                    
                     if("EXIT".equals(clientMessage) || "exit".equals(clientMessage) || "Exit".equals(clientMessage)){
                         
                         sendData = clientMessage.getBytes();
-                        sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName(clientIPAddress), clientPort);
+                        sendPacket = new DatagramPacket(sendData, sendData.length, receivePacket.getAddress(), clientPort);
                         serverSocket.send(sendPacket);
 
-                        System.out.println("< "+clientIPAddress+" server ["+dtf.format(LocalDateTime.now())+"] UDP: "+clientMessage);
+                        System.out.println("< "+receivePacket.getAddress()+" server ["+dtf.format(LocalDateTime.now())+"] UDP: "+clientMessage);
                         break;
-                    }
+                    }*/
 
 
                     char operator = ' ';
@@ -215,15 +218,16 @@ public class Server  {
                             }
                         }
 
+
                         sendData = Float.toString(result).getBytes();
-                        sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName(clientIPAddress), clientPort);
+                        sendPacket = new DatagramPacket(sendData, sendData.length, receivePacket.getAddress(), clientPort);
                         serverSocket.send(sendPacket);
 
                         System.out.println("< "+serverSocketIP+" server ["+dtf.format(LocalDateTime.now())+"] UDP: "+Float.toString(result));
 
                     } catch (Exception e) {
                         sendData = "Operación no válida!".getBytes();
-                        sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName(clientIPAddress), clientPort);
+                        sendPacket = new DatagramPacket(sendData, sendData.length, receivePacket.getAddress(), clientPort);
                         serverSocket.send(sendPacket);
                         System.out.println("< "+serverSocketIP+" server ["+dtf.format(LocalDateTime.now())+"] UDP: "+"Operación no válida!");
                     }
@@ -231,7 +235,7 @@ public class Server  {
 
                 }
 
-                serverSocket.close();
+                //serverSocket.close();
                 
             }
 
@@ -241,7 +245,8 @@ public class Server  {
         } catch (SocketException e) {
             System.out.println("Se perdió la conexión! ");
         } catch (Exception e) {
-            System.out.println("Ocurrió un error inesperado ("+e.getClass().getSimpleName()+"). Saliendo. ");
+            //System.out.println("Ocurrió un error inesperado ("+e.getClass().getSimpleName()+"). Saliendo. ");
+            System.out.println("Ocurrió un error inesperado ("+e+"). Saliendo. ");
         }
     }
 }

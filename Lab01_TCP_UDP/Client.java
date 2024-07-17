@@ -107,46 +107,46 @@ public class Client {
                 dataOut.close();
                 socket.close();
                 keyboard.close();
-
+                
             }else if(protocol == 2){
                 DatagramPacket sendPacket;
                 byte[] sendData;
-
+                
                 // UDP usa DatagramSocket
                 DatagramSocket clientSocket = new DatagramSocket();
                 // Set client timeout to be 2 seconds
                 clientSocket.setSoTimeout(2000);
 
-
+                
                 String myIP = InetAddress.getLocalHost().getHostAddress();
-
+                
                 //Para recibir respuesta de server:
                 byte[] receiveData = new byte[1024];
                 DatagramPacket receivePacket;
-
+                
                 userInput = "";
                 while (true) {
                     System.out.print("Ingrese la operación a realizar: ");
                     userInput = keyboard.nextLine();
-
+                    
+                    //en UDP no se cierra el Server con EXIT entonces no hay que enviarlo.
+                    if("EXIT".equals(userInput) || "exit".equals(userInput) || "Exit".equals(userInput)){
+                        clientSocket.close();
+                        break;
+                    }
+                    
                     sendData = userInput.getBytes();
                     sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName(server), port);
                     clientSocket.send(sendPacket);
                     System.out.println("< "+myIP+" client ["+dtf.format(LocalDateTime.now())+"] UDP: "+userInput);
-
+                    
                     receivePacket = new DatagramPacket(receiveData, receiveData.length);
                     clientSocket.receive(receivePacket);
                     String serverMessage = new String(receivePacket.getData(),0,receivePacket.getLength());
                     System.out.println("> "+server+" server ["+dtf.format(LocalDateTime.now())+"] UDP: "+serverMessage);
-
-                    if("EXIT".equals(userInput) || "exit".equals(userInput) || "Exit".equals(userInput)){
-                        clientSocket.close();
-                        System.exit(1);
-                        break;
-                    }
-                    
                 }
-
+                
+                System.out.println("...Bye!");
                 
             }
         } catch (ConnectException e) {
