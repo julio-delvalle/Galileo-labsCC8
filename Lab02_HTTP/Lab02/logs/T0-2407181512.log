@@ -1,0 +1,12 @@
+240718151254049 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718151300882 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718151300893 Request.getData()	INFO: (0) request: [GET /test01/ HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718151300898 Response.sendData()	INFO: GET /test01/ HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718151300902 Response.sendData()	INFO: GET /test01/ HTTP/1.1 
+240718151300903 Response.sendData()	INFO:  Host: localhost:1000 
+240718151300905 Response.sendData()	INFO:  
+240718151300906 Response.sendData()	INFO: GET
+240718151300908 Response.sendData()	INFO: /test01/
+240718151300909 Response.sendData()	INFO: HTTP/1.1
+240718151300923 Response.sendData()	INFO: text/html
+240718151300924 Response.sendData()	INFO: /test01/index.html

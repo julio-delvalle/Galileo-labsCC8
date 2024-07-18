@@ -1,0 +1,17 @@
+240717194327636 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240717194334692 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240717194334698 Request.getData()	INFO: (1) request: [GET /test01/ HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Cache-Control: max-age=0, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717194334701 Response.sendData()	INFO: G
+240717194334702 Response.sendData()	INFO: E
+240717194334703 Response.sendData()	INFO:  
+240717194334728 ThreadServer.run()	INFO: (1) > Thread :: Time: 18 milliseconds
+240717194334731 ThreadServer.run()	INFO: (1) > END #
+240717194339738 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240717194339739 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240717194339742 Request.getData()	INFO: (1) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717194339744 Response.sendData()	INFO: G
+240717194339745 Response.sendData()	INFO: E
+240717194339747 Response.sendData()	INFO:  
+240717194339749 ThreadServer.run()	INFO: (1) > Thread :: Time: 6 milliseconds
+240717194339749 ThreadServer.run()	INFO: (1) > END #
+240717194344753 ThreadServer.run()	INFO: (1) > Thread waiting for new client....

@@ -1,0 +1,69 @@
+240717193956489 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240717193959613 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240717193959617 Request.getData()	INFO: (1) request: [GET /test01/ HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Cache-Control: max-age=0, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717193959622 Response.sendData()	INFO: G
+240717193959623 Response.sendData()	INFO: E
+240717193959624 Response.sendData()	INFO:  
+240717193959629 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK, Content-Type: text/html, ClaseCC8: Alumnos, Content-Length: 639, , <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab HTTP</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 1.8em;
+        }
+     </style>
+</head>
+<body>
+    <h1>Pruebas de Web Server</h1>
+    <p>Test 1: <a href="test01/">HTML Simple con Media</a></p>
+    <p>Test 2: <a href="test02/">Formularios GET/POST con enctype</a></p>
+    <p>Test 3: <a href="test03/">Página Web Completa</a></p>
+    <br>
+    <p>
+        El servidor cambió esto y agregó un número aleatorio: 324
+    </p>
+</body>
+</html>
+]
+240717193959633 Response.sendData()	INFO: (1) request: GET /test01/ HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240717193959644 ThreadServer.run()	INFO: (1) > Thread :: Time: 22 milliseconds
+240717193959646 ThreadServer.run()	INFO: (1) > END #
+240717194004652 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240717194004653 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240717194004654 Request.getData()	INFO: (1) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717194004655 Response.sendData()	INFO: G
+240717194004656 Response.sendData()	INFO: E
+240717194004656 Response.sendData()	INFO:  
+240717194004657 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK, Content-Type: text/html, ClaseCC8: Alumnos, Content-Length: 637, , <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab HTTP</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 1.8em;
+        }
+     </style>
+</head>
+<body>
+    <h1>Pruebas de Web Server</h1>
+    <p>Test 1: <a href="test01/">HTML Simple con Media</a></p>
+    <p>Test 2: <a href="test02/">Formularios GET/POST con enctype</a></p>
+    <p>Test 3: <a href="test03/">Página Web Completa</a></p>
+    <br>
+    <p>
+        El servidor cambió esto y agregó un número aleatorio: 4
+    </p>
+</body>
+</html>
+]
+240717194004660 Response.sendData()	INFO: (1) request: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test01/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240717194004663 ThreadServer.run()	INFO: (1) > Thread :: Time: 10 milliseconds
+240717194004663 ThreadServer.run()	INFO: (1) > END #
+240717194009677 ThreadServer.run()	INFO: (1) > Thread waiting for new client....

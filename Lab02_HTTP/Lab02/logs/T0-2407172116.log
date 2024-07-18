@@ -1,0 +1,84 @@
+240717211651216 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240717211654279 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240717211654291 Request.getData()	INFO: (0) request: [GET /test01/ HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Cache-Control: max-age=0, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717211654297 Response.sendData()	INFO: GET /test01/ HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240717211654300 Response.sendData()	INFO: GET /test01/ HTTP/1.1 
+240717211654301 Response.sendData()	INFO:  Host: localhost:1000 
+240717211654303 Response.sendData()	INFO:  
+240717211654304 Response.sendData()	INFO: GET
+240717211654305 Response.sendData()	INFO: /test01/
+240717211654306 Response.sendData()	INFO: HTTP/1.1
+240717211654335 Response.sendData()	INFO: text/html
+240717211654343 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK, Content-Type: text/html, ClaseCC8: Alumnos, Content-Length: 4241, , <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Simple con Media</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>HTML SIMPLE</h1>
+    
+    <p> &lt;--- <a href="/">Regresar a Index</a></p>
+
+    <img src="images/galileo.jpg" width="250" alt="Imagen de Galileo">
+    <img src="images/fisicc.png" width="250" alt="Imagen de FISICC">
+
+    <div id="Inner">
+        <h1>Lorem Ipsum</h1>
+        <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+        <h5>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h5>
+        <div id="lipsum">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis sed metus id euismod. Sed a euismod urna. Pellentesque tellus ipsum, auctor iaculis elementum non, elementum vel mi. Fusce vestibulum tortor ut dolor tincidunt, nec aliquet lectus consequat. Fusce tristique elit justo, nec accumsan ipsum euismod quis. Aenean finibus erat et pulvinar auctor. Praesent eget dolor eu tellus iaculis efficitur id at elit. Sed ullamcorper risus et sem accumsan scelerisque. Quisque tempus, diam molestie pharetra dignissim, tortor nulla tincidunt quam, sed scelerisque nisl neque sit amet lacus. In hac habitasse platea dictumst.
+            </p>
+            <p>
+            Sed commodo lectus ut urna rhoncus, vitae malesuada dui porttitor. Quisque tortor sapien, efficitur ut ex vitae, pellentesque pulvinar orci. Nunc malesuada id tellus sit amet ullamcorper. Nullam porta, mauris eu scelerisque egestas, neque mauris laoreet lectus, et efficitur velit magna ac risus. Etiam ut volutpat tortor. Morbi nisi justo, tempus vitae metus ac, pulvinar aliquam enim. Ut a suscipit magna. Nam elementum non ex a mollis. Vivamus varius enim magna, id aliquam sapien vestibulum eu. Praesent eget viverra lorem, vitae hendrerit leo. Aliquam felis lacus, dictum eu fermentum eu, auctor id eros. Aenean rutrum odio et diam gravida eleifend non quis diam.
+            </p>
+            <p>
+            Nam posuere a tellus sed congue. Aliquam scelerisque magna finibus sodales tempor. Phasellus iaculis leo et erat pharetra rutrum. Donec ultricies tincidunt tempor. Suspendisse potenti. Mauris a nibh molestie, posuere velit in, dignissim augue. Sed consequat tempus feugiat. Donec quis justo dictum, viverra odio ut, sodales velit. Vestibulum eget auctor nisi, sit amet rutrum mauris. In sollicitudin ipsum et felis egestas malesuada. Proin lacus odio, bibendum vitae dolor ut, auctor fringilla erat. Vestibulum mollis id elit et volutpat.
+            </p>
+            <p>
+            Vestibulum scelerisque lorem ut arcu dignissim, et aliquam ligula suscipit. Fusce at fermentum quam, et varius eros. Fusce finibus tellus ut dolor sodales, non efficitur dolor dictum. Cras eu congue ex. Donec egestas, nisi sed cursus volutpat, nulla ligula feugiat nulla, quis condimentum massa lorem sit amet elit. Maecenas et mauris egestas, facilisis nisi et, fringilla dui. Donec tortor erat, egestas sed ornare eu, lacinia nec eros.
+            </p>
+            <p>
+            Quisque at viverra urna. Duis at risus blandit, pharetra nulla non, auctor nulla. Donec lacinia, neque eget lobortis volutpat, sapien odio mollis nibh, quis commodo purus quam eu lacus. In hac habitasse platea dictumst. In ultricies, risus quis lacinia dignissim, dui sem porta mi, vitae tempor diam risus nec nunc. In volutpat nec purus non eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat commodo massa, commodo imperdiet est egestas a. Nulla at enim nunc. Fusce finibus placerat lectus vel accumsan. Etiam lorem nibh, lacinia quis viverra sit amet, rutrum ac enim. Duis auctor imperdiet molestie. Donec aliquam quam leo, a cursus risus faucibus molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Vestibulum quis mollis metus, id faucibus nisl.
+            </p>
+        </div>
+    </div>
+    
+
+    <p> &lt;--- <a href="/">Regresar a Index</a></p>
+</body>
+</html>]
+240717211654380 ThreadServer.run()	INFO: (0) > Thread :: Time: 85 milliseconds
+240717211654382 ThreadServer.run()	INFO: (0) > END #
+240717211659395 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240717211659397 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240717211659399 Request.getData()	INFO: (0) request: [GET /test01/images/fisicc.png HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717211659401 Response.sendData()	INFO: GET /test01/images/fisicc.png HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test01/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240717211659402 Response.sendData()	INFO: GET /test01/images/fisicc.png HTTP/1.1 
+240717211659403 Response.sendData()	INFO:  Host: localhost:1000 
+240717211659403 Response.sendData()	INFO:  
+240717211659404 Response.sendData()	INFO: GET
+240717211659404 Response.sendData()	INFO: /test01/images/fisicc.png
+240717211659405 Response.sendData()	INFO: HTTP/1.1
+240717211659445 Response.sendData()	INFO: image/png
+240717211659449 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK, Content-Type: image/png, ClaseCC8: Alumnos, Content-Length: 822792, ]
+240717211659450 ThreadServer.run()	INFO: (0) > Thread :: Time: 51 milliseconds
+240717211659451 ThreadServer.run()	INFO: (0) > END #
+240717211704458 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240717211704460 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240717211704462 Request.getData()	INFO: (0) request: [GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", Origin: http://localhost:1000, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: font, Referer: http://localhost:1000/test01/styles/style.css, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717211704463 Response.sendData()	INFO: GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || Origin: http://localhost:1000 || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: font || Referer: http://localhost:1000/test01/styles/style.css || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240717211704466 Response.sendData()	INFO: GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1 
+240717211704467 Response.sendData()	INFO:  Host: localhost:1000 
+240717211704468 Response.sendData()	INFO:  
+240717211704469 Response.sendData()	INFO: GET
+240717211704469 Response.sendData()	INFO: /test01/styles/BungeeSpice-Regular.ttf
+240717211704470 Response.sendData()	INFO: HTTP/1.1
+240717211704484 Response.sendData()	INFO: application/octet-stream
+240717211704566 ThreadServer.run()	INFO: (0) > Thread :: Time: 105 milliseconds
+240717211704567 ThreadServer.run()	INFO: (0) > END #
+240717211709572 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

@@ -1,0 +1,41 @@
+240717200744226 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240717200755228 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240717200755230 Request.getData()	INFO: (1) request: [GET /test01/styles/style.css HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: text/css,*/*;q=0.1, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: style, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717200755232 Response.sendData()	INFO: GET /test01/styles/style.css HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: text/css,*/*;q=0.1 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: style || Referer: http://localhost:1000/test01/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240717200755235 Response.sendData()	INFO: GET /test01/styles/style.css HTTP/1.1 
+240717200755236 Response.sendData()	INFO:  Host: localhost:1000 
+240717200755237 Response.sendData()	INFO:  
+240717200755238 Response.sendData()	INFO: GET
+240717200755239 Response.sendData()	INFO: /test01/styles/style.css
+240717200755241 Response.sendData()	INFO: HTTP/1.1
+240717200755245 Response.sendData()	INFO: text/css
+240717200755247 ThreadServer.run()	INFO: (1) > Thread :: Time: 18 milliseconds
+240717200755248 ThreadServer.run()	INFO: (1) > END #
+240717200800264 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240717200800265 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240717200800265 Request.getData()	INFO: (1) request: [GET /test01/images/fisicc.png HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717200800266 Response.sendData()	INFO: GET /test01/images/fisicc.png HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test01/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240717200800267 Response.sendData()	INFO: GET /test01/images/fisicc.png HTTP/1.1 
+240717200800267 Response.sendData()	INFO:  Host: localhost:1000 
+240717200800268 Response.sendData()	INFO:  
+240717200800268 Response.sendData()	INFO: GET
+240717200800268 Response.sendData()	INFO: /test01/images/fisicc.png
+240717200800269 Response.sendData()	INFO: HTTP/1.1
+240717200800283 Response.sendData()	INFO: image/png
+240717200800328 ThreadServer.run()	INFO: (1) > Thread :: Time: 62 milliseconds
+240717200800329 ThreadServer.run()	INFO: (1) > END #
+240717200805344 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240717200805345 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240717200805346 Request.getData()	INFO: (1) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717200805347 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: empty || Referer: http://localhost:1000/test01/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240717200805348 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 
+240717200805349 Response.sendData()	INFO:  Host: localhost:1000 
+240717200805349 Response.sendData()	INFO:  
+240717200805350 Response.sendData()	INFO: GET
+240717200805350 Response.sendData()	INFO: /favicon.ico
+240717200805350 Response.sendData()	INFO: HTTP/1.1
+240717200805351 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240717200805352 Response.sendData()	INFO: image/x-icon
+240717200805353 ThreadServer.run()	INFO: (1) > Thread :: Time: 7 milliseconds
+240717200805353 ThreadServer.run()	INFO: (1) > END #
+240717200810366 ThreadServer.run()	INFO: (1) > Thread waiting for new client....

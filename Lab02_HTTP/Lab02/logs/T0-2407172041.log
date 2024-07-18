@@ -1,0 +1,15 @@
+240717204125725 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240717204128547 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240717204128549 Request.getData()	INFO: (0) request: [GET /test01/images/galileo.jpg HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717204128551 Response.sendData()	INFO: GET /test01/images/galileo.jpg HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test01/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240717204128554 Response.sendData()	INFO: GET /test01/images/galileo.jpg HTTP/1.1 
+240717204128556 Response.sendData()	INFO:  Host: localhost:1000 
+240717204128557 Response.sendData()	INFO:  
+240717204128558 Response.sendData()	INFO: GET
+240717204128560 Response.sendData()	INFO: /test01/images/galileo.jpg
+240717204128561 Response.sendData()	INFO: HTTP/1.1
+240717204128562 Response.sendData()	INFO: image/jpeg
+240717204128564 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK, Content-Type: image/jpeg, ClaseCC8: Alumnos, Content-Length: 154396, ]
+240717204128565 ThreadServer.run()	INFO: (0) > Thread :: Time: 17 milliseconds
+240717204128566 ThreadServer.run()	INFO: (0) > END #
+240717204133578 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

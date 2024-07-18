@@ -1,0 +1,35 @@
+240717193956490 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240717193959720 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240717193959723 Request.getData()	INFO: (0) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240717193959725 Response.sendData()	INFO: G
+240717193959726 Response.sendData()	INFO: E
+240717193959727 Response.sendData()	INFO:  
+240717193959729 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK, Content-Type: text/html, ClaseCC8: Alumnos, Content-Length: 639, , <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab HTTP</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 1.8em;
+        }
+     </style>
+</head>
+<body>
+    <h1>Pruebas de Web Server</h1>
+    <p>Test 1: <a href="test01/">HTML Simple con Media</a></p>
+    <p>Test 2: <a href="test02/">Formularios GET/POST con enctype</a></p>
+    <p>Test 3: <a href="test03/">Página Web Completa</a></p>
+    <br>
+    <p>
+        El servidor cambió esto y agregó un número aleatorio: 210
+    </p>
+</body>
+</html>
+]
+240717193959734 Response.sendData()	INFO: (0) request: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: empty || Referer: http://localhost:1000/test01/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240717193959736 ThreadServer.run()	INFO: (0) > Thread :: Time: 14 milliseconds
+240717193959737 ThreadServer.run()	INFO: (0) > END #
+240717194004744 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
