@@ -1,0 +1,76 @@
+240718221352115 ThreadServer.run()	INFO: (35) > Thread waiting for new client....
+240718221403661 ThreadServer.run()	INFO: (35) > Thread Accepting connection >
+240718221403663 Request.getData()	INFO: (35) request: [POST /test02/displayFields.cc8 HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 270, Cache-Control: max-age=0, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, Origin: http://localhost:1000, Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryBjpRLdNIhWCTux51, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/test02, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ------WebKitFormBoundaryBjpRLdNIhWCTux51
+Content-Disposition: form-data; name="name"
+
+POST - multipart/form-data
+------WebKitFormBoundaryBjpRLdNIhWCTux51
+Content-Disposition: form-data; name="email"
+
+lab02@galileo.edu
+------WebKitFormBoundaryBjpRLdNIhWCTux51--
+]
+240718221403666 Response.sendData()	INFO: POST /test02/displayFields.cc8 HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Content-Length: 270 || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || Origin: http://localhost:1000 || Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryBjpRLdNIhWCTux51 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test02 || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || ------WebKitFormBoundaryBjpRLdNIhWCTux51
+Content-Disposition: form-data; name="name"
+
+POST - multipart/form-data
+------WebKitFormBoundaryBjpRLdNIhWCTux51
+Content-Disposition: form-data; name="email"
+
+lab02@galileo.edu
+------WebKitFormBoundaryBjpRLdNIhWCTux51--
+
+240718221403671 Response.sendData()	INFO: requestContentType: multipart/form-data; boundary=----WebKitFormBoundaryBjpRLdNIhWCTux51 
+240718221403673 Response.sendData()	INFO: POST /test02/displayFields.cc8 HTTP/1.1 
+240718221403674 Response.sendData()	INFO:  Host: localhost:1000 
+240718221403674 Response.sendData()	INFO:  ------WebKitFormBoundaryBjpRLdNIhWCTux51
+Content-Disposition: form-data; name="name"
+
+POST - multipart/form-data
+------WebKitFormBoundaryBjpRLdNIhWCTux51
+Content-Disposition: form-data; name="email"
+
+lab02@galileo.edu
+------WebKitFormBoundaryBjpRLdNIhWCTux51--
+
+240718221403677 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718221403678 Response.sendData()	INFO: POST PARAMS : ------WebKitFormBoundaryBjpRLdNIhWCTux51
+Content-Disposition: form-data; name="name"
+
+POST - multipart/form-data
+------WebKitFormBoundaryBjpRLdNIhWCTux51
+Content-Disposition: form-data; name="email"
+
+lab02@galileo.edu
+------WebKitFormBoundaryBjpRLdNIhWCTux51--
+240718221403680 Response.sendData()	INFO: 
+
+
+ reqBoundary:----WebKitFormBoundaryBjpRLdNIhWCTux51 
+
+
+
+240718221403682 Response.sendData()	INFO: Post Params ARRAY: [------WebKitFormBoundaryBjpRLdNIhWCTux51, Content-Disposition: form-data; name="name", , POST - multipart/form-data, ------WebKitFormBoundaryBjpRLdNIhWCTux51, Content-Disposition: form-data; name="email", , lab02@galileo.edu, ------WebKitFormBoundaryBjpRLdNIhWCTux51--]
+240718221403683 Response.sendData()	INFO: Post Params ARRAY: 9
+240718221403684 Response.sendData()	INFO: POST PAIRS MAP: {"name"=POST - multipart/form-data, "email"=lab02@galileo.edu}
+240718221403684 Response.sendData()	INFO: method: POST
+240718221403685 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718221403687 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718221403688 Response.sendData()	INFO: extension: cc8
+240718221403689 Response.sendData()	INFO: fileContentType: text/html
+240718221403690 Response.sendData()	INFO: GET: []
+240718221403690 Response.sendData()	INFO: GET MAP: {}
+240718221403691 Response.sendData()	INFO: POST PARAMS: ------WebKitFormBoundaryBjpRLdNIhWCTux51
+Content-Disposition: form-data; name="name"
+
+POST - multipart/form-data
+------WebKitFormBoundaryBjpRLdNIhWCTux51
+Content-Disposition: form-data; name="email"
+
+lab02@galileo.edu
+------WebKitFormBoundaryBjpRLdNIhWCTux51--
+240718221403693 Response.sendData()	INFO: POST PARAMS MAP: {"name"=POST - multipart/form-data, "email"=lab02@galileo.edu}
+240718221403694 Response.sendData()	INFO: POST PARAMS MAP`KEYS: ["name", "email"]
+240718221403696 ThreadServer.run()	INFO: (35) > Thread :: Time: 34 milliseconds
+240718221403697 ThreadServer.run()	INFO: (35) > END #
+240718221408712 ThreadServer.run()	INFO: (35) > Thread waiting for new client....

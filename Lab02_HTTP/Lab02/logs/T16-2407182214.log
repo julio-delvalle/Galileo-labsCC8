@@ -1,0 +1,70 @@
+240718221434214 ThreadServer.run()	INFO: (16) > Thread waiting for new client....
+240718221453124 ThreadServer.run()	INFO: (16) > Thread Accepting connection >
+240718221453125 Request.getData()	INFO: (16) request: [GET /test03/ HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221453126 Response.sendData()	INFO: GET /test03/ HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221453127 Response.sendData()	INFO: requestContentType: 
+240718221453128 Response.sendData()	INFO: GET /test03/ HTTP/1.1 
+240718221453128 Response.sendData()	INFO:  Host: localhost:1000 
+240718221453129 Response.sendData()	INFO:  
+240718221453129 Response.sendData()	INFO: path: /test03/
+240718221453129 Response.sendData()	INFO: POST PARAMS : 
+240718221453130 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221453130 Response.sendData()	INFO: method: GET
+240718221453131 Response.sendData()	INFO: path: /test03/index.html
+240718221453132 Response.sendData()	INFO: fileContentType: text/html
+240718221453133 Response.sendData()	INFO: extension: html
+240718221453133 Response.sendData()	INFO: fileContentType: text/html
+240718221453134 Response.sendData()	INFO: GET: []
+240718221453135 Response.sendData()	INFO: GET MAP: {}
+240718221453135 Response.sendData()	INFO: POST PARAMS: 
+240718221453136 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221453136 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221453139 ThreadServer.run()	INFO: (16) > Thread :: Time: 14 milliseconds
+240718221453140 ThreadServer.run()	INFO: (16) > END #
+240718221458145 ThreadServer.run()	INFO: (16) > Thread waiting for new client....
+240718221505333 ThreadServer.run()	INFO: (16) > Thread Accepting connection >
+240718221505335 Request.getData()	INFO: (16) request: [GET /test03/assets/js/popper.js HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: script, Referer: http://localhost:1000/test03/contact.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221505337 Response.sendData()	INFO: GET /test03/assets/js/popper.js HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: script || Referer: http://localhost:1000/test03/contact.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221505339 Response.sendData()	INFO: requestContentType: 
+240718221505341 Response.sendData()	INFO: GET /test03/assets/js/popper.js HTTP/1.1 
+240718221505342 Response.sendData()	INFO:  Host: localhost:1000 
+240718221505344 Response.sendData()	INFO:  
+240718221505345 Response.sendData()	INFO: path: /test03/assets/js/popper.js
+240718221505347 Response.sendData()	INFO: POST PARAMS : 
+240718221505348 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221505349 Response.sendData()	INFO: method: GET
+240718221505350 Response.sendData()	INFO: path: /test03/assets/js/popper.js
+240718221505353 Response.sendData()	INFO: fileContentType: text/javascript
+240718221505354 Response.sendData()	INFO: extension: js
+240718221505354 Response.sendData()	INFO: fileContentType: text/javascript
+240718221505355 Response.sendData()	INFO: GET: []
+240718221505356 Response.sendData()	INFO: GET MAP: {}
+240718221505356 Response.sendData()	INFO: POST PARAMS: 
+240718221505359 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221505362 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221505366 ThreadServer.run()	INFO: (16) > Thread :: Time: 31 milliseconds
+240718221505371 ThreadServer.run()	INFO: (16) > END #
+240718221510381 ThreadServer.run()	INFO: (16) > Thread waiting for new client....
+240718221541479 ThreadServer.run()	INFO: (16) > Thread Accepting connection >
+240718221541481 Request.getData()	INFO: (16) request: [GET /test03/assets/js/wow.min.js HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: script, Referer: http://localhost:1000/test03/blog.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221541483 Response.sendData()	INFO: GET /test03/assets/js/wow.min.js HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: script || Referer: http://localhost:1000/test03/blog.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221541486 Response.sendData()	INFO: requestContentType: 
+240718221541489 Response.sendData()	INFO: GET /test03/assets/js/wow.min.js HTTP/1.1 
+240718221541491 Response.sendData()	INFO:  Host: localhost:1000 
+240718221541493 Response.sendData()	INFO:  
+240718221541495 Response.sendData()	INFO: path: /test03/assets/js/wow.min.js
+240718221541496 Response.sendData()	INFO: POST PARAMS : 
+240718221541498 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221541499 Response.sendData()	INFO: method: GET
+240718221541501 Response.sendData()	INFO: path: /test03/assets/js/wow.min.js
+240718221541503 Response.sendData()	INFO: fileContentType: text/javascript
+240718221541503 Response.sendData()	INFO: extension: js
+240718221541505 Response.sendData()	INFO: fileContentType: text/javascript
+240718221541507 Response.sendData()	INFO: GET: []
+240718221541510 Response.sendData()	INFO: GET MAP: {}
+240718221541513 Response.sendData()	INFO: POST PARAMS: 
+240718221541515 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221541517 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221541521 ThreadServer.run()	INFO: (16) > Thread :: Time: 40 milliseconds
+240718221541526 ThreadServer.run()	INFO: (16) > END #
+240718221546543 ThreadServer.run()	INFO: (16) > Thread waiting for new client....

@@ -1,0 +1,34 @@
+240718214538979 ThreadServer.run()	INFO: (10) > Thread waiting for new client....
+240718214613751 ThreadServer.run()	INFO: (10) > Thread Accepting connection >
+240718214613753 Request.getData()	INFO: (10) request: [POST /test02/displayFields.cc8 HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 49, Cache-Control: max-age=0, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, Origin: http://localhost:1000, Content-Type: text/plain, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/test02, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, name=POST - text/plain
+email=lab02@galileo.edu
+]
+240718214613756 Response.sendData()	INFO: POST /test02/displayFields.cc8 HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Content-Length: 49 || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || Origin: http://localhost:1000 || Content-Type: text/plain || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test02 || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || name=POST - text/plain
+email=lab02@galileo.edu
+
+240718214613757 Response.sendData()	INFO: requestContentType: text/plain 
+240718214613758 Response.sendData()	INFO: POST /test02/displayFields.cc8 HTTP/1.1 
+240718214613759 Response.sendData()	INFO:  Host: localhost:1000 
+240718214613760 Response.sendData()	INFO:  name=POST - text/plain
+email=lab02@galileo.edu
+
+240718214613761 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718214613761 Response.sendData()	INFO: POST PARAMS : name=POST - text/plain
+email=lab02@galileo.edu
+240718214613762 Response.sendData()	INFO: Post Params ARRAY: []
+240718214613763 Response.sendData()	INFO: Post Params ARRAY: 0
+240718214613764 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718214613765 Response.sendData()	INFO: method: POST
+240718214613766 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718214613767 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718214613768 Response.sendData()	INFO: extension: cc8
+240718214613769 Response.sendData()	INFO: fileContentType: text/html
+240718214613770 Response.sendData()	INFO: GET: []
+240718214613771 Response.sendData()	INFO: GET MAP: {}
+240718214613771 Response.sendData()	INFO: POST PARAMS: name=POST - text/plain
+email=lab02@galileo.edu
+240718214613772 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718214613773 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718214613774 ThreadServer.run()	INFO: (10) > Thread :: Time: 22 milliseconds
+240718214613775 ThreadServer.run()	INFO: (10) > END #
+240718214618778 ThreadServer.run()	INFO: (10) > Thread waiting for new client....

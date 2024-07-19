@@ -1,0 +1,25 @@
+240718201530959 ThreadServer.run()	INFO: (5) > Thread waiting for new client....
+240718201541206 ThreadServer.run()	INFO: (5) > Thread Accepting connection >
+240718201541208 Request.getData()	INFO: (5) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718201541209 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: empty || Referer: http://localhost:1000/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718201541211 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 
+240718201541211 Response.sendData()	INFO:  Host: localhost:1000 
+240718201541212 Response.sendData()	INFO:  
+240718201541213 Response.sendData()	INFO: path: /favicon.ico
+240718201541214 Response.sendData()	INFO: POST PARAMS : 
+240718201541214 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718201541215 Response.sendData()	INFO: method: GET
+240718201541216 Response.sendData()	INFO: path: /favicon.ico
+240718201541217 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718201541218 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718201541219 Response.sendData()	INFO: extension: ico
+240718201541219 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718201541220 Response.sendData()	INFO: GET: []
+240718201541221 Response.sendData()	INFO: GET MAP: {}
+240718201541222 Response.sendData()	INFO: POST PARAMS: 
+240718201541222 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718201541223 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718201541224 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718201541225 ThreadServer.run()	INFO: (5) > Thread :: Time: 17 milliseconds
+240718201541226 ThreadServer.run()	INFO: (5) > END #
+240718201546235 ThreadServer.run()	INFO: (5) > Thread waiting for new client....

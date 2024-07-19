@@ -1,0 +1,27 @@
+240718214457738 ThreadServer.run()	INFO: (37) > Thread waiting for new client....
+240718214503512 ThreadServer.run()	INFO: (37) > Thread Accepting connection >
+240718214503519 Request.getData()	INFO: (37) request: [POST /test02/displayFields.cc8 HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 73, Cache-Control: max-age=0, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, Origin: http://localhost:1000, Content-Type: application/x-www-form-urlencoded, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/test02, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, name=POST+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu]
+240718214503522 Response.sendData()	INFO: POST /test02/displayFields.cc8 HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Content-Length: 73 || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || Origin: http://localhost:1000 || Content-Type: application/x-www-form-urlencoded || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test02 || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || name=POST+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu
+240718214503525 Response.sendData()	INFO: requestContentType: application/x-www-form-urlencoded 
+240718214503525 Response.sendData()	INFO: POST /test02/displayFields.cc8 HTTP/1.1 
+240718214503526 Response.sendData()	INFO:  Host: localhost:1000 
+240718214503526 Response.sendData()	INFO:  name=POST+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu
+240718214503527 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718214503528 Response.sendData()	INFO: POST PARAMS : name=POST+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu
+240718214503529 Response.sendData()	INFO: DENTRO DE APPLICATION
+240718214503530 Response.sendData()	INFO: Post Params ARRAY: [name=POST+-+application%2Fx-www-form-urlencoded, email=lab02%40galileo.edu]
+240718214503535 Response.sendData()	INFO: Post Params ARRAY: 2
+240718214503536 Response.sendData()	INFO: POST PAIRS MAP: {name=POST - application/x-www-form-urlencoded, email=lab02@galileo.edu}
+240718214503537 Response.sendData()	INFO: method: POST
+240718214503537 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718214503547 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718214503549 Response.sendData()	INFO: extension: cc8
+240718214503550 Response.sendData()	INFO: fileContentType: text/html
+240718214503551 Response.sendData()	INFO: GET: []
+240718214503552 Response.sendData()	INFO: GET MAP: {}
+240718214503552 Response.sendData()	INFO: POST PARAMS: name=POST+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu
+240718214503554 Response.sendData()	INFO: POST PARAMS MAP: {name=POST - application/x-www-form-urlencoded, email=lab02@galileo.edu}
+240718214503555 Response.sendData()	INFO: POST PARAMS MAP`KEYS: [name, email]
+240718214503587 ThreadServer.run()	INFO: (37) > Thread :: Time: 52 milliseconds
+240718214503588 ThreadServer.run()	INFO: (37) > END #
+240718214508598 ThreadServer.run()	INFO: (37) > Thread waiting for new client....

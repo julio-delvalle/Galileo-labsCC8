@@ -1,0 +1,24 @@
+240718220455908 ThreadServer.run()	INFO: (22) > Thread waiting for new client....
+240718220458398 ThreadServer.run()	INFO: (22) > Thread Accepting connection >
+240718220458411 Request.getData()	INFO: (22) request: [GET /test02 HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/test02/displayFields.cc8, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718220458417 Response.sendData()	INFO: GET /test02 HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test02/displayFields.cc8 || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718220458420 Response.sendData()	INFO: requestContentType: 
+240718220458421 Response.sendData()	INFO: GET /test02 HTTP/1.1 
+240718220458423 Response.sendData()	INFO:  Host: localhost:1000 
+240718220458424 Response.sendData()	INFO:  
+240718220458425 Response.sendData()	INFO: path: /test02
+240718220458427 Response.sendData()	INFO: POST PARAMS : 
+240718220458429 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718220458430 Response.sendData()	INFO: method: GET
+240718220458431 Response.sendData()	INFO: path: /test02/index.html
+240718220458455 Response.sendData()	INFO: fileContentType: text/html
+240718220458456 Response.sendData()	INFO: extension: html
+240718220458457 Response.sendData()	INFO: fileContentType: text/html
+240718220458459 Response.sendData()	INFO: GET: []
+240718220458460 Response.sendData()	INFO: GET MAP: {}
+240718220458461 Response.sendData()	INFO: POST PARAMS: 
+240718220458462 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718220458465 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718220458502 ThreadServer.run()	INFO: (22) > Thread :: Time: 83 milliseconds
+240718220458504 ThreadServer.run()	INFO: (22) > END #
+240718220503519 ThreadServer.run()	INFO: (22) > Thread waiting for new client....

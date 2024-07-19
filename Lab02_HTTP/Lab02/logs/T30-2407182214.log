@@ -1,0 +1,73 @@
+240718221434257 ThreadServer.run()	INFO: (30) > Thread waiting for new client....
+240718221453950 ThreadServer.run()	INFO: (30) > Thread Accepting connection >
+240718221453951 Request.getData()	INFO: (30) request: [GET /test03/assets/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", Origin: http://localhost:1000, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: font, Referer: http://localhost:1000/test03/assets/css/ionicons.min.css, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221453953 Response.sendData()	INFO: GET /test03/assets/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || Origin: http://localhost:1000 || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: font || Referer: http://localhost:1000/test03/assets/css/ionicons.min.css || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221453954 Response.sendData()	INFO: requestContentType: 
+240718221453955 Response.sendData()	INFO: GET /test03/assets/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1 
+240718221453956 Response.sendData()	INFO:  Host: localhost:1000 
+240718221453956 Response.sendData()	INFO:  
+240718221453957 Response.sendData()	INFO: path: /test03/assets/fonts/ionicons.ttf?v=2.0.0
+240718221453957 Response.sendData()	INFO: POST PARAMS : 
+240718221453957 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221453958 Response.sendData()	INFO: method: GET
+240718221453958 Response.sendData()	INFO: path: /test03/assets/fonts/ionicons.ttf
+240718221453960 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718221453961 Response.sendData()	INFO: extension: ttf
+240718221453961 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718221453962 Response.sendData()	INFO: GET: [v=2.0.0]
+240718221453962 Response.sendData()	INFO: GET MAP: {v=2.0.0}
+240718221453963 Response.sendData()	INFO: POST PARAMS: 
+240718221453963 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221453964 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221453965 ThreadServer.run()	INFO: (30) > Thread :: Time: 14 milliseconds
+240718221453965 ThreadServer.run()	INFO: (30) > END #
+240718221458979 ThreadServer.run()	INFO: (30) > Thread waiting for new client....
+240718221541107 ThreadServer.run()	INFO: (30) > Thread Accepting connection >
+240718221541109 Request.getData()	INFO: (30) request: [GET /test03/assets/css/ionicons.min.css HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: text/css,*/*;q=0.1, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: style, Referer: http://localhost:1000/test03/blog.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221541112 Response.sendData()	INFO: GET /test03/assets/css/ionicons.min.css HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: text/css,*/*;q=0.1 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: style || Referer: http://localhost:1000/test03/blog.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221541116 Response.sendData()	INFO: requestContentType: 
+240718221541122 Response.sendData()	INFO: GET /test03/assets/css/ionicons.min.css HTTP/1.1 
+240718221541123 Response.sendData()	INFO:  Host: localhost:1000 
+240718221541124 Response.sendData()	INFO:  
+240718221541124 Response.sendData()	INFO: path: /test03/assets/css/ionicons.min.css
+240718221541126 Response.sendData()	INFO: POST PARAMS : 
+240718221541127 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221541127 Response.sendData()	INFO: method: GET
+240718221541128 Response.sendData()	INFO: path: /test03/assets/css/ionicons.min.css
+240718221541129 Response.sendData()	INFO: fileContentType: text/css
+240718221541130 Response.sendData()	INFO: extension: css
+240718221541131 Response.sendData()	INFO: fileContentType: text/css
+240718221541131 Response.sendData()	INFO: GET: []
+240718221541131 Response.sendData()	INFO: GET MAP: {}
+240718221541132 Response.sendData()	INFO: POST PARAMS: 
+240718221541132 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221541135 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221541142 ThreadServer.run()	INFO: (30) > Thread :: Time: 33 milliseconds
+240718221541148 ThreadServer.run()	INFO: (30) > END #
+240718221546157 ThreadServer.run()	INFO: (30) > Thread waiting for new client....
+240718221600999 ThreadServer.run()	INFO: (30) > Thread Accepting connection >
+240718221601000 Request.getData()	INFO: (30) request: [POST /test02/displayFields.cc8 HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 73, Cache-Control: max-age=0, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, Origin: http://localhost:1000, Content-Type: application/x-www-form-urlencoded, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/test02, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, name=POST+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu]
+240718221601001 Response.sendData()	INFO: POST /test02/displayFields.cc8 HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Content-Length: 73 || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || Origin: http://localhost:1000 || Content-Type: application/x-www-form-urlencoded || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test02 || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || name=POST+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu
+240718221601002 Response.sendData()	INFO: requestContentType: application/x-www-form-urlencoded 
+240718221601002 Response.sendData()	INFO: POST /test02/displayFields.cc8 HTTP/1.1 
+240718221601002 Response.sendData()	INFO:  Host: localhost:1000 
+240718221601002 Response.sendData()	INFO:  name=POST+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu
+240718221601002 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718221601003 Response.sendData()	INFO: POST PARAMS : name=POST+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu
+240718221601003 Response.sendData()	INFO: DENTRO DE APPLICATION
+240718221601003 Response.sendData()	INFO: Post Params ARRAY: [name=POST+-+application%2Fx-www-form-urlencoded, email=lab02%40galileo.edu]
+240718221601004 Response.sendData()	INFO: Post Params ARRAY: 2
+240718221601004 Response.sendData()	INFO: POST PAIRS MAP: {name=POST - application/x-www-form-urlencoded, email=lab02@galileo.edu}
+240718221601004 Response.sendData()	INFO: method: POST
+240718221601004 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718221601005 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718221601005 Response.sendData()	INFO: extension: cc8
+240718221601005 Response.sendData()	INFO: fileContentType: text/html
+240718221601005 Response.sendData()	INFO: GET: []
+240718221601005 Response.sendData()	INFO: GET MAP: {}
+240718221601006 Response.sendData()	INFO: POST PARAMS: name=POST+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu
+240718221601006 Response.sendData()	INFO: POST PARAMS MAP: {name=POST - application/x-www-form-urlencoded, email=lab02@galileo.edu}
+240718221601006 Response.sendData()	INFO: POST PARAMS MAP`KEYS: [name, email]
+240718221601007 ThreadServer.run()	INFO: (30) > Thread :: Time: 8 milliseconds
+240718221601007 ThreadServer.run()	INFO: (30) > END #
+240718221606011 ThreadServer.run()	INFO: (30) > Thread waiting for new client....

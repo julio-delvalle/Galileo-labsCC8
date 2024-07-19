@@ -1,0 +1,70 @@
+240718221434203 ThreadServer.run()	INFO: (36) > Thread waiting for new client....
+240718221453241 ThreadServer.run()	INFO: (36) > Thread Accepting connection >
+240718221453242 Request.getData()	INFO: (36) request: [GET /test03/assets/css/bootstrap.min.css HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: text/css,*/*;q=0.1, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: style, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221453243 Response.sendData()	INFO: GET /test03/assets/css/bootstrap.min.css HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: text/css,*/*;q=0.1 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: style || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221453245 Response.sendData()	INFO: requestContentType: 
+240718221453245 Response.sendData()	INFO: GET /test03/assets/css/bootstrap.min.css HTTP/1.1 
+240718221453246 Response.sendData()	INFO:  Host: localhost:1000 
+240718221453246 Response.sendData()	INFO:  
+240718221453247 Response.sendData()	INFO: path: /test03/assets/css/bootstrap.min.css
+240718221453247 Response.sendData()	INFO: POST PARAMS : 
+240718221453248 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221453248 Response.sendData()	INFO: method: GET
+240718221453249 Response.sendData()	INFO: path: /test03/assets/css/bootstrap.min.css
+240718221453254 Response.sendData()	INFO: fileContentType: text/css
+240718221453254 Response.sendData()	INFO: extension: css
+240718221453255 Response.sendData()	INFO: fileContentType: text/css
+240718221453256 Response.sendData()	INFO: GET: []
+240718221453257 Response.sendData()	INFO: GET MAP: {}
+240718221453257 Response.sendData()	INFO: POST PARAMS: 
+240718221453258 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221453259 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221453262 ThreadServer.run()	INFO: (36) > Thread :: Time: 20 milliseconds
+240718221453262 ThreadServer.run()	INFO: (36) > END #
+240718221458266 ThreadServer.run()	INFO: (36) > Thread waiting for new client....
+240718221505349 ThreadServer.run()	INFO: (36) > Thread Accepting connection >
+240718221505351 Request.getData()	INFO: (36) request: [GET /test03/assets/js/bootstrap.min.js HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: script, Referer: http://localhost:1000/test03/contact.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221505358 Response.sendData()	INFO: GET /test03/assets/js/bootstrap.min.js HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: script || Referer: http://localhost:1000/test03/contact.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221505361 Response.sendData()	INFO: requestContentType: 
+240718221505361 Response.sendData()	INFO: GET /test03/assets/js/bootstrap.min.js HTTP/1.1 
+240718221505363 Response.sendData()	INFO:  Host: localhost:1000 
+240718221505365 Response.sendData()	INFO:  
+240718221505370 Response.sendData()	INFO: path: /test03/assets/js/bootstrap.min.js
+240718221505371 Response.sendData()	INFO: POST PARAMS : 
+240718221505373 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221505374 Response.sendData()	INFO: method: GET
+240718221505376 Response.sendData()	INFO: path: /test03/assets/js/bootstrap.min.js
+240718221505379 Response.sendData()	INFO: fileContentType: text/javascript
+240718221505380 Response.sendData()	INFO: extension: js
+240718221505380 Response.sendData()	INFO: fileContentType: text/javascript
+240718221505380 Response.sendData()	INFO: GET: []
+240718221505381 Response.sendData()	INFO: GET MAP: {}
+240718221505382 Response.sendData()	INFO: POST PARAMS: 
+240718221505382 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221505383 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221505385 ThreadServer.run()	INFO: (36) > Thread :: Time: 34 milliseconds
+240718221505399 ThreadServer.run()	INFO: (36) > END #
+240718221510412 ThreadServer.run()	INFO: (36) > Thread waiting for new client....
+240718221541513 ThreadServer.run()	INFO: (36) > Thread Accepting connection >
+240718221541515 Request.getData()	INFO: (36) request: [GET /test03/assets/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", Origin: http://localhost:1000, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: font, Referer: http://localhost:1000/test03/assets/css/ionicons.min.css, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221541519 Response.sendData()	INFO: GET /test03/assets/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || Origin: http://localhost:1000 || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: font || Referer: http://localhost:1000/test03/assets/css/ionicons.min.css || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221541525 Response.sendData()	INFO: requestContentType: 
+240718221541528 Response.sendData()	INFO: GET /test03/assets/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1 
+240718221541530 Response.sendData()	INFO:  Host: localhost:1000 
+240718221541532 Response.sendData()	INFO:  
+240718221541535 Response.sendData()	INFO: path: /test03/assets/fonts/ionicons.ttf?v=2.0.0
+240718221541542 Response.sendData()	INFO: POST PARAMS : 
+240718221541543 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221541546 Response.sendData()	INFO: method: GET
+240718221541546 Response.sendData()	INFO: path: /test03/assets/fonts/ionicons.ttf
+240718221541548 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718221541549 Response.sendData()	INFO: extension: ttf
+240718221541552 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718221541553 Response.sendData()	INFO: GET: [v=2.0.0]
+240718221541559 Response.sendData()	INFO: GET MAP: {v=2.0.0}
+240718221541561 Response.sendData()	INFO: POST PARAMS: 
+240718221541562 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221541563 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221541565 ThreadServer.run()	INFO: (36) > Thread :: Time: 50 milliseconds
+240718221541578 ThreadServer.run()	INFO: (36) > END #
+240718221546590 ThreadServer.run()	INFO: (36) > Thread waiting for new client....

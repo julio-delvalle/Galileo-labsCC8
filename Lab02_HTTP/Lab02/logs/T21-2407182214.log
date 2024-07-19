@@ -1,0 +1,70 @@
+240718221434229 ThreadServer.run()	INFO: (21) > Thread waiting for new client....
+240718221453514 ThreadServer.run()	INFO: (21) > Thread Accepting connection >
+240718221453516 Request.getData()	INFO: (21) request: [GET /test03/assets/img/portfolio/home-port4.png HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221453519 Response.sendData()	INFO: GET /test03/assets/img/portfolio/home-port4.png HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221453522 Response.sendData()	INFO: requestContentType: 
+240718221453522 Response.sendData()	INFO: GET /test03/assets/img/portfolio/home-port4.png HTTP/1.1 
+240718221453524 Response.sendData()	INFO:  Host: localhost:1000 
+240718221453527 Response.sendData()	INFO:  
+240718221453529 Response.sendData()	INFO: path: /test03/assets/img/portfolio/home-port4.png
+240718221453530 Response.sendData()	INFO: POST PARAMS : 
+240718221453539 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221453540 Response.sendData()	INFO: method: GET
+240718221453541 Response.sendData()	INFO: path: /test03/assets/img/portfolio/home-port4.png
+240718221453544 Response.sendData()	INFO: fileContentType: image/png
+240718221453545 Response.sendData()	INFO: extension: png
+240718221453546 Response.sendData()	INFO: fileContentType: image/png
+240718221453547 Response.sendData()	INFO: GET: []
+240718221453547 Response.sendData()	INFO: GET MAP: {}
+240718221453548 Response.sendData()	INFO: POST PARAMS: 
+240718221453550 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221453553 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221453554 ThreadServer.run()	INFO: (21) > Thread :: Time: 39 milliseconds
+240718221453555 ThreadServer.run()	INFO: (21) > END #
+240718221458561 ThreadServer.run()	INFO: (21) > Thread waiting for new client....
+240718221509241 ThreadServer.run()	INFO: (21) > Thread Accepting connection >
+240718221509242 Request.getData()	INFO: (21) request: [GET /test03/assets/img/map-icon.png HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test03/contact.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221509242 Response.sendData()	INFO: GET /test03/assets/img/map-icon.png HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test03/contact.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221509243 Response.sendData()	INFO: requestContentType: 
+240718221509243 Response.sendData()	INFO: GET /test03/assets/img/map-icon.png HTTP/1.1 
+240718221509243 Response.sendData()	INFO:  Host: localhost:1000 
+240718221509244 Response.sendData()	INFO:  
+240718221509244 Response.sendData()	INFO: path: /test03/assets/img/map-icon.png
+240718221509244 Response.sendData()	INFO: POST PARAMS : 
+240718221509244 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221509245 Response.sendData()	INFO: method: GET
+240718221509245 Response.sendData()	INFO: path: /test03/assets/img/map-icon.png
+240718221509260 Response.sendData()	INFO: fileContentType: image/png
+240718221509260 Response.sendData()	INFO: extension: png
+240718221509260 Response.sendData()	INFO: fileContentType: image/png
+240718221509261 Response.sendData()	INFO: GET: []
+240718221509261 Response.sendData()	INFO: GET MAP: {}
+240718221509261 Response.sendData()	INFO: POST PARAMS: 
+240718221509262 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221509262 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221509263 ThreadServer.run()	INFO: (21) > Thread :: Time: 21 milliseconds
+240718221509263 ThreadServer.run()	INFO: (21) > END #
+240718221514270 ThreadServer.run()	INFO: (21) > Thread waiting for new client....
+240718221549290 ThreadServer.run()	INFO: (21) > Thread Accepting connection >
+240718221549290 Request.getData()	INFO: (21) request: [GET / HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Cache-Control: max-age=0, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/test03/blog.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221549291 Response.sendData()	INFO: GET / HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test03/blog.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221549291 Response.sendData()	INFO: requestContentType: 
+240718221549291 Response.sendData()	INFO: GET / HTTP/1.1 
+240718221549292 Response.sendData()	INFO:  Host: localhost:1000 
+240718221549292 Response.sendData()	INFO:  
+240718221549292 Response.sendData()	INFO: path: /
+240718221549292 Response.sendData()	INFO: POST PARAMS : 
+240718221549292 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221549292 Response.sendData()	INFO: method: GET
+240718221549293 Response.sendData()	INFO: path: /index.html
+240718221549293 Response.sendData()	INFO: fileContentType: text/html
+240718221549293 Response.sendData()	INFO: extension: html
+240718221549293 Response.sendData()	INFO: fileContentType: text/html
+240718221549293 Response.sendData()	INFO: GET: []
+240718221549294 Response.sendData()	INFO: GET MAP: {}
+240718221549294 Response.sendData()	INFO: POST PARAMS: 
+240718221549294 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221549294 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221549295 ThreadServer.run()	INFO: (21) > Thread :: Time: 5 milliseconds
+240718221549295 ThreadServer.run()	INFO: (21) > END #
+240718221554302 ThreadServer.run()	INFO: (21) > Thread waiting for new client....

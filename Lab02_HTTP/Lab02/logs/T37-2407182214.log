@@ -1,0 +1,74 @@
+240718221434224 ThreadServer.run()	INFO: (37) > Thread waiting for new client....
+240718221454120 ThreadServer.run()	INFO: (37) > Thread Accepting connection >
+240718221454122 Request.getData()	INFO: (37) request: [GET /test03/assets/js/popper.min.js.map HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: empty, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221454124 Response.sendData()	INFO: GET /test03/assets/js/popper.min.js.map HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: empty || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221454126 Response.sendData()	INFO: requestContentType: 
+240718221454127 Response.sendData()	INFO: GET /test03/assets/js/popper.min.js.map HTTP/1.1 
+240718221454132 Response.sendData()	INFO:  Host: localhost:1000 
+240718221454134 Response.sendData()	INFO:  
+240718221454136 Response.sendData()	INFO: path: /test03/assets/js/popper.min.js.map
+240718221454138 Response.sendData()	INFO: POST PARAMS : 
+240718221454139 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221454140 Response.sendData()	INFO: method: GET
+240718221454141 Response.sendData()	INFO: path: /test03/assets/js/popper.min.js.map
+240718221454142 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/test03/assets/js/popper.min.js.map)
+240718221454143 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718221454145 Response.sendData()	INFO: extension: map
+240718221454145 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718221454146 Response.sendData()	INFO: GET: []
+240718221454147 Response.sendData()	INFO: GET MAP: {}
+240718221454148 Response.sendData()	INFO: POST PARAMS: 
+240718221454149 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221454152 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221454158 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/test03/assets/js/popper.min.js.map)
+240718221454162 ThreadServer.run()	INFO: (37) > Thread :: Time: 39 milliseconds
+240718221454163 ThreadServer.run()	INFO: (37) > END #
+240718221459164 ThreadServer.run()	INFO: (37) > Thread waiting for new client....
+240718221541222 ThreadServer.run()	INFO: (37) > Thread Accepting connection >
+240718221541225 Request.getData()	INFO: (37) request: [GET /test03/assets/css/main.css HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: text/css,*/*;q=0.1, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: style, Referer: http://localhost:1000/test03/blog.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221541226 Response.sendData()	INFO: GET /test03/assets/css/main.css HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: text/css,*/*;q=0.1 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: style || Referer: http://localhost:1000/test03/blog.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221541227 Response.sendData()	INFO: requestContentType: 
+240718221541227 Response.sendData()	INFO: GET /test03/assets/css/main.css HTTP/1.1 
+240718221541228 Response.sendData()	INFO:  Host: localhost:1000 
+240718221541228 Response.sendData()	INFO:  
+240718221541229 Response.sendData()	INFO: path: /test03/assets/css/main.css
+240718221541229 Response.sendData()	INFO: POST PARAMS : 
+240718221541229 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221541229 Response.sendData()	INFO: method: GET
+240718221541230 Response.sendData()	INFO: path: /test03/assets/css/main.css
+240718221541230 Response.sendData()	INFO: fileContentType: text/css
+240718221541231 Response.sendData()	INFO: extension: css
+240718221541231 Response.sendData()	INFO: fileContentType: text/css
+240718221541231 Response.sendData()	INFO: GET: []
+240718221541232 Response.sendData()	INFO: GET MAP: {}
+240718221541232 Response.sendData()	INFO: POST PARAMS: 
+240718221541232 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221541232 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221541233 ThreadServer.run()	INFO: (37) > Thread :: Time: 11 milliseconds
+240718221541233 ThreadServer.run()	INFO: (37) > END #
+240718221546234 ThreadServer.run()	INFO: (37) > Thread waiting for new client....
+240718221604471 ThreadServer.run()	INFO: (37) > Thread Accepting connection >
+240718221604475 Request.getData()	INFO: (37) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/test02/displayFields.cc8, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718221604477 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: empty || Referer: http://localhost:1000/test02/displayFields.cc8 || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718221604478 Response.sendData()	INFO: requestContentType: 
+240718221604479 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 
+240718221604479 Response.sendData()	INFO:  Host: localhost:1000 
+240718221604479 Response.sendData()	INFO:  
+240718221604480 Response.sendData()	INFO: path: /favicon.ico
+240718221604480 Response.sendData()	INFO: POST PARAMS : 
+240718221604481 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718221604481 Response.sendData()	INFO: method: GET
+240718221604482 Response.sendData()	INFO: path: /favicon.ico
+240718221604482 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718221604482 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718221604483 Response.sendData()	INFO: extension: ico
+240718221604483 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718221604483 Response.sendData()	INFO: GET: []
+240718221604484 Response.sendData()	INFO: GET MAP: {}
+240718221604484 Response.sendData()	INFO: POST PARAMS: 
+240718221604484 Response.sendData()	INFO: POST PARAMS MAP: {}
+240718221604487 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240718221604489 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718221604490 ThreadServer.run()	INFO: (37) > Thread :: Time: 18 milliseconds
+240718221604490 ThreadServer.run()	INFO: (37) > END #
+240718221609495 ThreadServer.run()	INFO: (37) > Thread waiting for new client....
