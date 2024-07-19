@@ -1,0 +1,35 @@
+240718173108366 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718173110207 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718173110213 Request.getData()	INFO: (0) request: [GET /test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Cache-Control: max-age=0, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/test02/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718173110219 Response.sendData()	INFO: GET /test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test02/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718173110222 Response.sendData()	INFO: GET /test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu HTTP/1.1 
+240718173110223 Response.sendData()	INFO:  Host: localhost:1000 
+240718173110225 Response.sendData()	INFO:  
+240718173110226 Response.sendData()	INFO: path: /test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu
+240718173110227 Response.sendData()	INFO: method: GET
+240718173110228 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718173110238 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718173110239 Response.sendData()	INFO: extension: cc8
+240718173110240 Response.sendData()	INFO: fileContentType: text/html
+240718173110241 Response.sendData()	INFO: GET: [Ljava.lang.String;@7013c27c
+240718173110258 ThreadServer.run()	INFO: (0) > Thread :: Time: 42 milliseconds
+240718173110260 ThreadServer.run()	INFO: (0) > END #
+240718173115274 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718173115275 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718173115276 Request.getData()	INFO: (0) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718173115278 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718173115279 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 
+240718173115280 Response.sendData()	INFO:  Host: localhost:1000 
+240718173115280 Response.sendData()	INFO:  
+240718173115281 Response.sendData()	INFO: path: /favicon.ico
+240718173115282 Response.sendData()	INFO: method: GET
+240718173115282 Response.sendData()	INFO: path: /favicon.ico
+240718173115283 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718173115283 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718173115284 Response.sendData()	INFO: extension: ico
+240718173115285 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718173115285 Response.sendData()	INFO: GET: [Ljava.lang.String;@2c4eb1c2
+240718173115287 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718173115287 ThreadServer.run()	INFO: (0) > Thread :: Time: 11 milliseconds
+240718173115288 ThreadServer.run()	INFO: (0) > END #
+240718173120302 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

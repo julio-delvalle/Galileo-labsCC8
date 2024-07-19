@@ -1,0 +1,18 @@
+240718174335181 ThreadServer.run()	INFO: (95) > Thread waiting for new client....
+240718174345394 ThreadServer.run()	INFO: (95) > Thread Accepting connection >
+240718174345395 Request.getData()	INFO: (95) request: [GET / HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718174345397 Response.sendData()	INFO: GET / HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test01/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718174345398 Response.sendData()	INFO: GET / HTTP/1.1 
+240718174345398 Response.sendData()	INFO:  Host: localhost:1000 
+240718174345399 Response.sendData()	INFO:  
+240718174345399 Response.sendData()	INFO: path: /
+240718174345400 Response.sendData()	INFO: method: GET
+240718174345400 Response.sendData()	INFO: path: /index.html
+240718174345401 Response.sendData()	INFO: fileContentType: text/html
+240718174345401 Response.sendData()	INFO: extension: html
+240718174345402 Response.sendData()	INFO: fileContentType: text/html
+240718174345402 Response.sendData()	INFO: GET: []
+240718174345402 Response.sendData()	INFO: GET MAP: {}
+240718174345403 ThreadServer.run()	INFO: (95) > Thread :: Time: 8 milliseconds
+240718174345403 ThreadServer.run()	INFO: (95) > END #
+240718174350407 ThreadServer.run()	INFO: (95) > Thread waiting for new client....

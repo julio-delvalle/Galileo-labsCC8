@@ -1,0 +1,18 @@
+240718174335156 ThreadServer.run()	INFO: (20) > Thread waiting for new client....
+240718174342235 ThreadServer.run()	INFO: (20) > Thread Accepting connection >
+240718174342236 Request.getData()	INFO: (20) request: [GET /test01/images/fisicc.png HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718174342238 Response.sendData()	INFO: GET /test01/images/fisicc.png HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test01/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718174342240 Response.sendData()	INFO: GET /test01/images/fisicc.png HTTP/1.1 
+240718174342240 Response.sendData()	INFO:  Host: localhost:1000 
+240718174342242 Response.sendData()	INFO:  
+240718174342243 Response.sendData()	INFO: path: /test01/images/fisicc.png
+240718174342244 Response.sendData()	INFO: method: GET
+240718174342244 Response.sendData()	INFO: path: /test01/images/fisicc.png
+240718174342283 Response.sendData()	INFO: fileContentType: image/png
+240718174342285 Response.sendData()	INFO: extension: png
+240718174342286 Response.sendData()	INFO: fileContentType: image/png
+240718174342287 Response.sendData()	INFO: GET: []
+240718174342287 Response.sendData()	INFO: GET MAP: {}
+240718174342291 ThreadServer.run()	INFO: (20) > Thread :: Time: 56 milliseconds
+240718174342292 ThreadServer.run()	INFO: (20) > END #
+240718174347303 ThreadServer.run()	INFO: (20) > Thread waiting for new client....

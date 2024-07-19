@@ -1,0 +1,21 @@
+240718181637376 ThreadServer.run()	INFO: (44) > Thread waiting for new client....
+240718181645665 ThreadServer.run()	INFO: (44) > Thread Accepting connection >
+240718181645672 Request.getData()	INFO: (44) request: [POST /test02/displayFields.cc8 HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 62, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: application/json; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/test02/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, {"name":"POST - application/json","email":"lab02@galileo.edu"}]
+240718181645677 Response.sendData()	INFO: POST /test02/displayFields.cc8 HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Content-Length: 62 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-platform: "Windows" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Content-Type: application/json; charset=UTF-8 || Accept: */* || Origin: http://localhost:1000 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: empty || Referer: http://localhost:1000/test02/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || {"name":"POST - application/json","email":"lab02@galileo.edu"}
+240718181645679 Response.sendData()	INFO: POST /test02/displayFields.cc8 HTTP/1.1 
+240718181645680 Response.sendData()	INFO:  Host: localhost:1000 
+240718181645680 Response.sendData()	INFO:  {"name":"POST - application/json","email":"lab02@galileo.edu"}
+240718181645681 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718181645682 Response.sendData()	INFO: POST PARAMS :  {"name":"POST - application/json","email":"lab02@galileo.edu"}
+240718181645683 Response.sendData()	INFO: POST PAIRS MAP: {}
+240718181645683 Response.sendData()	INFO: method: POST
+240718181645684 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718181645691 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718181645693 Response.sendData()	INFO: extension: cc8
+240718181645694 Response.sendData()	INFO: fileContentType: text/html
+240718181645695 Response.sendData()	INFO: GET: []
+240718181645696 Response.sendData()	INFO: GET MAP: {}
+240718181645697 Response.sendData()	INFO: POST PARAMS :  {"name":"POST - application/json","email":"lab02@galileo.edu"}
+240718181645714 ThreadServer.run()	INFO: (44) > Thread :: Time: 38 milliseconds
+240718181645715 ThreadServer.run()	INFO: (44) > END #
+240718181650717 ThreadServer.run()	INFO: (44) > Thread waiting for new client....

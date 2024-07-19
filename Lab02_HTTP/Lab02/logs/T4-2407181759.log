@@ -1,0 +1,20 @@
+240718175955889 ThreadServer.run()	INFO: (4) > Thread waiting for new client....
+240718180043798 ThreadServer.run()	INFO: (4) > Thread Accepting connection >
+240718180043799 Request.getData()	INFO: (4) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test02/displayFields.cc8?name=GET+-+text%2Fplain&email=lab02%40galileo.edu, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718180043801 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test02/displayFields.cc8?name=GET+-+text%2Fplain&email=lab02%40galileo.edu || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718180043804 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 
+240718180043805 Response.sendData()	INFO:  Host: localhost:1000 
+240718180043806 Response.sendData()	INFO:  
+240718180043806 Response.sendData()	INFO: path: /favicon.ico
+240718180043807 Response.sendData()	INFO: method: GET
+240718180043808 Response.sendData()	INFO: path: /favicon.ico
+240718180043809 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718180043811 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718180043812 Response.sendData()	INFO: extension: ico
+240718180043812 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718180043813 Response.sendData()	INFO: GET: []
+240718180043814 Response.sendData()	INFO: GET MAP: {}
+240718180043815 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718180043817 ThreadServer.run()	INFO: (4) > Thread :: Time: 18 milliseconds
+240718180043818 ThreadServer.run()	INFO: (4) > END #
+240718180048831 ThreadServer.run()	INFO: (4) > Thread waiting for new client....

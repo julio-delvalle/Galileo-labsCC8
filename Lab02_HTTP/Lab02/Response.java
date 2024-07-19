@@ -1,6 +1,7 @@
 import java.io.*;
 import java.net.FileNameMap;
 import java.net.URLConnection;
+import java.net.URLDecoder;
 import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
@@ -20,23 +21,58 @@ public class Response {
         LOGGER.info(requestArr[requestArr.length - 1]);
 
         String firstLine = requestArr[0];
-        String body = requestArr[requestArr.length - 1];
+        String POSTbody = requestArr[requestArr.length - 1];
 
         String method = firstLine.split(" ")[0];
         String path = firstLine.split(" ")[1];
-        String httpVersion = firstLine.split(" ")[2];
 
-        LOGGER.info(method);
-        LOGGER.info(path);
-        LOGGER.info(httpVersion);
+        
 
-        path = path.split("\\?")[0];
 
-        if (path.endsWith("/")) {
-            path += "index.html";
+
+        //Obtener parámetros de GET:
+        LOGGER.info("path: "+path);
+        int qmIndex = path.lastIndexOf('?');
+        String GETparamsStr = "";
+        String[] GETparams = {};
+        Map<String, String> GETparamsPairs = new LinkedHashMap<String, String>();
+        if (qmIndex > 0) {
+            GETparamsStr = path.substring(qmIndex+1);
+            GETparams = GETparamsStr.split("&");
+            for (String param : GETparams) {
+                int idx = param.indexOf("=");
+                //Decodifica caracteres especiales de una vez.
+                GETparamsPairs.put(URLDecoder.decode(param.substring(0, idx), "UTF-8"), URLDecoder.decode(param.substring(idx + 1), "UTF-8"));
+            }
         }
 
 
+        //Obtener parámetros de POST:
+        LOGGER.info("POST PARAMS : "+POSTbody);
+        String[] POSTparams = {};
+        Map<String, String> POSTparamsPairs = new LinkedHashMap<String, String>();
+        if (POSTbody.length() > 0 && method.equals("POST")) {
+            POSTparams = POSTbody.split("&");
+            for (String param : POSTparams) {
+                int idx = param.indexOf("=");
+                //Decodifica caracteres especiales de una vez.
+                POSTparamsPairs.put(URLDecoder.decode(param.substring(0, idx), "UTF-8"), URLDecoder.decode(param.substring(idx + 1), "UTF-8"));
+            }
+        }
+        LOGGER.info("POST PAIRS MAP: "+POSTparamsPairs);
+
+
+
+
+        path = path.split("\\?")[0];
+        
+        if (path.endsWith("/")) {
+            path += "index.html";
+        }
+        
+        
+        LOGGER.info("method: "+method);
+        LOGGER.info("path: "+path);
 
         String fileData = " ";
         byte[] fileDataBytes = new byte[0];
@@ -50,21 +86,41 @@ public class Response {
         }
 
 
-        //Esta línea sustituye el TARGET por el segundo string
-        // === COMENTADA PORQUE AHORITA NO SE PUEDE HACER REPLACE SOBRE UN ARRAY DE BYTES. TIENE QUE SER STRING.
-        
-
         FileNameMap fileNameMap = URLConnection.getFileNameMap();
         String fileContentType = fileNameMap.getContentTypeFor("file://" + path);
         if (fileContentType == null) {
             fileContentType = "application/octet-stream";
         }
-        LOGGER.info(fileContentType);
-
-
+        LOGGER.info("fileContentType: "+fileContentType);
+        
+        int i = path.lastIndexOf('.');
+        String extension = "";
+        if (i > 0) {
+            extension = path.substring(i+1);
+        }
+        LOGGER.info("extension: "+extension);
+        
+        if(extension.equals("cc8")){
+            fileContentType = "text/html";
+        }
+        
+        LOGGER.info("fileContentType: "+fileContentType);
+        LOGGER.info("GET: "+Arrays.toString(GETparams));
+        LOGGER.info("GET MAP: "+GETparamsPairs.toString());
+        LOGGER.info("POST PARAMS: "+POSTbody);
+        LOGGER.info("POST PARAMS MAP: "+POSTparamsPairs.toString());
         /// SI ES TEXTO, SUSTITUIR LOS TARGETS Y LUEGO CONVERTIR A BYTES. SI ES CUALQUIER OTRA COSA (IMAGEN, FONT, ICON...) OBTENER BYTES DESDE EL ARCHIVO.
         if(fileContentType.split("/")[0].equals("text")){
             fileData = fileData.replace("{fieldTest_DEMO}", "El servidor cambió esto y agregó un número aleatorio: "+ (new Random()).nextInt(1000)  );
+            if(GETparamsPairs.size() > 0){
+                fileData = fileData.replace("{name}", GETparamsPairs.get("name") );
+                fileData = fileData.replace("{email}", GETparamsPairs.get("email") );
+            }
+            if(POSTparamsPairs.size() > 0){
+                fileData = fileData.replace("{name}", POSTparamsPairs.get("name")+"" );
+                fileData = fileData.replace("{email}", POSTparamsPairs.get("email")+"" );
+            }
+
             fileDataBytes = fileData.getBytes();
         }else{
             try {
@@ -77,17 +133,6 @@ public class Response {
             }
         }
 
-        /*LOGGER.info(path);
-        int i = path.lastIndexOf('.');
-        String extension = "";
-        if (i > 0) {
-            extension = path.substring(i+1);
-        }
-        LOGGER.info(extension);
-
-        if(extension.equals("ttf")){
-            fileContentType = "font/ttf";
-        }*/
 
 
         ArrayList<String> responseHeaders = new ArrayList<>();
@@ -102,9 +147,9 @@ public class Response {
         dataOut.write(fileDataBytes);
         dataOut.flush();
 
-        if (!fileContentType.equals("application/octet-stream")) {
+        /*if (!fileContentType.equals("application/octet-stream")) {
             LOGGER.info("(" + nThreadServer + ") response: " + responseHeaders);
             LOGGER.info("(" + nThreadServer + ") response: " + fileData);
-        }
+        }*/
     }
 }

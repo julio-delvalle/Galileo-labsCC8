@@ -1,0 +1,18 @@
+240718175955874 ThreadServer.run()	INFO: (9) > Thread waiting for new client....
+240718180242248 ThreadServer.run()	INFO: (9) > Thread Accepting connection >
+240718180242249 Request.getData()	INFO: (9) request: [GET /test02/displayFields.cc8?name=GET+-+multipart%2Fform-data&email=lab02%40galileo.edu HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/test02/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718180242250 Response.sendData()	INFO: GET /test02/displayFields.cc8?name=GET+-+multipart%2Fform-data&email=lab02%40galileo.edu HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test02/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718180242251 Response.sendData()	INFO: GET /test02/displayFields.cc8?name=GET+-+multipart%2Fform-data&email=lab02%40galileo.edu HTTP/1.1 
+240718180242251 Response.sendData()	INFO:  Host: localhost:1000 
+240718180242252 Response.sendData()	INFO:  
+240718180242252 Response.sendData()	INFO: path: /test02/displayFields.cc8?name=GET+-+multipart%2Fform-data&email=lab02%40galileo.edu
+240718180242252 Response.sendData()	INFO: method: GET
+240718180242253 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718180242253 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718180242253 Response.sendData()	INFO: extension: cc8
+240718180242254 Response.sendData()	INFO: fileContentType: text/html
+240718180242254 Response.sendData()	INFO: GET: [name=GET+-+multipart%2Fform-data, email=lab02%40galileo.edu]
+240718180242254 Response.sendData()	INFO: GET MAP: {name=GET - multipart/form-data, email=lab02@galileo.edu}
+240718180242254 ThreadServer.run()	INFO: (9) > Thread :: Time: 6 milliseconds
+240718180242255 ThreadServer.run()	INFO: (9) > END #
+240718180247258 ThreadServer.run()	INFO: (9) > Thread waiting for new client....

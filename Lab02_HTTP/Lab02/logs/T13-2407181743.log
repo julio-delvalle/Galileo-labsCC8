@@ -1,0 +1,18 @@
+240718174335158 ThreadServer.run()	INFO: (13) > Thread waiting for new client....
+240718174342270 ThreadServer.run()	INFO: (13) > Thread Accepting connection >
+240718174342270 Request.getData()	INFO: (13) request: [GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", Origin: http://localhost:1000, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: font, Referer: http://localhost:1000/test01/styles/style.css, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718174342272 Response.sendData()	INFO: GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || Origin: http://localhost:1000 || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: font || Referer: http://localhost:1000/test01/styles/style.css || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718174342274 Response.sendData()	INFO: GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1 
+240718174342278 Response.sendData()	INFO:  Host: localhost:1000 
+240718174342278 Response.sendData()	INFO:  
+240718174342279 Response.sendData()	INFO: path: /test01/styles/BungeeSpice-Regular.ttf
+240718174342280 Response.sendData()	INFO: method: GET
+240718174342280 Response.sendData()	INFO: path: /test01/styles/BungeeSpice-Regular.ttf
+240718174342299 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718174342300 Response.sendData()	INFO: extension: ttf
+240718174342300 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718174342301 Response.sendData()	INFO: GET: []
+240718174342301 Response.sendData()	INFO: GET MAP: {}
+240718174342305 ThreadServer.run()	INFO: (13) > Thread :: Time: 35 milliseconds
+240718174342305 ThreadServer.run()	INFO: (13) > END #
+240718174347317 ThreadServer.run()	INFO: (13) > Thread waiting for new client....

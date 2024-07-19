@@ -1,0 +1,124 @@
+240718174137152 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718174148152 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718174148157 Request.getData()	INFO: (0) request: [GET /test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Cache-Control: max-age=0, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/test02/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718174148162 Response.sendData()	INFO: GET /test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test02/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718174148164 Response.sendData()	INFO: GET /test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu HTTP/1.1 
+240718174148164 Response.sendData()	INFO:  Host: localhost:1000 
+240718174148166 Response.sendData()	INFO:  
+240718174148168 Response.sendData()	INFO: path: /test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu
+240718174148169 Response.sendData()	INFO: method: GET
+240718174148170 Response.sendData()	INFO: path: /test02/displayFields.cc8
+240718174148176 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718174148177 Response.sendData()	INFO: extension: cc8
+240718174148177 Response.sendData()	INFO: fileContentType: text/html
+240718174148178 Response.sendData()	INFO: GET: [name=GET+-+application%2Fx-www-form-urlencoded, email=lab02%40galileo.edu]
+240718174148179 Response.sendData()	INFO: GET MAP: {name=GET - application/x-www-form-urlencoded, email=lab02@galileo.edu}
+240718174148195 ThreadServer.run()	INFO: (0) > Thread :: Time: 32 milliseconds
+240718174148196 ThreadServer.run()	INFO: (0) > END #
+240718174153210 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718174153210 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718174153210 Request.getData()	INFO: (0) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718174153211 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test02/displayFields.cc8?name=GET+-+application%2Fx-www-form-urlencoded&email=lab02%40galileo.edu || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718174153212 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 
+240718174153212 Response.sendData()	INFO:  Host: localhost:1000 
+240718174153213 Response.sendData()	INFO:  
+240718174153213 Response.sendData()	INFO: path: /favicon.ico
+240718174153213 Response.sendData()	INFO: method: GET
+240718174153213 Response.sendData()	INFO: path: /favicon.ico
+240718174153214 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718174153214 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718174153215 Response.sendData()	INFO: extension: ico
+240718174153215 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718174153215 Response.sendData()	INFO: GET: []
+240718174153216 Response.sendData()	INFO: GET MAP: {}
+240718174153216 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718174153217 ThreadServer.run()	INFO: (0) > Thread :: Time: 7 milliseconds
+240718174153217 ThreadServer.run()	INFO: (0) > END #
+240718174158220 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718174230947 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718174230948 Request.getData()	INFO: (0) request: [GET / HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Sec-Fetch-Site: none, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718174230949 Response.sendData()	INFO: GET / HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7 || Sec-Fetch-Site: none || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718174230951 Response.sendData()	INFO: GET / HTTP/1.1 
+240718174230951 Response.sendData()	INFO:  Host: localhost:1000 
+240718174230951 Response.sendData()	INFO:  
+240718174230952 Response.sendData()	INFO: path: /
+240718174230952 Response.sendData()	INFO: method: GET
+240718174230952 Response.sendData()	INFO: path: /index.html
+240718174230953 Response.sendData()	INFO: fileContentType: text/html
+240718174230954 Response.sendData()	INFO: extension: html
+240718174230954 Response.sendData()	INFO: fileContentType: text/html
+240718174230955 Response.sendData()	INFO: GET: []
+240718174230956 Response.sendData()	INFO: GET MAP: {}
+240718174230957 ThreadServer.run()	INFO: (0) > Thread :: Time: 9 milliseconds
+240718174230957 ThreadServer.run()	INFO: (0) > END #
+240718174235959 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718174235959 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718174235960 Request.getData()	INFO: (0) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718174235961 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718174235961 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 
+240718174235962 Response.sendData()	INFO:  Host: localhost:1000 
+240718174235962 Response.sendData()	INFO:  
+240718174235962 Response.sendData()	INFO: path: /favicon.ico
+240718174235963 Response.sendData()	INFO: method: GET
+240718174235963 Response.sendData()	INFO: path: /favicon.ico
+240718174235963 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718174235964 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718174235964 Response.sendData()	INFO: extension: ico
+240718174235964 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718174235965 Response.sendData()	INFO: GET: []
+240718174235965 Response.sendData()	INFO: GET MAP: {}
+240718174235966 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240718174235966 ThreadServer.run()	INFO: (0) > Thread :: Time: 6 milliseconds
+240718174235967 ThreadServer.run()	INFO: (0) > END #
+240718174240969 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718174240969 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718174240970 Request.getData()	INFO: (0) request: [GET /test01/styles/style.css HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: text/css,*/*;q=0.1, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: style, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718174240971 Response.sendData()	INFO: GET /test01/styles/style.css HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: text/css,*/*;q=0.1 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: style || Referer: http://localhost:1000/test01/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718174240971 Response.sendData()	INFO: GET /test01/styles/style.css HTTP/1.1 
+240718174240971 Response.sendData()	INFO:  Host: localhost:1000 
+240718174240972 Response.sendData()	INFO:  
+240718174240972 Response.sendData()	INFO: path: /test01/styles/style.css
+240718174240972 Response.sendData()	INFO: method: GET
+240718174240973 Response.sendData()	INFO: path: /test01/styles/style.css
+240718174240973 Response.sendData()	INFO: fileContentType: text/css
+240718174240973 Response.sendData()	INFO: extension: css
+240718174240974 Response.sendData()	INFO: fileContentType: text/css
+240718174240974 Response.sendData()	INFO: GET: []
+240718174240974 Response.sendData()	INFO: GET MAP: {}
+240718174240975 ThreadServer.run()	INFO: (0) > Thread :: Time: 5 milliseconds
+240718174240975 ThreadServer.run()	INFO: (0) > END #
+240718174245977 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718174245978 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718174245978 Request.getData()	INFO: (0) request: [GET /test01/images/fisicc.png HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718174245979 Response.sendData()	INFO: GET /test01/images/fisicc.png HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test01/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718174245980 Response.sendData()	INFO: GET /test01/images/fisicc.png HTTP/1.1 
+240718174245980 Response.sendData()	INFO:  Host: localhost:1000 
+240718174245980 Response.sendData()	INFO:  
+240718174245980 Response.sendData()	INFO: path: /test01/images/fisicc.png
+240718174245981 Response.sendData()	INFO: method: GET
+240718174245981 Response.sendData()	INFO: path: /test01/images/fisicc.png
+240718174245993 Response.sendData()	INFO: fileContentType: image/png
+240718174245994 Response.sendData()	INFO: extension: png
+240718174245994 Response.sendData()	INFO: fileContentType: image/png
+240718174245994 Response.sendData()	INFO: GET: []
+240718174245995 Response.sendData()	INFO: GET MAP: {}
+240718174245997 ThreadServer.run()	INFO: (0) > Thread :: Time: 19 milliseconds
+240718174245998 ThreadServer.run()	INFO: (0) > END #
+240718174251005 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718174251005 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718174251006 Request.getData()	INFO: (0) request: [GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", Origin: http://localhost:1000, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: font, Referer: http://localhost:1000/test01/styles/style.css, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240718174251007 Response.sendData()	INFO: GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || Origin: http://localhost:1000 || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: font || Referer: http://localhost:1000/test01/styles/style.css || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240718174251007 Response.sendData()	INFO: GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1 
+240718174251008 Response.sendData()	INFO:  Host: localhost:1000 
+240718174251008 Response.sendData()	INFO:  
+240718174251008 Response.sendData()	INFO: path: /test01/styles/BungeeSpice-Regular.ttf
+240718174251009 Response.sendData()	INFO: method: GET
+240718174251009 Response.sendData()	INFO: path: /test01/styles/BungeeSpice-Regular.ttf
+240718174251016 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718174251017 Response.sendData()	INFO: extension: ttf
+240718174251017 Response.sendData()	INFO: fileContentType: application/octet-stream
+240718174251017 Response.sendData()	INFO: GET: []
+240718174251018 Response.sendData()	INFO: GET MAP: {}
+240718174251021 ThreadServer.run()	INFO: (0) > Thread :: Time: 15 milliseconds
+240718174251022 ThreadServer.run()	INFO: (0) > END #
+240718174256026 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
