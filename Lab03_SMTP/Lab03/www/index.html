@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Correo Electrónico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+    <title>Formularios DEMO</title>
+    <script type="text/javascript">
+        function submitForm(event) {
+            event.preventDefault();
+            var form = event.target;
+            var formData = new FormData(form);
+            var jsonObject = "";
+            formData.forEach(function(value, key){jsonObject = jsonObject+key+":"+value+";|;";});
+            var xhr = new XMLHttpRequest();
+            xhr.open(form.method, form.action, true);
+            xhr.setRequestHeader('Content-Type', 'text/experiment; charset=UTF-8');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    window.alert("Mensaje Enviado!");
+                } else if(xhr.readyState === 4) {
+                    window.alert("Error o Time Out, " + xhr.statusText );
+                }
+            };
+            xhr.send(JSON.stringify(jsonObject));
+        }
+    </script>
+</head>
+<body>
+    <h1>Enviar Correo Electrónico</h1>
+    <form action="/sendSMTP" method="post" onsubmit="submitForm(event)">
+        <div>
+            <label for="from">De:</label>
+            <input type="email" id="from" name="from" value="curso_cc8@lab03.edu" required>
+        </div>
+        <div>
+            <label for="to">Para:</label>
+            <input type="email" id="to" name="to" value="correo_externo@galileo.edu" required>
+        </div>
+        <div>
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" value="Lab 03 - SMTP" required>
+        </div>
+        <div>
+            <label for="body">Mensaje:</label>
+            <textarea id="body" name="body" rows="10" required>Hola Mundo!</textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
