@@ -60,32 +60,33 @@ class SMTPClientHandler extends Thread {
 			String rcptToReceived = "";
 			ArrayList<String> rcptToReceivedArray = new ArrayList<String>();
 			String dataReceived = "";
+			String subjectReceived = "";
 			while ((line = in.nextLine()) != null) {
 				try {
 					
 					System.out.println("-> fromClient: " + line);
 					if (line.startsWith("HELO")) {
 						clientName = line.substring(5);
-						if(validateServerName(clientName)){
-							out.println("250 HELLO " + clientName + ", pleased to meet you" );
-						}else{
-							out.println("501 Syntax Error, " + clientName + " is not a valid server name." );
-						}
+						out.println("250 HELLO " + clientName + ", pleased to meet you" );
+						//if(validateServerName(clientName)){
+						//}else{
+						//	out.println("501 Syntax Error, " + clientName + " is not a valid server name." );
+						//}
 					} else if (line.startsWith("MAIL FROM:")) {
 						mailFromReceived = line.substring(line.indexOf('<')+1, line.indexOf('>'));
-						if(validateServerName(clientName)){
-							out.println("250 OK MAIL FROM "+mailFromReceived);
-						}else{
-							out.println("501 Syntax Error, " + mailFromReceived + " is not a valid mail address." );
-						}
+						out.println("250 OK MAIL FROM "+mailFromReceived);
+						//if(validateServerName(clientName)){
+						//}else{
+						//	out.println("501 Syntax Error, " + mailFromReceived + " is not a valid mail address." );
+						//}
 					} else if (line.startsWith("RCPT TO:")) {
 						rcptToReceived = line.substring(line.indexOf('<')+1, line.indexOf('>'));
-						if(validateServerName(clientName)){
-							out.println("250 OK RCPT TO "+rcptToReceived);
-							rcptToReceivedArray.add(rcptToReceived); 
-						}else{
-							out.println("501 Syntax Error, " + rcptToReceived + " is not a valid mail address." );
-						}
+						out.println("250 OK RCPT TO "+rcptToReceived);
+						rcptToReceivedArray.add(rcptToReceived); 
+						//if(validateServerName(clientName)){
+						//}else{
+						//	out.println("501 Syntax Error, " + rcptToReceived + " is not a valid mail address." );
+						//}
 					} else if (line.equals("DATA")) {
 						out.println("354 End data with <CR><LF>.<CR><LF>");
 						while ((line = in.nextLine()) != null) {
@@ -95,10 +96,33 @@ class SMTPClientHandler extends Thread {
 								out.println("Will be sent to: "+rcptToReceivedArray.toString());
 								out.println("");
 								System.out.println("Email data received: " + dataReceived);
+								for (String str : dataReceived.split("\n")) {
+									if(str.contains("Subject:")){
+										int idx = str.indexOf("Subject:");
+										subjectReceived = str.substring(idx+8);
+									}
+								}
 								break;
 							}
 						}
 					} else if (line.equals("QUIT")) {
+						for (String rcptToStr : rcptToReceivedArray) {
+							String mailServer = rcptToStr.split("@")[1];
+							if(mailServer.equals("julio.com")){
+								(new SQLiteJDBC()).insertMailToDBSimple(mailFromReceived, rcptToStr, subjectReceived, dataReceived);
+							}else{
+								SMTPClient tempClient = new SMTPClient(mailServer, 25);
+								boolean started = tempClient.start();
+								if(started){
+									System.out.println("Se reenvió el correo a "+mailServer+"!");
+									tempClient.sendMail(mailFromReceived, rcptToStr, subjectReceived, dataReceived);
+									tempClient.close();
+								}else{
+									System.out.println("No se pudo conectar a "+mailServer+"!");
+								}
+							}
+						}
+
 						out.println("221 Bye " + clientName);
 						System.out.println("QUIT: ");
 						clientName = "";
@@ -108,10 +132,12 @@ class SMTPClientHandler extends Thread {
 						rcptToReceivedArray.clear();
 						break;
 					} else {
-						out.println("500 Unknown command");
+						System.out.println("-> no command fromClient: " + line);
+						out.println("500 Unknown command aaaaa");
 					}
 					
 				} catch (Exception e) {
+					System.out.println("-> ERROR! fromClient: " + line+"\n\n"+e);
 					out.println("500 Unknown command");
 				}
 			}

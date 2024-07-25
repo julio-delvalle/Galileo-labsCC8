@@ -1,0 +1,33 @@
+240724201953735 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240724201957262 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240724201957283 Request.getData()	INFO: (1) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 128, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: text/experiment; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, "from:curso_cc8@farfan.com;|;to:correo_externo@galileo.edu;|;subject:Lab 03 - SMTP;|;body:que onda farfan\n\nAAAAAAAAA\n....;|;"]
+240724201957364 Response.sendData()	INFO: SERVER START?: true
+240724201957370 Response.sendData()	INFO: (1) HTTP_request.getLast() : "from:curso_cc8@farfan.com;|;to:correo_externo@galileo.edu;|;subject:Lab 03 - SMTP;|;body:que onda farfan\n\nAAAAAAAAA\n....;|;"
+240724201957376 Response.sendData()	INFO: DENTRO DE APPLICATION
+240724201957380 Response.sendData()	INFO: from:curso_cc8@farfan.com
+240724201957385 Response.sendData()	INFO: to:correo_externo@galileo.edu
+240724201957388 Response.sendData()	INFO: subject:Lab 03 - SMTP
+240724201957391 Response.sendData()	INFO: body:que onda farfan\n\nAAAAAAAAA\n....
+240724201957394 Response.sendData()	INFO: POST PAIRS MAP: {from=curso_cc8@farfan.com, to=correo_externo@galileo.edu, subject=Lab 03 - SMTP, body=que onda farfan\n\nAAAAAAAAA\n....}
+240724201957398 Response.sendData()	INFO: POST PAIRS KEYS: [from, to, subject, body]
+240724201957603 Response.sendData()	INFO: Se reenvió el correo a farfan.com!
+240724201957776 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK]
+240724201957794 ThreadServer.run()	INFO: (1) > Thread :: Time: 509 milliseconds
+240724201957797 ThreadServer.run()	INFO: (1) > END #
+240724202002814 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240724202036858 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240724202036861 Request.getData()	INFO: (1) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 126, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: text/experiment; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, "from:curso_cc8@farfan.com;|;to:correo_externo@julio.com;|;subject:Lab 03 - SMTP;|;body:que onda farfan\n\nAAAAAAAAA\n....;|;"]
+240724202036866 Response.sendData()	INFO: SERVER START?: true
+240724202036867 Response.sendData()	INFO: (1) HTTP_request.getLast() : "from:curso_cc8@farfan.com;|;to:correo_externo@julio.com;|;subject:Lab 03 - SMTP;|;body:que onda farfan\n\nAAAAAAAAA\n....;|;"
+240724202036869 Response.sendData()	INFO: DENTRO DE APPLICATION
+240724202036870 Response.sendData()	INFO: from:curso_cc8@farfan.com
+240724202036871 Response.sendData()	INFO: to:correo_externo@julio.com
+240724202036872 Response.sendData()	INFO: subject:Lab 03 - SMTP
+240724202036873 Response.sendData()	INFO: body:que onda farfan\n\nAAAAAAAAA\n....
+240724202036875 Response.sendData()	INFO: POST PAIRS MAP: {from=curso_cc8@farfan.com, to=correo_externo@julio.com, subject=Lab 03 - SMTP, body=que onda farfan\n\nAAAAAAAAA\n....}
+240724202036876 Response.sendData()	INFO: POST PAIRS KEYS: [from, to, subject, body]
+240724202036924 Response.sendData()	INFO: Se reenvió el correo a farfan.com!
+240724202037125 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK]
+240724202037126 ThreadServer.run()	INFO: (1) > Thread :: Time: 266 milliseconds
+240724202037127 ThreadServer.run()	INFO: (1) > END #
+240724202042130 ThreadServer.run()	INFO: (1) > Thread waiting for new client....

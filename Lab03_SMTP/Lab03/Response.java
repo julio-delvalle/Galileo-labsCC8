@@ -52,11 +52,23 @@ public class Response {
             LOGGER.info("POST PAIRS KEYS: "+POSTparamsPairs.keySet());
 
             smtpClient.sendMail(POSTparamsPairs.get("from"), POSTparamsPairs.get("to"), POSTparamsPairs.get("subject"), POSTparamsPairs.get("body"));
+            
+            String mailServer = POSTparamsPairs.get("from").split("@")[1];
 
-            if(POSTparamsPairs.get("from").split("@")[1].equals("julio.com")){
-                (new SQLiteJDBC()).insertMailToDB(POSTparamsPairs.get("from"), POSTparamsPairs.get("to"), POSTparamsPairs.get("subject"), POSTparamsPairs.get("body"));
+            /*if(mailServer.equals("julio.com")){
+                (new SQLiteJDBC()).insertMailToDBbuildBody(POSTparamsPairs.get("from"), POSTparamsPairs.get("to"), POSTparamsPairs.get("subject"), POSTparamsPairs.get("body"));
                 LOGGER.info("Se insertó a mi base de datos!");
-            }
+            }else{
+                SMTPClient tempClient = new SMTPClient(mailServer, 25);
+                started = tempClient.start();
+                if(started){
+                    LOGGER.info("Se reenvió el correo a "+mailServer+"!");
+                    tempClient.sendMail(POSTparamsPairs.get("from"), POSTparamsPairs.get("to"), POSTparamsPairs.get("subject"), POSTparamsPairs.get("body"));
+                    tempClient.close();
+                }else{
+                    LOGGER.info("No se pudo conectar a "+mailServer+"!");
+                }
+            }*/
             
             response.add("HTTP/1.1 200 OK");
             dataOut.print( response.stream().collect(Collectors.joining("\r\n")) );

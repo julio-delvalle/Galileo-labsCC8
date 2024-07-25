@@ -1,0 +1,17 @@
+240724201953735 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240724202019090 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240724202019093 Request.getData()	INFO: (0) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 127, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: text/experiment; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, "from:curso_cc8@farfan.com;|;to:correo_externo@farfan.com;|;subject:Lab 03 - SMTP;|;body:que onda farfan\n\nAAAAAAAAA\n....;|;"]
+240724202019099 Response.sendData()	INFO: SERVER START?: true
+240724202019102 Response.sendData()	INFO: (0) HTTP_request.getLast() : "from:curso_cc8@farfan.com;|;to:correo_externo@farfan.com;|;subject:Lab 03 - SMTP;|;body:que onda farfan\n\nAAAAAAAAA\n....;|;"
+240724202019104 Response.sendData()	INFO: DENTRO DE APPLICATION
+240724202019106 Response.sendData()	INFO: from:curso_cc8@farfan.com
+240724202019107 Response.sendData()	INFO: to:correo_externo@farfan.com
+240724202019109 Response.sendData()	INFO: subject:Lab 03 - SMTP
+240724202019111 Response.sendData()	INFO: body:que onda farfan\n\nAAAAAAAAA\n....
+240724202019112 Response.sendData()	INFO: POST PAIRS MAP: {from=curso_cc8@farfan.com, to=correo_externo@farfan.com, subject=Lab 03 - SMTP, body=que onda farfan\n\nAAAAAAAAA\n....}
+240724202019114 Response.sendData()	INFO: POST PAIRS KEYS: [from, to, subject, body]
+240724202019208 Response.sendData()	INFO: Se reenvió el correo a farfan.com!
+240724202019348 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK]
+240724202019349 ThreadServer.run()	INFO: (0) > Thread :: Time: 256 milliseconds
+240724202019350 ThreadServer.run()	INFO: (0) > END #
+240724202024365 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

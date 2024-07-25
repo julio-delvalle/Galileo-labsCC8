@@ -71,6 +71,18 @@ public class SMTPClient {
 		}
 	}
 
+	public void close(){
+		try {
+			this.socket.close();
+			this.in.close();
+			this.out.close();
+			this.stdIn.close();
+		} catch (Exception e) {
+		
+		}
+	}
+	
+
 	public boolean sendMail(String fromParam, String toParamStr, String subjectParam, String bodyParam){
 		try {
 			System.out.println("INSIDE SENDMAIL FUNCTION");

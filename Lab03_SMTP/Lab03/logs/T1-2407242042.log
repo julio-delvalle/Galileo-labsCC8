@@ -1,0 +1,16 @@
+240724204212761 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240724204550213 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240724204550214 Request.getData()	INFO: (1) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 223, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: text/experiment; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, "from:curso_cc8@julio.com;|;to:correo_externo@julio.com, test@farfan.com, testing@pablo.com;|;subject:HOLA PABLO;|;body:QUE ONDA PABLO\n\nBBBBBBBBBBBB\n....\n\n74125853698521369874126987425654564898789889545625121545848;|;"]
+240724204550216 Response.sendData()	INFO: SERVER START?: true
+240724204550217 Response.sendData()	INFO: (1) HTTP_request.getLast() : "from:curso_cc8@julio.com;|;to:correo_externo@julio.com, test@farfan.com, testing@pablo.com;|;subject:HOLA PABLO;|;body:QUE ONDA PABLO\n\nBBBBBBBBBBBB\n....\n\n74125853698521369874126987425654564898789889545625121545848;|;"
+240724204550218 Response.sendData()	INFO: DENTRO DE APPLICATION
+240724204550218 Response.sendData()	INFO: from:curso_cc8@julio.com
+240724204550219 Response.sendData()	INFO: to:correo_externo@julio.com, test@farfan.com, testing@pablo.com
+240724204550219 Response.sendData()	INFO: subject:HOLA PABLO
+240724204550220 Response.sendData()	INFO: body:QUE ONDA PABLO\n\nBBBBBBBBBBBB\n....\n\n74125853698521369874126987425654564898789889545625121545848
+240724204550220 Response.sendData()	INFO: POST PAIRS MAP: {from=curso_cc8@julio.com, to=correo_externo@julio.com, test@farfan.com, testing@pablo.com, subject=HOLA PABLO, body=QUE ONDA PABLO\n\nBBBBBBBBBBBB\n....\n\n74125853698521369874126987425654564898789889545625121545848}
+240724204550221 Response.sendData()	INFO: POST PAIRS KEYS: [from, to, subject, body]
+240724204550229 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK]
+240724204550230 ThreadServer.run()	INFO: (1) > Thread :: Time: 16 milliseconds
+240724204550230 ThreadServer.run()	INFO: (1) > END #
+240724204555232 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
