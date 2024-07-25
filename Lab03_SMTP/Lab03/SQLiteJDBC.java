@@ -53,13 +53,16 @@ public class SQLiteJDBC {
 			" DATE      DATETIME  default current_timestamp )"; 
 			stmt.executeUpdate(sql);
 
-			String mailData = "Subject: "+subjectParam+"\nFrom: "+fromParam+"\nTo: "+toParamStr;
+			String mailData = "Subject: "+subjectParam+"\nFrom: "+fromParam+"\nTo: "+toParamStr+"\n\n"+bodyParam;
 
-			sql = "INSERT INTO SMTP_DB (MAIL_FROM, RCPT_TO, DATA) " +
-			"VALUES (\""+fromParam+"\", \""+toParamStr+"\", \""+mailData+"\");";
-
+			sql = "INSERT INTO SMTP_DB (MAIL_FROM, RCPT_TO, DATA) " + "VALUES (\""+fromParam+"\", \""+toParamStr+"\", \""+mailData+"\");";
+			
+			System.out.println("QUERY: "+sql);
+			
 			stmt.executeUpdate(sql);
 
+			sql = "SELECT IDmail FROM SMTP_DB ORDER BY IDmail DESC LIMIT 1;";
+			
 			stmt.close();
 			c.close();
 		} catch ( Exception e ) {

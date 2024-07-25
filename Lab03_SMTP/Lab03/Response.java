@@ -52,6 +52,11 @@ public class Response {
             LOGGER.info("POST PAIRS KEYS: "+POSTparamsPairs.keySet());
 
             smtpClient.sendMail(POSTparamsPairs.get("from"), POSTparamsPairs.get("to"), POSTparamsPairs.get("subject"), POSTparamsPairs.get("body"));
+
+            if(POSTparamsPairs.get("from").split("@")[1].equals("julio.com")){
+                (new SQLiteJDBC()).insertMailToDB(POSTparamsPairs.get("from"), POSTparamsPairs.get("to"), POSTparamsPairs.get("subject"), POSTparamsPairs.get("body"));
+                LOGGER.info("Se insertó a mi base de datos!");
+            }
             
             response.add("HTTP/1.1 200 OK");
             dataOut.print( response.stream().collect(Collectors.joining("\r\n")) );

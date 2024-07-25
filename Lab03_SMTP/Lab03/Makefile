@@ -1,5 +1,5 @@
 JFLAGS = -g
-JLIB = -classpath ".:sqlite-jdbc-3.7.2.jar"
+JLIB = -classpath ".;sqlite-jdbc-3.7.2.jar"
 JC = javac
 JVM= java
 .SUFFIXES: .java .class
@@ -25,8 +25,8 @@ default: classes
 
 classes: $(CLASSES:.java=.class)
 
-run: $(MAIN).class
-		$(JVM) $(MAIN) $(ARGS)
+run:  $(MAIN).class
+		$(JVM) $(JLIB) $(MAIN) $(ARGS)
 
 clean:
 		$(RM) *.class

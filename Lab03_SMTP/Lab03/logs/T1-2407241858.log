@@ -1,0 +1,32 @@
+240724185855753 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240724185907732 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240724185907736 Request.getData()	INFO: (1) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 145, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: text/experiment; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, "from:curso_cc8@julio.com;|;to:correo_externo@galileo.edu, test@test.ug;|;subject:Lab 03 - SMTP;|;body:EEEEEEEEE\nabc\n\ncon enters... . . ..;|;"]
+240724185907752 Response.sendData()	INFO: SERVER START?: true
+240724185907753 Response.sendData()	INFO: (1) HTTP_request.getLast() : "from:curso_cc8@julio.com;|;to:correo_externo@galileo.edu, test@test.ug;|;subject:Lab 03 - SMTP;|;body:EEEEEEEEE\nabc\n\ncon enters... . . ..;|;"
+240724185907754 Response.sendData()	INFO: DENTRO DE APPLICATION
+240724185907755 Response.sendData()	INFO: from:curso_cc8@julio.com
+240724185907756 Response.sendData()	INFO: to:correo_externo@galileo.edu, test@test.ug
+240724185907756 Response.sendData()	INFO: subject:Lab 03 - SMTP
+240724185907757 Response.sendData()	INFO: body:EEEEEEEEE\nabc\n\ncon enters... . . ..
+240724185907758 Response.sendData()	INFO: POST PAIRS MAP: {from=curso_cc8@julio.com, to=correo_externo@galileo.edu, test@test.ug, subject=Lab 03 - SMTP, body=EEEEEEEEE\nabc\n\ncon enters... . . ..}
+240724185907759 Response.sendData()	INFO: POST PAIRS KEYS: [from, to, subject, body]
+240724185907900 Response.sendData()	INFO: Se insertó a mi base de datos!
+240724185907903 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK]
+240724185907909 ThreadServer.run()	INFO: (1) > Thread :: Time: 171 milliseconds
+240724185907910 ThreadServer.run()	INFO: (1) > END #
+240724185912914 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240724185921913 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240724185921913 Request.getData()	INFO: (1) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 145, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: text/experiment; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, "from:curso_cc8@abc.com;|;to:correo_externo@galileo.edu, test@test.ug, ;|;subject:Lab 03 - SMTP;|;body:EEEEEEEEE\nabc\n\ncon enters... . . ..;|;"]
+240724185921915 Response.sendData()	INFO: SERVER START?: true
+240724185921915 Response.sendData()	INFO: (1) HTTP_request.getLast() : "from:curso_cc8@abc.com;|;to:correo_externo@galileo.edu, test@test.ug, ;|;subject:Lab 03 - SMTP;|;body:EEEEEEEEE\nabc\n\ncon enters... . . ..;|;"
+240724185921915 Response.sendData()	INFO: DENTRO DE APPLICATION
+240724185921916 Response.sendData()	INFO: from:curso_cc8@abc.com
+240724185921916 Response.sendData()	INFO: to:correo_externo@galileo.edu, test@test.ug, 
+240724185921916 Response.sendData()	INFO: subject:Lab 03 - SMTP
+240724185921917 Response.sendData()	INFO: body:EEEEEEEEE\nabc\n\ncon enters... . . ..
+240724185921917 Response.sendData()	INFO: POST PAIRS MAP: {from=curso_cc8@abc.com, to=correo_externo@galileo.edu, test@test.ug, , subject=Lab 03 - SMTP, body=EEEEEEEEE\nabc\n\ncon enters... . . ..}
+240724185921917 Response.sendData()	INFO: POST PAIRS KEYS: [from, to, subject, body]
+240724185921924 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK]
+240724185921925 ThreadServer.run()	INFO: (1) > Thread :: Time: 12 milliseconds
+240724185921926 ThreadServer.run()	INFO: (1) > END #
+240724185926937 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
