@@ -1,0 +1,47 @@
+240724182147400 ThreadServer.run()	INFO: (2) > Thread waiting for new client....
+240724182748353 ThreadServer.run()	INFO: (2) > Thread Accepting connection >
+240724182748358 Request.getData()	INFO: (2) request: [GET /test03/assets/css/font-awesome.min.css HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: text/css,*/*;q=0.1, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: style, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182748364 Response.sendData()	INFO: GET /test03/assets/css/font-awesome.min.css HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: text/css,*/*;q=0.1 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: style || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182748370 Response.sendData()	INFO: requestContentType: 
+240724182748374 Response.sendData()	INFO: GET /test03/assets/css/font-awesome.min.css HTTP/1.1 
+240724182748376 Response.sendData()	INFO:  Host: localhost:1000 
+240724182748382 Response.sendData()	INFO:  
+240724182748389 Response.sendData()	INFO: path: /test03/assets/css/font-awesome.min.css
+240724182748406 Response.sendData()	INFO: POST PARAMS : 
+240724182748432 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182748479 Response.sendData()	INFO: method: GET
+240724182748495 Response.sendData()	INFO: path: /test03/assets/css/font-awesome.min.css
+240724182748511 Response.sendData()	INFO: fileContentType: text/css
+240724182748553 Response.sendData()	INFO: extension: css
+240724182748567 Response.sendData()	INFO: fileContentType: text/css
+240724182748595 Response.sendData()	INFO: GET: []
+240724182748601 Response.sendData()	INFO: GET MAP: {}
+240724182748602 Response.sendData()	INFO: POST PARAMS: 
+240724182748609 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182748630 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182748635 ThreadServer.run()	INFO: (2) > Thread :: Time: 278 milliseconds
+240724182748636 ThreadServer.run()	INFO: (2) > END #
+240724182753659 ThreadServer.run()	INFO: (2) > Thread waiting for new client....
+240724182759620 ThreadServer.run()	INFO: (2) > Thread Accepting connection >
+240724182759637 Request.getData()	INFO: (2) request: [GET /test03/assets/js/isotope.js HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: script, Referer: http://localhost:1000/test03/contact.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182759655 Response.sendData()	INFO: GET /test03/assets/js/isotope.js HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: script || Referer: http://localhost:1000/test03/contact.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182759672 Response.sendData()	INFO: requestContentType: 
+240724182759673 Response.sendData()	INFO: GET /test03/assets/js/isotope.js HTTP/1.1 
+240724182759684 Response.sendData()	INFO:  Host: localhost:1000 
+240724182759689 Response.sendData()	INFO:  
+240724182759704 Response.sendData()	INFO: path: /test03/assets/js/isotope.js
+240724182759714 Response.sendData()	INFO: POST PARAMS : 
+240724182759733 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182759764 Response.sendData()	INFO: method: GET
+240724182759774 Response.sendData()	INFO: path: /test03/assets/js/isotope.js
+240724182759788 Response.sendData()	INFO: fileContentType: text/javascript
+240724182759800 Response.sendData()	INFO: extension: js
+240724182759808 Response.sendData()	INFO: fileContentType: text/javascript
+240724182759856 Response.sendData()	INFO: GET: []
+240724182759861 Response.sendData()	INFO: GET MAP: {}
+240724182759871 Response.sendData()	INFO: POST PARAMS: 
+240724182759877 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182759879 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182759888 ThreadServer.run()	INFO: (2) > Thread :: Time: 252 milliseconds
+240724182759889 ThreadServer.run()	INFO: (2) > END #
+240724182804926 ThreadServer.run()	INFO: (2) > Thread waiting for new client....

@@ -1,0 +1,110 @@
+240724174711426 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240724174715049 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240724174715051 Request.getData()	INFO: (0) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724174715054 Response.sendData()	INFO: (0) HTTP_request.get(0) : GET /favicon.ico HTTP/1.1
+240724174715054 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK, Content-Type: text/html, Content-Length: 3011, , <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Correo Electrónico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+    <title>Formularios DEMO</title>
+    <script type="text/javascript">
+        function submitForm(event) {
+            event.preventDefault();
+            var form = event.target;
+            var formData = new FormData(form);
+            var jsonObject = "";
+            formData.forEach(function(value, key){jsonObject = jsonObject+key+":"+value+";|;";});
+            var xhr = new XMLHttpRequest();
+            xhr.open(form.method, form.action, true);
+            xhr.setRequestHeader('Content-Type', 'text/experiment; charset=UTF-8');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    window.alert("Mensaje Enviado!");
+                } else if(xhr.readyState === 4) {
+                    window.alert("Error o Time Out, " + xhr.statusText );
+                }
+            };
+            xhr.send(JSON.stringify(jsonObject));
+        }
+    </script>
+</head>
+<body>
+    <h1>Enviar Correo Electrónico</h1>
+    <form action="/sendSMTP" method="post" onsubmit="submitForm(event)">
+        <div>
+            <label for="from">De:</label>
+            <input type="email" id="from" name="from" value="curso_cc8@lab03.edu" required>
+        </div>
+        <div>
+            <label for="to">Para:</label>
+            <input type="text" id="to" name="to" value="correo_externo@galileo.edu" required>
+        </div>
+        <div>
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" value="Lab 03 - SMTP" required>
+        </div>
+        <div>
+            <label for="body">Mensaje:</label>
+            <textarea id="body" name="body" rows="10" required>Hola Mundo!</textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>]
+240724174715067 ThreadServer.run()	INFO: (0) > Thread :: Time: 17 milliseconds
+240724174715068 ThreadServer.run()	INFO: (0) > END #
+240724174720073 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240724174752451 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240724174752452 Request.getData()	INFO: (0) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 146, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: text/experiment; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, "from:curso_cc8@lab03.edu;|;to:correo_externo@galileo.edu, test@test.ug;|;subject:Lab 03 - SMTP;|;body:TESTING \n\nabc\n\ncon enters... . . ..;|;"]
+240724174752465 Response.sendData()	INFO: SERVER START?: true
+240724174752466 Response.sendData()	INFO: (0) HTTP_request.getLast() : "from:curso_cc8@lab03.edu;|;to:correo_externo@galileo.edu, test@test.ug;|;subject:Lab 03 - SMTP;|;body:TESTING \n\nabc\n\ncon enters... . . ..;|;"
+240724174752467 Response.sendData()	INFO: DENTRO DE APPLICATION
+240724174752467 Response.sendData()	INFO: "from:curso_cc8@lab03.edu
+240724174752468 Response.sendData()	INFO: to:correo_externo@galileo.edu, test@test.ug
+240724174752468 Response.sendData()	INFO: subject:Lab 03 - SMTP
+240724174752468 Response.sendData()	INFO: body:TESTING \n\nabc\n\ncon enters... . . ..
+240724174752469 Response.sendData()	INFO: POST PAIRS MAP: {"from=curso_cc8@lab03.edu, to=correo_externo@galileo.edu, test@test.ug, subject=Lab 03 - SMTP, body=TESTING \n\nabc\n\ncon enters... . . ..}

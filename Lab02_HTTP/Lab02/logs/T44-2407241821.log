@@ -1,0 +1,24 @@
+240724182147619 ThreadServer.run()	INFO: (44) > Thread waiting for new client....
+240724182749268 ThreadServer.run()	INFO: (44) > Thread Accepting connection >
+240724182749282 Request.getData()	INFO: (44) request: [GET /test03/assets/js/jquery.magnific-popup.min.js HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: script, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182749386 Response.sendData()	INFO: GET /test03/assets/js/jquery.magnific-popup.min.js HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: script || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182749400 Response.sendData()	INFO: requestContentType: 
+240724182749415 Response.sendData()	INFO: GET /test03/assets/js/jquery.magnific-popup.min.js HTTP/1.1 
+240724182749431 Response.sendData()	INFO:  Host: localhost:1000 
+240724182749437 Response.sendData()	INFO:  
+240724182749448 Response.sendData()	INFO: path: /test03/assets/js/jquery.magnific-popup.min.js
+240724182749468 Response.sendData()	INFO: POST PARAMS : 
+240724182749516 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182749517 Response.sendData()	INFO: method: GET
+240724182749530 Response.sendData()	INFO: path: /test03/assets/js/jquery.magnific-popup.min.js
+240724182749535 Response.sendData()	INFO: fileContentType: text/javascript
+240724182749545 Response.sendData()	INFO: extension: js
+240724182749550 Response.sendData()	INFO: fileContentType: text/javascript
+240724182749596 Response.sendData()	INFO: GET: []
+240724182749633 Response.sendData()	INFO: GET MAP: {}
+240724182749660 Response.sendData()	INFO: POST PARAMS: 
+240724182749666 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182749677 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182749680 ThreadServer.run()	INFO: (44) > Thread :: Time: 399 milliseconds
+240724182749698 ThreadServer.run()	INFO: (44) > END #
+240724182754704 ThreadServer.run()	INFO: (44) > Thread waiting for new client....

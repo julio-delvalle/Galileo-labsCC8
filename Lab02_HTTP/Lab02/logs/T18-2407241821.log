@@ -1,0 +1,24 @@
+240724182147620 ThreadServer.run()	INFO: (18) > Thread waiting for new client....
+240724182749245 ThreadServer.run()	INFO: (18) > Thread Accepting connection >
+240724182749254 Request.getData()	INFO: (18) request: [GET /test03/assets/js/imgloaded.js HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: script, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182749278 Response.sendData()	INFO: GET /test03/assets/js/imgloaded.js HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: script || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182749284 Response.sendData()	INFO: requestContentType: 
+240724182749285 Response.sendData()	INFO: GET /test03/assets/js/imgloaded.js HTTP/1.1 
+240724182749286 Response.sendData()	INFO:  Host: localhost:1000 
+240724182749287 Response.sendData()	INFO:  
+240724182749289 Response.sendData()	INFO: path: /test03/assets/js/imgloaded.js
+240724182749291 Response.sendData()	INFO: POST PARAMS : 
+240724182749291 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182749292 Response.sendData()	INFO: method: GET
+240724182749293 Response.sendData()	INFO: path: /test03/assets/js/imgloaded.js
+240724182749296 Response.sendData()	INFO: fileContentType: text/javascript
+240724182749297 Response.sendData()	INFO: extension: js
+240724182749390 Response.sendData()	INFO: fileContentType: text/javascript
+240724182749391 Response.sendData()	INFO: GET: []
+240724182749393 Response.sendData()	INFO: GET MAP: {}
+240724182749403 Response.sendData()	INFO: POST PARAMS: 
+240724182749419 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182749433 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182749444 ThreadServer.run()	INFO: (18) > Thread :: Time: 191 milliseconds
+240724182749445 ThreadServer.run()	INFO: (18) > END #
+240724182754452 ThreadServer.run()	INFO: (18) > Thread waiting for new client....

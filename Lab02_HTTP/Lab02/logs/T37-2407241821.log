@@ -1,0 +1,24 @@
+240724182147361 ThreadServer.run()	INFO: (37) > Thread waiting for new client....
+240724182749008 ThreadServer.run()	INFO: (37) > Thread Accepting connection >
+240724182749134 Request.getData()	INFO: (37) request: [GET /test03/assets/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", Origin: http://localhost:1000, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: font, Referer: http://localhost:1000/test03/assets/css/ionicons.min.css, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182749149 Response.sendData()	INFO: GET /test03/assets/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || Origin: http://localhost:1000 || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: font || Referer: http://localhost:1000/test03/assets/css/ionicons.min.css || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182749163 Response.sendData()	INFO: requestContentType: 
+240724182749179 Response.sendData()	INFO: GET /test03/assets/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1 
+240724182749194 Response.sendData()	INFO:  Host: localhost:1000 
+240724182749199 Response.sendData()	INFO:  
+240724182749203 Response.sendData()	INFO: path: /test03/assets/fonts/ionicons.ttf?v=2.0.0
+240724182749209 Response.sendData()	INFO: POST PARAMS : 
+240724182749212 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182749215 Response.sendData()	INFO: method: GET
+240724182749217 Response.sendData()	INFO: path: /test03/assets/fonts/ionicons.ttf
+240724182749246 Response.sendData()	INFO: fileContentType: application/octet-stream
+240724182749259 Response.sendData()	INFO: extension: ttf
+240724182749279 Response.sendData()	INFO: fileContentType: application/octet-stream
+240724182749313 Response.sendData()	INFO: GET: [v=2.0.0]
+240724182749395 Response.sendData()	INFO: GET MAP: {v=2.0.0}
+240724182749396 Response.sendData()	INFO: POST PARAMS: 
+240724182749410 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182749411 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182749414 ThreadServer.run()	INFO: (37) > Thread :: Time: 281 milliseconds
+240724182749428 ThreadServer.run()	INFO: (37) > END #
+240724182754436 ThreadServer.run()	INFO: (37) > Thread waiting for new client....

@@ -1,0 +1,24 @@
+240724182147632 ThreadServer.run()	INFO: (26) > Thread waiting for new client....
+240724182749359 ThreadServer.run()	INFO: (26) > Thread Accepting connection >
+240724182749395 Request.getData()	INFO: (26) request: [GET /test03/assets/js/jquery.counterup.min.js HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: script, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182749408 Response.sendData()	INFO: GET /test03/assets/js/jquery.counterup.min.js HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: script || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182749426 Response.sendData()	INFO: requestContentType: 
+240724182749433 Response.sendData()	INFO: GET /test03/assets/js/jquery.counterup.min.js HTTP/1.1 
+240724182749442 Response.sendData()	INFO:  Host: localhost:1000 
+240724182749464 Response.sendData()	INFO:  
+240724182749515 Response.sendData()	INFO: path: /test03/assets/js/jquery.counterup.min.js
+240724182749528 Response.sendData()	INFO: POST PARAMS : 
+240724182749532 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182749533 Response.sendData()	INFO: method: GET
+240724182749543 Response.sendData()	INFO: path: /test03/assets/js/jquery.counterup.min.js
+240724182749549 Response.sendData()	INFO: fileContentType: text/javascript
+240724182749573 Response.sendData()	INFO: extension: js
+240724182749576 Response.sendData()	INFO: fileContentType: text/javascript
+240724182749596 Response.sendData()	INFO: GET: []
+240724182749601 Response.sendData()	INFO: GET MAP: {}
+240724182749602 Response.sendData()	INFO: POST PARAMS: 
+240724182749606 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182749649 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182749661 ThreadServer.run()	INFO: (26) > Thread :: Time: 267 milliseconds
+240724182749667 ThreadServer.run()	INFO: (26) > END #
+240724182754688 ThreadServer.run()	INFO: (26) > Thread waiting for new client....

@@ -1,0 +1,49 @@
+240724182147382 ThreadServer.run()	INFO: (48) > Thread waiting for new client....
+240724182748380 ThreadServer.run()	INFO: (48) > Thread Accepting connection >
+240724182748386 Request.getData()	INFO: (48) request: [GET /test03/assets/css/slick.css HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: text/css,*/*;q=0.1, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: style, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182748401 Response.sendData()	INFO: GET /test03/assets/css/slick.css HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: text/css,*/*;q=0.1 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: style || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182748429 Response.sendData()	INFO: requestContentType: 
+240724182748460 Response.sendData()	INFO: GET /test03/assets/css/slick.css HTTP/1.1 
+240724182748483 Response.sendData()	INFO:  Host: localhost:1000 
+240724182748484 Response.sendData()	INFO:  
+240724182748492 Response.sendData()	INFO: path: /test03/assets/css/slick.css
+240724182748502 Response.sendData()	INFO: POST PARAMS : 
+240724182748547 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182748549 Response.sendData()	INFO: method: GET
+240724182748557 Response.sendData()	INFO: path: /test03/assets/css/slick.css
+240724182748595 Response.sendData()	INFO: fileContentType: text/css
+240724182748596 Response.sendData()	INFO: extension: css
+240724182748603 Response.sendData()	INFO: fileContentType: text/css
+240724182748611 Response.sendData()	INFO: GET: []
+240724182748647 Response.sendData()	INFO: GET MAP: {}
+240724182748668 Response.sendData()	INFO: POST PARAMS: 
+240724182748686 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182748698 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182748705 ThreadServer.run()	INFO: (48) > Thread :: Time: 320 milliseconds
+240724182748775 ThreadServer.run()	INFO: (48) > END #
+240724182753810 ThreadServer.run()	INFO: (48) > Thread waiting for new client....
+240724182800213 ThreadServer.run()	INFO: (48) > Thread Accepting connection >
+240724182800221 Request.getData()	INFO: (48) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/test03/contact.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182800224 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: empty || Referer: http://localhost:1000/test03/contact.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182800227 Response.sendData()	INFO: requestContentType: 
+240724182800228 Response.sendData()	INFO: GET /favicon.ico HTTP/1.1 
+240724182800229 Response.sendData()	INFO:  Host: localhost:1000 
+240724182800230 Response.sendData()	INFO:  
+240724182800231 Response.sendData()	INFO: path: /favicon.ico
+240724182800232 Response.sendData()	INFO: POST PARAMS : 
+240724182800233 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182800234 Response.sendData()	INFO: method: GET
+240724182800235 Response.sendData()	INFO: path: /favicon.ico
+240724182800236 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240724182800238 Response.sendData()	INFO: fileContentType: application/octet-stream
+240724182800239 Response.sendData()	INFO: extension: ico
+240724182800240 Response.sendData()	INFO: fileContentType: application/octet-stream
+240724182800241 Response.sendData()	INFO: GET: []
+240724182800242 Response.sendData()	INFO: GET MAP: {}
+240724182800243 Response.sendData()	INFO: POST PARAMS: 
+240724182800244 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182800245 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182800246 Response.sendData()	INFO: NO SE ENCONTRÓ EL ARCHIVO SOLICITADO. (/favicon.ico)
+240724182800248 ThreadServer.run()	INFO: (48) > Thread :: Time: 34 milliseconds
+240724182800249 ThreadServer.run()	INFO: (48) > END #
+240724182805252 ThreadServer.run()	INFO: (48) > Thread waiting for new client....

@@ -1,0 +1,24 @@
+240724182147565 ThreadServer.run()	INFO: (5) > Thread waiting for new client....
+240724182748905 ThreadServer.run()	INFO: (5) > Thread Accepting connection >
+240724182748908 Request.getData()	INFO: (5) request: [GET /test03/assets/js/bootstrap.min.js HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: script, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182748943 Response.sendData()	INFO: GET /test03/assets/js/bootstrap.min.js HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: script || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182748951 Response.sendData()	INFO: requestContentType: 
+240724182748974 Response.sendData()	INFO: GET /test03/assets/js/bootstrap.min.js HTTP/1.1 
+240724182748988 Response.sendData()	INFO:  Host: localhost:1000 
+240724182748990 Response.sendData()	INFO:  
+240724182748991 Response.sendData()	INFO: path: /test03/assets/js/bootstrap.min.js
+240724182748992 Response.sendData()	INFO: POST PARAMS : 
+240724182748993 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182748995 Response.sendData()	INFO: method: GET
+240724182748996 Response.sendData()	INFO: path: /test03/assets/js/bootstrap.min.js
+240724182748999 Response.sendData()	INFO: fileContentType: text/javascript
+240724182749132 Response.sendData()	INFO: extension: js
+240724182749140 Response.sendData()	INFO: fileContentType: text/javascript
+240724182749142 Response.sendData()	INFO: GET: []
+240724182749143 Response.sendData()	INFO: GET MAP: {}
+240724182749144 Response.sendData()	INFO: POST PARAMS: 
+240724182749145 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182749146 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182749156 ThreadServer.run()	INFO: (5) > Thread :: Time: 249 milliseconds
+240724182749158 ThreadServer.run()	INFO: (5) > END #
+240724182754171 ThreadServer.run()	INFO: (5) > Thread waiting for new client....

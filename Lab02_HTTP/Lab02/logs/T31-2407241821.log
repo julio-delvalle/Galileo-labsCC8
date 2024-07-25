@@ -1,0 +1,47 @@
+240724182147391 ThreadServer.run()	INFO: (31) > Thread waiting for new client....
+240724182748380 ThreadServer.run()	INFO: (31) > Thread Accepting connection >
+240724182748384 Request.getData()	INFO: (31) request: [GET /test03/assets/css/magnific-popup.css HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: text/css,*/*;q=0.1, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: style, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182748397 Response.sendData()	INFO: GET /test03/assets/css/magnific-popup.css HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: text/css,*/*;q=0.1 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: style || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182748425 Response.sendData()	INFO: requestContentType: 
+240724182748443 Response.sendData()	INFO: GET /test03/assets/css/magnific-popup.css HTTP/1.1 
+240724182748445 Response.sendData()	INFO:  Host: localhost:1000 
+240724182748446 Response.sendData()	INFO:  
+240724182748459 Response.sendData()	INFO: path: /test03/assets/css/magnific-popup.css
+240724182748494 Response.sendData()	INFO: POST PARAMS : 
+240724182748503 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182748507 Response.sendData()	INFO: method: GET
+240724182748527 Response.sendData()	INFO: path: /test03/assets/css/magnific-popup.css
+240724182748549 Response.sendData()	INFO: fileContentType: text/css
+240724182748557 Response.sendData()	INFO: extension: css
+240724182748567 Response.sendData()	INFO: fileContentType: text/css
+240724182748569 Response.sendData()	INFO: GET: []
+240724182748597 Response.sendData()	INFO: GET MAP: {}
+240724182748604 Response.sendData()	INFO: POST PARAMS: 
+240724182748610 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182748640 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182748652 ThreadServer.run()	INFO: (31) > Thread :: Time: 269 milliseconds
+240724182748654 ThreadServer.run()	INFO: (31) > END #
+240724182753676 ThreadServer.run()	INFO: (31) > Thread waiting for new client....
+240724182759749 ThreadServer.run()	INFO: (31) > Thread Accepting connection >
+240724182759774 Request.getData()	INFO: (31) request: [GET /test03/assets/js/jquery.counterup.min.js HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: script, Referer: http://localhost:1000/test03/contact.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182759786 Response.sendData()	INFO: GET /test03/assets/js/jquery.counterup.min.js HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: script || Referer: http://localhost:1000/test03/contact.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182759798 Response.sendData()	INFO: requestContentType: 
+240724182759799 Response.sendData()	INFO: GET /test03/assets/js/jquery.counterup.min.js HTTP/1.1 
+240724182759805 Response.sendData()	INFO:  Host: localhost:1000 
+240724182759812 Response.sendData()	INFO:  
+240724182759822 Response.sendData()	INFO: path: /test03/assets/js/jquery.counterup.min.js
+240724182759825 Response.sendData()	INFO: POST PARAMS : 
+240724182759828 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182759832 Response.sendData()	INFO: method: GET
+240724182759836 Response.sendData()	INFO: path: /test03/assets/js/jquery.counterup.min.js
+240724182759841 Response.sendData()	INFO: fileContentType: text/javascript
+240724182759843 Response.sendData()	INFO: extension: js
+240724182759845 Response.sendData()	INFO: fileContentType: text/javascript
+240724182759850 Response.sendData()	INFO: GET: []
+240724182759852 Response.sendData()	INFO: GET MAP: {}
+240724182759854 Response.sendData()	INFO: POST PARAMS: 
+240724182759856 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182759858 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182759865 ThreadServer.run()	INFO: (31) > Thread :: Time: 92 milliseconds
+240724182759872 ThreadServer.run()	INFO: (31) > END #
+240724182804889 ThreadServer.run()	INFO: (31) > Thread waiting for new client....

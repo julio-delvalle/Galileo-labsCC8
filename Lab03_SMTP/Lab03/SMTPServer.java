@@ -93,12 +93,14 @@ class SMTPClientHandler extends Thread {
 							if (line.equals(".")) {
 								out.println("250 OK DATA #1234 <-- ID ROW ");
 								out.println("Will be sent to: "+rcptToReceivedArray.toString());
+								out.println("");
+								System.out.println("Email data received: " + dataReceived);
 								break;
 							}
-							System.out.println("Email data: " + dataReceived);
 						}
 					} else if (line.equals("QUIT")) {
 						out.println("221 Bye " + clientName);
+						System.out.println("QUIT: ");
 						clientName = "";
 						mailFromReceived = "";
 						rcptToReceived = "";

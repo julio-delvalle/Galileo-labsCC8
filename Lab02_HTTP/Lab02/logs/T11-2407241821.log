@@ -1,0 +1,24 @@
+240724182147409 ThreadServer.run()	INFO: (11) > Thread waiting for new client....
+240724182748660 ThreadServer.run()	INFO: (11) > Thread Accepting connection >
+240724182748670 Request.getData()	INFO: (11) request: [GET /test03/assets/img/portfolio/home-port3.png HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182748679 Response.sendData()	INFO: GET /test03/assets/img/portfolio/home-port3.png HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182748685 Response.sendData()	INFO: requestContentType: 
+240724182748690 Response.sendData()	INFO: GET /test03/assets/img/portfolio/home-port3.png HTTP/1.1 
+240724182748695 Response.sendData()	INFO:  Host: localhost:1000 
+240724182748706 Response.sendData()	INFO:  
+240724182748773 Response.sendData()	INFO: path: /test03/assets/img/portfolio/home-port3.png
+240724182748783 Response.sendData()	INFO: POST PARAMS : 
+240724182748808 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182748878 Response.sendData()	INFO: method: GET
+240724182748911 Response.sendData()	INFO: path: /test03/assets/img/portfolio/home-port3.png
+240724182748925 Response.sendData()	INFO: fileContentType: image/png
+240724182748940 Response.sendData()	INFO: extension: png
+240724182748952 Response.sendData()	INFO: fileContentType: image/png
+240724182748953 Response.sendData()	INFO: GET: []
+240724182748978 Response.sendData()	INFO: GET MAP: {}
+240724182749135 Response.sendData()	INFO: POST PARAMS: 
+240724182749152 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182749180 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182749199 ThreadServer.run()	INFO: (11) > Thread :: Time: 530 milliseconds
+240724182749202 ThreadServer.run()	INFO: (11) > END #
+240724182754218 ThreadServer.run()	INFO: (11) > Thread waiting for new client....

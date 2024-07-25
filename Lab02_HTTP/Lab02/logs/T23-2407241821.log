@@ -1,0 +1,47 @@
+240724182147562 ThreadServer.run()	INFO: (23) > Thread waiting for new client....
+240724182748787 ThreadServer.run()	INFO: (23) > Thread Accepting connection >
+240724182748799 Request.getData()	INFO: (23) request: [GET /test03/assets/js/popper.js HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: script, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182748810 Response.sendData()	INFO: GET /test03/assets/js/popper.js HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: script || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182748813 Response.sendData()	INFO: requestContentType: 
+240724182748814 Response.sendData()	INFO: GET /test03/assets/js/popper.js HTTP/1.1 
+240724182748815 Response.sendData()	INFO:  Host: localhost:1000 
+240724182748816 Response.sendData()	INFO:  
+240724182748817 Response.sendData()	INFO: path: /test03/assets/js/popper.js
+240724182748818 Response.sendData()	INFO: POST PARAMS : 
+240724182748820 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182748821 Response.sendData()	INFO: method: GET
+240724182748822 Response.sendData()	INFO: path: /test03/assets/js/popper.js
+240724182748824 Response.sendData()	INFO: fileContentType: text/javascript
+240724182748826 Response.sendData()	INFO: extension: js
+240724182748827 Response.sendData()	INFO: fileContentType: text/javascript
+240724182748828 Response.sendData()	INFO: GET: []
+240724182748830 Response.sendData()	INFO: GET MAP: {}
+240724182748864 Response.sendData()	INFO: POST PARAMS: 
+240724182748878 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182748887 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182748890 ThreadServer.run()	INFO: (23) > Thread :: Time: 91 milliseconds
+240724182748892 ThreadServer.run()	INFO: (23) > END #
+240724182753905 ThreadServer.run()	INFO: (23) > Thread waiting for new client....
+240724182800710 ThreadServer.run()	INFO: (23) > Thread Accepting connection >
+240724182800712 Request.getData()	INFO: (23) request: [GET /test03/assets/img/map-icon.png HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test03/contact.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182800715 Response.sendData()	INFO: GET /test03/assets/img/map-icon.png HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test03/contact.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182800719 Response.sendData()	INFO: requestContentType: 
+240724182800720 Response.sendData()	INFO: GET /test03/assets/img/map-icon.png HTTP/1.1 
+240724182800721 Response.sendData()	INFO:  Host: localhost:1000 
+240724182800722 Response.sendData()	INFO:  
+240724182800723 Response.sendData()	INFO: path: /test03/assets/img/map-icon.png
+240724182800724 Response.sendData()	INFO: POST PARAMS : 
+240724182800725 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182800725 Response.sendData()	INFO: method: GET
+240724182800726 Response.sendData()	INFO: path: /test03/assets/img/map-icon.png
+240724182800728 Response.sendData()	INFO: fileContentType: image/png
+240724182800729 Response.sendData()	INFO: extension: png
+240724182800730 Response.sendData()	INFO: fileContentType: image/png
+240724182800731 Response.sendData()	INFO: GET: []
+240724182800733 Response.sendData()	INFO: GET MAP: {}
+240724182800734 Response.sendData()	INFO: POST PARAMS: 
+240724182800735 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182800736 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182800738 ThreadServer.run()	INFO: (23) > Thread :: Time: 27 milliseconds
+240724182800739 ThreadServer.run()	INFO: (23) > END #
+240724182805743 ThreadServer.run()	INFO: (23) > Thread waiting for new client....

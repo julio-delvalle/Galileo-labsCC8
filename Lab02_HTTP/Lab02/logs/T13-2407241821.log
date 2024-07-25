@@ -1,0 +1,47 @@
+240724182147387 ThreadServer.run()	INFO: (13) > Thread waiting for new client....
+240724182154361 ThreadServer.run()	INFO: (13) > Thread Accepting connection >
+240724182154436 Request.getData()	INFO: (13) request: [GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", Origin: http://localhost:1000, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: font, Referer: http://localhost:1000/test01/styles/style.css, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182154444 Response.sendData()	INFO: GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || Origin: http://localhost:1000 || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: font || Referer: http://localhost:1000/test01/styles/style.css || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182154449 Response.sendData()	INFO: requestContentType: 
+240724182154452 Response.sendData()	INFO: GET /test01/styles/BungeeSpice-Regular.ttf HTTP/1.1 
+240724182154455 Response.sendData()	INFO:  Host: localhost:1000 
+240724182154456 Response.sendData()	INFO:  
+240724182154468 Response.sendData()	INFO: path: /test01/styles/BungeeSpice-Regular.ttf
+240724182154472 Response.sendData()	INFO: POST PARAMS : 
+240724182154474 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182154477 Response.sendData()	INFO: method: GET
+240724182154484 Response.sendData()	INFO: path: /test01/styles/BungeeSpice-Regular.ttf
+240724182154628 Response.sendData()	INFO: fileContentType: application/octet-stream
+240724182154644 Response.sendData()	INFO: extension: ttf
+240724182154653 Response.sendData()	INFO: fileContentType: application/octet-stream
+240724182154656 Response.sendData()	INFO: GET: []
+240724182154660 Response.sendData()	INFO: GET MAP: {}
+240724182154671 Response.sendData()	INFO: POST PARAMS: 
+240724182154673 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182154676 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182154710 ThreadServer.run()	INFO: (13) > Thread :: Time: 274 milliseconds
+240724182154718 ThreadServer.run()	INFO: (13) > END #
+240724182159729 ThreadServer.run()	INFO: (13) > Thread waiting for new client....
+240724182759099 ThreadServer.run()	INFO: (13) > Thread Accepting connection >
+240724182759110 Request.getData()	INFO: (13) request: [GET /test03/assets/css/slick.css HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: text/css,*/*;q=0.1, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: style, Referer: http://localhost:1000/test03/contact.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182759120 Response.sendData()	INFO: GET /test03/assets/css/slick.css HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: text/css,*/*;q=0.1 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: style || Referer: http://localhost:1000/test03/contact.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182759134 Response.sendData()	INFO: requestContentType: 
+240724182759139 Response.sendData()	INFO: GET /test03/assets/css/slick.css HTTP/1.1 
+240724182759143 Response.sendData()	INFO:  Host: localhost:1000 
+240724182759146 Response.sendData()	INFO:  
+240724182759151 Response.sendData()	INFO: path: /test03/assets/css/slick.css
+240724182759155 Response.sendData()	INFO: POST PARAMS : 
+240724182759158 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182759163 Response.sendData()	INFO: method: GET
+240724182759164 Response.sendData()	INFO: path: /test03/assets/css/slick.css
+240724182759169 Response.sendData()	INFO: fileContentType: text/css
+240724182759175 Response.sendData()	INFO: extension: css
+240724182759187 Response.sendData()	INFO: fileContentType: text/css
+240724182759192 Response.sendData()	INFO: GET: []
+240724182759196 Response.sendData()	INFO: GET MAP: {}
+240724182759200 Response.sendData()	INFO: POST PARAMS: 
+240724182759205 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182759210 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182759217 ThreadServer.run()	INFO: (13) > Thread :: Time: 116 milliseconds
+240724182759218 ThreadServer.run()	INFO: (13) > END #
+240724182804255 ThreadServer.run()	INFO: (13) > Thread waiting for new client....

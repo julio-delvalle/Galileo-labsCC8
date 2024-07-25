@@ -1,0 +1,16 @@
+240724181120158 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240724181124636 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240724181124641 Request.getData()	INFO: (0) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 150, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: text/experiment; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, "from:curso_cc8@lab03.edu;|;to:correo_externo@galileo.edu, test@test.ug;|;subject:Lab 03 - SMTP;|;body:BBBBBBBBBBBBBB\nabc\n\ncon enters... . . ..;|;"]
+240724181124657 Response.sendData()	INFO: SERVER START?: true
+240724181124658 Response.sendData()	INFO: (0) HTTP_request.getLast() : "from:curso_cc8@lab03.edu;|;to:correo_externo@galileo.edu, test@test.ug;|;subject:Lab 03 - SMTP;|;body:BBBBBBBBBBBBBB\nabc\n\ncon enters... . . ..;|;"
+240724181124659 Response.sendData()	INFO: DENTRO DE APPLICATION
+240724181124660 Response.sendData()	INFO: from:curso_cc8@lab03.edu
+240724181124660 Response.sendData()	INFO: to:correo_externo@galileo.edu, test@test.ug
+240724181124661 Response.sendData()	INFO: subject:Lab 03 - SMTP
+240724181124661 Response.sendData()	INFO: body:BBBBBBBBBBBBBB\nabc\n\ncon enters... . . ..
+240724181124662 Response.sendData()	INFO: POST PAIRS MAP: {from=curso_cc8@lab03.edu, to=correo_externo@galileo.edu, test@test.ug, subject=Lab 03 - SMTP, body=BBBBBBBBBBBBBB\nabc\n\ncon enters... . . ..}
+240724181124663 Response.sendData()	INFO: POST PAIRS KEYS: [from, to, subject, body]
+240724181124672 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK]
+240724181124678 ThreadServer.run()	INFO: (0) > Thread :: Time: 35 milliseconds
+240724181124679 ThreadServer.run()	INFO: (0) > END #
+240724181129688 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

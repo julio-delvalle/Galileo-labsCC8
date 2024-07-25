@@ -1,8 +1,9 @@
 import java.io.*;
-import java.util.*;
+import java.net.URLDecoder;
 import java.nio.file.*;
-import java.util.stream.*;
+import java.util.*;
 import java.util.logging.*;
+import java.util.stream.*;
 
 
 public class Response {
@@ -15,6 +16,10 @@ public class Response {
         ArrayList<String> response = new ArrayList<String>();
         if ( HTTP_request.get(0).contains("/sendSMTP") ){
 
+            SMTPClient smtpClient = new SMTPClient();
+            boolean started = smtpClient.start();
+            LOGGER.info("SERVER START?: "+started);
+
             /////////////////////////////////////////////////
             //                                             // 
             //   Procesar el POST del Correo aquí          //
@@ -23,6 +28,30 @@ public class Response {
             /////////////////////////////////////////////////
 
             LOGGER.info("(" + nThreadServer + ") HTTP_request.getLast() : " + HTTP_request.getLast() );
+
+            String POSTbody = HTTP_request.getLast().substring(1);
+            String[] POSTparams = {};
+            Map<String, String> POSTparamsPairs = new LinkedHashMap<String, String>();
+            if (POSTbody.length() > 0) {
+
+                POSTparams = POSTbody.split(";\\|;");
+
+                LOGGER.info("DENTRO DE APPLICATION");
+                
+                for (String param : POSTparams) {
+                    if(param.length()>0 && param.contains(":")){
+                        LOGGER.info(param);
+                        int idx = param.indexOf(':');
+                        //Decodifica caracteres especiales de una vez.
+                        POSTparamsPairs.put(URLDecoder.decode(param.substring(0, idx), "UTF-8"), URLDecoder.decode(param.substring(idx + 1), "UTF-8"));
+                    }
+                }
+            }
+
+            LOGGER.info("POST PAIRS MAP: "+POSTparamsPairs);
+            LOGGER.info("POST PAIRS KEYS: "+POSTparamsPairs.keySet());
+
+            smtpClient.sendMail(POSTparamsPairs.get("from"), POSTparamsPairs.get("to"), POSTparamsPairs.get("subject"), POSTparamsPairs.get("body"));
             
             response.add("HTTP/1.1 200 OK");
             dataOut.print( response.stream().collect(Collectors.joining("\r\n")) );

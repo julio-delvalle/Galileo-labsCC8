@@ -1,0 +1,47 @@
+240724182147420 ThreadServer.run()	INFO: (4) > Thread waiting for new client....
+240724182748361 ThreadServer.run()	INFO: (4) > Thread Accepting connection >
+240724182748366 Request.getData()	INFO: (4) request: [GET /test03/assets/css/et-line.css HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: text/css,*/*;q=0.1, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: style, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182748376 Response.sendData()	INFO: GET /test03/assets/css/et-line.css HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: text/css,*/*;q=0.1 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: style || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182748379 Response.sendData()	INFO: requestContentType: 
+240724182748382 Response.sendData()	INFO: GET /test03/assets/css/et-line.css HTTP/1.1 
+240724182748390 Response.sendData()	INFO:  Host: localhost:1000 
+240724182748391 Response.sendData()	INFO:  
+240724182748392 Response.sendData()	INFO: path: /test03/assets/css/et-line.css
+240724182748393 Response.sendData()	INFO: POST PARAMS : 
+240724182748393 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182748394 Response.sendData()	INFO: method: GET
+240724182748406 Response.sendData()	INFO: path: /test03/assets/css/et-line.css
+240724182748409 Response.sendData()	INFO: fileContentType: text/css
+240724182748410 Response.sendData()	INFO: extension: css
+240724182748411 Response.sendData()	INFO: fileContentType: text/css
+240724182748432 Response.sendData()	INFO: GET: []
+240724182748495 Response.sendData()	INFO: GET MAP: {}
+240724182748509 Response.sendData()	INFO: POST PARAMS: 
+240724182748528 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182748552 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182748567 ThreadServer.run()	INFO: (4) > Thread :: Time: 202 milliseconds
+240724182748592 ThreadServer.run()	INFO: (4) > END #
+240724182753595 ThreadServer.run()	INFO: (4) > Thread waiting for new client....
+240724182759604 ThreadServer.run()	INFO: (4) > Thread Accepting connection >
+240724182759636 Request.getData()	INFO: (4) request: [GET /test03/assets/js/imgloaded.js HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: script, Referer: http://localhost:1000/test03/contact.html, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182759639 Response.sendData()	INFO: GET /test03/assets/js/imgloaded.js HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: script || Referer: http://localhost:1000/test03/contact.html || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182759657 Response.sendData()	INFO: requestContentType: 
+240724182759672 Response.sendData()	INFO: GET /test03/assets/js/imgloaded.js HTTP/1.1 
+240724182759684 Response.sendData()	INFO:  Host: localhost:1000 
+240724182759688 Response.sendData()	INFO:  
+240724182759703 Response.sendData()	INFO: path: /test03/assets/js/imgloaded.js
+240724182759714 Response.sendData()	INFO: POST PARAMS : 
+240724182759742 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182759773 Response.sendData()	INFO: method: GET
+240724182759793 Response.sendData()	INFO: path: /test03/assets/js/imgloaded.js
+240724182759804 Response.sendData()	INFO: fileContentType: text/javascript
+240724182759812 Response.sendData()	INFO: extension: js
+240724182759821 Response.sendData()	INFO: fileContentType: text/javascript
+240724182759825 Response.sendData()	INFO: GET: []
+240724182759828 Response.sendData()	INFO: GET MAP: {}
+240724182759832 Response.sendData()	INFO: POST PARAMS: 
+240724182759835 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182759839 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182759843 ThreadServer.run()	INFO: (4) > Thread :: Time: 207 milliseconds
+240724182759847 ThreadServer.run()	INFO: (4) > END #
+240724182804855 ThreadServer.run()	INFO: (4) > Thread waiting for new client....

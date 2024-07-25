@@ -1,0 +1,47 @@
+240724182147434 ThreadServer.run()	INFO: (45) > Thread waiting for new client....
+240724182748293 ThreadServer.run()	INFO: (45) > Thread Accepting connection >
+240724182748301 Request.getData()	INFO: (45) request: [GET /test03/assets/css/bootstrap.min.css HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: text/css,*/*;q=0.1, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: style, Referer: http://localhost:1000/test03/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182748306 Response.sendData()	INFO: GET /test03/assets/css/bootstrap.min.css HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: text/css,*/*;q=0.1 || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: style || Referer: http://localhost:1000/test03/ || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182748310 Response.sendData()	INFO: requestContentType: 
+240724182748311 Response.sendData()	INFO: GET /test03/assets/css/bootstrap.min.css HTTP/1.1 
+240724182748312 Response.sendData()	INFO:  Host: localhost:1000 
+240724182748313 Response.sendData()	INFO:  
+240724182748314 Response.sendData()	INFO: path: /test03/assets/css/bootstrap.min.css
+240724182748315 Response.sendData()	INFO: POST PARAMS : 
+240724182748316 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182748317 Response.sendData()	INFO: method: GET
+240724182748318 Response.sendData()	INFO: path: /test03/assets/css/bootstrap.min.css
+240724182748324 Response.sendData()	INFO: fileContentType: text/css
+240724182748325 Response.sendData()	INFO: extension: css
+240724182748326 Response.sendData()	INFO: fileContentType: text/css
+240724182748327 Response.sendData()	INFO: GET: []
+240724182748328 Response.sendData()	INFO: GET MAP: {}
+240724182748330 Response.sendData()	INFO: POST PARAMS: 
+240724182748331 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182748332 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182748338 ThreadServer.run()	INFO: (45) > Thread :: Time: 43 milliseconds
+240724182748340 ThreadServer.run()	INFO: (45) > END #
+240724182753344 ThreadServer.run()	INFO: (45) > Thread waiting for new client....
+240724182759536 ThreadServer.run()	INFO: (45) > Thread Accepting connection >
+240724182759572 Request.getData()	INFO: (45) request: [GET /test03/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", Origin: http://localhost:1000, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: font, Referer: http://localhost:1000/test03/assets/css/font-awesome.min.css, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182759589 Response.sendData()	INFO: GET /test03/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || Origin: http://localhost:1000 || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: font || Referer: http://localhost:1000/test03/assets/css/font-awesome.min.css || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182759598 Response.sendData()	INFO: requestContentType: 
+240724182759628 Response.sendData()	INFO: GET /test03/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1 
+240724182759644 Response.sendData()	INFO:  Host: localhost:1000 
+240724182759646 Response.sendData()	INFO:  
+240724182759647 Response.sendData()	INFO: path: /test03/assets/fonts/fontawesome-webfont.woff2?v=4.7.0
+240724182759649 Response.sendData()	INFO: POST PARAMS : 
+240724182759658 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182759673 Response.sendData()	INFO: method: GET
+240724182759686 Response.sendData()	INFO: path: /test03/assets/fonts/fontawesome-webfont.woff2
+240724182759693 Response.sendData()	INFO: fileContentType: application/octet-stream
+240724182759705 Response.sendData()	INFO: extension: woff2
+240724182759726 Response.sendData()	INFO: fileContentType: application/octet-stream
+240724182759745 Response.sendData()	INFO: GET: [v=4.7.0]
+240724182759747 Response.sendData()	INFO: GET MAP: {v=4.7.0}
+240724182759749 Response.sendData()	INFO: POST PARAMS: 
+240724182759750 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182759751 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182759753 ThreadServer.run()	INFO: (45) > Thread :: Time: 182 milliseconds
+240724182759754 ThreadServer.run()	INFO: (45) > END #
+240724182804760 ThreadServer.run()	INFO: (45) > Thread waiting for new client....

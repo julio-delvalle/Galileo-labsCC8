@@ -1,0 +1,24 @@
+240724182147594 ThreadServer.run()	INFO: (49) > Thread waiting for new client....
+240724182749064 ThreadServer.run()	INFO: (49) > Thread Accepting connection >
+240724182749069 Request.getData()	INFO: (49) request: [GET /test03/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", Origin: http://localhost:1000, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: font, Referer: http://localhost:1000/test03/assets/css/font-awesome.min.css, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, ]
+240724182749135 Response.sendData()	INFO: GET /test03/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126" || Origin: http://localhost:1000 || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: */* || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: cors || Sec-Fetch-Dest: font || Referer: http://localhost:1000/test03/assets/css/font-awesome.min.css || Accept-Encoding: gzip, deflate, br, zstd || Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7 || 
+240724182749152 Response.sendData()	INFO: requestContentType: 
+240724182749164 Response.sendData()	INFO: GET /test03/assets/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1 
+240724182749166 Response.sendData()	INFO:  Host: localhost:1000 
+240724182749180 Response.sendData()	INFO:  
+240724182749195 Response.sendData()	INFO: path: /test03/assets/fonts/fontawesome-webfont.woff2?v=4.7.0
+240724182749200 Response.sendData()	INFO: POST PARAMS : 
+240724182749206 Response.sendData()	INFO: POST PAIRS MAP: {}
+240724182749210 Response.sendData()	INFO: method: GET
+240724182749213 Response.sendData()	INFO: path: /test03/assets/fonts/fontawesome-webfont.woff2
+240724182749231 Response.sendData()	INFO: fileContentType: application/octet-stream
+240724182749232 Response.sendData()	INFO: extension: woff2
+240724182749234 Response.sendData()	INFO: fileContentType: application/octet-stream
+240724182749249 Response.sendData()	INFO: GET: [v=4.7.0]
+240724182749263 Response.sendData()	INFO: GET MAP: {v=4.7.0}
+240724182749280 Response.sendData()	INFO: POST PARAMS: 
+240724182749383 Response.sendData()	INFO: POST PARAMS MAP: {}
+240724182749397 Response.sendData()	INFO: POST PARAMS MAP`KEYS: []
+240724182749415 ThreadServer.run()	INFO: (49) > Thread :: Time: 347 milliseconds
+240724182749431 ThreadServer.run()	INFO: (49) > END #
+240724182754456 ThreadServer.run()	INFO: (49) > Thread waiting for new client....
