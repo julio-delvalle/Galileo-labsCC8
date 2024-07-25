@@ -66,7 +66,7 @@ public class SMTPClient {
 				}
 			}*/
 		} catch (IOException e) {
-			System.out.println("Ocurrió un error inesperado. Saliendo.");
+			//System.out.println("Ocurrió un error inesperado. Saliendo.");
 			return false;
 		}
 	}
@@ -81,7 +81,7 @@ public class SMTPClient {
 		
 		}
 	}
-	
+
 
 	public boolean sendMail(String fromParam, String toParamStr, String subjectParam, String bodyParam){
 		try {

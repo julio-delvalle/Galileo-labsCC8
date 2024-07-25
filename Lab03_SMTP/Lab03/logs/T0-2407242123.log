@@ -1,0 +1,31 @@
+240724212346498 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240724212634729 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240724212634730 Request.getData()	INFO: (0) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 196, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: text/experiment; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, "from:curso_cc8@julio.com;|;to:correo_externo@julio.com, test@test.ug;|;subject:TESTING AAAA;|;body:TESTING TESGINT\n\nAAAA\n....\n\n74125853698521369874126987425654564898789889545625121545848;|;"]
+240724212634732 Response.sendData()	INFO: SERVER START?: true
+240724212634732 Response.sendData()	INFO: (0) HTTP_request.getLast() : "from:curso_cc8@julio.com;|;to:correo_externo@julio.com, test@test.ug;|;subject:TESTING AAAA;|;body:TESTING TESGINT\n\nAAAA\n....\n\n74125853698521369874126987425654564898789889545625121545848;|;"
+240724212634733 Response.sendData()	INFO: DENTRO DE APPLICATION
+240724212634734 Response.sendData()	INFO: from:curso_cc8@julio.com
+240724212634734 Response.sendData()	INFO: to:correo_externo@julio.com, test@test.ug
+240724212634735 Response.sendData()	INFO: subject:TESTING AAAA
+240724212634735 Response.sendData()	INFO: body:TESTING TESGINT\n\nAAAA\n....\n\n74125853698521369874126987425654564898789889545625121545848
+240724212634736 Response.sendData()	INFO: POST PAIRS MAP: {from=curso_cc8@julio.com, to=correo_externo@julio.com, test@test.ug, subject=TESTING AAAA, body=TESTING TESGINT\n\nAAAA\n....\n\n74125853698521369874126987425654564898789889545625121545848}
+240724212634736 Response.sendData()	INFO: POST PAIRS KEYS: [from, to, subject, body]
+240724212634930 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK]
+240724212634931 ThreadServer.run()	INFO: (0) > Thread :: Time: 201 milliseconds
+240724212634932 ThreadServer.run()	INFO: (0) > END #
+240724212639947 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240724212837318 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240724212837318 Request.getData()	INFO: (0) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 128, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: text/experiment; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, "from:curso_cc8@galileo.edu;|;to:correo_externo@julio.com, test@test.ug;|;subject:asdf;|;body:TESTING TESGINT\n1\n2\n3\n4\n5;|;"]
+240724212837320 Response.sendData()	INFO: SERVER START?: true
+240724212837321 Response.sendData()	INFO: (0) HTTP_request.getLast() : "from:curso_cc8@galileo.edu;|;to:correo_externo@julio.com, test@test.ug;|;subject:asdf;|;body:TESTING TESGINT\n1\n2\n3\n4\n5;|;"
+240724212837321 Response.sendData()	INFO: DENTRO DE APPLICATION
+240724212837322 Response.sendData()	INFO: from:curso_cc8@galileo.edu
+240724212837322 Response.sendData()	INFO: to:correo_externo@julio.com, test@test.ug
+240724212837322 Response.sendData()	INFO: subject:asdf
+240724212837323 Response.sendData()	INFO: body:TESTING TESGINT\n1\n2\n3\n4\n5
+240724212837323 Response.sendData()	INFO: POST PAIRS MAP: {from=curso_cc8@galileo.edu, to=correo_externo@julio.com, test@test.ug, subject=asdf, body=TESTING TESGINT\n1\n2\n3\n4\n5}
+240724212837324 Response.sendData()	INFO: POST PAIRS KEYS: [from, to, subject, body]
+240724212837500 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK]
+240724212837500 ThreadServer.run()	INFO: (0) > Thread :: Time: 182 milliseconds
+240724212837501 ThreadServer.run()	INFO: (0) > END #
+240724212842505 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

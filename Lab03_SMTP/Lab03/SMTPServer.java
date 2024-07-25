@@ -92,10 +92,30 @@ class SMTPClientHandler extends Thread {
 						while ((line = in.nextLine()) != null) {
 							dataReceived += "\n"+line;
 							if (line.equals(".")) {
-								out.println("250 OK DATA #1234 <-- ID ROW ");
-								out.println("Will be sent to: "+rcptToReceivedArray.toString());
+								
+								
+								int rowID = -5;
+								for (String rcptToStr : rcptToReceivedArray) {
+									String mailServer = rcptToStr.split("@")[1];
+									if(mailServer.equals("julio.com")){
+										rowID = (new SQLiteJDBC()).insertMailToDBSimple(mailFromReceived, rcptToStr, subjectReceived, dataReceived);
+									}else{
+										SMTPClient tempClient = new SMTPClient(mailServer, 25);
+										boolean started = tempClient.start();
+										if(started){
+											System.out.println("Se reenvió el correo a "+mailServer+"!");
+											tempClient.sendMail(mailFromReceived, rcptToStr, subjectReceived, dataReceived);
+											tempClient.close();
+										}else{
+											System.out.println("No se pudo conectar a "+mailServer+"!");
+										}
+									}
+								}
+								out.println("250 OK DATA #"+rowID+" <-- ID ROW ");
+
+								out.println("Was sent to: "+rcptToReceivedArray.toString());
 								out.println("");
-								System.out.println("Email data received: " + dataReceived);
+								
 								for (String str : dataReceived.split("\n")) {
 									if(str.contains("Subject:")){
 										int idx = str.indexOf("Subject:");
@@ -106,22 +126,7 @@ class SMTPClientHandler extends Thread {
 							}
 						}
 					} else if (line.equals("QUIT")) {
-						for (String rcptToStr : rcptToReceivedArray) {
-							String mailServer = rcptToStr.split("@")[1];
-							if(mailServer.equals("julio.com")){
-								(new SQLiteJDBC()).insertMailToDBSimple(mailFromReceived, rcptToStr, subjectReceived, dataReceived);
-							}else{
-								SMTPClient tempClient = new SMTPClient(mailServer, 25);
-								boolean started = tempClient.start();
-								if(started){
-									System.out.println("Se reenvió el correo a "+mailServer+"!");
-									tempClient.sendMail(mailFromReceived, rcptToStr, subjectReceived, dataReceived);
-									tempClient.close();
-								}else{
-									System.out.println("No se pudo conectar a "+mailServer+"!");
-								}
-							}
-						}
+						
 
 						out.println("221 Bye " + clientName);
 						System.out.println("QUIT: ");

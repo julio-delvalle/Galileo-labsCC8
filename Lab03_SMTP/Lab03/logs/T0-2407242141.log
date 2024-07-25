@@ -1,0 +1,16 @@
+240724214122110 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240724214139299 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240724214139302 Request.getData()	INFO: (0) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 97, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126", sec-ch-ua-platform: "Windows", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Content-Type: text/experiment; charset=UTF-8, Accept: */*, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, Accept-Language: es-US,es;q=0.9,es-419;q=0.8,en;q=0.7, "from:curso_cc8@galileo.edu;|;to:julio@julio.com, test@test.ug;|;subject:asdf;|;body:cccccccc;|;"]
+240724214139309 Response.sendData()	INFO: SERVER START?: true
+240724214139311 Response.sendData()	INFO: (0) HTTP_request.getLast() : "from:curso_cc8@galileo.edu;|;to:julio@julio.com, test@test.ug;|;subject:asdf;|;body:cccccccc;|;"
+240724214139313 Response.sendData()	INFO: DENTRO DE APPLICATION
+240724214139315 Response.sendData()	INFO: from:curso_cc8@galileo.edu
+240724214139317 Response.sendData()	INFO: to:julio@julio.com, test@test.ug
+240724214139319 Response.sendData()	INFO: subject:asdf
+240724214139320 Response.sendData()	INFO: body:cccccccc
+240724214139322 Response.sendData()	INFO: POST PAIRS MAP: {from=curso_cc8@galileo.edu, to=julio@julio.com, test@test.ug, subject=asdf, body=cccccccc}
+240724214139324 Response.sendData()	INFO: POST PAIRS KEYS: [from, to, subject, body]
+240724214139812 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK]
+240724214139835 ThreadServer.run()	INFO: (0) > Thread :: Time: 515 milliseconds
+240724214139838 ThreadServer.run()	INFO: (0) > END #
+240724214144855 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

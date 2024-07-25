@@ -35,7 +35,7 @@ public class SQLiteJDBC {
 	}
 
 
-	public boolean insertMailToDBSimple(String fromParam, String toParamStr, String subjectParam, String bodyParam){
+	public int insertMailToDBSimple(String fromParam, String toParamStr, String subjectParam, String bodyParam){
 		Connection c = null;
 		Statement stmt = null;
 
@@ -60,22 +60,23 @@ public class SQLiteJDBC {
 			stmt.executeUpdate(sql);
 			
 			sql = "SELECT IDmail FROM SMTP_DB ORDER BY IDmail DESC LIMIT 1";
-			stmt.executeUpdate(sql);
-			
+			int rowID = stmt.executeUpdate(sql);
+
 			stmt.close();
 			c.close();
+			return rowID;
+
 		} catch ( Exception e ) {
 			System.err.println( e.getClass().getName() + ": " + e.getMessage() );
 			System.exit(0);
-			return false;
+			return 0;
 		}
-		System.out.println("Table created successfully");
-		return true;
 	}
 
-	public boolean insertMailToDBbuildBody(String fromParam, String toParamStr, String subjectParam, String bodyParam){
+	public int insertMailToDBbuildBody(String fromParam, String toParamStr, String subjectParam, String bodyParam){
 		Connection c = null;
 		Statement stmt = null;
+		ResultSet rs = null;
 
 		try {
 			Class.forName("org.sqlite.JDBC");
@@ -95,21 +96,33 @@ public class SQLiteJDBC {
 
 			sql = "INSERT INTO SMTP_DB (MAIL_FROM, RCPT_TO, DATA) " + "VALUES (\""+fromParam+"\", \""+toParamStr+"\", \""+mailData+"\");";
 			
-			System.out.println("QUERY: "+sql);
+			//System.out.println("QUERY: "+sql);
 			
 			stmt.executeUpdate(sql);
-			
-			sql = "SELECT IDmail FROM SMTP_DB ORDER BY IDmail DESC LIMIT 1";
-			stmt.executeUpdate(sql);
-			
 			stmt.close();
+
+
+			Statement stmt2 = c.createStatement();
+			
+			sql = "SELECT IDmail as id FROM SMTP_DB ORDER BY IDmail DESC LIMIT 1";
+            rs = stmt2.executeQuery(sql);
+
+			int rowID = -1;
+			if (rs.next()) {
+                rowID = rs.getInt("id");
+                System.out.println("Last ID: " + rowID);
+            }
+
+
+			
+			stmt2.close();
 			c.close();
+
+			return rowID;
 		} catch ( Exception e ) {
 			System.err.println( e.getClass().getName() + ": " + e.getMessage() );
 			System.exit(0);
-			return false;
+			return 0;
 		}
-		System.out.println("Table created successfully");
-		return true;
 	}
 }
