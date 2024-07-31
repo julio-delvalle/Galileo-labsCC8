@@ -44,6 +44,7 @@ public class IMAPServer {
 
 				String inputLine;
 				boolean authenticated = false;
+				String loggedUser = "";
 
 				while ((inputLine = in.readLine()) != null) {
 					
@@ -51,13 +52,29 @@ public class IMAPServer {
 					System.out.println("> " + inputLine );
 
 
-					//Matches: NUM login "asdfasdf" "admin"
 					if ( inputLine.matches("(?i)\\d+ login \"[^\"]+\" \"[^\"]+\"") ) {
+						//Matches: NUM login "asdfasdf" "admin"
 						String[] parts = inputLine.split(" ");
-						System.out.println("< " + parts[0] + " OK LOGIN completed" );
+
+						
+						if(parts[3].replace("\"","").equals("admin")){
+							System.out.println("< " + parts[0] + " OK LOGIN completed" );
+							authenticated = true;
+							loggedUser = parts[2].replace("\"","");
+							out.println(parts[0] + " OK LOGIN completed" );
+						}else{
+							System.out.println("< " + parts[0] + " NO LOGIN incorrect password" );
+							out.println(parts[0] + " NO LOGIN incorrect password" );
+						}
+
+					} else if ( inputLine.matches("(?i)\\d+ select \"[^\"]+\"") ) {
+						//Matches: NUM login "asdfasdf" "admin"
+						String[] parts = inputLine.split(" ");
+
+						String requestedFolder = parts[2].replace("\"","");
+						
 						
 
-						out.println(parts[0] + " OK LOGIN completed" );
 					} else {
 						String[] parts = inputLine.split(" ");
 						System.out.println(parts[0] + " NO "+parts[1]+" failed" );

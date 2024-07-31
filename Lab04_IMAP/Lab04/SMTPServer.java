@@ -129,6 +129,7 @@ class SMTPClientHandler extends Thread {
 									}
 								}
 								out.println("250 OK DATA #"+rowID+" <-- ID ROW ");
+								LOGGER.info("250 OK DATA #"+rowID+" <-- ID ROW ");
 
 								//out.println("Was sent to: "+rcptToReceivedArray.toString());
 								//out.println("");

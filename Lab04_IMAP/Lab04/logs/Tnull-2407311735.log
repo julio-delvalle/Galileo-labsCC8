@@ -1,0 +1,8 @@
+240731173553434 SMTPClientHandler.run()	INFO: -> fromClient: EHLO [127.0.0.1]
+240731173553436 SMTPClientHandler.run()	INFO: -> no command fromClient: EHLO [127.0.0.1]
+240731173553438 SMTPClientHandler.run()	INFO: -> fromClient: HELO [127.0.0.1]
+240731173553440 SMTPClientHandler.run()	INFO: -> fromClient: MAIL FROM:<julio@julio.com>
+240731173553444 SMTPClientHandler.run()	INFO: -> fromClient: RCPT TO:<test@test.ug>
+240731173553446 SMTPClientHandler.run()	INFO: -> fromClient: DATA
+240731173553486 SMTPClientHandler.run()	INFO: No se pudo conectar a test.ug!
+240731173553486 SMTPClientHandler.run()	INFO: 250 OK DATA #1 <-- ID ROW 

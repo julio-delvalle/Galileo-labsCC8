@@ -17,6 +17,8 @@ public class SQLiteJDBC {
 			" MAIL_FROM TEXT    NOT NULL, " + 
 			" RCPT_TO   TEXT    NOT NULL, " + 
 			" DATA      TEXT, " + 
+			" READ      INTEGER DEFAULT 0, " + 
+			" DELETED      INTEGER DEFAULT 0, " + 
 			" DATE      DATETIME  default current_timestamp )"; 
 			stmt.executeUpdate(sql);
 
@@ -38,6 +40,7 @@ public class SQLiteJDBC {
 	public int insertMailToDBSimple(String fromParam, String toParamStr, String subjectParam, String bodyParam){
 		Connection c = null;
 		Statement stmt = null;
+		ResultSet rs = null;
 
 		try {
 			Class.forName("org.sqlite.JDBC");
@@ -50,6 +53,8 @@ public class SQLiteJDBC {
 			" MAIL_FROM TEXT    NOT NULL, " + 
 			" RCPT_TO   TEXT    NOT NULL, " + 
 			" DATA      TEXT, " + 
+			" READ      INTEGER DEFAULT 0, " + 
+			" DELETED      INTEGER DEFAULT 0, " + 
 			" DATE      DATETIME  default current_timestamp )"; 
 			stmt.executeUpdate(sql);
 
@@ -58,12 +63,28 @@ public class SQLiteJDBC {
 			System.out.println("QUERY: "+sql);
 			
 			stmt.executeUpdate(sql);
+			stmt.close();
+
+
+			Statement stmt2 = c.createStatement();
 			
 			sql = "SELECT IDmail FROM SMTP_DB ORDER BY IDmail DESC LIMIT 1";
-			int rowID = stmt.executeUpdate(sql);
+            rs = stmt2.executeQuery(sql);
+			
+			int rowID = -1;
+			rowID = rs.getInt("IDMail");
+			System.out.println("\n\n\nLast ID: " + rowID);
 
-			stmt.close();
+			if (rs.next()) {
+                rowID = rs.getInt("IDMail");
+                System.out.println("Last ID: " + rowID);
+            }
+
+
+			
+			stmt2.close();
 			c.close();
+
 			return rowID;
 
 		} catch ( Exception e ) {
@@ -89,6 +110,8 @@ public class SQLiteJDBC {
 			" MAIL_FROM TEXT    NOT NULL, " + 
 			" RCPT_TO   TEXT    NOT NULL, " + 
 			" DATA      TEXT, " + 
+			" READ      INTEGER DEFAULT 0, " + 
+			" DELETED      INTEGER DEFAULT 0, " + 
 			" DATE      DATETIME  default current_timestamp )"; 
 			stmt.executeUpdate(sql);
 
@@ -104,12 +127,15 @@ public class SQLiteJDBC {
 
 			Statement stmt2 = c.createStatement();
 			
-			sql = "SELECT IDmail as id FROM SMTP_DB ORDER BY IDmail DESC LIMIT 1";
+			sql = "SELECT IDmail FROM SMTP_DB ORDER BY IDmail DESC LIMIT 1";
             rs = stmt2.executeQuery(sql);
-
+			
 			int rowID = -1;
+			rowID = rs.getInt("\n\n\nIDMail");
+			System.out.println("Last ID: " + rowID);
+
 			if (rs.next()) {
-                rowID = rs.getInt("id");
+                rowID = rs.getInt("IDMail");
                 System.out.println("Last ID: " + rowID);
             }
 
