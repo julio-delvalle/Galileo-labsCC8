@@ -9,6 +9,7 @@ JVM= java
 CLASSES = \
 		SMTPServer.java \
 		SMTPClient.java \
+		FormatterWebServer.java \
 		IMAPServer.java \
 		SQLiteJDBC.java 
 

@@ -1,8 +1,12 @@
 import java.io.*;
 import java.net.*;
+import java.nio.file.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.logging.*;
 import java.util.regex.*;
+import java.util.*;
 
 public class SMTPServer {
 	private static final int PORT = 25;
@@ -25,6 +29,9 @@ class SMTPClientHandler extends Thread {
 	private Socket socket;
 	private Scanner in;
 	private PrintWriter out;
+	private String logsFolder = "logs";
+	private SimpleDateFormat dateFormat = new SimpleDateFormat("yyMMddHHmm");
+	private Integer nThreadServer;
 
 
 
@@ -52,6 +59,16 @@ class SMTPClientHandler extends Thread {
 			in = new Scanner(new InputStreamReader(socket.getInputStream()));
 			out = new PrintWriter(socket.getOutputStream(), true);
 
+			Logger LOGGER = Logger.getAnonymousLogger();
+			LOGGER.setUseParentHandlers(false);
+			Files.createDirectories(Paths.get(logsFolder));
+			FileHandler fileHandler = new FileHandler(logsFolder + File.separator + "T"+ nThreadServer + "-" + dateFormat.format((new Date()).getTime()) + ".log");
+			ConsoleHandler consoleHandler = new ConsoleHandler();
+			fileHandler.setFormatter(new FormatterWebServer());
+			consoleHandler.setFormatter(new FormatterWebServer());
+			LOGGER.addHandler(fileHandler);
+			LOGGER.addHandler(consoleHandler);
+
 			out.println("220 Welcome to SMTP Server CC8");
 
 			String line;
@@ -64,7 +81,7 @@ class SMTPClientHandler extends Thread {
 			while ((line = in.nextLine()) != null) {
 				try {
 					
-					System.out.println("-> fromClient: " + line);
+					LOGGER.info("-> fromClient: " + line);
 					if (line.startsWith("HELO")) {
 						clientName = line.substring(5);
 						out.println("250 HELLO " + clientName + ", pleased to meet you" );
@@ -103,11 +120,11 @@ class SMTPClientHandler extends Thread {
 										SMTPClient tempClient = new SMTPClient(mailServer, 25);
 										boolean started = tempClient.start();
 										if(started){
-											System.out.println("Se reenvió el correo a "+mailServer+"!");
+											LOGGER.info("Se reenvió el correo a "+mailServer+"!");
 											tempClient.sendMail(mailFromReceived, rcptToStr, subjectReceived, dataReceived);
 											tempClient.close();
 										}else{
-											System.out.println("No se pudo conectar a "+mailServer+"!");
+											LOGGER.info("No se pudo conectar a "+mailServer+"!");
 										}
 									}
 								}
@@ -129,7 +146,7 @@ class SMTPClientHandler extends Thread {
 						
 
 						out.println("221 Bye " + clientName);
-						System.out.println("QUIT ");
+						LOGGER.info("QUIT ");
 						clientName = "";
 						mailFromReceived = "";
 						rcptToReceived = "";
@@ -137,12 +154,12 @@ class SMTPClientHandler extends Thread {
 						rcptToReceivedArray.clear();
 						break;
 					} else {
-						System.out.println("-> no command fromClient: " + line);
+						LOGGER.info("-> no command fromClient: " + line);
 						out.println("500 Unknown command aaaaa");
 					}
 					
 				} catch (Exception e) {
-					System.out.println("-> ERROR! fromClient: " + line+"\n\n"+e);
+					LOGGER.info("-> ERROR! fromClient: " + line+"\n\n"+e);
 					out.println("500 Unknown command");
 				}
 			}
