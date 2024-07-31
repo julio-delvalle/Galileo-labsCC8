@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class IMAPServer {
 
-	private static final int PORT = 134; // Puerto IMAP
+	private static final int PORT = 143; // Puerto IMAP
 	private static Map<String, String> users = new HashMap<>(); // Usuarios y contraseñas
 
 	public static void main(String[] args) {
@@ -40,15 +40,24 @@ public class IMAPServer {
 
 				// Enviar mensaje de bienvenida
 				out.println("* OK [CAPABILITY IMAP4rev1] IMAP Server Ready");
+				System.out.println(" > * OK [CAPABILITY IMAP4rev1] IMAP Server Ready");
 
 				String inputLine;
 				boolean authenticated = false;
 
 				while ((inputLine = in.readLine()) != null) {
+					
+					//Linea recibida:
 					System.out.println("> " + inputLine );
+
+
+					//Matches: NUM login "asdfasdf" "admin"
 					if ( inputLine.matches("(?i)\\d+ login \"[^\"]+\" \"[^\"]+\"") ) {
 						String[] parts = inputLine.split(" ");
-						System.out.println("> " + parts[0] + " OK LOGIN completed" );
+						System.out.println("< " + parts[0] + " OK LOGIN completed" );
+						
+
+						out.println(parts[0] + " OK LOGIN completed" );
 					} else {
 						String[] parts = inputLine.split(" ");
 						System.out.println(parts[0] + " NO "+parts[1]+" failed" );
