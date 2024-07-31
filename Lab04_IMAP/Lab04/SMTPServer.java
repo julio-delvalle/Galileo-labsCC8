@@ -2,11 +2,9 @@ import java.io.*;
 import java.net.*;
 import java.nio.file.*;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 import java.util.logging.*;
 import java.util.regex.*;
-import java.util.*;
 
 public class SMTPServer {
 	private static final int PORT = 25;
@@ -117,6 +115,8 @@ class SMTPClientHandler extends Thread {
 									if(mailServer.equals("julio.com")){
 										rowID = (new SQLiteJDBC()).insertMailToDBSimple(mailFromReceived, rcptToStr, subjectReceived, dataReceived);
 									}else{
+										//También lo guarda incluso si no es para mi.
+										rowID = (new SQLiteJDBC()).insertMailToDBSimple(mailFromReceived, rcptToStr, subjectReceived, dataReceived);
 										SMTPClient tempClient = new SMTPClient(mailServer, 25);
 										boolean started = tempClient.start();
 										if(started){
