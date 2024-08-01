@@ -1,0 +1,4 @@
+240731205923033 SMTPClientHandler.run()	INFO: -> fromClient: EHLO we-guess.mozilla.org
+240731205923034 SMTPClientHandler.run()	INFO: -> no command fromClient: EHLO we-guess.mozilla.org
+240731205923035 SMTPClientHandler.run()	INFO: -> fromClient: QUIT
+240731205923036 SMTPClientHandler.run()	INFO: QUIT 

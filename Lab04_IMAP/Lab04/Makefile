@@ -13,7 +13,7 @@ CLASSES = \
 		IMAPServer.java \
 		SQLiteJDBC.java 
 
-MAIN = Server
+MAIN = IMAPServer
 SMTPSERVER = SMTPServer
 SMTPCLIENT = SMTPClient
 SQLite = SQLiteJDBC

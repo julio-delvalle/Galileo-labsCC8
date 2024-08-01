@@ -1,4 +1,5 @@
 import java.sql.*;
+import java.util.HashMap;
 
 public class SQLiteJDBC {
 
@@ -149,6 +150,45 @@ public class SQLiteJDBC {
 			System.err.println( e.getClass().getName() + ": " + e.getMessage() );
 			System.exit(0);
 			return 0;
+		}
+	}
+
+
+	public HashMap<String,String> getInboxInfo(String user){
+		HashMap<String, String> inboxInfo = new HashMap<>();
+		Connection c = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		try {
+			int exists = -1;
+			Class.forName("org.sqlite.JDBC");
+			c = DriverManager.getConnection("jdbc:sqlite:SMTP_SERVER.db");
+			//System.out.println("Opened database successfully");
+
+			try {
+
+				String sql = "select count(*) as cuenta from SMTP_DB where rcpt_to = ?"; 
+
+				var pstmt = c.prepareStatement(sql);
+
+				pstmt.setString(1, user);
+
+				rs = pstmt.executeQuery();
+
+				while (rs.next()) {
+					exists = rs.getInt("cuenta"); 
+				}
+			} catch (SQLException e) {
+				System.err.println(e.getMessage());
+			}
+			inboxInfo.put("exists", Integer.toString(exists));
+
+			return inboxInfo;
+		} catch ( Exception e ) {
+			System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+			System.exit(0);
+			return inboxInfo;
 		}
 	}
 }

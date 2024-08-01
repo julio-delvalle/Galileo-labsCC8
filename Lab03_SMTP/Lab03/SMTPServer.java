@@ -61,7 +61,7 @@ class SMTPClientHandler extends Thread {
 			ArrayList<String> rcptToReceivedArray = new ArrayList<String>();
 			String dataReceived = "";
 			String subjectReceived = "";
-			while (in.hasNextLine() && (line = in.nextLine()) != null) {
+			while ((line = in.nextLine()) != null) {
 				try {
 					
 					System.out.println("-> fromClient: " + line);
@@ -93,7 +93,6 @@ class SMTPClientHandler extends Thread {
 							dataReceived += "\n"+line;
 							if (line.equals(".")) {
 								
-								System.out.println("ME ENVIO PUNTO: "+line);
 								
 								int rowID = -5;
 								for (String rcptToStr : rcptToReceivedArray) {
@@ -114,8 +113,8 @@ class SMTPClientHandler extends Thread {
 								}
 								out.println("250 OK DATA #"+rowID+" <-- ID ROW ");
 
-								//out.println("Was sent to: "+rcptToReceivedArray.toString());
-								//out.println("");
+								out.println("Was sent to: "+rcptToReceivedArray.toString());
+								out.println("");
 								
 								for (String str : dataReceived.split("\n")) {
 									if(str.contains("Subject:")){
