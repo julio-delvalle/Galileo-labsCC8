@@ -11,7 +11,8 @@ CLASSES = \
 		SMTPClient.java \
 		FormatterWebServer.java \
 		IMAPServer.java \
-		SQLiteJDBC.java 
+		SQLiteJDBC.java \
+		
 
 MAIN = IMAPServer
 SMTPSERVER = SMTPServer
