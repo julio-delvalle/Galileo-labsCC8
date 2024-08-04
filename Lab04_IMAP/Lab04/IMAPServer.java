@@ -229,7 +229,7 @@ public class IMAPServer {
 							out.println(parts[0] + " OK FETCH completed");
 
 
-						}else if(parts[3].matches("\\d+:\\d+") || parts[3].matches("\\d+:\\d+[,\\d+]*") || parts[3].matches("\\d+:\\d+[,\\d+:\\d+]*") || parts[3].matches("\\d+[,\\d+]*[,\\d+:\\d+]*")){		//forma a:b , pide del correo a al b. Puede venir como a:b, c . O venir como a:b, c:d
+						}else if(parts[3].matches("\\d+:\\d+") || parts[3].matches("\\d+:\\d+[,\\d+]*") || parts[3].matches("\\d+:\\d+[,\\d+:\\d+]*") || parts[3].matches("\\d+,[\\d+]*[,\\d+:\\d+]*")){		//forma a:b , pide del correo a al b. Puede venir como a:b, c . O venir como a:b, c:d
 							int firstMail = Integer.parseInt(parts[3].split(":")[0].split(",")[0]);
 							int lastMail = Integer.parseInt(parts[3].split(":")[parts[3].split(":").length-1].split(",")[parts[3].split(":")[parts[3].split(":").length-1].split(",").length-1]);
 							

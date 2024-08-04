@@ -656,7 +656,8 @@ public class SQLiteJDBC {
 		try {
 			Class.forName("org.sqlite.JDBC");
 			c = DriverManager.getConnection("jdbc:sqlite:SMTP_SERVER.db");
-			//System.out.println("Opened database successfully");
+			
+			System.out.println("------------SE VA A COLOCAR EL "+mailNumber+" COMO READ.");
 
 			try {
 				//Obtener ID, recent y Seen de todos los correos del usuario:
