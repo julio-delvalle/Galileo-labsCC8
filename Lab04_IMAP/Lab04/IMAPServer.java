@@ -149,6 +149,14 @@ public class IMAPServer {
 					else if ( inputLine.matches("(?i)\\d+ UID fetch [^\"]+ [^\"]+") ) { 
 						//Matches: UID fetch 1:* (FLAGS)
 						String[] parts = inputLine.split(" ");
+
+
+
+						//SI TRAE EL FLAG BODY[] mandar TODO. SI trae más cosas, o BODY[ ... mandar solo header y todas las etiquetas.
+						boolean sendBody = false;
+						if(parts.length == 7 && parts[6].equals("BODY[])")){
+							sendBody = true;
+						}
 						
 						if(parts[3].equals("1:*")){		//Pide todos los correos
 							List<Map<String,String>> allMailsInfo = (new SQLiteJDBC()).getUserAllMailIDs(loggedUser);
@@ -170,9 +178,41 @@ public class IMAPServer {
 
 						}else if(parts[3].matches("\\d+:\\d+")){		//forma a:b , pide del correo a al b
 							int firstMail = Integer.parseInt(parts[3].split(":")[0]);
-							int lastMail = Integer.parseInt(parts[3].split(":")[0]);
+							int lastMail = Integer.parseInt(parts[3].split(":")[1]);
 							
 							List<Map<String,String>> mailsInfo = (new SQLiteJDBC()).getUserMailsRange(loggedUser, firstMail, lastMail);
+
+
+							int count = 0;
+							for (Map<String,String> mail : mailsInfo) {
+								String flags = "(";
+								if(mail.get("recent").equals("1")) flags +="\\Recent";
+								if(mail.get("seen").equals("1")) flags +="\\Seen";
+								flags += ")"; //Cierra paréntesis de flags
+								count++;
+
+								String bodyToSend = sendBody ? mail.get("body") : mail.get("body").split("\n\n")[0] ; //mail.get("body").split("\n\n")[0] es el HEADER SOLO.
+								
+								if(sendBody){
+									//Mandar TODO, sin flags
+									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+")");
+									out.println("* "+count+" FETCH (UID "+mail.get("id")+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+")");
+								}else{
+									//Mandar solo header, con todos los flags
+									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
+									out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
+								}
+
+							}
+
+							LOGGER.info("< " + parts[0] + " OK UID FETCH completed");
+							out.println(parts[0] + " OK UID FETCH completed");
+
+
+						}else if(parts[3].matches("\\d+")){		//forma a -- pide un solo correo
+							int mailNumber = Integer.parseInt(parts[3]);
+							
+							List<Map<String,String>> mailsInfo = (new SQLiteJDBC()).getUserSingleMail(loggedUser, mailNumber);
 
 							LOGGER.info(">>>>>> mailsInfo.length: "+Integer.toString(mailsInfo.size()));
 
@@ -184,9 +224,20 @@ public class IMAPServer {
 								if(mail.get("seen").equals("1")) flags +="\\Seen";
 								flags += ")"; //Cierra paréntesis de flags
 								count++;
+
+								String bodyToSend = sendBody ? mail.get("body") : mail.get("body").split("\n\n")[0] ; //mail.get("body").split("\n\n")[0] es el HEADER SOLO.
 								
-								LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)]) {"+mail.get("body").split("\n\n")[0].length()+"}"+mail.get("body").split("\n\n")[0]+")");
-								out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)]) {"+mail.get("body").split("\n\n")[0].length()+"}"+mail.get("body").split("\n\n")[0]+")");
+								if(sendBody){
+									//Mandar TODO, sin flags
+									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+")");
+									out.println("* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+")");
+								}else{
+									//Mandar solo header, con todos los flags
+									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
+									out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
+								}
+								// LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
+								// out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
 							}
 
 							LOGGER.info("< " + parts[0] + " OK UID FETCH completed");

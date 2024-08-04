@@ -1,0 +1,30 @@
+240803230932897 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240803230932903 IMAPServer$ClientHandler.run()	INFO: > 45 login "julio@julio.com" "admin"
+240803230932904 IMAPServer$ClientHandler.run()	INFO: < 45 OK LOGIN completed
+240803230932906 IMAPServer$ClientHandler.run()	INFO: > 46 capability
+240803230932906 IMAPServer$ClientHandler.run()	INFO: < 46 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240803230932907 IMAPServer$ClientHandler.run()	INFO: > 47 namespace
+240803230932908 IMAPServer$ClientHandler.run()	INFO: < 47 OK namespace completed
+240803230932909 IMAPServer$ClientHandler.run()	INFO: > 48 ID ("name" "Thunderbird" "version" "128.0.1")
+240803230932910 IMAPServer$ClientHandler.run()	INFO: < 48 OK ID completed
+240803230932912 IMAPServer$ClientHandler.run()	INFO: > 49 select "INBOX"
+240803230932914 IMAPServer$ClientHandler.run()	INFO: < * 8 EXISTS
+240803230932915 IMAPServer$ClientHandler.run()	INFO: < * 3 RECENT
+240803230932916 IMAPServer$ClientHandler.run()	INFO: < * OK [UNSEEN 3] First unseen.
+240803230932917 IMAPServer$ClientHandler.run()	INFO: < 49 OK [READ-WRITE] SELECT completed
+240803230932917 IMAPServer$ClientHandler.run()	INFO: > 50 getquotaroot "INBOX"
+240803230932918 IMAPServer$ClientHandler.run()	INFO: < 50 OK getquotaroot completed
+240803230932919 IMAPServer$ClientHandler.run()	INFO: > 51 UID fetch 1:* (FLAGS)
+240803230932920 IMAPServer$ClientHandler.run()	INFO:  ---------- PARTS: [51, UID, fetch, 1:*, (FLAGS)]
+240803230932922 IMAPServer$ClientHandler.run()	INFO: < * 1 FETCH (UID 3 FLAGS ())
+240803230932923 IMAPServer$ClientHandler.run()	INFO: < * 2 FETCH (UID 5 FLAGS ())
+240803230932924 IMAPServer$ClientHandler.run()	INFO: < * 3 FETCH (UID 8 FLAGS ())
+240803230932924 IMAPServer$ClientHandler.run()	INFO: < * 4 FETCH (UID 10 FLAGS ())
+240803230932925 IMAPServer$ClientHandler.run()	INFO: < * 5 FETCH (UID 11 FLAGS ())
+240803230932926 IMAPServer$ClientHandler.run()	INFO: < * 6 FETCH (UID 12 FLAGS (\Recent))
+240803230932926 IMAPServer$ClientHandler.run()	INFO: < * 7 FETCH (UID 13 FLAGS (\Recent))
+240803230932927 IMAPServer$ClientHandler.run()	INFO: < * 8 FETCH (UID 14 FLAGS (\Recent))
+240803230932928 IMAPServer$ClientHandler.run()	INFO: < 51 OK FETCH completed
+240803230934943 IMAPServer$ClientHandler.run()	INFO: > 52 IDLE
+240803230934944 IMAPServer$ClientHandler.run()	INFO: < 52 OK IDLE completed
+240803230954048 IMAPServer$ClientHandler.run()	INFO: > DONE

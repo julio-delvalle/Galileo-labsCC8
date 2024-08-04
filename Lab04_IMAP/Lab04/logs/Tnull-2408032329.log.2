@@ -1,0 +1,21 @@
+240803232911054 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240803232936524 IMAPServer$ClientHandler.run()	INFO: > 85 login "julio@julio.com" "admin"
+240803232936524 IMAPServer$ClientHandler.run()	INFO: < 85 OK LOGIN completed
+240803232936525 IMAPServer$ClientHandler.run()	INFO: > 86 capability
+240803232936526 IMAPServer$ClientHandler.run()	INFO: < 86 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240803232936527 IMAPServer$ClientHandler.run()	INFO: > 87 namespace
+240803232936527 IMAPServer$ClientHandler.run()	INFO: < 87 OK namespace completed
+240803232936528 IMAPServer$ClientHandler.run()	INFO: > 88 ID ("name" "Thunderbird" "version" "128.0.1")
+240803232936529 IMAPServer$ClientHandler.run()	INFO: < 88 OK ID completed
+240803232936530 IMAPServer$ClientHandler.run()	INFO: > 89 list (subscribed) "" "*" return (special-use)
+240803232936530 IMAPServer$ClientHandler.run()	INFO: < 89 OK list completed
+240803232936531 IMAPServer$ClientHandler.run()	INFO: > 90 list "" "INBOX"
+240803232936531 IMAPServer$ClientHandler.run()	INFO: < 90 OK list completed
+240803232936532 IMAPServer$ClientHandler.run()	INFO: > 91 list "" "Trash"
+240803232936532 IMAPServer$ClientHandler.run()	INFO: < 91 OK list completed
+240803232936536 IMAPServer$ClientHandler.run()	INFO: > 92 create "Trash"
+240803232936536 IMAPServer$ClientHandler.run()	INFO: < 92 OK create completed
+240803232936551 IMAPServer$ClientHandler.run()	INFO: > 93 subscribe "Trash"
+240803232936552 IMAPServer$ClientHandler.run()	INFO: < 93 OK subscribe completed
+240803232936554 IMAPServer$ClientHandler.run()	INFO: > 94 list "" "Trash"
+240803232936554 IMAPServer$ClientHandler.run()	INFO: < 94 OK list completed

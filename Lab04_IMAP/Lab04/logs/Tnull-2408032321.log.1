@@ -1,0 +1,47 @@
+240803232130593 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240803232130595 IMAPServer$ClientHandler.run()	INFO: > 60 login "julio@julio.com" "admin"
+240803232130595 IMAPServer$ClientHandler.run()	INFO: < 60 OK LOGIN completed
+240803232130596 IMAPServer$ClientHandler.run()	INFO: > 61 capability
+240803232130598 IMAPServer$ClientHandler.run()	INFO: < 61 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240803232130599 IMAPServer$ClientHandler.run()	INFO: > 62 namespace
+240803232130599 IMAPServer$ClientHandler.run()	INFO: < 62 OK namespace completed
+240803232130600 IMAPServer$ClientHandler.run()	INFO: > 63 ID ("name" "Thunderbird" "version" "128.0.1")
+240803232130601 IMAPServer$ClientHandler.run()	INFO: < 63 OK ID completed
+240803232130603 IMAPServer$ClientHandler.run()	INFO: > 64 select "INBOX"
+240803232130605 IMAPServer$ClientHandler.run()	INFO: < * 8 EXISTS
+240803232130606 IMAPServer$ClientHandler.run()	INFO: < * 3 RECENT
+240803232130607 IMAPServer$ClientHandler.run()	INFO: < * OK [UNSEEN 3] First unseen.
+240803232130607 IMAPServer$ClientHandler.run()	INFO: < 64 OK [READ-WRITE] SELECT completed
+240803232130609 IMAPServer$ClientHandler.run()	INFO: > 65 getquotaroot "INBOX"
+240803232130611 IMAPServer$ClientHandler.run()	INFO: < 65 OK getquotaroot completed
+240803232130613 IMAPServer$ClientHandler.run()	INFO: > 66 UID fetch 1:* (FLAGS)
+240803232130613 IMAPServer$ClientHandler.run()	INFO:  ---------- PARTS: [66, UID, fetch, 1:*, (FLAGS)]
+240803232130616 IMAPServer$ClientHandler.run()	INFO: < * 1 FETCH (UID 3 FLAGS ())
+240803232130617 IMAPServer$ClientHandler.run()	INFO: < * 2 FETCH (UID 5 FLAGS ())
+240803232130618 IMAPServer$ClientHandler.run()	INFO: < * 3 FETCH (UID 8 FLAGS ())
+240803232130618 IMAPServer$ClientHandler.run()	INFO: < * 4 FETCH (UID 10 FLAGS ())
+240803232130619 IMAPServer$ClientHandler.run()	INFO: < * 5 FETCH (UID 11 FLAGS ())
+240803232130619 IMAPServer$ClientHandler.run()	INFO: < * 6 FETCH (UID 12 FLAGS (\Recent))
+240803232130620 IMAPServer$ClientHandler.run()	INFO: < * 7 FETCH (UID 13 FLAGS (\Recent))
+240803232130620 IMAPServer$ClientHandler.run()	INFO: < * 8 FETCH (UID 14 FLAGS (\Recent))
+240803232130621 IMAPServer$ClientHandler.run()	INFO: < 66 OK FETCH completed
+240803232130658 IMAPServer$ClientHandler.run()	INFO: > 67 UID fetch 5 (UID RFC822.SIZE BODY[])
+240803232130658 IMAPServer$ClientHandler.run()	INFO:  ---------- PARTS: [67, UID, fetch, 5, (UID, RFC822.SIZE, BODY[])]
+240803232130660 IMAPServer$ClientHandler.run()	INFO: >>>>>> mailsInfo.length: 1
+240803232130661 IMAPServer$ClientHandler.run()	INFO: < * 1 FETCH (UID 5 RFC822.SIZE 358 BODY[] {358}
+Message-ID: <780d97b3-11aa-44bc-94d8-3a6f48f69fbc@julio.com>
+Date: Wed, 31 Jul 2024 20:10:58 -0600
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: test@test.ug, julio@julio.com
+From: Julio Test <julio@julio.com>
+Subject: Test 1 a UG
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+AAAA
+.)
+240803232130663 IMAPServer$ClientHandler.run()	INFO: < 67 OK UID FETCH completed
+240803232130772 IMAPServer$ClientHandler.run()	INFO: > 68 logout
+240803232130772 IMAPServer$ClientHandler.run()	INFO: < 68 OK logout completed

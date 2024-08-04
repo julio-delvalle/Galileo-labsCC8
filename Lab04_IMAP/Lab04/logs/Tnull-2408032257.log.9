@@ -1,0 +1,24 @@
+240803225751622 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240803225751622 IMAPServer$ClientHandler.run()	INFO: > 28 login "julio2@julio.com" "admin"
+240803225751623 IMAPServer$ClientHandler.run()	INFO: < 28 OK LOGIN completed
+240803225751627 IMAPServer$ClientHandler.run()	INFO: > 29 capability
+240803225751627 IMAPServer$ClientHandler.run()	INFO: < 29 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240803225751628 IMAPServer$ClientHandler.run()	INFO: > 30 namespace
+240803225751629 IMAPServer$ClientHandler.run()	INFO: < 30 OK namespace completed
+240803225751630 IMAPServer$ClientHandler.run()	INFO: > 31 ID ("name" "Thunderbird" "version" "128.0.1")
+240803225751631 IMAPServer$ClientHandler.run()	INFO: < 31 OK ID completed
+240803225751635 IMAPServer$ClientHandler.run()	INFO: > 32 select "INBOX"
+240803225751638 IMAPServer$ClientHandler.run()	INFO: < * 1 EXISTS
+240803225751638 IMAPServer$ClientHandler.run()	INFO: < * 1 RECENT
+240803225751639 IMAPServer$ClientHandler.run()	INFO: < * OK [UNSEEN 15] First unseen.
+240803225751639 IMAPServer$ClientHandler.run()	INFO: < 32 OK [READ-WRITE] SELECT completed
+240803225751703 IMAPServer$ClientHandler.run()	INFO: > 33 getquotaroot "INBOX"
+240803225751703 IMAPServer$ClientHandler.run()	INFO: < 33 OK getquotaroot completed
+240803225751712 IMAPServer$ClientHandler.run()	INFO: > 34 UID fetch 1:* (FLAGS)
+240803225751714 IMAPServer$ClientHandler.run()	INFO: < * 1 FETCH (UID 15 FLAGS (\Recent))
+240803225751715 IMAPServer$ClientHandler.run()	INFO: < 34 OK FETCH completed
+240803225751719 IMAPServer$ClientHandler.run()	INFO: > 35 UID fetch 15 (UID RFC822.SIZE FLAGS BODY.PEEK[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)])
+240803225751720 IMAPServer$ClientHandler.run()	INFO: < 35 NO FETCH failed
+240803225753747 IMAPServer$ClientHandler.run()	INFO: > 36 IDLE
+240803225753748 IMAPServer$ClientHandler.run()	INFO: < 36 OK IDLE completed
+240803225758234 IMAPServer$ClientHandler.run()	INFO: > DONE

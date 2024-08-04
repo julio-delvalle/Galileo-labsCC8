@@ -365,4 +365,70 @@ public class SQLiteJDBC {
 			return listOfMails;
 		}
 	}
+
+
+
+
+	public List<Map<String,String>> getUserSingleMail(String user, int mailNumber){
+		List<Map<String, String>> listOfMails = new ArrayList<Map<String, String>>();
+		Connection c = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		try {
+			int mailID = -1;
+			int recent = -1;
+			int seen = -1;
+			String body = "";
+			Class.forName("org.sqlite.JDBC");
+			c = DriverManager.getConnection("jdbc:sqlite:SMTP_SERVER.db");
+			//System.out.println("Opened database successfully");
+
+			try {
+				//Obtener ID, recent y Seen de todos los correos del usuario:
+				String sql = """
+					select IDmail as id,
+					read,
+					case when date > datetime('now', '-1 day') then 1 else 0 end as recent,
+					data as body
+					from SMTP_DB 
+					where RCPT_TO = ?
+						and IDmail = ?"""; 
+				var pstmt = c.prepareStatement(sql);
+				pstmt.setString(1, user);
+				pstmt.setInt(2, mailNumber);
+				rs = pstmt.executeQuery();
+				while (rs.next()) {
+					Map<String, String> mail = new HashMap<>();	
+
+					mailID = rs.getInt("id"); 
+					recent = rs.getInt("recent"); 
+					seen = rs.getInt("read"); 
+					body = rs.getString("body"); 
+
+					mail.put("id", Integer.toString(mailID));
+					mail.put("recent", Integer.toString(recent));
+					mail.put("seen", Integer.toString(seen));
+					mail.put("body", body);
+
+					listOfMails.add(mail);	//Guarda un mail con ID, recent y seen.
+
+					//Reinicia las variables
+					mailID = -1;
+					recent = -1;
+					seen = -1;
+					body = "";
+				}
+				pstmt.close();
+
+			} catch (SQLException e) {
+				System.err.println(e.getMessage());
+			}
+			return listOfMails;
+		} catch ( Exception e ) {
+			System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+			System.exit(0);
+			return listOfMails;
+		}
+	}
 }

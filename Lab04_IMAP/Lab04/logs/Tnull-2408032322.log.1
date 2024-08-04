@@ -1,0 +1,24 @@
+240803232216494 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240803232216502 IMAPServer$ClientHandler.run()	INFO: > 61 login "julio2@julio.com" "admin"
+240803232216503 IMAPServer$ClientHandler.run()	INFO: < 61 OK LOGIN completed
+240803232216507 IMAPServer$ClientHandler.run()	INFO: > 62 capability
+240803232216508 IMAPServer$ClientHandler.run()	INFO: < 62 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240803232216509 IMAPServer$ClientHandler.run()	INFO: > 63 namespace
+240803232216510 IMAPServer$ClientHandler.run()	INFO: < 63 OK namespace completed
+240803232216511 IMAPServer$ClientHandler.run()	INFO: > 64 ID ("name" "Thunderbird" "version" "128.0.1")
+240803232216512 IMAPServer$ClientHandler.run()	INFO: < 64 OK ID completed
+240803232216513 IMAPServer$ClientHandler.run()	INFO: > 65 select "INBOX"
+240803232216516 IMAPServer$ClientHandler.run()	INFO: < * 2 EXISTS
+240803232216516 IMAPServer$ClientHandler.run()	INFO: < * 2 RECENT
+240803232216517 IMAPServer$ClientHandler.run()	INFO: < * OK [UNSEEN 15] First unseen.
+240803232216518 IMAPServer$ClientHandler.run()	INFO: < 65 OK [READ-WRITE] SELECT completed
+240803232216519 IMAPServer$ClientHandler.run()	INFO: > 66 getquotaroot "INBOX"
+240803232216520 IMAPServer$ClientHandler.run()	INFO: < 66 OK getquotaroot completed
+240803232216524 IMAPServer$ClientHandler.run()	INFO: > 67 UID fetch 1:* (FLAGS)
+240803232216525 IMAPServer$ClientHandler.run()	INFO:  ---------- PARTS: [67, UID, fetch, 1:*, (FLAGS)]
+240803232216526 IMAPServer$ClientHandler.run()	INFO: < * 1 FETCH (UID 15 FLAGS (\Recent))
+240803232216528 IMAPServer$ClientHandler.run()	INFO: < * 2 FETCH (UID 16 FLAGS (\Recent))
+240803232216528 IMAPServer$ClientHandler.run()	INFO: < 67 OK FETCH completed
+240803232218565 IMAPServer$ClientHandler.run()	INFO: > 68 IDLE
+240803232218565 IMAPServer$ClientHandler.run()	INFO: < 68 OK IDLE completed
+240803232546975 IMAPServer$ClientHandler.run()	INFO: > DONE
