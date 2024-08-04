@@ -53,7 +53,7 @@ public class IMAPServer {
 
 
 					// ------------------- LOGIN -------------------- 
-					if ( inputLine.matches("(?i)\\d+ login \"[^\"]+\" \"[^\"]+\"") ) {
+					if ( inputLine.matches("(?i)\\d+ loginnn \"[^\"]+\" \"[^\"]+\"") ) {
 						//Matches: NUM login "asdfasdf" "admin"
 						String[] parts = inputLine.split(" ");
 
@@ -79,26 +79,23 @@ public class IMAPServer {
 						String requestedFolder = parts[2].replace("\"","");
 
 						if(requestedFolder.equals("INBOX")){
-							//HashMap inboxInfo = (new SQLiteJDBC()).getInboxInfo(loggedUser);
-							//if(inboxInfo.containsKey("exists")){
+							HashMap inboxInfo = (new SQLiteJDBC()).getInboxInfo(loggedUser);
+							if(inboxInfo.containsKey("exists")){
 								// System.out.println("< " + parts[0] + " "+inboxInfo.get("exists")+" EXISTS" );
 								// out.println( parts[0] + " "+inboxInfo.get("exists")+" EXISTS" );
 								// System.out.println("*" + " 2 RECENT");
-								out.println("* 2 EXISTS" );
-								System.out.println("* 2 EXISTS" );
-								out.println("* 1 RECENT" );
-								System.out.println("* 1 RECENT" );
+								// out.println("*" + " 2 RECENT" );
+								// out.println( parts[0] + " 1 RECENT" );
 								// System.out.println("*" + " OK [UNSEEN 8] First unseen.");
-								out.println("*" + " OK [UNSEEN 8] First unseen.");
-								System.out.println("*" + " OK [UNSEEN 8] First unseen.");
+								// out.println("*" + " OK [UNSEEN 8] First unseen.");
 								// out.println(parts[0] + " OK [UNSEEN 2] First unseen.");
 								// System.out.println("< " + parts[0] + " OK [UIDVALIDITY 3857529045] UIDs valid");
 								// out.println("*" + " OK [UIDVALIDITY 3857529045] UIDs valid");
 								// System.out.println("*" + " FLAGS (\\Answered \\Flagged \\Deleted \\Seen \\Draft)");
 								// out.println("*" + " FLAGS (\\Answered \\Flagged \\Deleted \\Seen \\Draft)");
-								System.out.println("< " + parts[0] + " OK [READ-WRITE] SELECT completed");
-								out.println(parts[0] + " OK [READ-WRITE] SELECT completed");
-							//}
+								System.out.println("< " + parts[0] + " OK select completed");
+								out.println(parts[0] + " OK select completed");
+							}
 						}else{
 							System.out.println("< " + parts[0] + " NO "+parts[1]+" "+requestedFolder+" failed" );
 							out.println(parts[0] + " NO "+parts[1]+" failed");
