@@ -20,3 +20,4 @@
 240803234056409 IMAPServer$ClientHandler.run()	INFO: < 52 OK FETCH completed
 240803234058442 IMAPServer$ClientHandler.run()	INFO: > 53 IDLE
 240803234058443 IMAPServer$ClientHandler.run()	INFO: < 53 OK IDLE completed
+240803234508924 IMAPServer$ClientHandler.run()	INFO: > DONE

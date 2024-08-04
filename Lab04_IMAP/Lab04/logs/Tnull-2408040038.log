@@ -1,0 +1,69 @@
+240804003834229 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240804003838795 IMAPServer$ClientHandler.run()	INFO: > 59 login "julio@julio.com" "admin"
+240804003838800 IMAPServer$ClientHandler.run()	INFO: < 59 OK LOGIN completed
+240804003838835 IMAPServer$ClientHandler.run()	INFO: > 60 capability
+240804003838838 IMAPServer$ClientHandler.run()	INFO: < 60 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240804003838843 IMAPServer$ClientHandler.run()	INFO: > 61 namespace
+240804003838849 IMAPServer$ClientHandler.run()	INFO: < 61 OK namespace completed
+240804003838851 IMAPServer$ClientHandler.run()	INFO: > 62 ID ("name" "Thunderbird" "version" "128.0.1")
+240804003838853 IMAPServer$ClientHandler.run()	INFO: < 62 OK ID completed
+240804003838863 IMAPServer$ClientHandler.run()	INFO: > 63 list (subscribed) "" "*" return (special-use)
+240804003838865 IMAPServer$ClientHandler.run()	INFO: < 63 OK list completed
+240804003838866 IMAPServer$ClientHandler.run()	INFO: > 64 list "" "INBOX"
+240804003838867 IMAPServer$ClientHandler.run()	INFO: < 64 OK list completed
+240804003838869 IMAPServer$ClientHandler.run()	INFO: > 65 list "" "Trash"
+240804003838870 IMAPServer$ClientHandler.run()	INFO: < 65 OK list completed
+240804003838873 IMAPServer$ClientHandler.run()	INFO: > 66 create "Trash"
+240804003838874 IMAPServer$ClientHandler.run()	INFO: < 66 OK create completed
+240804003838877 IMAPServer$ClientHandler.run()	INFO: > 67 subscribe "Trash"
+240804003838878 IMAPServer$ClientHandler.run()	INFO: < 67 OK subscribe completed
+240804003838881 IMAPServer$ClientHandler.run()	INFO: > 68 list "" "Trash"
+240804003838882 IMAPServer$ClientHandler.run()	INFO: < 68 OK list completed
+240804004019146 IMAPServer$ClientHandler.run()	INFO: > 69 list "" "Sent"
+240804004019147 IMAPServer$ClientHandler.run()	INFO: < 69 OK list completed
+240804004019153 IMAPServer$ClientHandler.run()	INFO: > 70 create "Sent"
+240804004019154 IMAPServer$ClientHandler.run()	INFO: < 70 OK create completed
+240804004019160 IMAPServer$ClientHandler.run()	INFO: > 71 subscribe "Sent"
+240804004019161 IMAPServer$ClientHandler.run()	INFO: < 71 OK subscribe completed
+240804004019165 IMAPServer$ClientHandler.run()	INFO: > 72 list "" "Sent"
+240804004019165 IMAPServer$ClientHandler.run()	INFO: < 72 OK list completed
+240804004041093 IMAPServer$ClientHandler.run()	INFO: > 73 list "" "Sent"
+240804004041094 IMAPServer$ClientHandler.run()	INFO: < 73 OK list completed
+240804004041100 IMAPServer$ClientHandler.run()	INFO: > 74 create "Sent"
+240804004041101 IMAPServer$ClientHandler.run()	INFO: < 74 OK create completed
+240804004041101 IMAPServer$ClientHandler.run()	INFO: > 75 subscribe "Sent"
+240804004041103 IMAPServer$ClientHandler.run()	INFO: < 75 OK subscribe completed
+240804004041103 IMAPServer$ClientHandler.run()	INFO: > 76 list "" "Sent"
+240804004041104 IMAPServer$ClientHandler.run()	INFO: < 76 OK list completed
+240804004049286 IMAPServer$ClientHandler.run()	INFO: > 77 list "" "Sent"
+240804004049286 IMAPServer$ClientHandler.run()	INFO: < 77 OK list completed
+240804004049287 IMAPServer$ClientHandler.run()	INFO: > 78 create "Sent"
+240804004049288 IMAPServer$ClientHandler.run()	INFO: < 78 OK create completed
+240804004049290 IMAPServer$ClientHandler.run()	INFO: > 79 subscribe "Sent"
+240804004049291 IMAPServer$ClientHandler.run()	INFO: < 79 OK subscribe completed
+240804004049292 IMAPServer$ClientHandler.run()	INFO: > 80 list "" "Sent"
+240804004049292 IMAPServer$ClientHandler.run()	INFO: < 80 OK list completed
+240804004057181 IMAPServer$ClientHandler.run()	INFO: > 81 list "" "Sent"
+240804004057181 IMAPServer$ClientHandler.run()	INFO: < 81 OK list completed
+240804004057193 IMAPServer$ClientHandler.run()	INFO: > 82 create "Sent"
+240804004057194 IMAPServer$ClientHandler.run()	INFO: < 82 OK create completed
+240804004057196 IMAPServer$ClientHandler.run()	INFO: > 83 subscribe "Sent"
+240804004057197 IMAPServer$ClientHandler.run()	INFO: < 83 OK subscribe completed
+240804004057198 IMAPServer$ClientHandler.run()	INFO: > 84 list "" "Sent"
+240804004057198 IMAPServer$ClientHandler.run()	INFO: < 84 OK list completed
+240804004104269 IMAPServer$ClientHandler.run()	INFO: > 85 list "" "Sent"
+240804004104269 IMAPServer$ClientHandler.run()	INFO: < 85 OK list completed
+240804004104275 IMAPServer$ClientHandler.run()	INFO: > 86 create "Sent"
+240804004104275 IMAPServer$ClientHandler.run()	INFO: < 86 OK create completed
+240804004104276 IMAPServer$ClientHandler.run()	INFO: > 87 subscribe "Sent"
+240804004104277 IMAPServer$ClientHandler.run()	INFO: < 87 OK subscribe completed
+240804004104278 IMAPServer$ClientHandler.run()	INFO: > 88 list "" "Sent"
+240804004104279 IMAPServer$ClientHandler.run()	INFO: < 88 OK list completed
+240804004408390 IMAPServer$ClientHandler.run()	INFO: > 89 list "" "Sent"
+240804004408390 IMAPServer$ClientHandler.run()	INFO: < 89 OK list completed
+240804004408394 IMAPServer$ClientHandler.run()	INFO: > 90 create "Sent"
+240804004408394 IMAPServer$ClientHandler.run()	INFO: < 90 OK create completed
+240804004408395 IMAPServer$ClientHandler.run()	INFO: > 91 subscribe "Sent"
+240804004408396 IMAPServer$ClientHandler.run()	INFO: < 91 OK subscribe completed
+240804004408404 IMAPServer$ClientHandler.run()	INFO: > 92 list "" "Sent"
+240804004408405 IMAPServer$ClientHandler.run()	INFO: < 92 OK list completed

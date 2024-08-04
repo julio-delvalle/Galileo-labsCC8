@@ -1,0 +1,20 @@
+240804004832002 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240804004832003 IMAPServer$ClientHandler.run()	INFO: > 4 login "julio2@julio.com" "admin"
+240804004832004 IMAPServer$ClientHandler.run()	INFO: < 4 OK LOGIN completed
+240804004832005 IMAPServer$ClientHandler.run()	INFO: > 5 capability
+240804004832006 IMAPServer$ClientHandler.run()	INFO: < 5 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240804004832008 IMAPServer$ClientHandler.run()	INFO: > 6 namespace
+240804004832008 IMAPServer$ClientHandler.run()	INFO: < 6 OK namespace completed
+240804004832009 IMAPServer$ClientHandler.run()	INFO: > 7 ID ("name" "Thunderbird" "version" "128.0.1")
+240804004832010 IMAPServer$ClientHandler.run()	INFO: < 7 OK ID completed
+240804004832011 IMAPServer$ClientHandler.run()	INFO: > 8 select "INBOX"
+240804004832013 IMAPServer$ClientHandler.run()	INFO: < * 4 EXISTS
+240804004832014 IMAPServer$ClientHandler.run()	INFO: < * 4 RECENT
+240804004832015 IMAPServer$ClientHandler.run()	INFO: < * OK [UNSEEN 15] First unseen.
+240804004832015 IMAPServer$ClientHandler.run()	INFO: < 8 OK [READ-WRITE] SELECT completed
+240804004832016 IMAPServer$ClientHandler.run()	INFO: > 9 getquotaroot "INBOX"
+240804004832017 IMAPServer$ClientHandler.run()	INFO: < 9 OK getquotaroot completed
+240804004832018 IMAPServer$ClientHandler.run()	INFO: > 10 UID fetch 1:* (FLAGS)
+240804004832019 IMAPServer$ClientHandler.run()	INFO: < 10 NO FETCH failed
+240804004834031 IMAPServer$ClientHandler.run()	INFO: > 11 IDLE
+240804004834032 IMAPServer$ClientHandler.run()	INFO: < 11 OK IDLE completed

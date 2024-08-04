@@ -1,0 +1,90 @@
+240804003010055 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240804003010066 IMAPServer$ClientHandler.run()	INFO: > 43 login "julio2@julio.com" "admin"
+240804003010068 IMAPServer$ClientHandler.run()	INFO: < 43 OK LOGIN completed
+240804003010070 IMAPServer$ClientHandler.run()	INFO: > 44 capability
+240804003010071 IMAPServer$ClientHandler.run()	INFO: < 44 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240804003010083 IMAPServer$ClientHandler.run()	INFO: > 45 namespace
+240804003010083 IMAPServer$ClientHandler.run()	INFO: < 45 OK namespace completed
+240804003010084 IMAPServer$ClientHandler.run()	INFO: > 46 ID ("name" "Thunderbird" "version" "128.0.1")
+240804003010085 IMAPServer$ClientHandler.run()	INFO: < 46 OK ID completed
+240804003010087 IMAPServer$ClientHandler.run()	INFO: > 47 select "INBOX"
+240804003010247 IMAPServer$ClientHandler.run()	INFO: < * 4 EXISTS
+240804003010249 IMAPServer$ClientHandler.run()	INFO: < * 4 RECENT
+240804003010250 IMAPServer$ClientHandler.run()	INFO: < * OK [UNSEEN 15] First unseen.
+240804003010250 IMAPServer$ClientHandler.run()	INFO: < 47 OK [READ-WRITE] SELECT completed
+240804003010251 IMAPServer$ClientHandler.run()	INFO: > 48 getquotaroot "INBOX"
+240804003010252 IMAPServer$ClientHandler.run()	INFO: < 48 OK getquotaroot completed
+240804003010253 IMAPServer$ClientHandler.run()	INFO: > 49 UID fetch 1:* (FLAGS)
+240804003010262 IMAPServer$ClientHandler.run()	INFO: < * 1 FETCH (UID 15 FLAGS (\Recent))
+240804003010263 IMAPServer$ClientHandler.run()	INFO: < * 2 FETCH (UID 16 FLAGS (\Recent))
+240804003010264 IMAPServer$ClientHandler.run()	INFO: < * 3 FETCH (UID 17 FLAGS (\Recent))
+240804003010265 IMAPServer$ClientHandler.run()	INFO: < * 4 FETCH (UID 18 FLAGS (\Recent))
+240804003010265 IMAPServer$ClientHandler.run()	INFO: < 49 OK FETCH completed
+240804003010273 IMAPServer$ClientHandler.run()	INFO: > 50 UID fetch 18 (UID RFC822.SIZE FLAGS BODY.PEEK[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)])
+240804003010283 IMAPServer$ClientHandler.run()	INFO: < * 1 FETCH (UID 18 FLAGS (\Recent) BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {335}
+Content-Type: multipart/alternative;
+ boundary="------------Hp43xHCkexFfWonHAfHOuOYf"
+Message-ID: <4b20d992-79a7-4865-a54f-1d062d53560f@julio.com>
+Date: Sun, 4 Aug 2024 00:30:02 -0600
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: julio2@julio.com
+From: Julio Test <julio@julio.com>
+Subject: HOLA JULIO!
+)
+240804003010286 IMAPServer$ClientHandler.run()	INFO: < 50 OK UID FETCH completed
+240804003011593 IMAPServer$ClientHandler.run()	INFO: > 51 UID fetch 18 (UID RFC822.SIZE BODY[])
+240804003011615 IMAPServer$ClientHandler.run()	INFO: < * 1 FETCH (UID 18 RFC822.SIZE 1111 BODY[] {1111}
+Content-Type: multipart/alternative;
+ boundary="------------Hp43xHCkexFfWonHAfHOuOYf"
+Message-ID: <4b20d992-79a7-4865-a54f-1d062d53560f@julio.com>
+Date: Sun, 4 Aug 2024 00:30:02 -0600
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: julio2@julio.com
+From: Julio Test <julio@julio.com>
+Subject: HOLA JULIO!
+
+This is a multi-part message in MIME format.
+--------------Hp43xHCkexFfWonHAfHOuOYf
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+*Te mando un correo con /diferentesletras _AAAAAAA_/*
+
+
+  */_Header 1_/*
+
+Hola.
+
+
+🙂
+
+--------------Hp43xHCkexFfWonHAfHOuOYf
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <p><b>Te mando un correo con <i>diferentes<font size="1"> letras <u>AAAAAAA</u></font></i></b></p>
+    <h1><b><i><font size="1"><u>Header 1</u></font></i></b></h1>
+    <p>Hola.</p>
+    <p><br>
+    </p>
+    <p>🙂</p>
+  </body>
+</html>
+
+--------------Hp43xHCkexFfWonHAfHOuOYf--
+.
+)
+240804003011627 IMAPServer$ClientHandler.run()	INFO: < 51 OK UID FETCH completed
+240804003011729 IMAPServer$ClientHandler.run()	INFO: > 52 logout
+240804003011730 IMAPServer$ClientHandler.run()	INFO: < 52 OK logout completed

@@ -1,0 +1,21 @@
+240804023854845 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240804023855058 IMAPServer$ClientHandler.run()	INFO: > 49 login "julio2@julio.com" "admin"
+240804023855063 IMAPServer$ClientHandler.run()	INFO: < 49 OK LOGIN completed
+240804023855080 IMAPServer$ClientHandler.run()	INFO: > 50 capability
+240804023855082 IMAPServer$ClientHandler.run()	INFO: < 50 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240804023855084 IMAPServer$ClientHandler.run()	INFO: > 51 namespace
+240804023855091 IMAPServer$ClientHandler.run()	INFO: < 51 OK namespace completed
+240804023855093 IMAPServer$ClientHandler.run()	INFO: > 52 ID ("name" "Thunderbird" "version" "128.0.1")
+240804023855094 IMAPServer$ClientHandler.run()	INFO: < 52 OK ID completed
+240804023855125 IMAPServer$ClientHandler.run()	INFO: > 53 list (subscribed) "" "*" return (special-use)
+240804023855127 IMAPServer$ClientHandler.run()	INFO: < 53 OK list completed
+240804023855144 IMAPServer$ClientHandler.run()	INFO: > 54 list "" "INBOX"
+240804023855145 IMAPServer$ClientHandler.run()	INFO: < 54 OK list completed
+240804023855147 IMAPServer$ClientHandler.run()	INFO: > 55 list "" "Trash"
+240804023855148 IMAPServer$ClientHandler.run()	INFO: < 55 OK list completed
+240804023855424 IMAPServer$ClientHandler.run()	INFO: > 56 create "Trash"
+240804023855427 IMAPServer$ClientHandler.run()	INFO: < 56 OK create completed
+240804023856121 IMAPServer$ClientHandler.run()	INFO: > 57 subscribe "Trash"
+240804023856123 IMAPServer$ClientHandler.run()	INFO: < 57 OK subscribe completed
+240804023856128 IMAPServer$ClientHandler.run()	INFO: > 58 list "" "Trash"
+240804023856129 IMAPServer$ClientHandler.run()	INFO: < 58 OK list completed

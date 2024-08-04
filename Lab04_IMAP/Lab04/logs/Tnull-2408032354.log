@@ -1,0 +1,23 @@
+240803235414011 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240803235414181 IMAPServer$ClientHandler.run()	INFO: > 24 login "julio2@julio.com" "admin"
+240803235414182 IMAPServer$ClientHandler.run()	INFO: < 24 OK LOGIN completed
+240803235414209 IMAPServer$ClientHandler.run()	INFO: > 25 capability
+240803235414209 IMAPServer$ClientHandler.run()	INFO: < 25 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240803235414210 IMAPServer$ClientHandler.run()	INFO: > 26 namespace
+240803235414211 IMAPServer$ClientHandler.run()	INFO: < 26 OK namespace completed
+240803235414212 IMAPServer$ClientHandler.run()	INFO: > 27 ID ("name" "Thunderbird" "version" "128.0.1")
+240803235414212 IMAPServer$ClientHandler.run()	INFO: < 27 OK ID completed
+240803235414215 IMAPServer$ClientHandler.run()	INFO: > 28 list (subscribed) "" "*" return (special-use)
+240803235414216 IMAPServer$ClientHandler.run()	INFO: < 28 OK list completed
+240803235414217 IMAPServer$ClientHandler.run()	INFO: > 29 list "" "INBOX"
+240803235414217 IMAPServer$ClientHandler.run()	INFO: < 29 OK list completed
+240803235414218 IMAPServer$ClientHandler.run()	INFO: > 30 list "" "Trash"
+240803235414219 IMAPServer$ClientHandler.run()	INFO: < 30 OK list completed
+240803235414221 IMAPServer$ClientHandler.run()	INFO: > 31 create "Trash"
+240803235414221 IMAPServer$ClientHandler.run()	INFO: < 31 OK create completed
+240803235414226 IMAPServer$ClientHandler.run()	INFO: > 32 subscribe "Trash"
+240803235414227 IMAPServer$ClientHandler.run()	INFO: < 32 OK subscribe completed
+240803235414249 IMAPServer$ClientHandler.run()	INFO: > 33 list "" "Trash"
+240803235414250 IMAPServer$ClientHandler.run()	INFO: < 33 OK list completed
+240803235905442 IMAPServer$ClientHandler.run()	INFO: > 34 logout
+240803235905443 IMAPServer$ClientHandler.run()	INFO: < 34 OK logout completed

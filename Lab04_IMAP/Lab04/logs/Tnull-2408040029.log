@@ -1,0 +1,40 @@
+240804002907503 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240804002907514 IMAPServer$ClientHandler.run()	INFO: > 101 login "julio@julio.com" "admin"
+240804002907518 IMAPServer$ClientHandler.run()	INFO: < 101 OK LOGIN completed
+240804002907525 IMAPServer$ClientHandler.run()	INFO: > 102 capability
+240804002907527 IMAPServer$ClientHandler.run()	INFO: < 102 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240804002907529 IMAPServer$ClientHandler.run()	INFO: > 103 namespace
+240804002907534 IMAPServer$ClientHandler.run()	INFO: < 103 OK namespace completed
+240804002907535 IMAPServer$ClientHandler.run()	INFO: > 104 ID ("name" "Thunderbird" "version" "128.0.1")
+240804002907537 IMAPServer$ClientHandler.run()	INFO: < 104 OK ID completed
+240804002907541 IMAPServer$ClientHandler.run()	INFO: > 105 list "" "Drafts"
+240804002907542 IMAPServer$ClientHandler.run()	INFO: < 105 OK list completed
+240804002907547 IMAPServer$ClientHandler.run()	INFO: > 106 create "Drafts"
+240804002907548 IMAPServer$ClientHandler.run()	INFO: < 106 OK create completed
+240804002907552 IMAPServer$ClientHandler.run()	INFO: > 107 subscribe "Drafts"
+240804002907553 IMAPServer$ClientHandler.run()	INFO: < 107 OK subscribe completed
+240804002907556 IMAPServer$ClientHandler.run()	INFO: > 108 list "" "Drafts"
+240804002907557 IMAPServer$ClientHandler.run()	INFO: < 108 OK list completed
+240804003002583 IMAPServer$ClientHandler.run()	INFO: > 109 append "Sent" (\Seen) {1160+}
+240804003002584 IMAPServer$ClientHandler.run()	INFO: < 109 OK append completed
+240804003002585 IMAPServer$ClientHandler.run()	INFO: > Content-Type: multipart/alternative;
+240804003002586 IMAPServer$ClientHandler.run()	INFO: < Content-Type: OK multipart/alternative; completed
+240804003002587 IMAPServer$ClientHandler.run()	INFO: >  boundary="------------Hp43xHCkexFfWonHAfHOuOYf"
+240804003002587 IMAPServer$ClientHandler.run()	INFO: <  OK boundary="------------Hp43xHCkexFfWonHAfHOuOYf" completed
+240804003002589 IMAPServer$ClientHandler.run()	INFO: > Message-ID: <4b20d992-79a7-4865-a54f-1d062d53560f@julio.com>
+240804003002590 IMAPServer$ClientHandler.run()	INFO: < Message-ID: OK <4b20d992-79a7-4865-a54f-1d062d53560f@julio.com> completed
+240804003002591 IMAPServer$ClientHandler.run()	INFO: > Date: Sun, 4 Aug 2024 00:30:02 -0600
+240804003002592 IMAPServer$ClientHandler.run()	INFO: < Date: OK Sun, completed
+240804003002592 IMAPServer$ClientHandler.run()	INFO: > MIME-Version: 1.0
+240804003002593 IMAPServer$ClientHandler.run()	INFO: < MIME-Version: OK 1.0 completed
+240804003002593 IMAPServer$ClientHandler.run()	INFO: > User-Agent: Mozilla Thunderbird
+240804003002594 IMAPServer$ClientHandler.run()	INFO: < User-Agent: OK Mozilla completed
+240804003002595 IMAPServer$ClientHandler.run()	INFO: > Content-Language: en-US
+240804003002595 IMAPServer$ClientHandler.run()	INFO: < Content-Language: OK en-US completed
+240804003002596 IMAPServer$ClientHandler.run()	INFO: > To: julio2@julio.com
+240804003002598 IMAPServer$ClientHandler.run()	INFO: < To: OK julio2@julio.com completed
+240804003002598 IMAPServer$ClientHandler.run()	INFO: > From: Julio Test <julio@julio.com>
+240804003002599 IMAPServer$ClientHandler.run()	INFO: < From: OK Julio completed
+240804003002599 IMAPServer$ClientHandler.run()	INFO: > Subject: HOLA JULIO!
+240804003002600 IMAPServer$ClientHandler.run()	INFO: < Subject: OK HOLA completed
+240804003002601 IMAPServer$ClientHandler.run()	INFO: > 

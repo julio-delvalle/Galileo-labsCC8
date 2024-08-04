@@ -1,0 +1,32 @@
+240804004057228 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240804004057230 IMAPServer$ClientHandler.run()	INFO: > 33 login "julio@julio.com" "admin"
+240804004057231 IMAPServer$ClientHandler.run()	INFO: < 33 OK LOGIN completed
+240804004057233 IMAPServer$ClientHandler.run()	INFO: > 34 capability
+240804004057234 IMAPServer$ClientHandler.run()	INFO: < 34 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240804004057236 IMAPServer$ClientHandler.run()	INFO: > 35 namespace
+240804004057236 IMAPServer$ClientHandler.run()	INFO: < 35 OK namespace completed
+240804004057237 IMAPServer$ClientHandler.run()	INFO: > 36 ID ("name" "Thunderbird" "version" "128.0.1")
+240804004057238 IMAPServer$ClientHandler.run()	INFO: < 36 OK ID completed
+240804004057238 IMAPServer$ClientHandler.run()	INFO: > 37 append "Sent" (\Seen) {397+}
+240804004057241 IMAPServer$ClientHandler.run()	INFO: < 37 OK append completed
+240804004057243 IMAPServer$ClientHandler.run()	INFO: > Message-ID: <537a5baf-931a-42a0-8b0d-08e5e51bb77d@julio.com>
+240804004057244 IMAPServer$ClientHandler.run()	INFO: < Message-ID: OK <537a5baf-931a-42a0-8b0d-08e5e51bb77d@julio.com> completed
+240804004057245 IMAPServer$ClientHandler.run()	INFO: > Date: Sun, 4 Aug 2024 00:40:57 -0600
+240804004057246 IMAPServer$ClientHandler.run()	INFO: < Date: OK Sun, completed
+240804004057247 IMAPServer$ClientHandler.run()	INFO: > MIME-Version: 1.0
+240804004057248 IMAPServer$ClientHandler.run()	INFO: < MIME-Version: OK 1.0 completed
+240804004057249 IMAPServer$ClientHandler.run()	INFO: > User-Agent: Mozilla Thunderbird
+240804004057249 IMAPServer$ClientHandler.run()	INFO: < User-Agent: OK Mozilla completed
+240804004057249 IMAPServer$ClientHandler.run()	INFO: > Content-Language: en-US
+240804004057250 IMAPServer$ClientHandler.run()	INFO: < Content-Language: OK en-US completed
+240804004057250 IMAPServer$ClientHandler.run()	INFO: > To: julio@julio.com
+240804004057251 IMAPServer$ClientHandler.run()	INFO: < To: OK julio@julio.com completed
+240804004057251 IMAPServer$ClientHandler.run()	INFO: > From: Julio Test <julio@julio.com>
+240804004057252 IMAPServer$ClientHandler.run()	INFO: < From: OK Julio completed
+240804004057253 IMAPServer$ClientHandler.run()	INFO: > Subject: Test 5
+240804004057254 IMAPServer$ClientHandler.run()	INFO: < Subject: OK Test completed
+240804004057255 IMAPServer$ClientHandler.run()	INFO: > Content-Type: text/plain; charset=UTF-8; format=flowed
+240804004057256 IMAPServer$ClientHandler.run()	INFO: < Content-Type: OK text/plain; completed
+240804004057257 IMAPServer$ClientHandler.run()	INFO: > Content-Transfer-Encoding: 8bit
+240804004057258 IMAPServer$ClientHandler.run()	INFO: < Content-Transfer-Encoding: OK 8bit completed
+240804004057259 IMAPServer$ClientHandler.run()	INFO: > 

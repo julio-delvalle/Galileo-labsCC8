@@ -1,0 +1,21 @@
+240804031031557 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240804031033833 IMAPServer$ClientHandler.run()	INFO: > 5 login "julio@julio.com" "admin"
+240804031033834 IMAPServer$ClientHandler.run()	INFO: < 5 OK LOGIN completed
+240804031033839 IMAPServer$ClientHandler.run()	INFO: > 6 capability
+240804031033840 IMAPServer$ClientHandler.run()	INFO: < 6 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240804031033846 IMAPServer$ClientHandler.run()	INFO: > 7 namespace
+240804031033847 IMAPServer$ClientHandler.run()	INFO: < 7 OK namespace completed
+240804031033849 IMAPServer$ClientHandler.run()	INFO: > 8 ID ("name" "Thunderbird" "version" "128.0.1")
+240804031033849 IMAPServer$ClientHandler.run()	INFO: < 8 OK ID completed
+240804031033877 IMAPServer$ClientHandler.run()	INFO: > 9 list (subscribed) "" "*" return (special-use)
+240804031033879 IMAPServer$ClientHandler.run()	INFO: < 9 OK list completed
+240804031033881 IMAPServer$ClientHandler.run()	INFO: > 10 list "" "INBOX"
+240804031033882 IMAPServer$ClientHandler.run()	INFO: < 10 OK list completed
+240804031033886 IMAPServer$ClientHandler.run()	INFO: > 11 list "" "Trash"
+240804031033887 IMAPServer$ClientHandler.run()	INFO: < 11 OK list completed
+240804031033891 IMAPServer$ClientHandler.run()	INFO: > 12 create "Trash"
+240804031033891 IMAPServer$ClientHandler.run()	INFO: < 12 OK create completed
+240804031033894 IMAPServer$ClientHandler.run()	INFO: > 13 subscribe "Trash"
+240804031033895 IMAPServer$ClientHandler.run()	INFO: < 13 OK subscribe completed
+240804031033909 IMAPServer$ClientHandler.run()	INFO: > 14 list "" "Trash"
+240804031033911 IMAPServer$ClientHandler.run()	INFO: < 14 OK list completed

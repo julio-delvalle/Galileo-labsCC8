@@ -73,6 +73,7 @@ public class IMAPServer {
 				String inputLine;
 				boolean authenticated = false;
 				String loggedUser = "";
+				String lastSelect = "";
 
 				while ((inputLine = in.readLine()) != null) {
 					
@@ -105,6 +106,7 @@ public class IMAPServer {
 						String[] parts = inputLine.split(" ");
 						
 						String requestedFolder = parts[2].replace("\"","");
+						lastSelect = requestedFolder;
 
 						if(requestedFolder.equals("INBOX")){
 							HashMap inboxInfo = (new SQLiteJDBC()).getInboxInfo(loggedUser);
@@ -134,11 +136,55 @@ public class IMAPServer {
 								LOGGER.info("< " + parts[0] + " OK [READ-WRITE] SELECT completed");
 								out.println(parts[0] + " OK [READ-WRITE] SELECT completed");
 							}
+						}else if(requestedFolder.equals("Sent")){
+							HashMap sentInfo = (new SQLiteJDBC()).getSentInfo(loggedUser);
+							if(sentInfo.containsKey("exists") && sentInfo.containsKey("recent")){
+								LOGGER.info("< " + "* "+sentInfo.get("exists")+" EXISTS" );
+								out.println("* "+sentInfo.get("exists")+" EXISTS" );
+								
+								LOGGER.info("< " + "* "+sentInfo.get("recent")+" RECENT" );
+								out.println("* "+sentInfo.get("recent")+" RECENT" );
+
+								// out.println("*" + " OK [UNSEEN "+sentInfo.get("firstunseen")+"] First unseen.");
+								// LOGGER.info("< *" + " OK [UNSEEN "+sentInfo.get("firstunseen")+"] First unseen.");
+								// out.println(parts[0] + " OK [UNSEEN 2] First unseen.");
+
+								LOGGER.info("< " + parts[0] + " OK [READ-WRITE] SELECT completed");
+								out.println(parts[0] + " OK [READ-WRITE] SELECT completed");
+							}
 						}else{
 							LOGGER.info("< " + parts[0] + " NO "+parts[1]+" "+requestedFolder+" failed" );
 							out.println(parts[0] + " NO "+parts[1]+" failed");
 						}
 						
+						
+					}
+
+
+
+
+
+					// ------------------- LIST -------------------- 
+					else if ( inputLine.matches("(?i)\\d+ list \"[^\"]*\" \"[^\"]*\"") ) {
+						//Matches: NUM list "" "Sent"
+						String[] parts = inputLine.split(" ");
+						
+						String requestedFolder1 = parts[2].replace("\"","");
+						String requestedFolder2 = parts[3].replace("\"","");
+
+						LOGGER.info("------------ RECIBÍ: rf1:"+requestedFolder1+"  rf2:"+requestedFolder2);
+
+						if(requestedFolder1.equals("") && requestedFolder2.equals("Sent")){
+								LOGGER.info("< " + "* LIST (\\HasNoChildren) \"\" \"Sent\"");
+								out.println("* LIST (\\HasNoChildren) \"\" \"Sent\"");
+
+
+								LOGGER.info("< " + parts[0] + " OK LIST completed");
+								out.println(parts[0] + " OK LIST completed");
+						}else{
+							LOGGER.info("< " + parts[0] + " OK LIST completed" );
+							out.println(parts[0] + " OK LIST completed" );
+						}
 						
 					}
 
@@ -158,14 +204,21 @@ public class IMAPServer {
 							sendBody = true;
 						}
 						
-						if(parts[3].equals("1:*")){		//Pide todos los correos
-							List<Map<String,String>> allMailsInfo = (new SQLiteJDBC()).getUserAllMailIDs(loggedUser);
+						if(parts[3].matches("\\d+:\\*")){		//Pide todos los correos a partir del primer número
+							int firstMail = Integer.parseInt(parts[3].split(":")[0]);
+
+							List<Map<String,String>> allMailsInfo;
+							if(lastSelect.equals("Sent")){
+								allMailsInfo = (new SQLiteJDBC()).getUserSentMailIDs(loggedUser, firstMail);
+							}else{
+								allMailsInfo = (new SQLiteJDBC()).getUserAllMailIDs(loggedUser, firstMail);
+							}
 
 							int count = 0;
 							for (Map<String,String> mail : allMailsInfo) {
 								String flags = "(";
-								if(mail.get("recent").equals("1")) flags +="\\Recent";
-								if(mail.get("seen").equals("1")) flags +="\\Seen";
+								if(mail.get("recent").equals("1")) flags +=" \\Recent";
+								if(mail.get("seen").equals("1")) flags +=" \\Seen";
 								flags += "))"; //Cierra 2 paréntesis por el de (UID ...
 								count++;
 								LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags);
@@ -176,18 +229,23 @@ public class IMAPServer {
 							out.println(parts[0] + " OK FETCH completed");
 
 
-						}else if(parts[3].matches("\\d+:\\d+")){		//forma a:b , pide del correo a al b
-							int firstMail = Integer.parseInt(parts[3].split(":")[0]);
-							int lastMail = Integer.parseInt(parts[3].split(":")[1]);
+						}else if(parts[3].matches("\\d+:\\d+") || parts[3].matches("\\d+:\\d+[,\\d+]*") || parts[3].matches("\\d+:\\d+[,\\d+:\\d+]*") || parts[3].matches("\\d+[,\\d+]*[,\\d+:\\d+]*")){		//forma a:b , pide del correo a al b. Puede venir como a:b, c . O venir como a:b, c:d
+							int firstMail = Integer.parseInt(parts[3].split(":")[0].split(",")[0]);
+							int lastMail = Integer.parseInt(parts[3].split(":")[parts[3].split(":").length-1].split(",")[parts[3].split(":")[parts[3].split(":").length-1].split(",").length-1]);
 							
-							List<Map<String,String>> mailsInfo = (new SQLiteJDBC()).getUserMailsRange(loggedUser, firstMail, lastMail);
+							List<Map<String,String>> mailsInfo;
+							if(lastSelect.equals("Sent")){
+								mailsInfo = (new SQLiteJDBC()).getUserSentMailsRange(loggedUser, firstMail, lastMail);
+							}else{
+								mailsInfo = (new SQLiteJDBC()).getUserMailsRange(loggedUser, firstMail, lastMail);
+							}
 
 
 							int count = 0;
 							for (Map<String,String> mail : mailsInfo) {
 								String flags = "(";
-								if(mail.get("recent").equals("1")) flags +="\\Recent";
-								if(mail.get("seen").equals("1")) flags +="\\Seen";
+								if(mail.get("recent").equals("1")) flags +=" \\Recent";
+								if(mail.get("seen").equals("1")) flags +=" \\Seen";
 								flags += ")"; //Cierra paréntesis de flags
 								count++;
 
@@ -195,12 +253,12 @@ public class IMAPServer {
 								
 								if(sendBody){
 									//Mandar TODO, sin flags
-									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+")");
-									out.println("* "+count+" FETCH (UID "+mail.get("id")+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+")");
+									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
+									out.println("* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
 								}else{
 									//Mandar solo header, con todos los flags
-									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
-									out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
+									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
+									out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
 								}
 
 							}
@@ -214,14 +272,12 @@ public class IMAPServer {
 							
 							List<Map<String,String>> mailsInfo = (new SQLiteJDBC()).getUserSingleMail(loggedUser, mailNumber);
 
-							LOGGER.info(">>>>>> mailsInfo.length: "+Integer.toString(mailsInfo.size()));
-
 
 							int count = 0;
 							for (Map<String,String> mail : mailsInfo) {
 								String flags = "(";
-								if(mail.get("recent").equals("1")) flags +="\\Recent";
-								if(mail.get("seen").equals("1")) flags +="\\Seen";
+								if(mail.get("recent").equals("1")) flags +=" \\Recent";
+								if(mail.get("seen").equals("1")) flags +=" \\Seen";
 								flags += ")"; //Cierra paréntesis de flags
 								count++;
 
@@ -229,12 +285,15 @@ public class IMAPServer {
 								
 								if(sendBody){
 									//Mandar TODO, sin flags
-									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+")");
-									out.println("* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+")");
+									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
+									out.println("* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
+
+									//Si entró aquí es porque se entró a ver el mail. Marcar como visto en base de datos:
+									(new SQLiteJDBC()).setMailAsSeen(loggedUser, mailNumber);
 								}else{
 									//Mandar solo header, con todos los flags
-									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
-									out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
+									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
+									out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
 								}
 								// LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
 								// out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
@@ -283,8 +342,13 @@ public class IMAPServer {
 					} else {
 						String[] parts = inputLine.split(" ");
 						// LOGGER.info("< " + parts[0] + " NO "+parts[1]+" failed" );
-						LOGGER.info("< " + parts[0] + " OK "+parts[1]+" completed" );
-						out.println(parts[0] + " OK "+parts[1]+" completed");
+						if(parts.length>1){
+							LOGGER.info("< " + parts[0] + " OK "+parts[1]+" completed" );
+							out.println(parts[0] + " OK "+parts[1]+" completed");
+						}else{
+							LOGGER.info("< " + parts[0] + " OK completed" );
+							out.println(parts[0] + " OK completed");
+						}
 						// out.println(parts[0] + " NO "+parts[1]+" failed");
 					}
 				}
