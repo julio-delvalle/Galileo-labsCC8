@@ -88,14 +88,17 @@ class SMTPClientHandler extends Thread {
 						//	out.println("501 Syntax Error, " + clientName + " is not a valid server name." );
 						//}
 					} else if (line.startsWith("MAIL FROM:")) {
-						mailFromReceived = line.substring(line.indexOf('<')+1, line.indexOf('>'));
+						mailFromReceived = line.split(":")[1].trim().replace("<", "").replace(">", "");
+						// mailFromReceived = line.substring(line.indexOf('<')+1, line.indexOf('>'));
 						out.println("250 OK MAIL FROM "+mailFromReceived);
 						//if(validateServerName(clientName)){
 						//}else{
 						//	out.println("501 Syntax Error, " + mailFromReceived + " is not a valid mail address." );
 						//}
 					} else if (line.startsWith("RCPT TO:")) {
-						rcptToReceived = line.substring(line.indexOf('<')+1, line.indexOf('>'));
+						rcptToReceived = line.split(":")[1].trim().replace("<", "").replace(">", "");
+
+						// rcptToReceived = line.substring(line.indexOf('<')+1, line.indexOf('>'));
 						out.println("250 OK RCPT TO "+rcptToReceived);
 						rcptToReceivedArray.add(rcptToReceived); 
 						//if(validateServerName(clientName)){

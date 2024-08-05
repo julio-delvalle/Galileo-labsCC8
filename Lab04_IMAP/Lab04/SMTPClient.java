@@ -130,20 +130,20 @@ public class SMTPClient {
 			System.out.println("-> fromServer = " + fromServer);
 			
 			if(fromServer.startsWith("354")){
-				out.println("Subject: "+subjectParam);
-				System.out.println("Subject: "+subjectParam);
+				// out.println("Subject: "+subjectParam.trim());
+				// System.out.println("Subject: "+subjectParam.trim());
 				
-				out.println("From: "+fromParam);
-				System.out.println("From: "+fromParam);
+				// out.println("From: "+fromParam.trim());
+				// System.out.println("From: "+fromParam.trim());
 				
-				out.println("To: "+toParamStr);
-				System.out.println("To: "+toParamStr);
+				// out.println("To: "+toParamStr.trim());
+				// System.out.println("To: "+toParamStr.trim());
 				
-				out.println("");
-				System.out.println("");
+				// out.println("");
+				// System.out.println("");
 				
-				out.println(bodyParam);
-				System.out.println(bodyParam);
+				out.println(bodyParam.trim());
+				System.out.println(bodyParam.trim());
 				
 				out.println(".");
 				System.out.println(".");

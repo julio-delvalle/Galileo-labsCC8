@@ -1,0 +1,10 @@
+240805155243806 SMTPClientHandler.run()	INFO: -> fromClient: EHLO [127.0.0.1]
+240805155243816 SMTPClientHandler.run()	INFO: -> no command fromClient: EHLO [127.0.0.1]
+240805155243818 SMTPClientHandler.run()	INFO: -> fromClient: HELO [127.0.0.1]
+240805155243821 SMTPClientHandler.run()	INFO: -> fromClient: MAIL FROM:<julio@julio.com>
+240805155243822 SMTPClientHandler.run()	INFO: -> fromClient: RCPT TO:<puta@motomoto.com>
+240805155243823 SMTPClientHandler.run()	INFO: -> fromClient: DATA
+240805155243979 SMTPClientHandler.run()	INFO: Se reenvió el correo a motomoto.com!
+240805155244080 SMTPClientHandler.run()	INFO: 250 OK DATA #42 <-- ID ROW 
+240805155249094 SMTPClientHandler.run()	INFO: -> fromClient: QUIT
+240805155249095 SMTPClientHandler.run()	INFO: QUIT 

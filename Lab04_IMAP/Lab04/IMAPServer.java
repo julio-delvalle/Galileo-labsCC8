@@ -178,7 +178,6 @@ public class IMAPServer {
 								LOGGER.info("< " + "* LIST (\\HasNoChildren) \"\" \"Sent\"");
 								out.println("* LIST (\\HasNoChildren) \"\" \"Sent\"");
 
-
 								LOGGER.info("< " + parts[0] + " OK LIST completed");
 								out.println(parts[0] + " OK LIST completed");
 						}else{

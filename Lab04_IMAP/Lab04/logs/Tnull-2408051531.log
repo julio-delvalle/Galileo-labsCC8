@@ -1,0 +1,5 @@
+240805153122420 SMTPClientHandler.run()	INFO: -> fromClient: HELO pablo01@pablo.com
+240805153122423 SMTPClientHandler.run()	INFO: -> fromClient: MAIL FROM: pablo01@pablo.com
+240805153122427 SMTPClientHandler.run()	INFO: -> ERROR! fromClient: MAIL FROM: pablo01@pablo.com
+
+java.lang.StringIndexOutOfBoundsException: Range [0, -1) out of bounds for length 28
