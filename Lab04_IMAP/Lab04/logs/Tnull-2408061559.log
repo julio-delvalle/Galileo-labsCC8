@@ -1,0 +1,66 @@
+240806155914042 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240806155916501 IMAPServer$ClientHandler.run()	INFO: > 52 login "julio@julio.com" "admin"
+240806155916503 IMAPServer$ClientHandler.run()	INFO: < 52 OK LOGIN completed
+240806155916505 IMAPServer$ClientHandler.run()	INFO: > 53 capability
+240806155916505 IMAPServer$ClientHandler.run()	INFO: < 53 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240806155916539 IMAPServer$ClientHandler.run()	INFO: > 54 namespace
+240806155916540 IMAPServer$ClientHandler.run()	INFO: < 54 OK namespace completed
+240806155916541 IMAPServer$ClientHandler.run()	INFO: > 55 ID ("name" "Thunderbird" "version" "128.0.1")
+240806155916542 IMAPServer$ClientHandler.run()	INFO: < 55 OK ID completed
+240806155916543 IMAPServer$ClientHandler.run()	INFO: > 56 list (subscribed) "" "*" return (special-use)
+240806155916544 IMAPServer$ClientHandler.run()	INFO: < 56 OK list completed
+240806155916549 IMAPServer$ClientHandler.run()	INFO: > 57 list "" "INBOX"
+240806155916550 IMAPServer$ClientHandler.run()	INFO: ------------ RECIBÍ: rf1:  rf2:INBOX
+240806155916551 IMAPServer$ClientHandler.run()	INFO: < 57 OK LIST completed
+240806155916553 IMAPServer$ClientHandler.run()	INFO: > 58 list "" "Trash"
+240806155916554 IMAPServer$ClientHandler.run()	INFO: ------------ RECIBÍ: rf1:  rf2:Trash
+240806155916555 IMAPServer$ClientHandler.run()	INFO: < 58 OK LIST completed
+240806155916557 IMAPServer$ClientHandler.run()	INFO: > 59 create "Trash"
+240806155916558 IMAPServer$ClientHandler.run()	INFO: < 59 OK create completed
+240806155916573 IMAPServer$ClientHandler.run()	INFO: > 60 subscribe "Trash"
+240806155916574 IMAPServer$ClientHandler.run()	INFO: < 60 OK subscribe completed
+240806155916575 IMAPServer$ClientHandler.run()	INFO: > 61 list "" "Trash"
+240806155916576 IMAPServer$ClientHandler.run()	INFO: ------------ RECIBÍ: rf1:  rf2:Trash
+240806155916577 IMAPServer$ClientHandler.run()	INFO: < 61 OK LIST completed
+240806160149826 IMAPServer$ClientHandler.run()	INFO: > 62 append "Sent" (\Seen) {395+}
+240806160149826 IMAPServer$ClientHandler.run()	INFO: < 62 OK append completed
+240806160149826 IMAPServer$ClientHandler.run()	INFO: > Message-ID: <2c7a4ac6-634a-45a6-91f0-c0da83b37a70@julio.com>
+240806160149826 IMAPServer$ClientHandler.run()	INFO: < Message-ID: OK <2c7a4ac6-634a-45a6-91f0-c0da83b37a70@julio.com> completed
+240806160149827 IMAPServer$ClientHandler.run()	INFO: > Date: Tue, 6 Aug 2024 16:01:49 -0600
+240806160149827 IMAPServer$ClientHandler.run()	INFO: < Date: OK Tue, completed
+240806160149827 IMAPServer$ClientHandler.run()	INFO: > MIME-Version: 1.0
+240806160149828 IMAPServer$ClientHandler.run()	INFO: < MIME-Version: OK 1.0 completed
+240806160149828 IMAPServer$ClientHandler.run()	INFO: > User-Agent: Mozilla Thunderbird
+240806160149829 IMAPServer$ClientHandler.run()	INFO: < User-Agent: OK Mozilla completed
+240806160149829 IMAPServer$ClientHandler.run()	INFO: > Content-Language: en-US
+240806160149829 IMAPServer$ClientHandler.run()	INFO: < Content-Language: OK en-US completed
+240806160149829 IMAPServer$ClientHandler.run()	INFO: > To: pablo01@pablo.com
+240806160149830 IMAPServer$ClientHandler.run()	INFO: < To: OK pablo01@pablo.com completed
+240806160149830 IMAPServer$ClientHandler.run()	INFO: > From: Julio Test <julio@julio.com>
+240806160149830 IMAPServer$ClientHandler.run()	INFO: < From: OK Julio completed
+240806160149831 IMAPServer$ClientHandler.run()	INFO: > Subject: De julio a pablo
+240806160149831 IMAPServer$ClientHandler.run()	INFO: < Subject: OK De completed
+240806160149831 IMAPServer$ClientHandler.run()	INFO: > Content-Type: text/plain; charset=UTF-8; format=flowed
+240806160149832 IMAPServer$ClientHandler.run()	INFO: < Content-Type: OK text/plain; completed
+240806160149832 IMAPServer$ClientHandler.run()	INFO: > Content-Transfer-Encoding: 7bit
+240806160149833 IMAPServer$ClientHandler.run()	INFO: < Content-Transfer-Encoding: OK 7bit completed
+240806160149833 IMAPServer$ClientHandler.run()	INFO: > 
+240806160149833 IMAPServer$ClientHandler.run()	INFO: <  OK completed
+240806160149834 IMAPServer$ClientHandler.run()	INFO: > HOla soy julio
+240806160149834 IMAPServer$ClientHandler.run()	INFO: < HOla OK soy completed
+240806160149834 IMAPServer$ClientHandler.run()	INFO: > 
+240806160149835 IMAPServer$ClientHandler.run()	INFO: <  OK completed
+240806160149835 IMAPServer$ClientHandler.run()	INFO: > 
+240806160149835 IMAPServer$ClientHandler.run()	INFO: <  OK completed
+240806160149836 IMAPServer$ClientHandler.run()	INFO: > test
+240806160149836 IMAPServer$ClientHandler.run()	INFO: < test OK completed
+240806160149836 IMAPServer$ClientHandler.run()	INFO: > 
+240806160149837 IMAPServer$ClientHandler.run()	INFO: <  OK completed
+240806160149837 IMAPServer$ClientHandler.run()	INFO: > 
+240806160149837 IMAPServer$ClientHandler.run()	INFO: <  OK completed
+240806160149837 IMAPServer$ClientHandler.run()	INFO: > newline
+240806160149837 IMAPServer$ClientHandler.run()	INFO: < newline OK completed
+240806160149838 IMAPServer$ClientHandler.run()	INFO: > 
+240806160149838 IMAPServer$ClientHandler.run()	INFO: <  OK completed
+240806160149838 IMAPServer$ClientHandler.run()	INFO: > 
+240806160149838 IMAPServer$ClientHandler.run()	INFO: <  OK completed

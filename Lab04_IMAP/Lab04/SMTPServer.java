@@ -108,7 +108,9 @@ class SMTPClientHandler extends Thread {
 					} else if (line.equals("DATA")) {
 						out.println("354 End data with <CR><LF>.<CR><LF>");
 						while ((line = in.nextLine()) != null) {
-							dataReceived += "\n"+line;
+
+							if(!line.equals(".")) dataReceived += "\n"+line;
+							
 							if (line.equals(".")) {
 								
 								

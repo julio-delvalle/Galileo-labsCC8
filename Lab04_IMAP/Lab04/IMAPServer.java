@@ -220,8 +220,9 @@ public class IMAPServer {
 								if(mail.get("seen").equals("1")) flags +=" \\Seen";
 								flags += "))"; //Cierra 2 paréntesis por el de (UID ...
 								count++;
-								LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags);
-								out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags);
+								// CAMBIAR AQUÍ
+								LOGGER.info("< " + "* "+mail.get("id")+" FETCH (UID "+mail.get("id")+" FLAGS "+flags);
+								out.println("* "+mail.get("id")+" FETCH (UID "+mail.get("id")+" FLAGS "+flags);
 							}
 
 							LOGGER.info("< " + parts[0] + " OK FETCH completed");
@@ -250,14 +251,16 @@ public class IMAPServer {
 
 								String bodyToSend = sendBody ? mail.get("body") : mail.get("body").split("\n\n")[0] ; //mail.get("body").split("\n\n")[0] es el HEADER SOLO.
 								
+
+								// ========= CAMBIAR AQUÍ
 								if(sendBody){
 									//Mandar TODO, sin flags
-									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
-									out.println("* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
+									LOGGER.info("< " + "* "+mail.get("id")+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
+									out.println("* "+mail.get("id")+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
 								}else{
 									//Mandar solo header, con todos los flags
-									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
-									out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
+									LOGGER.info("< " + "* "+mail.get("id")+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n\n)");
+									out.println("* "+mail.get("id")+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n\n)");
 								}
 
 							}
@@ -268,12 +271,16 @@ public class IMAPServer {
 
 						}else if(parts[3].matches("\\d+")){		//forma a -- pide un solo correo
 							int mailNumber = Integer.parseInt(parts[3]);
+
+							LOGGER.info("ME PIDIERON EL CORREO "+mailNumber);
 							
 							List<Map<String,String>> mailsInfo = (new SQLiteJDBC()).getUserSingleMail(loggedUser, mailNumber);
-
-
+							
+							
 							int count = 0;
 							for (Map<String,String> mail : mailsInfo) {
+								LOGGER.info("OBTUVE EL CORREO "+mail.toString());
+
 								String flags = "(";
 								if(mail.get("recent").equals("1")) flags +=" \\Recent";
 								if(mail.get("seen").equals("1")) flags +=" \\Seen";
@@ -282,17 +289,19 @@ public class IMAPServer {
 
 								String bodyToSend = sendBody ? mail.get("body") : mail.get("body").split("\n\n")[0] ; //mail.get("body").split("\n\n")[0] es el HEADER SOLO.
 								
+
+								// ====== CAMBIAR AQUI
 								if(sendBody){
 									//Mandar TODO, sin flags
-									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
-									out.println("* "+count+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
+									LOGGER.info("< " + "* "+mail.get("id")+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
+									out.println("* "+mail.get("id")+" FETCH (UID "+mail.get("id")+" RFC822.SIZE "+bodyToSend.length()+" BODY[] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
 
 									//Si entró aquí es porque se entró a ver el mail. Marcar como visto en base de datos:
 									(new SQLiteJDBC()).setMailAsSeen(loggedUser, mailNumber);
 								}else{
 									//Mandar solo header, con todos los flags
-									LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
-									out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n)");
+									LOGGER.info("< " + "* "+mail.get("id")+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n\n)");
+									out.println("* "+mail.get("id")+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+"\n\n)");
 								}
 								// LOGGER.info("< " + "* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");
 								// out.println("* "+count+" FETCH (UID "+mail.get("id")+" FLAGS "+flags+" BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {"+bodyToSend.length()+"}"+bodyToSend+")");

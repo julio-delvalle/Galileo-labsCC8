@@ -1,0 +1,127 @@
+240806155845595 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240806155845604 IMAPServer$ClientHandler.run()	INFO: > 61 login "julio2@julio.com" "admin"
+240806155845608 IMAPServer$ClientHandler.run()	INFO: < 61 OK LOGIN completed
+240806155845609 IMAPServer$ClientHandler.run()	INFO: > 62 capability
+240806155845611 IMAPServer$ClientHandler.run()	INFO: < 62 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240806155845612 IMAPServer$ClientHandler.run()	INFO: > 63 namespace
+240806155845615 IMAPServer$ClientHandler.run()	INFO: < 63 OK namespace completed
+240806155845616 IMAPServer$ClientHandler.run()	INFO: > 64 ID ("name" "Thunderbird" "version" "128.0.1")
+240806155845618 IMAPServer$ClientHandler.run()	INFO: < 64 OK ID completed
+240806155845619 IMAPServer$ClientHandler.run()	INFO: > 65 select "Sent"
+240806155845742 IMAPServer$ClientHandler.run()	INFO: < * 9 EXISTS
+240806155845743 IMAPServer$ClientHandler.run()	INFO: < * 1 RECENT
+240806155845743 IMAPServer$ClientHandler.run()	INFO: < 65 OK [READ-WRITE] SELECT completed
+240806155845744 IMAPServer$ClientHandler.run()	INFO: > 66 getquotaroot "Sent"
+240806155845745 IMAPServer$ClientHandler.run()	INFO: < 66 OK getquotaroot completed
+240806155845745 IMAPServer$ClientHandler.run()	INFO: > 67 UID fetch 1:* (FLAGS)
+240806155845751 IMAPServer$ClientHandler.run()	INFO: < * 26 FETCH (UID 26 FLAGS ( \Seen))
+240806155845751 IMAPServer$ClientHandler.run()	INFO: < * 27 FETCH (UID 27 FLAGS ( \Seen))
+240806155845752 IMAPServer$ClientHandler.run()	INFO: < * 28 FETCH (UID 28 FLAGS ( \Seen))
+240806155845753 IMAPServer$ClientHandler.run()	INFO: < * 29 FETCH (UID 29 FLAGS ())
+240806155845753 IMAPServer$ClientHandler.run()	INFO: < * 30 FETCH (UID 30 FLAGS ())
+240806155845754 IMAPServer$ClientHandler.run()	INFO: < * 31 FETCH (UID 31 FLAGS ())
+240806155845755 IMAPServer$ClientHandler.run()	INFO: < * 32 FETCH (UID 32 FLAGS ())
+240806155845755 IMAPServer$ClientHandler.run()	INFO: < * 33 FETCH (UID 33 FLAGS ())
+240806155845756 IMAPServer$ClientHandler.run()	INFO: < * 64 FETCH (UID 64 FLAGS ())
+240806155845757 IMAPServer$ClientHandler.run()	INFO: < 67 OK FETCH completed
+240806155845766 IMAPServer$ClientHandler.run()	INFO: > 68 UID fetch 26 (UID RFC822.SIZE FLAGS BODY.PEEK[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)])
+240806155845769 IMAPServer$ClientHandler.run()	INFO: ME PIDIERON EL CORREO 26
+240806155845773 IMAPServer$ClientHandler.run()	INFO: OBTUVE EL CORREO {id=26, body=
+Content-Type: multipart/alternative;
+ boundary="------------EnqS9YS8YGReBUwkBh0JwLcR"
+Message-ID: <c5f8bf56-4df9-4bb8-883c-ff3f0d88e3fa@julio.com>
+Date: Sun, 4 Aug 2024 02:54:08 -0600
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: julio@julio.com
+From: Julio2 <julio2@julio.com>
+Subject: Hola Julio
+
+This is a multi-part message in MIME format.
+--------------EnqS9YS8YGReBUwkBh0JwLcR
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Te mando un nuevo mensaje.
+
+
+Ahora deberías ver este texto en rojo.
+
+
+Y este en azul.
+
+--------------EnqS9YS8YGReBUwkBh0JwLcR
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <p>Te mando un nuevo mensaje. <br>
+    </p>
+    <p><br>
+    </p>
+    <p><font color="#ff0000">Ahora deberías ver este texto en rojo.</font></p>
+    <p><font color="#ff0000"><br>
+      </font></p>
+    <p><font color="#0000ff">Y este en azul.<br>
+      </font></p>
+  </body>
+</html>
+
+--------------EnqS9YS8YGReBUwkBh0JwLcR--
+., recent=0, seen=1}
+240806155845785 IMAPServer$ClientHandler.run()	INFO: < * 26 FETCH (UID 26 FLAGS ( \Seen) BODY[HEADER.FIELDS (From To Cc Bcc Subject Date Message-ID Priority X-Priority References Newsgroups In-Reply-To Content-Type Reply-To)] {330}
+Content-Type: multipart/alternative;
+ boundary="------------EnqS9YS8YGReBUwkBh0JwLcR"
+Message-ID: <c5f8bf56-4df9-4bb8-883c-ff3f0d88e3fa@julio.com>
+Date: Sun, 4 Aug 2024 02:54:08 -0600
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: julio@julio.com
+From: Julio2 <julio2@julio.com>
+Subject: Hola Julio
+)
+240806155845787 IMAPServer$ClientHandler.run()	INFO: < 68 OK UID FETCH completed
+240806155845799 IMAPServer$ClientHandler.run()	INFO: > 69 UID fetch 33 (UID RFC822.SIZE BODY[])
+240806155845800 IMAPServer$ClientHandler.run()	INFO: ME PIDIERON EL CORREO 33
+240806155845802 IMAPServer$ClientHandler.run()	INFO: OBTUVE EL CORREO {id=33, body=
+Message-ID: <37827812-b515-4271-a929-4e2ba9b4b189@julio.com>
+Date: Sun, 4 Aug 2024 03:33:28 -0600
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: julio@julio.com
+From: Julio2 <julio2@julio.com>
+Subject: Sent prueba en vivo
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Esta sí debería aparecer de una.
+
+., recent=0, seen=0}
+240806155845811 IMAPServer$ClientHandler.run()	INFO: < * 33 FETCH (UID 33 RFC822.SIZE 377 BODY[] {377}
+Message-ID: <37827812-b515-4271-a929-4e2ba9b4b189@julio.com>
+Date: Sun, 4 Aug 2024 03:33:28 -0600
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: julio@julio.com
+From: Julio2 <julio2@julio.com>
+Subject: Sent prueba en vivo
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Esta sí debería aparecer de una.
+
+.
+)
+240806155845822 IMAPServer$ClientHandler.run()	INFO: < 69 OK UID FETCH completed
+240806155845881 IMAPServer$ClientHandler.run()	INFO: > 70 logout
+240806155845882 IMAPServer$ClientHandler.run()	INFO: < 70 OK logout completed

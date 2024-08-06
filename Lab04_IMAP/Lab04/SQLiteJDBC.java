@@ -608,11 +608,10 @@ public class SQLiteJDBC {
 					case when date > datetime('now', '-1 day') then 1 else 0 end as recent,
 					data as body
 					from SMTP_DB 
-					where RCPT_TO = ?
-						and IDmail = ?"""; 
+					where IDmail = ?"""; 
 				var pstmt = c.prepareStatement(sql);
-				pstmt.setString(1, user);
-				pstmt.setInt(2, mailNumber);
+				// pstmt.setString(1, user);
+				pstmt.setInt(1, mailNumber);
 				rs = pstmt.executeQuery();
 				while (rs.next()) {
 					Map<String, String> mail = new HashMap<>();	

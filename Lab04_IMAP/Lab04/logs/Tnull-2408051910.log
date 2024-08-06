@@ -1,0 +1,7 @@
+240805191018980 SMTPClientHandler.run()	INFO: -> fromClient: HELO pablo01@pablo.com
+240805191018983 SMTPClientHandler.run()	INFO: -> fromClient: MAIL FROM: pablo01@pablo.com
+240805191018990 SMTPClientHandler.run()	INFO: -> fromClient: RCPT TO: julio@julio.com
+240805191018994 SMTPClientHandler.run()	INFO: -> fromClient: DATA
+240805191019046 SMTPClientHandler.run()	INFO: 250 OK DATA #51 <-- ID ROW 
+240805191019050 SMTPClientHandler.run()	INFO: -> fromClient: QUIT
+240805191019050 SMTPClientHandler.run()	INFO: QUIT 
