@@ -1,0 +1,24 @@
+240807162326335 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240807162326399 IMAPServer$ClientHandler.run()	INFO: > 85 login "julio2@julio.com" "admin"
+240807162326400 IMAPServer$ClientHandler.run()	INFO: < 85 OK LOGIN completed
+240807162326402 IMAPServer$ClientHandler.run()	INFO: > 86 capability
+240807162326403 IMAPServer$ClientHandler.run()	INFO: < 86 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240807162326404 IMAPServer$ClientHandler.run()	INFO: > 87 namespace
+240807162326405 IMAPServer$ClientHandler.run()	INFO: < 87 OK namespace completed
+240807162326406 IMAPServer$ClientHandler.run()	INFO: > 88 ID ("name" "Thunderbird" "version" "128.1.0")
+240807162326407 IMAPServer$ClientHandler.run()	INFO: < 88 OK ID completed
+240807162326410 IMAPServer$ClientHandler.run()	INFO: > 89 list (subscribed) "" "*" return (special-use)
+240807162326411 IMAPServer$ClientHandler.run()	INFO: < 89 OK list completed
+240807162326412 IMAPServer$ClientHandler.run()	INFO: > 90 list "" "INBOX"
+240807162326414 IMAPServer$ClientHandler.run()	INFO: ------------ RECIBÍ: rf1:  rf2:INBOX
+240807162326415 IMAPServer$ClientHandler.run()	INFO: < 90 OK LIST completed
+240807162326417 IMAPServer$ClientHandler.run()	INFO: > 91 list "" "Trash"
+240807162326418 IMAPServer$ClientHandler.run()	INFO: ------------ RECIBÍ: rf1:  rf2:Trash
+240807162326418 IMAPServer$ClientHandler.run()	INFO: < 91 OK LIST completed
+240807162326420 IMAPServer$ClientHandler.run()	INFO: > 92 create "Trash"
+240807162326421 IMAPServer$ClientHandler.run()	INFO: < 92 OK create completed
+240807162326423 IMAPServer$ClientHandler.run()	INFO: > 93 subscribe "Trash"
+240807162326424 IMAPServer$ClientHandler.run()	INFO: < 93 OK subscribe completed
+240807162326425 IMAPServer$ClientHandler.run()	INFO: > 94 list "" "Trash"
+240807162326426 IMAPServer$ClientHandler.run()	INFO: ------------ RECIBÍ: rf1:  rf2:Trash
+240807162326428 IMAPServer$ClientHandler.run()	INFO: < 94 OK LIST completed

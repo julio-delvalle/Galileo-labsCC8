@@ -1,0 +1,27 @@
+240807163855667 IMAPServer$ClientHandler.run()	INFO: < * OK [CAPABILITY IMAP4rev1] IMAP Server Ready
+240807163855670 IMAPServer$ClientHandler.run()	INFO: > 45 login "julio2@julio.com" "admin"
+240807163855670 IMAPServer$ClientHandler.run()	INFO: < 45 OK LOGIN completed
+240807163855671 IMAPServer$ClientHandler.run()	INFO: > 46 capability
+240807163855671 IMAPServer$ClientHandler.run()	INFO: < 46 OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE NOTIFY SPECIAL-USE QUOTA]
+240807163855672 IMAPServer$ClientHandler.run()	INFO: > 47 namespace
+240807163855672 IMAPServer$ClientHandler.run()	INFO: < 47 OK namespace completed
+240807163855673 IMAPServer$ClientHandler.run()	INFO: > 48 ID ("name" "Thunderbird" "version" "128.1.0")
+240807163855673 IMAPServer$ClientHandler.run()	INFO: < 48 OK ID completed
+240807163855674 IMAPServer$ClientHandler.run()	INFO: > 49 select "INBOX"
+240807163855676 IMAPServer$ClientHandler.run()	INFO: < * 1 EXISTS
+240807163855676 IMAPServer$ClientHandler.run()	INFO: < * 1 RECENT
+240807163855677 IMAPServer$ClientHandler.run()	INFO: < * OK [UNSEEN -1] First unseen.
+240807163855677 IMAPServer$ClientHandler.run()	INFO: < 49 OK [READ-WRITE] SELECT completed
+240807163855677 IMAPServer$ClientHandler.run()	INFO: > 50 getquotaroot "INBOX"
+240807163855678 IMAPServer$ClientHandler.run()	INFO: < 50 OK getquotaroot completed
+240807163855678 IMAPServer$ClientHandler.run()	INFO: > 51 UID fetch 1:* (FLAGS)
+240807163855679 IMAPServer$ClientHandler.run()	INFO: < * 4 FETCH (UID 4 FLAGS ( \Recent \Seen))
+240807163855680 IMAPServer$ClientHandler.run()	INFO: < 51 OK FETCH completed
+240807163857683 IMAPServer$ClientHandler.run()	INFO: > 52 IDLE
+240807163857684 IMAPServer$ClientHandler.run()	INFO: < 52 OK IDLE completed
+240807163907906 IMAPServer$ClientHandler.run()	INFO: > DONE
+240807163907907 IMAPServer$ClientHandler.run()	INFO: < DONE OK completed
+240807163907909 IMAPServer$ClientHandler.run()	INFO: > 53 close
+240807163907910 IMAPServer$ClientHandler.run()	INFO: < 53 OK close completed
+240807163907911 IMAPServer$ClientHandler.run()	INFO: > 54 logout
+240807163907912 IMAPServer$ClientHandler.run()	INFO: < 54 OK logout completed
