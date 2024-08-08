@@ -129,11 +129,6 @@ public class Client {
                     System.out.print("Ingrese la operación a realizar: ");
                     userInput = keyboard.nextLine();
                     
-                    //en UDP no se cierra el Server con EXIT entonces no hay que enviarlo.
-                    if("EXIT".equals(userInput) || "exit".equals(userInput) || "Exit".equals(userInput)){
-                        clientSocket.close();
-                        break;
-                    }
                     
                     sendData = userInput.getBytes();
                     sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName(server), port);
@@ -144,6 +139,12 @@ public class Client {
                     clientSocket.receive(receivePacket);
                     String serverMessage = new String(receivePacket.getData(),0,receivePacket.getLength());
                     System.out.println("> "+server+" server ["+dtf.format(LocalDateTime.now())+"] UDP: "+serverMessage);
+                    
+                    //en UDP no se cierra el Server con EXIT entonces no hay que enviarlo.
+                    if("EXIT".equals(userInput) || "exit".equals(userInput) || "Exit".equals(userInput)){
+                        clientSocket.close();
+                        break;
+                    }
                 }
                 
                 System.out.println("...Bye!");

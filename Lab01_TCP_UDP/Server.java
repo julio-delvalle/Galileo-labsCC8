@@ -169,7 +169,7 @@ public class Server  {
                     String clientMessage = new String(receivePacket.getData(),0,receivePacket.getLength());
                     System.out.println("> "+receivePacket.getAddress()+" client ["+dtf.format(LocalDateTime.now())+"] UDP: "+clientMessage);
 
-                    /*  ====== UDP NO SE CIERRA AL RECIBIR EXIT ========
+                    /*  ====== UDP NO SE CIERRA AL RECIBIR EXIT ========*/
                     
                     if("EXIT".equals(clientMessage) || "exit".equals(clientMessage) || "Exit".equals(clientMessage)){
                         
@@ -179,7 +179,7 @@ public class Server  {
 
                         System.out.println("< "+receivePacket.getAddress()+" server ["+dtf.format(LocalDateTime.now())+"] UDP: "+clientMessage);
                         break;
-                    }*/
+                    }
 
 
                     char operator = ' ';
