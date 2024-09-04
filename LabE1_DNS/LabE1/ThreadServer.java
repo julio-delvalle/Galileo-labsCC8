@@ -58,6 +58,7 @@ public class ThreadServer implements Runnable {
         this.socket = socket;
         this.delay = delay;
 
+        listIPv4.put("www.youtube.com", "142.250.217.238");
         listIPv4.put("www.google.com", "8.8.8.8");
     }
 
@@ -70,13 +71,20 @@ public class ThreadServer implements Runnable {
                 LOGGER.info("("+nThreadServer+") > Thread waiting for new client....");
                 receivePacket = new DatagramPacket(input, input.length);
                 socket.receive(receivePacket);
-                InetAddress c_address = receivePacket.getAddress();
-                int port_c = receivePacket.getPort();
-                String mess = new String(receivePacket.getData());
+                InetAddress clientAddress = receivePacket.getAddress();
+                int clientPort = receivePacket.getPort();
+                String receiveMessage = new String(receivePacket.getData());
+
+
+
                 LOGGER.info("LEGIBLE: " + filterPrintableChars(receivePacket.getData(), receivePacket.getLength()));
-                LOGGER.info("HEXADECIMAL: " + bytesToHex(receivePacket.getData(),
-                        receivePacket.getLength()));
-                LOGGER.info("Consulta DNS al dominio: " + extractDomainName(receivePacket.getData()));
+                LOGGER.info("HEXADECIMAL: " + bytesToHex(receivePacket.getData(),receivePacket.getLength()));
+                // LOGGER.info("Consulta DNS al dominio: " + extractDomainName(receivePacket.getData()));
+
+
+
+                
+
 
                 // InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[0]);
                 // DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,
