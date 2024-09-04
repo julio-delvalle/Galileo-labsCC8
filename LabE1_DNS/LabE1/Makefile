@@ -7,13 +7,14 @@ JVM= java
 		$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
-		Server.java \
+		DNSServer.java \
 		Client.java \
 		FormatterWebServer.java \
 		ThreadServer.java \
-		
+		DNSResponse.java \
+		DNSRequest.java \
 
-MAIN = Server
+MAIN = DNSServer
 
 default: classes
 

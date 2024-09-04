@@ -77,18 +77,26 @@ public class ThreadServer implements Runnable {
 
 
 
+                
+                
+                
                 LOGGER.info("LEGIBLE: " + filterPrintableChars(receivePacket.getData(), receivePacket.getLength()));
                 LOGGER.info("HEXADECIMAL: " + bytesToHex(receivePacket.getData(),receivePacket.getLength()));
+                
+                DNSRequest receivedRequest = formatAndGetDNSRequest(receivePacket.getData());
+                receivedRequest.printDNSRequest();
+
+                LOGGER.info("\n\n\n");
+
                 // LOGGER.info("Consulta DNS al dominio: " + extractDomainName(receivePacket.getData()));
 
 
 
-                
 
 
+                //Resend the query to the first DNS server
                 // InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[0]);
-                // DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,
-                //         53);
+                // DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,53);
                 // socket.send(dnsPacket);
 
                 // socket.setSoTimeout(2000);
@@ -115,6 +123,50 @@ public class ThreadServer implements Runnable {
             sb.append(String.format("%x ", bytes[i]));
         }
         return sb.toString().trim();
+    }
+
+    private static DNSRequest formatAndGetDNSRequest(byte[] data) {
+        ByteBuffer buffer = ByteBuffer.wrap(data);
+
+        // Gets all the header info
+        short transactionID = buffer.getShort(0);
+        short flags = buffer.getShort(2);
+        short numQuestions = buffer.getShort(4);
+        short numAnswerRRs = buffer.getShort(6);
+        short numAuthorityRRs = buffer.getShort(8);
+        short numAdditionalRRs = buffer.getShort(10);
+
+        //Get Question info, starting from byte 12
+        StringBuilder domainName = new StringBuilder();
+        int position = 12; 
+            //To get domain info:
+        while (buffer.get(position) != 0) {
+            int segmentLength = buffer.get(position); //Gets length of the next part of the domain
+            position++;
+            for (int i = 0; i < segmentLength; i++) { 
+                domainName.append((char) buffer.get(position));
+                position++;
+            }
+            domainName.append('.'); //Separates segments by point, building the domain name like dns.google.com
+        }
+        position++; //skips the \0 character
+        if (domainName.length() > 0) {
+            domainName.setLength(domainName.length() - 1); //Removes the last added point.
+        }
+
+        // Split the domain name 
+        String[] domainNameParts = domainName.toString().split("\\.");
+        int queryLabelCount = domainNameParts.length;
+
+            //To get QType and QClass
+        short queryType = buffer.getShort(position);
+        short queryClass = buffer.getShort(position + 2);
+
+        
+
+        DNSRequest returnRequest = new DNSRequest(transactionID, flags, numQuestions, numAnswerRRs, numAuthorityRRs, numAdditionalRRs,
+                                        domainName.toString(), domainName.toString().length(),domainNameParts, queryLabelCount, queryType, queryClass);
+        return returnRequest;
     }
 
     private static String filterPrintableChars(byte[] data, int length) {
@@ -279,7 +331,7 @@ public class ThreadServer implements Runnable {
             for (int i = 0; i < length; i++) {
                 domainName.append((char) query[position++]);
             }
-            domainName.append('.');
+            domainName.append('.'); // www.google.com
         }
         if (domainName.length() > 0) {
             domainName.setLength(domainName.length() - 1);
