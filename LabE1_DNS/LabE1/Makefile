@@ -10,6 +10,7 @@ CLASSES = \
 		Server.java \
 		Client.java \
 		FormatterWebServer.java \
+		ThreadServer.java \
 		
 
 MAIN = Server
