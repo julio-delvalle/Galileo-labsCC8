@@ -18,13 +18,20 @@ public class Main  {
     private static Integer nThreadServer;
 
 
-    private int serverSequence = 0;
-    private int clientSequence = 0;
+    private static int currentPacketId = 0;
+    private static int serverSequence = 0;
+    private static int clientSequence = 0;
+    private static int clientPort = 0;
+    private static int serverPort = 80;
+    private static int windowSize = 65535;
+    private static int packetLossProbability = 0;
+    private static String dataTransmissionDirection = "ambos";
+
 
 
     private static String textDonQuijote = """
-                                           En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que viv\u00eda un hidalgo de los de lanza en astillero, adarga antigua, roc\u00edn flaco y galgo corredor. Una olla de algo m\u00e1s vaca que carnero, salpic\u00f3n las m\u00e1s noches, duelos y quebrantos los s\u00e1bados, lentejas los viernes, alg\u00fan palomino de a\u00f1adidura los domingos, consum\u00edan las tres partes de su hacienda. El resto della conclu\u00edan sayo de velarte, calzas de velludo para las fiestas con sus pantuflos de lo mismo, los d\u00edas de entre semana se honraba con su vellori de lo m\u00e1s fino. Ten\u00eda en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que as\u00ed ensillaba el roc\u00edn como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta a\u00f1os, era de complexi\u00f3n recia, seco de carnes, enjuto de rostro; gran madrugador y amigo de la caza. Quieren decir que ten\u00eda el sobrenombre de Quijada o Quesada (que en esto hay alguna diferencia en los autores que deste caso escriben), aunque por conjeturas veros\u00edmiles se deja entender que se llama Quijana; pero esto importa poco a nuestro cuento; basta que en la narraci\u00f3n d\u00e9l no se salga un punto de la verdad.
-                                           Es, pues, de saber, que este sobredicho hidalgo, los ratos que estaba ocioso (que eran los m\u00e1s del a\u00f1o) se daba a leer libros de caballer\u00edas con tanta afici\u00f3n y gusto, que olvid\u00f3 casi de todo punto el ejercicio de la caza, y aun la administraci\u00f3n de su hacienda; y lleg\u00f3 a tanto su curiosidad y desatino en esto, que vendi\u00f3 muchas hanegas de tierra de sembradura, para comprar libros de caballer\u00edas en que leer; y as\u00ed llev\u00f3 a su casa todos cuantos pudo haber dellos; y de todos ningunos le parec\u00edan tan bien como los que compuso el famoso Feliciano de Silva: porque la claridad de su prosa, y aquellas intrincadas razones suyas, le parec\u00edan de perlas; y m\u00e1s cuando llegaba a leer aquellos requiebros y cartas de desaf\u00edo, donde en muchas partes hallaba escrito: la raz\u00f3n de la sinraz\u00f3n que a mi raz\u00f3n se hace, de tal manera mi raz\u00f3n enflaquece, que con raz\u00f3n me quejo de la vuestra fermosura, y tambi\u00e9n cuando le\u00eda: los altos cielos que de vuestra divinidad divinamente con las estrellas se fortifican, y os hacen merecedora del merecimiento que merece la vuestra grandeza. Con estas y semejantes razones perd\u00eda el pobre caballero el juicio, y desvel\u00e1base por entenderlas, y desentra\u00f1arles el sentido, que no se lo sacara, ni las entendiera el mismo Arist\u00f3teles, si resucitara para s\u00f3lo ello. No estaba muy bien con las heridas que don Belianis daba y recib\u00eda, porque se imaginaba que por grandes maestros que le hubiesen curado, no dejar\u00eda de tener el rostro y todo el cuerpo lleno de cicatrices y se\u00f1ales; pero con todo alababa en su autor aquel acabar su libro con la promesa de aquella inacabable aventura, y muchas veces le vino deseo de tomar la pluma, y darle fin al pie de la letra como all\u00ed se promete; y sin duda alguna lo hiciera, y aun saliera con ello, si otros mayores y continuos pensamientos no se lo estorbaran.""";
+                                           En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino. Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza. Quieren decir que tenía el sobrenombre de Quijada, o Quesada, que en esto hay alguna diferencia en los autores que deste caso escriben; aunque por conjeturas verosímiles se deja entender que se llamaba Quijana. Pero esto importa poco a nuestro cuento: basta que en la narración dél no se salga un punto de la verdad.
+                                            Es, pues, de saber que este sobredicho hidalgo, los ratos que estaba ocioso, que eran los más del año, se daba a leer libros de caballerías, con tanta afición y gusto, que olvidó casi de todo punto el ejercicio de la caza, y aun la administración de su hacienda; y llegó a tanto su curiosidad y desatino en esto, que vendió muchas hanegas de tierra de sembradura para comprar libros de caballerías en que leer, y así, llevó a su casa todos cuantos pudo haber dellos; y de todos, ningunos le parecían tan bien como los que compuso el famoso Feliciano de Silva; porque la claridad de su prosa y aquellas entricadas razones suyas le parecían de perlas, y más cuando llegaba a leer aquellos requiebros y cartas de desafíos, donde en muchas partes hallaba escrito: «La razón de la sinrazón que a mi razón se hace, de tal manera mi razón enflaquece, que con razón me quejo de la vuestra fermosura». Y también cuando leía: «... los altos cielos que de vuestra divinidad divinamente con las estrellas os fortifican, y os hacen merecedora del merecimiento que merece la vuestra grandeza».""";
     private static String textLosMosqueteros = "El primer lunes del mes de abril de 1625, el burgo de Meung, donde nació el autor del Roman de la Rose, parecía estar en una revolución tan completa como si los hugonotes hubieran venido a hacer de ella una segunda Rochelle. Muchos burgueses, al ver huir a las mujeres por la calle Mayor, al oír gritar a los niños en el umbral de las puertas, se apresuraban a endosarse la coraza y, respaldando su aplomo algo incierto con un mosquete o una partesana, se dirigían hacia la hostería del Franc Meunier, ante la cual bullía, creciendo de minuto en minuto, un grupo compacto, ruidoso y lleno de curiosidad. En ese tiempo los pánicos eran frecuentes, y pocos días pasaban sin que una aldea a otra registrara en sus archivos algún acontecimiento de ese género. Estaban los señores que guerreaban entre sí; estaba el rey que hacía la guerra al cardenal; estaba el Español que hacía la guerra al rey. Luego, además de estas guerras sordas o públicas, secretas o patentes, estaban los ladrones, los mendigos, los hugonotes, los lobos y los lacayos que hacían la guerra a todo el mundo. Los burgueses se armaban siempre contra los ladrones, contra los lobos, contra los lacayos, con frecuencia contra los señores y los hugonotes, algunas veces contra el rey, pero nunca contra el cardenal ni contra el Español. De este hábito adquirido resulta, pues, que el susodicho primer lunes del mes de abril de 1625, los burgueses, al oír el barullo y no ver ni el banderín amarillo y rojo ni la librea del duque de Richelieu, se precipitaron hacia la hostería del Franc Meunier.";
     
     private static String textDonQuijoteCorto = """
@@ -53,14 +60,12 @@ public class Main  {
             System.out.println("Ingrese los siguientes parámetros: ");
             System.out.println(" * Puede presionar ENTER para valor Default.\n");
             // Default values
-            int windowSize = 65535;
-            int serverPort = 80;
-            int clientPort = new Random().nextInt(900) + 100; // Random entre 100 y 999
+            windowSize = 65535;
+            serverPort = 80;
+            clientPort = new Random().nextInt(900) + 100; // Random entre 100 y 999
             int clientInitialSequence = new Random().nextInt(200001) + 100000; // Random entre 100000 y 300000
             int serverInitialSequence = new Random().nextInt(200001) + 500000; // Random entre 500000 y 700000
-            int packetLossProbability = 0;
-            boolean useShortTexts = true;
-            String dataTransmissionDirection = "ambos";
+            boolean useShortTexts = false;
 
             Scanner scanner = new Scanner(System.in);
 
@@ -92,6 +97,7 @@ public class Main  {
             input = scanner.nextLine();
             try{if (!input.isEmpty()) {
                 clientInitialSequence = Integer.parseInt(input);
+                clientSequence = clientInitialSequence;
             }}catch(Exception e){
                 System.out.println("Valor inválido. Se usará el valor por defecto.");
             }
@@ -100,6 +106,7 @@ public class Main  {
             input = scanner.nextLine();
             try{if (!input.isEmpty()) {
                 serverInitialSequence = Integer.parseInt(input);
+                serverSequence = serverInitialSequence;
             }}catch(Exception e){
                 System.out.println("Valor inválido. Se usará el valor por defecto.");
             }
@@ -161,9 +168,9 @@ public class Main  {
                 if(input.toLowerCase().equals("n")){
                     useShortTexts = false;
                 }else if(input.toLowerCase().equals("s")){
+                    useShortTexts = true;
                     textDonQuijote = textDonQuijoteCorto;
                     textLosMosqueteros = textLosMosqueterosCorto;
-                    useShortTexts = true;
                 }else{
                     useShortTexts = false;
                     System.out.println("Valor inválido. Se usará el valor por defecto.");
@@ -225,10 +232,10 @@ public class Main  {
                 }
             }
 
-            LOGGER.info("Textos de Don Quijote: ");
-            for (String texto : textosDonQuijote) {
-                LOGGER.info(" (" + texto.length() + " caracteres) : " + texto);
-            }
+            LOGGER.info("Textos de Don Quijote: "+textosDonQuijote.size());
+            // for (String texto : textosDonQuijote) {
+            //     LOGGER.info(" (" + texto.length() + " caracteres) : " + texto);
+            // }
             LOGGER.info("MODA de longitud de palabras Don Quijote: " + getLengthMode(textosDonQuijote));
 
 
@@ -270,13 +277,33 @@ public class Main  {
                 }
             }
 
-            LOGGER.info("Textos de Los Mosqueteros: ");
-            for (String texto : textosLosMosqueteros) {
-                LOGGER.info(" (" + texto.length() + " caracteres) : " + texto);
-            }
+            LOGGER.info("Textos de Los Mosqueteros: "+textosLosMosqueteros.size());
+            // for (String texto : textosLosMosqueteros) {
+            //     LOGGER.info(" (" + texto.length() + " caracteres) : " + texto);
+            // }
             LOGGER.info("MODA de longitud de palabras Los mosqueteros: " + getLengthMode(textosLosMosqueteros));
 
 
+
+
+
+
+
+            //  =================== FIN DE LA INICIALIZACION ===================
+            
+            //  =================== ENVÍO DE PAQUETES ===================
+            clientSequence = clientInitialSequence;
+            serverSequence = serverInitialSequence;
+
+
+            //  =========== HANDSHAKE ===========
+            excecuteAndPrintHandshake();
+            
+            
+
+
+            // while(textosDonQuijote.size() > 0 || textosLosMosqueteros.size() > 0){
+            // }
 
 
 
@@ -295,67 +322,20 @@ public class Main  {
 
 
 
-    // Clase Packet para guardar la información de cada paquete enviado/recibido
-    class Packet {
-        private int id;
-        private String status;
-        private String sender;
-        private int sourcePort;
-        private int destinationPort;
-        private List<String> flags;
-        private int sequenceNumber;
-        private int ackNumber;
-        private int length;
-        private int windowSize;
+    
 
-        public Packet(int id, String status, String sender, int sourcePort, int destinationPort,
-                      List<String> flags, int sequenceNumber, int ackNumber, int length, int windowSize) {
-            this.id = id;
-            this.status = status;
-            this.sender = sender;
-            this.sourcePort = sourcePort;
-            this.destinationPort = destinationPort;
-            this.flags = flags;
-            this.sequenceNumber = sequenceNumber;
-            this.ackNumber = ackNumber;
-            this.length = length;
-            this.windowSize = windowSize;
-        }
 
-        // Getters and setters for all fields
-        public int getId() { return id; }
-        public void setId(int id) { this.id = id; }
-
-        public String getStatus() { return status; }
-        public void setStatus(String status) { this.status = status; }
-
-        public String getSender() { return sender; }
-        public void setSender(String sender) { this.sender = sender; }
-
-        public int getSourcePort() { return sourcePort; }
-        public void setSourcePort(int sourcePort) { this.sourcePort = sourcePort; }
-
-        public int getDestinationPort() { return destinationPort; }
-        public void setDestinationPort(int destinationPort) { this.destinationPort = destinationPort; }
-
-        public List<String> getFlags() { return flags; }
-        public void setFlags(List<String> flags) { this.flags = flags; }
-
-        public int getSequenceNumber() { return sequenceNumber; }
-        public void setSequenceNumber(int sequenceNumber) { this.sequenceNumber = sequenceNumber; }
-
-        public int getAckNumber() { return ackNumber; }
-        public void setAckNumber(int ackNumber) { this.ackNumber = ackNumber; }
-
-        public int getLength() { return length; }
-        public void setLength(int length) { this.length = length; }
-
-        public int getWindowSize() { return windowSize; }
-        public void setWindowSize(int windowSize) { this.windowSize = windowSize; }
+    static void excecuteAndPrintHandshake(){
+        Packet packetToPrint = new Packet(currentPacketId++, "succeed", "Client", clientPort, serverPort, Arrays.asList("SYN"), clientSequence, 0, 0, windowSize, "");
+        packetToPrint.printPacketHeader();
+        packetToPrint.sendAndPrintPacket();
+        clientSequence++;
+        packetToPrint = new Packet(currentPacketId++, "succeed", "Server", clientPort, serverPort, Arrays.asList("SYN", "ACK"), clientSequence, serverSequence, 0, windowSize, "");
+        packetToPrint.sendAndPrintPacket();
+        serverSequence++;
+        packetToPrint = new Packet(currentPacketId++, "succeed", "Client", clientPort, serverPort, Arrays.asList("ACK"), clientSequence, serverSequence, 0, windowSize, "");
+        packetToPrint.sendAndPrintPacket();
     }
-
-
-
 
     public static int getLengthMode(ArrayList<String> wordsList){
     HashMap<Integer,Integer> hm = new HashMap<Integer,Integer>();
@@ -379,4 +359,110 @@ public class Main  {
             }
         return temp;
     }
+}
+
+
+// Clase Packet para guardar la información de cada paquete enviado/recibido
+class Packet {
+    private int id;
+    private String status;
+    private String sender;
+    private int clientPort;
+    private int serverPort;
+    private List<String> flags;
+    private int clientSequenceNumber;
+    private int serverSequenceNumber;
+    private int length;
+    private int windowSize;
+    private String data;
+
+    public Packet(int id, String status, String sender, int clientPort, int serverPort,
+                  List<String> flags, int clientSequenceNumber, int serverSequenceNumber, int length, int windowSize, String data) {
+        this.id = id;
+        this.status = status;
+        this.sender = sender;
+        this.clientPort = clientPort;
+        this.serverPort = serverPort;
+        this.flags = flags;
+        this.clientSequenceNumber = clientSequenceNumber;
+        this.serverSequenceNumber = serverSequenceNumber;
+        this.length = length;
+        this.windowSize = windowSize;
+        this.data = data;
+    }
+
+    // Getters and setters for all fields
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+
+    public String getStatus() { return status; }
+    public void setStatus(String status) { this.status = status; }
+
+    public String getSender() { return sender; }
+    public void setSender(String sender) { this.sender = sender; }
+
+    public int getClientPort() { return clientPort; }
+    public void setClientPort(int clientPort) { this.clientPort = clientPort; }
+
+    public int getServerPort() { return serverPort; }
+    public void setServerPort(int serverPort) { this.serverPort = serverPort; }
+
+    public String getData() { return data; }
+    public void setData(String data) { this.data = data; }
+
+    public List<String> getFlags() { return flags; }
+    public void setFlags(List<String> flags) { this.flags = flags; }
+
+    public int getClientSequenceNumber() { return clientSequenceNumber; }
+    public void setClientSequenceNumber(int clientSequenceNumber) { this.clientSequenceNumber = clientSequenceNumber; }
+
+    public int getServerSequenceNumber() { return serverSequenceNumber; }
+    public void setServerSequenceNumber(int serverSequenceNumber) { this.serverSequenceNumber = serverSequenceNumber; }
+
+    public int getLength() { return length; }
+    public void setLength(int length) { this.length = length; }
+
+    public int getWindowSize() { return windowSize; }
+    public void setWindowSize(int windowSize) { this.windowSize = windowSize; }
+
+
+public void sendAndPrintPacket() {
+    if(sender.equals("Client")){
+        System.out.printf("%-5d | %-10s | %-10s | %-10d | %-10d | %-15s | %-12d | %-12d | %-5d | %-8d | %s%n",
+        id,
+        status,
+        sender,
+        clientPort,
+        serverPort,
+        String.join(",", flags),
+        clientSequenceNumber,
+        serverSequenceNumber,
+        length,
+        windowSize,
+        data.length() > 7 ? data.substring(0, 7)+"..." : data
+        );
+    }else{
+        System.out.printf("%-5d | %-10s | %-10s | %-10d | %-10d | %-15s | %-12d | %-12d | %-5d | %-8d | %s%n",
+        id,
+        status,
+        sender,
+        serverPort,
+        clientPort,
+        String.join(",", flags),
+        serverSequenceNumber,
+        clientSequenceNumber,
+        length,
+        windowSize,
+        data.length() > 7 ? data.substring(0, 7)+"..." : data
+        );
+    }
+}
+
+public static void printPacketHeader() {
+    System.out.printf("%-5s | %-10s | %-10s | %-10s | %-10s | %-15s | %-12s | %-12s | %-5s | %-8s | %s%n",
+        "Index", "Status", "Sender", "Src Port", "Dst Port", "Flags", "Seq Number", "Ack Number", "Len", "Window", "Data"
+    );
+}
+
+
 }
