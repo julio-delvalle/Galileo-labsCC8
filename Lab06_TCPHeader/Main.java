@@ -323,6 +323,9 @@ public class Main  {
                 
             }else if(dataTransmissionDirection.equals("servidor")){
                 
+                while(textosLosMosqueteros.size() > 0){
+                    serverSendPackets(textosLosMosqueteros);
+                }
 
             }else if(dataTransmissionDirection.equals("ambos")){
                 
@@ -376,17 +379,17 @@ public class Main  {
         // System.out.print("Failed packets: "+failedPackets);
         // System.out.print("  Total length sent: "+totalLengthSent);
         // System.out.print("  Total sent packets: "+totalSentPackets+"\n");
-        boolean failedAck = false;
+        boolean receivedAck = false;
         if(failedPackets == 0 && totalSentPackets > 0){
-            failedAck = serverAckPacket(totalLengthSent);
-            if(failedAck){
-                clientSequence += totalLengthSent;
+            receivedAck = serverAckPacket(totalLengthSent);
+            if(receivedAck){
+                // clientSequence += totalLengthSent;
                 for(int i = 0; i < totalSentPackets; i++){
                     textos.remove(0);
                 }
             }
         }
-        return failedPackets == 0 && failedAck ;
+        return failedPackets == 0 && receivedAck ;
     }
 
     static void clientSendSinglePacket(boolean succeedStatus, String texto){
@@ -395,14 +398,71 @@ public class Main  {
     }
 
 
+    static boolean serverSendPackets(ArrayList<String> textos){
+        int remainingWindowSize = windowSize;
+        int failedPackets = 0;
+        int totalLengthSent = 0;
+        int totalSentPackets = 0;
+        for(String texto : textos){
+            // System.out.println("Mando packet con length: "+texto.length() + " y remainingWindowSize: "+remainingWindowSize);
+            if(texto.length() <= remainingWindowSize){
+                boolean succeedStatus = packetLossProbability <= new Random().nextInt(100); //Si la probabilidad es menor al random, el paquete se pierde
+                serverSendSinglePacket(succeedStatus,texto);
+                if(!succeedStatus){
+                    failedPackets++;
+                }
+                remainingWindowSize -= texto.length();
+                totalLengthSent += texto.length();
+                totalSentPackets++;
+            }else{
+                if(totalSentPackets == 0){
+                    serverSendExtendWindow(texto.length());
+                }
+                break;
+            }
+        }
+        boolean receivedAck = false;
+        if(failedPackets == 0 && totalSentPackets > 0){
+            receivedAck = clientAckPacket(totalLengthSent);
+            if(receivedAck){
+                //serverSequence += totalLengthSent;
+                for(int i = 0; i < totalSentPackets; i++){
+                    textos.remove(0);
+                }
+            }
+        }
+        // System.out.print("Failed packets: "+failedPackets);
+        // System.out.print("  Total length sent: "+totalLengthSent);
+        // System.out.print("  Total sent packets: "+totalSentPackets+"\n");
+        return failedPackets == 0 && receivedAck ;
+    }
+
+    static void serverSendSinglePacket(boolean succeedStatus, String texto){
+        Packet packetToPrint = new Packet(currentPacketId++, succeedStatus ? "succeed" : "failed", "Server", clientPort, serverPort, Arrays.asList("PSH","ACK"), clientSequence, serverSequence, texto.length(), windowSize, texto);
+        packetToPrint.sendAndPrintPacket();
+    }
+
+
     static boolean serverAckPacket(int totalLengthSent){
         boolean succeedStatus = packetLossProbability <= new Random().nextInt(100); //Si la probabilidad es menor al random, el paquete se pierde
-        clientSequence += totalLengthSent;
+        serverSequence += totalLengthSent;
         
-        Packet packetToPrint = new Packet(currentPacketId++, succeedStatus ? "succeed" : "failed", "Server", clientPort, serverPort, Arrays.asList("ACK"), clientSequence, serverSequence, totalLengthSent, windowSize, "");
+        Packet packetToPrint = new Packet(currentPacketId++, succeedStatus ? "succeed" : "failed", "Server", clientPort, serverPort, Arrays.asList("ACK"), clientSequence, serverSequence, 0, windowSize, "");
         packetToPrint.sendAndPrintPacket();
         if(!succeedStatus){
-            clientSequence -= totalLengthSent;
+            serverSequence -= totalLengthSent;
+        }
+        return succeedStatus;
+    }
+
+    static boolean clientAckPacket(int totalLengthSent){
+        boolean succeedStatus = packetLossProbability <= new Random().nextInt(100); //Si la probabilidad es menor al random, el paquete se pierde
+        serverSequence += totalLengthSent;
+        
+        Packet packetToPrint = new Packet(currentPacketId++, succeedStatus ? "succeed" : "failed", "Client", clientPort, serverPort, Arrays.asList("ACK"), clientSequence, serverSequence, 0, windowSize, "");
+        packetToPrint.sendAndPrintPacket();
+        if(!succeedStatus){
+            serverSequence -= totalLengthSent;
         }
         return succeedStatus;
     }
@@ -414,7 +474,7 @@ public class Main  {
         windowSize = newWindowSize;
     }
     static void serverSendExtendWindow(int newWindowSize){
-        Packet packetToPrint = new Packet(currentPacketId++, "succeed", "Client", clientPort, serverPort, Arrays.asList("TCP Win Upd"), clientSequence, serverSequence, 0, newWindowSize, "");
+        Packet packetToPrint = new Packet(currentPacketId++, "succeed", "Server", clientPort, serverPort, Arrays.asList("TCP Win Upd"), clientSequence, serverSequence, 0, newWindowSize, "");
         packetToPrint.sendAndPrintPacket();
         windowSize = newWindowSize;
     }
@@ -491,6 +551,7 @@ class Packet {
     public static final String ANSI_GREEN = "\u001B[32m";
     public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
 
     public Packet(){}
 
@@ -557,10 +618,10 @@ public void sendAndPrintPacket() {
         serverSequenceNumber,
         length,
         windowSize,
-        data.length() > 7 ? data.substring(0, 7)+"..." : data
+        data.length() > 8 ? data.substring(0, 8)+"..." : data
         );
     }else{
-        System.out.printf("%-5d |"+(status.equals("succeed") ? ANSI_GREEN : ANSI_RED)+" %-10s "+ANSI_RESET+"| %-10s | %-10d | %-10d | %-15s | %-12d | %-12d | %-5d | %-8d | %s%n",
+        System.out.printf("%-5d |"+(status.equals("succeed") ? ANSI_GREEN : ANSI_RED)+" %-10s "+ANSI_RESET+"|"+ANSI_PURPLE+" %-10s "+ANSI_RESET+"| %-10d | %-10d | %-15s | %-12d | %-12d | %-5d | %-8d | %s%n",
         id,
         status,
         sender,
@@ -571,7 +632,7 @@ public void sendAndPrintPacket() {
         clientSequenceNumber,
         length,
         windowSize,
-        data.length() > 7 ? data.substring(0, 7)+"..." : data
+        data.length() > 8 ? data.substring(0, 8)+"..." : data
         );
     }
 }
