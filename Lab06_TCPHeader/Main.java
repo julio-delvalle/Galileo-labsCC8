@@ -309,10 +309,10 @@ public class Main  {
             //Header tabla
             Packet.printPacketHeader();
             //  =========== HANDSHAKE ===========
-            System.out.println("============================================================ HANDSHAKE ============================================================");
+            System.out.println("============================================================ Three-way Handshake ============================================================");
             excecuteAndPrintHandshake();
             System.out.println("==================================================== Connection Established =======================================================");
-
+            
             
             //  =========== TRANSFERENCIA DE DATOS ===========
             if(dataTransmissionDirection.equals("cliente")){
@@ -325,13 +325,18 @@ public class Main  {
                 
 
             }else if(dataTransmissionDirection.equals("ambos")){
-
+                
             }else{
                 System.out.println("Dirección de transmisión de datos inválida. Saliendo...");
                 System.exit(0);
             }
-
-
+            
+            
+            //  =========== FIN DE LA TRANSFERENCIA DE DATOS ===========
+            System.out.println("=================================================== Two or Four way hanshake  =====================================================");
+            excecuteAndPrintFinAck();
+            
+            
 
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Falta un parámetro!");
@@ -422,6 +427,19 @@ public class Main  {
         packetToPrint.sendAndPrintPacket();
         clientSequence++;
         packetToPrint = new Packet(currentPacketId++, "succeed", "Server", clientPort, serverPort, Arrays.asList("SYN", "ACK"), clientSequence, serverSequence, 0, windowSize, "");
+        packetToPrint.sendAndPrintPacket();
+        serverSequence++;
+        packetToPrint = new Packet(currentPacketId++, "succeed", "Client", clientPort, serverPort, Arrays.asList("ACK"), clientSequence, serverSequence, 0, windowSize, "");
+        packetToPrint.sendAndPrintPacket();
+    }
+
+    static void excecuteAndPrintFinAck(){
+        Packet packetToPrint = new Packet(currentPacketId++, "succeed", "Client", clientPort, serverPort, Arrays.asList("FIN","ACK"), clientSequence,serverSequence, 0, windowSize, "");
+        packetToPrint.sendAndPrintPacket();
+        clientSequence++;
+        packetToPrint = new Packet(currentPacketId++, "succeed", "Server", clientPort, serverPort, Arrays.asList("ACK"), clientSequence, serverSequence, 0, windowSize, "");
+        packetToPrint.sendAndPrintPacket();
+        packetToPrint = new Packet(currentPacketId++, "succeed", "Server", clientPort, serverPort, Arrays.asList("FIN","ACK"), clientSequence, serverSequence, 0, windowSize, "");
         packetToPrint.sendAndPrintPacket();
         serverSequence++;
         packetToPrint = new Packet(currentPacketId++, "succeed", "Client", clientPort, serverPort, Arrays.asList("ACK"), clientSequence, serverSequence, 0, windowSize, "");
