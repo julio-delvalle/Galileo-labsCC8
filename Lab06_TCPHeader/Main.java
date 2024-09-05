@@ -328,6 +328,17 @@ public class Main  {
                 }
 
             }else if(dataTransmissionDirection.equals("ambos")){
+
+                while(textosLosMosqueteros.size() > 0 || textosDonQuijote.size() > 0){
+                    if(textosDonQuijote.size() > 0){
+                        System.out.println("Enviando textos de Don Quijote (Client)");
+                        clientSendPackets(textosDonQuijote);
+                    }
+                    if(textosLosMosqueteros.size() > 0){
+                        System.out.println("Enviando textos de Los Mosqueteros (Server)");
+                        serverSendPackets(textosLosMosqueteros);
+                    }
+                }
                 
             }else{
                 System.out.println("Dirección de transmisión de datos inválida. Saliendo...");
@@ -445,12 +456,12 @@ public class Main  {
 
     static boolean serverAckPacket(int totalLengthSent){
         boolean succeedStatus = packetLossProbability <= new Random().nextInt(100); //Si la probabilidad es menor al random, el paquete se pierde
-        serverSequence += totalLengthSent;
+        clientSequence += totalLengthSent;
         
         Packet packetToPrint = new Packet(currentPacketId++, succeedStatus ? "succeed" : "failed", "Server", clientPort, serverPort, Arrays.asList("ACK"), clientSequence, serverSequence, 0, windowSize, "");
         packetToPrint.sendAndPrintPacket();
         if(!succeedStatus){
-            serverSequence -= totalLengthSent;
+            clientSequence -= totalLengthSent;
         }
         return succeedStatus;
     }
