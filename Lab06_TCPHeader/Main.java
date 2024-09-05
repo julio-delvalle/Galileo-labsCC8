@@ -23,7 +23,7 @@ public class Main  {
     private static int clientSequence = 0;
     private static int clientPort = 0;
     private static int serverPort = 80;
-    private static int windowSize = 65535;
+    private static int windowSize = 0;
     private static int packetLossProbability = 0;
     private static String dataTransmissionDirection = "ambos";
 
@@ -37,7 +37,6 @@ public class Main  {
     private static String textDonQuijoteCorto = """
                                            En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que viv\u00eda un hidalgo de los de lanza en astillero, adarga antigua, roc\u00edn flaco y galgo corredor. Una olla de algo m\u00e1s vaca que carnero, salpic\u00f3n las m\u00e1s noches, duelos y quebrantos los s\u00e1bados, lentejas los viernes, alg\u00fan palomino de a\u00f1adidura los domingos, consum\u00edan las tres partes de su hacienda. El resto della conclu\u00edan sayo de velarte, calzas de velludo para las fiestas con sus pantuflos de lo mismo, los d\u00edas de entre semana se honraba con su vellori de lo m\u00e1s fino.""";
     private static String textLosMosqueterosCorto = "El primer lunes del mes de abril de 1625, el burgo de Meung, donde nació el autor del Roman de la Rose, parecía estar en una revolución tan completa como si los hugonotes hubieran venido a hacer de ella una segunda Rochelle. Muchos burgueses, al ver huir a las mujeres por la calle Mayor, al oír gritar a los niños en el umbral de las puertas, se apresuraban a endosarse la coraza y, respaldando su aplomo algo incierto con un mosquete o una partesana, se dirigían hacia la hostería del Franc Meunier, ante la cual bullía, creciendo de minuto en minuto, un grupo compacto, ruidoso y lleno de curiosidad. ";
-
 
 
     public static void main(String[] args) throws IOException{
@@ -60,7 +59,6 @@ public class Main  {
             System.out.println("Ingrese los siguientes parámetros: ");
             System.out.println(" * Puede presionar ENTER para valor Default.\n");
             // Default values
-            windowSize = 65535;
             serverPort = 80;
             clientPort = new Random().nextInt(900) + 100; // Random entre 100 y 999
             int clientInitialSequence = new Random().nextInt(200001) + 100000; // Random entre 100000 y 300000
@@ -69,7 +67,7 @@ public class Main  {
 
             Scanner scanner = new Scanner(System.in);
 
-            System.out.print("Valor del Window Size Inicial (Default: 65535): ");
+            System.out.print("Valor del Window Size Inicial (Default: Moda): ");
             String input = scanner.nextLine();
             try{if (!input.isEmpty()) {
                 windowSize = Integer.parseInt(input);
@@ -115,6 +113,10 @@ public class Main  {
             input = scanner.nextLine();
             try{if (!input.isEmpty()) {
                 packetLossProbability = Integer.parseInt(input);
+                if(packetLossProbability <= 0 || packetLossProbability >= 99){
+                    System.out.println("Valor inválido. Se usará el valor por defecto.");
+                    packetLossProbability = 0;
+                }
             }}catch(Exception e){
                 System.out.println("Valor inválido. Se usará el valor por defecto.");
             }
@@ -179,19 +181,7 @@ public class Main  {
                 System.out.println("Valor inválido. Se usará el valor por defecto.");
             }
 
-            System.out.println("\n\n==Valores configurados:==");
-            System.out.println("Window Size: " + windowSize);
-            System.out.println("Puerto del Servidor: " + serverPort);
-            System.out.println("Puerto del Cliente: " + clientPort);
-            System.out.println("Secuencia Inicial del Cliente: " + clientInitialSequence);
-            System.out.println("Secuencia Inicial del Servidor: " + serverInitialSequence);
-            System.out.println("Probabilidad de pérdida de paquetes: " + packetLossProbability + "%");
-            System.out.println("Dirección de transmisión: " + dataTransmissionDirection);
-            System.out.println("Usar textos cortos: " + useShortTexts);
-
-
-            System.out.println("\nPresione ENTER para continuar...");
-            scanner.nextLine();
+            
 
 
 
@@ -236,18 +226,15 @@ public class Main  {
             // for (String texto : textosDonQuijote) {
             //     LOGGER.info(" (" + texto.length() + " caracteres) : " + texto);
             // }
-            LOGGER.info("MODA de longitud de palabras Don Quijote: " + getLengthMode(textosDonQuijote));
-
-
             
-
-
-
+            
+            
+            
             // Dividir el texto de Los Mosqueteros en textos más pequeños
             ArrayList<String> textosLosMosqueteros = new ArrayList<>();
             while(textLosMosqueteros.length() != 0){
                 int randomSplit = new Random().nextInt(10) + 2; //Los mosqueteros dividido en 2 a 12 espacios
-
+                
                 int nthSpaceIndex = -1;
                 int spaceCount = 0;
                 for (int i = 0; i < textLosMosqueteros.length(); i++) {
@@ -276,13 +263,36 @@ public class Main  {
                     textLosMosqueteros = "";
                 }
             }
-
+            
             LOGGER.info("Textos de Los Mosqueteros: "+textosLosMosqueteros.size());
             // for (String texto : textosLosMosqueteros) {
-            //     LOGGER.info(" (" + texto.length() + " caracteres) : " + texto);
-            // }
-            LOGGER.info("MODA de longitud de palabras Los mosqueteros: " + getLengthMode(textosLosMosqueteros));
+                //     LOGGER.info(" (" + texto.length() + " caracteres) : " + texto);
+                // }
+            ArrayList<String> tempModeTextos = textosDonQuijote;
+            tempModeTextos.addAll(textosLosMosqueteros);
+            int textLengthMode = getLengthMode(tempModeTextos);
+            LOGGER.info("MODA de longitud de palabras ambos textos: " + textLengthMode);
+            if(windowSize == 0){
+                windowSize = textLengthMode;
+            }
 
+
+
+
+
+            System.out.println("\n\n==Valores configurados:==");
+            System.out.println("Window Size: " + windowSize);
+            System.out.println("Puerto del Servidor: " + serverPort);
+            System.out.println("Puerto del Cliente: " + clientPort);
+            System.out.println("Secuencia Inicial del Cliente: " + clientInitialSequence);
+            System.out.println("Secuencia Inicial del Servidor: " + serverInitialSequence);
+            System.out.println("Probabilidad de pérdida de paquetes: " + packetLossProbability + "%");
+            System.out.println("Dirección de transmisión: " + dataTransmissionDirection);
+            System.out.println("Usar textos cortos: " + useShortTexts);
+
+
+            System.out.println("\nPresione ENTER para continuar...");
+            scanner.nextLine();
 
 
 
@@ -295,16 +305,31 @@ public class Main  {
             clientSequence = clientInitialSequence;
             serverSequence = serverInitialSequence;
 
-
+            System.out.println("\n\n");
+            //Header tabla
+            Packet.printPacketHeader();
             //  =========== HANDSHAKE ===========
+            System.out.println("============================================================ HANDSHAKE ============================================================");
             excecuteAndPrintHandshake();
+            System.out.println("==================================================== Connection Established =======================================================");
+
             
-            
+            //  =========== TRANSFERENCIA DE DATOS ===========
+            if(dataTransmissionDirection.equals("cliente")){
+                
+                while(textosDonQuijote.size() > 0){
+                    clientSendPackets(textosDonQuijote);
+                }
+                
+            }else if(dataTransmissionDirection.equals("servidor")){
+                
 
+            }else if(dataTransmissionDirection.equals("ambos")){
 
-            // while(textosDonQuijote.size() > 0 || textosLosMosqueteros.size() > 0){
-            // }
-
+            }else{
+                System.out.println("Dirección de transmisión de datos inválida. Saliendo...");
+                System.exit(0);
+            }
 
 
 
@@ -320,14 +345,80 @@ public class Main  {
 
 
 
+    static boolean clientSendPackets(ArrayList<String> textos){
+        int remainingWindowSize = windowSize;
+        int failedPackets = 0;
+        int totalLengthSent = 0;
+        int totalSentPackets = 0;
+        for(String texto : textos){
+            // System.out.println("Mando packet con length: "+texto.length() + " y remainingWindowSize: "+remainingWindowSize);
+            if(texto.length() <= remainingWindowSize){
+                boolean succeedStatus = packetLossProbability <= new Random().nextInt(100); //Si la probabilidad es menor al random, el paquete se pierde
+                clientSendSinglePacket(succeedStatus,texto);
+                if(!succeedStatus){
+                    failedPackets++;
+                }
+                remainingWindowSize -= texto.length();
+                totalLengthSent += texto.length();
+                totalSentPackets++;
+            }else{
+                if(totalSentPackets == 0){
+                    clientSendExtendWindow(texto.length());
+                }
+                break;
+            }
+        }
+        // System.out.print("Failed packets: "+failedPackets);
+        // System.out.print("  Total length sent: "+totalLengthSent);
+        // System.out.print("  Total sent packets: "+totalSentPackets+"\n");
+        boolean failedAck = false;
+        if(failedPackets == 0 && totalSentPackets > 0){
+            failedAck = serverAckPacket(totalLengthSent);
+            if(failedAck){
+                clientSequence += totalLengthSent;
+                for(int i = 0; i < totalSentPackets; i++){
+                    textos.remove(0);
+                }
+            }
+        }
+        return failedPackets == 0 && failedAck ;
+    }
 
+    static void clientSendSinglePacket(boolean succeedStatus, String texto){
+        Packet packetToPrint = new Packet(currentPacketId++, succeedStatus ? "succeed" : "failed", "Client", clientPort, serverPort, Arrays.asList("PSH","ACK"), clientSequence, serverSequence, texto.length(), windowSize, texto);
+        packetToPrint.sendAndPrintPacket();
+    }
+
+
+    static boolean serverAckPacket(int totalLengthSent){
+        boolean succeedStatus = packetLossProbability <= new Random().nextInt(100); //Si la probabilidad es menor al random, el paquete se pierde
+        clientSequence += totalLengthSent;
+        
+        Packet packetToPrint = new Packet(currentPacketId++, succeedStatus ? "succeed" : "failed", "Server", clientPort, serverPort, Arrays.asList("ACK"), clientSequence, serverSequence, totalLengthSent, windowSize, "");
+        packetToPrint.sendAndPrintPacket();
+        if(!succeedStatus){
+            clientSequence -= totalLengthSent;
+        }
+        return succeedStatus;
+    }
+
+
+    static void clientSendExtendWindow(int newWindowSize){
+        Packet packetToPrint = new Packet(currentPacketId++, "succeed", "Client", clientPort, serverPort, Arrays.asList("TCP Win Upd"), clientSequence, serverSequence, 0, newWindowSize, "");
+        packetToPrint.sendAndPrintPacket();
+        windowSize = newWindowSize;
+    }
+    static void serverSendExtendWindow(int newWindowSize){
+        Packet packetToPrint = new Packet(currentPacketId++, "succeed", "Client", clientPort, serverPort, Arrays.asList("TCP Win Upd"), clientSequence, serverSequence, 0, newWindowSize, "");
+        packetToPrint.sendAndPrintPacket();
+        windowSize = newWindowSize;
+    }
 
     
 
 
     static void excecuteAndPrintHandshake(){
         Packet packetToPrint = new Packet(currentPacketId++, "succeed", "Client", clientPort, serverPort, Arrays.asList("SYN"), clientSequence, 0, 0, windowSize, "");
-        packetToPrint.printPacketHeader();
         packetToPrint.sendAndPrintPacket();
         clientSequence++;
         packetToPrint = new Packet(currentPacketId++, "succeed", "Server", clientPort, serverPort, Arrays.asList("SYN", "ACK"), clientSequence, serverSequence, 0, windowSize, "");
@@ -375,6 +466,15 @@ class Packet {
     private int length;
     private int windowSize;
     private String data;
+
+    
+    //Colores ANSI para terminal
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_RED = "\u001B[31m";
+
+    public Packet(){}
 
     public Packet(int id, String status, String sender, int clientPort, int serverPort,
                   List<String> flags, int clientSequenceNumber, int serverSequenceNumber, int length, int windowSize, String data) {
@@ -428,7 +528,7 @@ class Packet {
 
 public void sendAndPrintPacket() {
     if(sender.equals("Client")){
-        System.out.printf("%-5d | %-10s | %-10s | %-10d | %-10d | %-15s | %-12d | %-12d | %-5d | %-8d | %s%n",
+        System.out.printf("%-5d |"+(status.equals("succeed") ? ANSI_GREEN : ANSI_RED)+" %-10s "+ANSI_RESET+"|"+ANSI_GREEN+" %-10s "+ANSI_RESET+"| %-10d | %-10d | %-15s | %-12d | %-12d | %-5d | %-8d | %s%n"+ANSI_RESET,
         id,
         status,
         sender,
@@ -442,7 +542,7 @@ public void sendAndPrintPacket() {
         data.length() > 7 ? data.substring(0, 7)+"..." : data
         );
     }else{
-        System.out.printf("%-5d | %-10s | %-10s | %-10d | %-10d | %-15s | %-12d | %-12d | %-5d | %-8d | %s%n",
+        System.out.printf("%-5d |"+(status.equals("succeed") ? ANSI_GREEN : ANSI_RED)+" %-10s "+ANSI_RESET+"| %-10s | %-10d | %-10d | %-15s | %-12d | %-12d | %-5d | %-8d | %s%n",
         id,
         status,
         sender,
