@@ -95,19 +95,29 @@ public class ThreadServer implements Runnable {
                 DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,53);
                 socket.send(dnsPacket);
 
+                socket.setSoTimeout(2000);
                 try {
-                    socket.setSoTimeout(2000);
-                    socket.receive(receivePacket);
+                    socket.receive(dnsPacket);
 
 
-                    LOGGER.info("Respuesta del Proveedor: " + bytesToHex(receivePacket.getData(),receivePacket.getLength()));
-                    LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(receivePacket.getData(),receivePacket.getLength()));
+                    LOGGER.info("Respuesta del Proveedor: " + bytesToHex(dnsPacket.getData(),dnsPacket.getLength()));
+                    LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(dnsPacket.getData(),dnsPacket.getLength()));
+                    LOGGER.info("Respuesta del Proveedor LENGTH: " + dnsPacket.getLength());
+
+
+
+                    // AQUÍ GUARDAR EN MI CACHE
+                    // AQUÍ GUARDAR EN MI CACHE
+                    // AQUÍ GUARDAR EN MI CACHE
+                    // AQUÍ GUARDAR EN MI CACHE
+                    // AQUÍ GUARDAR EN MI CACHE
+                    // AQUÍ GUARDAR EN MI CACHE
+                    // AQUÍ GUARDAR EN MI CACHE
                     
 
-                    
+
                     // Envía la respuesta de vuelta al cliente
-                    // ESTO NO TODAVÍA!!!
-                    //socket.send(new DatagramPacket(receivePacket.getData(), receivePacket.getLength(),receivePacket.getAddress(),receivePacket.getPort()));
+                    socket.send(new DatagramPacket(dnsPacket.getData(), dnsPacket.getLength(),receivePacket.getAddress(),receivePacket.getPort()));
                 } catch (SocketTimeoutException e) {
                     System.out.println("Timeout esperando la respuesta del servidor DNS.");
                 }
