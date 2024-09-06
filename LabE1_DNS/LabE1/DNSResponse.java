@@ -1,4 +1,5 @@
 public class DNSResponse {
+    private byte[] data;
     // DNS Response Header
     private short transactionID;
     private short flags;
@@ -43,7 +44,7 @@ public class DNSResponse {
 
 
     // DNSResponse Constructor
-    public DNSResponse(short transactionID, short flags, short numQuestions, short numAnswerRRs,
+    public DNSResponse(byte[] data, short transactionID, short flags, short numQuestions, short numAnswerRRs,
                        short numAuthorityRRs, short numAdditionalRRs, String queryName,
                        int queryNameLength, String[] queryNameParts, int queryLabelCount, short queryType, short queryClass) {
         this.transactionID = transactionID;
@@ -59,6 +60,7 @@ public class DNSResponse {
         this.queryType = queryType;
         this.queryClass = queryClass;
         this.answers = new Answer[numAnswerRRs];
+        this.data = data;
     }
 
     // Method to add an answer

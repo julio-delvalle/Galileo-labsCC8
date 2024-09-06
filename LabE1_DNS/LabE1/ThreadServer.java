@@ -84,33 +84,33 @@ public class ThreadServer implements Runnable {
                 LOGGER.info("HEXADECIMAL: " + bytesToHex(receivePacket.getData(),receivePacket.getLength()));
                 
                 DNSRequest receivedRequest = formatAndGetDNSRequest(receivePacket.getData());
+                receivedRequest.setRecursionDesired();
                 receivedRequest.printDNSRequest();
 
                 LOGGER.info("\n\n\n");
 
-                // LOGGER.info("Consulta DNS al dominio: " + extractDomainName(receivePacket.getData()));
-
-
-
-
 
                 //Resend the query to the first DNS server
-                // InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[0]);
-                // DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,53);
-                // socket.send(dnsPacket);
+                InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[0]);
+                DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,53);
+                socket.send(dnsPacket);
 
-                // socket.setSoTimeout(2000);
-                // try {
-                //     socket.receive(receivePacket);
-                //     LOGGER.info("Respuesta del Proveedor: " + bytesToHex(receivePacket.getData(),receivePacket.getLength()));
-                //     LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(receivePacket.getData(),receivePacket.getLength()));
-                //     // Envía la respuesta de vuelta al cliente
+                try {
+                    socket.setSoTimeout(2000);
+                    socket.receive(receivePacket);
 
+
+                    LOGGER.info("Respuesta del Proveedor: " + bytesToHex(receivePacket.getData(),receivePacket.getLength()));
+                    LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(receivePacket.getData(),receivePacket.getLength()));
+                    
+
+                    
+                    // Envía la respuesta de vuelta al cliente
                     // ESTO NO TODAVÍA!!!
-                //     socket.send(new DatagramPacket(receivePacket.getData(), receivePacket.getLength(),receivePacket.getAddress(),receivePacket.getPort()));
-                // } catch (SocketTimeoutException e) {
-                //     System.out.println("Timeout esperando la respuesta del servidor DNS.");
-                // }
+                    //socket.send(new DatagramPacket(receivePacket.getData(), receivePacket.getLength(),receivePacket.getAddress(),receivePacket.getPort()));
+                } catch (SocketTimeoutException e) {
+                    System.out.println("Timeout esperando la respuesta del servidor DNS.");
+                }
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -164,7 +164,7 @@ public class ThreadServer implements Runnable {
 
         
 
-        DNSRequest returnRequest = new DNSRequest(transactionID, flags, numQuestions, numAnswerRRs, numAuthorityRRs, numAdditionalRRs,
+        DNSRequest returnRequest = new DNSRequest(data, transactionID, flags, numQuestions, numAnswerRRs, numAuthorityRRs, numAdditionalRRs,
                                         domainName.toString(), domainName.toString().length(),domainNameParts, queryLabelCount, queryType, queryClass);
         return returnRequest;
     }

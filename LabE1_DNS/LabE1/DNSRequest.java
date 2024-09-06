@@ -1,4 +1,6 @@
 public class DNSRequest {
+
+    private byte[] data;
     // DNS Request Header
     private short transactionID;
     private short flags;
@@ -18,7 +20,7 @@ public class DNSRequest {
 
 
     // DNSRequest Constructor
-    public DNSRequest(short transactionID, short flags, short numQuestions, short numAnswerRRs,
+    public DNSRequest(byte[] data, short transactionID, short flags, short numQuestions, short numAnswerRRs,
                        short numAuthorityRRs, short numAdditionalRRs, String queryName,
                        int queryNameLength, String[] queryNameParts, int queryLabelCount, short queryType, short queryClass) {
         this.transactionID = transactionID;
@@ -33,6 +35,7 @@ public class DNSRequest {
         this.queryLabelCount = queryLabelCount;
         this.queryType = queryType;
         this.queryClass = queryClass;
+        this.data = data;
     }
 
 
@@ -79,6 +82,13 @@ public class DNSRequest {
             case 28: return "AAAA";
             default: return "UNKNOWN";
         }
+    }
+
+
+    public void setRecursionDesired(){
+        this.flags = (short) (this.flags | 0x0100); // Set the RD (Recursion Desired) bit to 1
+
+        this.data[2] = (byte) (this.data[2] | 0x01); // Set the RD (Recursion Desired) bit to 1
     }
 
 }
