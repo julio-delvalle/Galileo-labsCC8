@@ -4,7 +4,9 @@ import java.nio.ByteBuffer;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Random;
 import java.util.logging.Logger;
 
 public class ThreadServer implements Runnable {
@@ -66,61 +68,167 @@ public class ThreadServer implements Runnable {
     public void run() {
         byte[] input = new byte[65535];
         DatagramPacket receivePacket = null;
+        InetAddress clientAddress = null;
+        int clientPort = 0;
         while (true) {
             try {
                 LOGGER.info("("+nThreadServer+") > Thread waiting for new client....");
                 receivePacket = new DatagramPacket(input, input.length);
                 socket.receive(receivePacket);
-                InetAddress clientAddress = receivePacket.getAddress();
-                int clientPort = receivePacket.getPort();
+
                 String receiveMessage = new String(receivePacket.getData());
 
+                // int dnsCounter = 0;
+                int dnsCounter = new Random().nextInt(7);
+                if(receivePacket.getAddress().toString().equals("/127.0.0.1")){
+                    clientAddress = receivePacket.getAddress();
+                    clientPort = receivePacket.getPort();
+
+                    // ==== SI ES LOCAL, ES REQUEST. ENVIAR A DNS ====
+
+                    DNSRequest receivedRequest = formatAndGetDNSRequest(receivePacket.getData(), receivePacket.getLength());
+                    receivedRequest.setRecursionDesired();
+                    receivedRequest.printDNSRequest();
+
+                    LOGGER.info("\n\n\n");
 
 
-                
-                
-                
-                LOGGER.info("LEGIBLE: " + filterPrintableChars(receivePacket.getData(), receivePacket.getLength()));
-                LOGGER.info("HEXADECIMAL: " + bytesToHex(receivePacket.getData(),receivePacket.getLength()));
-                
-                DNSRequest receivedRequest = formatAndGetDNSRequest(receivePacket.getData());
-                receivedRequest.setRecursionDesired();
-                receivedRequest.printDNSRequest();
+                    //Resend the query to the first DNS server
+                    InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[dnsCounter]);
+                    dnsCounter++;
+                    // if(dnsCounter == 8){break;}
+                    // InetAddress dnsServer = InetAddress.getByName(ROOT_SERVERS[0]);
+                    DatagramPacket dnsPacket = new DatagramPacket(receivedRequest.getData(), receivedRequest.getLength(), dnsServer,53);
+                    LOGGER.info("paquete recibido LENGHT: "+receivePacket.getLength());
+                    LOGGER.info("paquete recibido creado LENGHT: "+receivedRequest.getLength());
+                    LOGGER.info("paquete enviado a DNS "+dnsCounter);
+                    socket.send(dnsPacket);
+                }else{
+                    // ==== SI ES OTRO, ES RESPONSE. RECIBIR DE DNS ====
 
-                LOGGER.info("\n\n\n");
-
-
-                //Resend the query to the first DNS server
-                InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[0]);
-                DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,53);
-                socket.send(dnsPacket);
-
-                socket.setSoTimeout(2000);
-                try {
-                    socket.receive(dnsPacket);
+                    LOGGER.info("source del packet: "+receivePacket.getAddress().toString());
 
 
-                    LOGGER.info("Respuesta del Proveedor: " + bytesToHex(dnsPacket.getData(),dnsPacket.getLength()));
-                    LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(dnsPacket.getData(),dnsPacket.getLength()));
-                    LOGGER.info("Respuesta del Proveedor LENGTH: " + dnsPacket.getLength());
+                    DNSResponse receivedResponse = formatAndGetDNSResponse(receivePacket.getData());
+                    LOGGER.info("HEXADECIMAL recibido: " + bytesToHex(receivePacket.getData(),receivePacket.getLength()));
+                    receivedResponse.printDNSResponse();
+                    System.out.println("\n\n\n");
 
+                    // LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(dnsPacket.getData(),dnsPacket.getLength()));
+                    // LOGGER.info("Respuesta del Proveedor LENGTH: " + dnsPacket.getLength());
+                    
+                    byte[] receivedData = new byte[receivePacket.getLength()];
+                    byte[] receivedDataTemp = receivePacket.getData();
+                    LOGGER.info("receivedData LENGTH: "+receivedData.length);
+                    LOGGER.info("receivedDataTemp LENGTH: "+receivedDataTemp.length);
 
+                    for (int i = 0; i < receivePacket.getLength(); i++) {
+                        receivedData[i] = receivedDataTemp[i];
+                    }
+                    
+                    LOGGER.info("receivedData LENGTH: "+receivedData.length);
+                    LOGGER.info("receivedData Respuesta: " + bytesToHex(receivedData,receivedData.length));
 
-                    // AQUÍ GUARDAR EN MI CACHE
-                    // AQUÍ GUARDAR EN MI CACHE
-                    // AQUÍ GUARDAR EN MI CACHE
+                    byte[] receivedDataFixed = new byte[receivePacket.getLength()-1];
+
+                    boolean changed = false;
+                    if (receivedData[receivedData.length - 1] == (byte) 0xC0) {
+                        // Handle the case when the last byte is 0xC0
+                        receivedDataFixed = Arrays.copyOf(receivedData, receivedData.length-1);
+                        LOGGER.info("receivedDataFixed CAMBIO: "+receivedDataFixed.length);
+                        changed = true;
+                    }else{
+                        LOGGER.info("receivedDataFixed SIN CAMBIO: "+receivedData.length);
+                    }
+
                     // AQUÍ GUARDAR EN MI CACHE
                     // AQUÍ GUARDAR EN MI CACHE
                     // AQUÍ GUARDAR EN MI CACHE
                     // AQUÍ GUARDAR EN MI CACHE
                     
 
-
                     // Envía la respuesta de vuelta al cliente
-                    socket.send(new DatagramPacket(dnsPacket.getData(), dnsPacket.getLength(),receivePacket.getAddress(),receivePacket.getPort()));
-                } catch (SocketTimeoutException e) {
-                    System.out.println("Timeout esperando la respuesta del servidor DNS.");
+                    if(changed){
+                        socket.send(new DatagramPacket(receivedDataFixed, receivedDataFixed.length,clientAddress,clientPort));
+                    }else{
+                        socket.send(new DatagramPacket(receivedData, receivedData.length,clientAddress,clientPort));
+                    }
+
                 }
+
+
+                
+                // LOGGER.info("LEGIBLE: " + filterPrintableChars(receivePacket.getData(), receivePacket.getLength()));
+                // LOGGER.info("HEXADECIMAL: " + bytesToHex(receivePacket.getData(),receivePacket.getLength()));
+                // while (true) { 
+                    
+
+
+                    // byte[] receivedDNSData = new byte[1024];
+                    // DatagramPacket receivedDNSPacket = new DatagramPacket(receivedDNSData, receivedDNSData.length);
+
+                    // try {
+                        // socket.setSoTimeout(500);
+                        // // socket.receive(receivedDNSPacket);
+                        // LOGGER.info("source del packet: "+receivedDNSPacket.getAddress().toString());
+                        // while(receivedDNSPacket.getAddress().toString().equals("/127.0.0.1")){
+                        //     System.out.println("DENTRO DEL WHILE. "+receivedDNSPacket.getAddress().toString());
+                        //     socket.receive(receivedDNSPacket);
+                        // }
+                        // DNSResponse receivedResponse = formatAndGetDNSResponse(receivedDNSPacket.getData());
+                        // LOGGER.info("HEXADECIMAL recibido: " + bytesToHex(receivedDNSPacket.getData(),receivedDNSPacket.getLength()));
+                        // receivedResponse.printDNSResponse();
+                        // System.out.println("\n\n\n");
+                        // LOGGER.info("dnsPacketL2: "+receivedDNSPacket.getLength());
+
+
+                        // // LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(dnsPacket.getData(),dnsPacket.getLength()));
+                        // // LOGGER.info("Respuesta del Proveedor LENGTH: " + dnsPacket.getLength());
+                        
+                        // byte[] receivedData = new byte[receivedDNSPacket.getLength()];
+                        // byte[] receivedDataTemp = receivedDNSPacket.getData();
+                        // LOGGER.info("receivedData LENGTH: "+receivedData.length);
+                        // LOGGER.info("receivedDataTemp LENGTH: "+receivedDataTemp.length);
+
+                        // for (int i = 0; i < receivedDNSPacket.getLength(); i++) {
+                        //     receivedData[i] = receivedDataTemp[i];
+                        // }
+                        
+                        // LOGGER.info("receivedData LENGTH: "+receivedData.length);
+                        // LOGGER.info("receivedData Respuesta: " + bytesToHex(receivedData,receivedData.length));
+
+                        // byte[] receivedDataFixed = new byte[receivedDNSPacket.getLength()-1];
+
+                        // boolean changed = false;
+                        // if (receivedData[receivedData.length - 1] == (byte) 0xC0) {
+                        //     // Handle the case when the last byte is 0xC0
+                        //     receivedDataFixed = Arrays.copyOf(receivedData, receivedData.length-1);
+                        //     LOGGER.info("receivedDataFixed CAMBIO: "+receivedDataFixed.length);
+                        //     changed = true;
+                        // }else{
+                        //     LOGGER.info("receivedDataFixed SIN CAMBIO: "+receivedData.length);
+                        // }
+
+                        // // AQUÍ GUARDAR EN MI CACHE
+                        // // AQUÍ GUARDAR EN MI CACHE
+                        // // AQUÍ GUARDAR EN MI CACHE
+                        // // AQUÍ GUARDAR EN MI CACHE
+                        
+
+
+                        // // Envía la respuesta de vuelta al cliente
+                        // if(changed){
+                        //     socket.send(new DatagramPacket(receivedDataFixed, receivedDataFixed.length,receivePacket.getAddress(),receivePacket.getPort()));
+                        // }else{
+                        //     socket.send(new DatagramPacket(receivedData, receivedData.length,receivePacket.getAddress(),receivePacket.getPort()));
+                        // }
+                        // break;
+                    // } catch (SocketTimeoutException e) {
+                        // System.out.println("Timeout esperando la respuesta del servidor DNS.");
+                    // }
+                // }
+            } catch (SocketTimeoutException e) {
+                System.out.println("Timeout esperando la respuesta del servidor DNS.");
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -135,7 +243,10 @@ public class ThreadServer implements Runnable {
         return sb.toString().trim();
     }
 
-    private static DNSRequest formatAndGetDNSRequest(byte[] data) {
+    private static DNSRequest formatAndGetDNSRequest(byte[] data, int dataLength) {
+        byte[] dataCopy = new byte[dataLength];
+        System.arraycopy(data, 0, dataCopy, 0, dataLength);
+        System.out.println("DENTRO DE formatAndGetDNSRequest, con data length: " + dataCopy.length + "y "+dataLength);
         ByteBuffer buffer = ByteBuffer.wrap(data);
 
         // Gets all the header info
@@ -174,9 +285,112 @@ public class ThreadServer implements Runnable {
 
         
 
-        DNSRequest returnRequest = new DNSRequest(data, transactionID, flags, numQuestions, numAnswerRRs, numAuthorityRRs, numAdditionalRRs,
+        DNSRequest returnRequest = new DNSRequest(dataCopy, dataCopy.length, transactionID, flags, numQuestions, numAnswerRRs, numAuthorityRRs, numAdditionalRRs,
                                         domainName.toString(), domainName.toString().length(),domainNameParts, queryLabelCount, queryType, queryClass);
         return returnRequest;
+    }
+
+
+    private static DNSResponse formatAndGetDNSResponse(byte[] data) {
+        System.out.println("DENTRO DE formatAndGetDNSResponse, con data: " + bytesToHex(data, data.length));
+        ByteBuffer buffer = ByteBuffer.wrap(data);
+
+        // Gets all the header info
+        short transactionID = buffer.getShort(0);
+        short flags = buffer.getShort(2);
+        short numQuestions = buffer.getShort(4);
+        short numAnswerRRs = buffer.getShort(6);
+        short numAuthorityRRs = buffer.getShort(8);
+        short numAdditionalRRs = buffer.getShort(10);
+
+        //Get Question info, starting from byte 12
+        StringBuilder domainName = new StringBuilder();
+        int position = 12; 
+            //To get domain info:
+        while (buffer.get(position) != 0) {
+            int segmentLength = buffer.get(position); //Gets length of the next part of the domain
+            position++;
+            for (int i = 0; i < segmentLength; i++) { 
+                domainName.append((char) buffer.get(position));
+                position++;
+            }
+            domainName.append('.'); //Separates segments by point, building the domain name like dns.google.com
+        }
+        position++; //skips the \0 character
+        if (domainName.length() > 0) {
+            domainName.setLength(domainName.length() - 1); //Removes the last added point.
+        }
+
+        // Split the domain name 
+        String[] domainNameParts = domainName.toString().split("\\.");
+        int queryLabelCount = domainNameParts.length;
+
+        //To get QType and QClass
+        short queryType = buffer.getShort(position);
+        short queryClass = buffer.getShort(position + 2);
+        position = position+4;
+
+        
+
+        DNSResponse returnResponse = new DNSResponse(data, transactionID, flags, numQuestions, numAnswerRRs, numAuthorityRRs, numAdditionalRRs,
+                                        domainName.toString(), domainName.toString().length(),domainNameParts, queryLabelCount, queryType, queryClass);
+
+        int countAnswers = (int)numAnswerRRs;
+        int AnswerIndex = 0;
+        System.out.println("countAnswers: "+countAnswers);
+        System.out.println("Currentposition: "+position);
+
+        while(countAnswers > 0){
+
+            // ==== OBTENER URL de ANSWER: ====
+            StringBuilder answerNameBuilder = new StringBuilder();
+            String answerName = "";
+            if(buffer.get(position) == (byte)0xC0){ //Si es comprimido, obtiene domain y salta a types
+                System.out.println("SE ENCONTRÓ C0 en posición "+position);
+                answerName = domainName.toString();
+                position = position + 2;
+            }else{
+                while (buffer.get(position) != 0) {
+                    int segmentLength = buffer.get(position); //Gets length of the next part of the domain
+                    position++;
+                    for (int i = 0; i < segmentLength; i++) { 
+                        answerNameBuilder.append((char) buffer.get(position));
+                        position++;
+                    }
+                    answerNameBuilder.append('.'); //Separates segments by point, building the domain name like dns.google.com
+                }
+                position++; //skips the \0 character
+                if (answerNameBuilder.length() > 0) {
+                    answerNameBuilder.setLength(answerNameBuilder.length() - 1); //Removes the last added point.
+                }
+                answerName = answerNameBuilder.toString();
+            }
+
+            System.out.println("position después de obtener el nombre: "+position);
+
+            //To get AType and AClass
+            short ansType = buffer.getShort(position);
+            short ansClass = buffer.getShort(position + 2);
+            position = position+4;
+
+            int ansTTL = buffer.getInt(position);
+            position += 4;
+
+            String ansAddress = "";
+            if(ansType == 1){
+                for (int i = 0; i < 4; i++) {
+                    System.out.println("Item "+i+" del address: "+buffer.get(position));
+                    ansAddress += (int)buffer.get(position) + ".";
+                    position++;
+                }
+                ansAddress = ansAddress.substring(0, ansAddress.length() - 1);
+            }
+
+            returnResponse.addAnswer(AnswerIndex, answerName, ansType, ansClass, ansTTL, ansAddress.split("\\.").length, ansAddress);
+
+            countAnswers--;
+        }
+        return returnResponse;
     }
 
     private static String filterPrintableChars(byte[] data, int length) {

@@ -28,7 +28,7 @@ public class DNSServer {
     }
 
     public static void main(String[] args) throws SocketException {
-        DNSServer newServer = new DNSServer( 3, 53, 3000 );
+        DNSServer newServer = new DNSServer( 1, 53, 3000 );
         try {
             newServer.start();
         } catch(Exception e){

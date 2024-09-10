@@ -24,11 +24,11 @@ public class DNSResponse {
         private short type;
         private short dnsClass;
         private int ttl;
-        private short dataLength;
+        private int dataLength;
         private String address;
 
         // Constructor
-        public Answer(String name, short type, short dnsClass, int ttl, short dataLength, String address) {
+        public Answer(String name, short type, short dnsClass, int ttl, int dataLength, String address) {
             this.name = name;
             this.type = type;
             this.dnsClass = dnsClass;
@@ -64,7 +64,7 @@ public class DNSResponse {
     }
 
     // Method to add an answer
-    public void addAnswer(int index, String name, short type, short dnsClass, int ttl, short dataLength, String address) {
+    public void addAnswer(int index, String name, short type, short dnsClass, int ttl, int dataLength, String address) {
         if (index < numAnswerRRs) {
             answers[index] = new Answer(name, type, dnsClass, ttl, dataLength, address);
         }
@@ -122,9 +122,9 @@ public class DNSResponse {
     // Helper method to convert type code to string
     private String getTypeString(short type) {
         switch (type) {
-            case 1: return "A";
-            case 5: return "CNAME";
-            case 16: return "TXT";
+            case 0x01: return "A";
+            case 0x05: return "CNAME";
+            case 0x10: return "TXT";
             case 28: return "AAAA";
             default: return "UNKNOWN";
         }
