@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 public class DNSResponse {
     private byte[] data;
     // DNS Response Header
@@ -17,7 +20,7 @@ public class DNSResponse {
     private short queryClass;
 
     // Answer information
-    private Answer[] answers;
+    private ArrayList<Answer> answers;
 
     public static class Answer {
         private String name;
@@ -59,16 +62,14 @@ public class DNSResponse {
         this.queryLabelCount = queryLabelCount;
         this.queryType = queryType;
         this.queryClass = queryClass;
-        this.answers = new Answer[numAnswerRRs];
+        this.answers = new ArrayList<Answer>();
         this.data = new byte[dataLength];
         System.arraycopy(data, 0, this.data, 0, dataLength);
     }
 
     // Method to add an answer
     public void addAnswer(int index, String name, short type, short dnsClass, int ttl, int dataLength, String address) {
-        if (index < numAnswerRRs) {
-            answers[index] = new Answer(name, type, dnsClass, ttl, dataLength, address);
-        }
+        answers.add(new Answer(name, type, dnsClass, ttl, dataLength, address));
     }
 
 
@@ -83,7 +84,7 @@ public class DNSResponse {
         this.numAdditionalRRs = numAdditionalRRs;
         
         // Reinitialize the answers array based on the new number of answer RRs
-        this.answers = new Answer[numAnswerRRs];
+        this.answers = new ArrayList<Answer>();
     }
 
 
@@ -102,7 +103,7 @@ public class DNSResponse {
         System.out.println("            Name: " + this.queryName);
         System.out.println("            [Name Length: " + this.queryNameLength + "]");
         System.out.println("            [Label Count: " + this.queryLabelCount + "]");
-        System.out.println("            Type: " + getTypeString(this.queryType) + " (" + this.queryType + ") (Host Address)");
+        System.out.println("            Type: " + getTypeString(this.queryType) + " (" + this.queryType + ")");
         System.out.printf("            Class: IN (0x%04x)\n", this.queryClass);
         
         System.out.println("    Answers");
@@ -111,7 +112,7 @@ public class DNSResponse {
                 System.out.printf("        %s: type %s, class IN, addr %s\n", 
                                   answer.name, getTypeString(answer.type), answer.address);
                 System.out.println("            Name: " + answer.name);
-                System.out.println("            Type: " + getTypeString(answer.type) + " (" + answer.type + ") (Host Address)");
+                System.out.println("            Type: " + getTypeString(answer.type) + " (" + answer.type + ")");
                 System.out.printf("            Class: IN (0x%04x)\n", answer.dnsClass);
                 System.out.println("            Time to live: " + answer.ttl + " (" + answer.ttl + " seconds)");
                 System.out.println("            Data length: " + answer.dataLength);

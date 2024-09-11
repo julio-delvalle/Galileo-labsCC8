@@ -1,0 +1,151 @@
+240910234853260 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853421 ThreadServer.run()	INFO: 
+
+
+
+240910234853423 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234853425 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853433 ThreadServer.run()	INFO: 
+
+
+
+240910234853435 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234853438 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853444 ThreadServer.run()	INFO: 
+
+
+
+240910234853446 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234853447 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853454 ThreadServer.run()	INFO: 
+
+
+
+240910234853455 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234853457 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853569 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234853634 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853635 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234853680 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853682 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234853722 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 5d0c
+240910234853724 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853726 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234853767 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: f7a9
+240910234853768 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853920 ThreadServer.run()	INFO: 
+
+
+
+240910234853922 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234853923 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853927 ThreadServer.run()	INFO: 
+
+
+
+240910234853928 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234853929 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853955 ThreadServer.run()	INFO: 
+
+
+
+240910234853956 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234853957 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234853964 ThreadServer.run()	INFO: 
+
+
+
+240910234853965 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234853966 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854013 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234854032 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854183 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234854199 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854200 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234854217 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: fadf
+240910234854217 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854218 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234854234 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 4ae0
+240910234854235 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854320 ThreadServer.run()	INFO: 
+
+
+
+240910234854321 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234854322 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854328 ThreadServer.run()	INFO: 
+
+
+
+240910234854329 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234854330 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854345 ThreadServer.run()	INFO: 
+
+
+
+240910234854346 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234854347 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854351 ThreadServer.run()	INFO: 
+
+
+
+240910234854352 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234854353 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854371 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234854384 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854405 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234854417 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854417 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234854430 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 0ea0
+240910234854431 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234854432 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234854447 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: c248
+240910234854448 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234855020 ThreadServer.run()	INFO: 
+
+
+
+240910234855022 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234855023 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234855029 ThreadServer.run()	INFO: 
+
+
+
+240910234855031 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234855033 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234855040 ThreadServer.run()	INFO: 
+
+
+
+240910234855041 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234855042 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234855081 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234855096 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234855097 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234855112 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234855113 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234855125 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234856062 ThreadServer.run()	INFO: 
+
+
+
+240910234856063 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234856064 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234856070 ThreadServer.run()	INFO: 
+
+
+
+240910234856071 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234856072 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234856077 ThreadServer.run()	INFO: 
+
+
+
+240910234856079 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234856079 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234856138 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234856149 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234856151 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234856165 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234856166 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234856181 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

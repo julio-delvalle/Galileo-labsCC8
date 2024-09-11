@@ -1,8 +1,11 @@
+import java.io.*;
 import java.net.*;
 import java.nio.ByteBuffer;
+import java.nio.file.*;
 import java.text.SimpleDateFormat;
-import java.util.HashMap;
-import java.util.logging.Logger;
+import java.util.*;
+import java.util.logging.*;
+
 
 public class ThreadServer implements Runnable {
     private Integer nThreadServer;
@@ -11,7 +14,11 @@ public class ThreadServer implements Runnable {
     private Integer delay;
     private DatagramSocket socket;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyMMddHHmm");
-    static Logger LOGGER = Logger.getLogger("Server");
+    // static Logger LOGGER = Logger.getLogger("Server");
+    // DEFINICION DE LOGGER:
+    public String logsFolder = "logs";
+    public Logger LOGGER = Logger.getAnonymousLogger();
+    
 
     private static final int A = 1;
     private static final int CNAME = 5;
@@ -50,13 +57,22 @@ public class ThreadServer implements Runnable {
             "202.12.27.33"      // M Root
     };
 
-    public ThreadServer(Integer id, DatagramSocket socket, Integer delay) {
+    public ThreadServer(Integer id, DatagramSocket socket, Integer delay) throws IOException {
         this.nThreadServer = id;
         this.socket = socket;
         this.delay = delay;
 
         listIPv4.put("www.youtube.com", "142.250.217.238");
         listIPv4.put("www.google.com", "8.8.8.8");
+
+        LOGGER.setUseParentHandlers(false);
+        Files.createDirectories(Paths.get(logsFolder));
+        FileHandler fileHandler = new FileHandler(logsFolder + File.separator + "T"+ nThreadServer + "-" + dateFormat.format((new Date()).getTime()) + ".log");
+        ConsoleHandler consoleHandler = new ConsoleHandler();
+        fileHandler.setFormatter(new FormatterWebServer());
+        consoleHandler.setFormatter(new FormatterWebServer());
+        LOGGER.addHandler(fileHandler);
+        LOGGER.addHandler(consoleHandler);
     }
 
 
@@ -79,12 +95,18 @@ public class ThreadServer implements Runnable {
     }
 
     @Override
-    public void run() {
-        byte[] input = new byte[65535];
+    public void run(){
+        
+        
+        
+            byte[] input = new byte[65535];
         DatagramPacket receivePacket = null;
         InetAddress clientAddress = null;
         int clientPort = 0;
         HashMap<String, RequestInfo> requesters = new HashMap<>();
+        int dnsCounter = 0;
+        int querysWithoutResponse = 0;
+
         
         while (true) {
             try {
@@ -92,8 +114,14 @@ public class ThreadServer implements Runnable {
                 receivePacket = new DatagramPacket(input, input.length);
                 socket.receive(receivePacket);
 
-
-                int dnsCounter = 0;
+                if(querysWithoutResponse > 50){
+                    System.out.println("SE LLENO QUERYS WITHOUT RESPONSE, SE VA A CAMBIAR DE DNS.");
+                    dnsCounter++;
+                    querysWithoutResponse = 0;
+                }
+                if(dnsCounter > 7){dnsCounter=0;}
+                System.out.println("QuerysWithoutResponse: "+querysWithoutResponse);
+                
                 // int dnsCounter = new Random().nextInt(7);
                 if(receivePacket.getAddress().toString().equals("/127.0.0.1")){
                     clientAddress = receivePacket.getAddress();
@@ -106,31 +134,28 @@ public class ThreadServer implements Runnable {
                     receivedRequest.printDNSRequest();
 
                     requesters.put(receivedRequest.getTransactionID(), new RequestInfo(receivePacket.getAddress(), receivePacket.getPort()));
+                    querysWithoutResponse++;
 
                     LOGGER.info("\n\n\n");
 
 
                     //Resend the query to the first DNS server
                     InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[dnsCounter]);
-                    dnsCounter++;
                     // if(dnsCounter == 8){break;}
                     // InetAddress dnsServer = InetAddress.getByName(ROOT_SERVERS[0]);
                     DatagramPacket dnsPacket = new DatagramPacket(receivedRequest.getData(), receivedRequest.getLength(), dnsServer,53);
-                    LOGGER.info("paquete recibido LENGHT: "+receivePacket.getLength());
-                    LOGGER.info("paquete recibido creado LENGHT: "+receivedRequest.getLength());
-                    LOGGER.info("paquete enviado a DNS "+dnsCounter);
+                    LOGGER.info("request "+receivedRequest.getTransactionID()+" enviado a DNS "+dnsCounter);
                     socket.send(dnsPacket);
                 }else{
                     // ==== SI ES OTRO, ES RESPONSE. RECIBIR DE DNS ====
 
-                    LOGGER.info("source del packet: "+receivePacket.getAddress().toString());
-
-
+                    
+                    
                     DNSResponse receivedResponse = formatAndGetDNSResponse(receivePacket.getData(), receivePacket.getLength());
-                    LOGGER.info("HEXADECIMAL recibido: " + bytesToHex(receivePacket.getData(),receivePacket.getLength()));
                     receivedResponse.printDNSResponse();
                     System.out.println("\n\n\n");
-
+                    
+                    LOGGER.info("Se recibió response para el paquete "+receivedResponse.getTransactionID()+" del source: "+receivePacket.getAddress().toString());
                     
                     // byte[] receivedData = new byte[receivePacket.getLength()];
                     // byte[] receivedDataTemp = receivePacket.getData();
@@ -156,9 +181,17 @@ public class ThreadServer implements Runnable {
                     // AQUÍ GUARDAR EN MI CACHE
                     // AQUÍ GUARDAR EN MI CACHE
 
-                    clientAddress = requesters.get(receivedResponse.getTransactionID()).getAddress();
-                    clientPort = requesters.get(receivedResponse.getTransactionID()).getPort();
-                    requesters.remove(receivedResponse.getTransactionID());
+                    RequestInfo client = requesters.get(receivedResponse.getTransactionID());
+
+                    if(client != null){
+                        clientAddress = client.getAddress();
+                        clientPort = client.getPort();
+                        requesters.remove(receivedResponse.getTransactionID());
+                        querysWithoutResponse--;
+                    }else{
+                        LOGGER.info("No se encontró el cliente para el ID de transacción: " + receivedResponse.getTransactionID());
+                    }
+
 
                     // Envía la respuesta de vuelta al cliente
                     // if(changed){
@@ -353,8 +386,6 @@ public class ThreadServer implements Runnable {
 
         int countAnswers = (int)numAnswerRRs;
         int AnswerIndex = 0;
-        System.out.println("countAnswers: "+countAnswers);
-        System.out.println("Currentposition: "+position);
 
         while(countAnswers > 0){
 
@@ -382,17 +413,16 @@ public class ThreadServer implements Runnable {
                 answerName = answerNameBuilder.toString();
             }
 
-            System.out.println("position después de obtener el nombre: "+position);
             
             //To get AType and AClass
             short ansType = buffer.getShort(position);
             short ansClass = buffer.getShort(position + 2);
             position += 4;
             
-            System.out.println("position después de obtener clases: "+position);
+            System.out.println("type: "+ansType+" class: "+ansClass);
             int ansTTL = buffer.getInt(position);
             position += 4;
-            System.out.println("position después de obtener ttl y ttl: "+position+"ttl: "+ansTTL);
+            System.out.println("position después de obtener ttl y ttl: "+position+" ttl: "+ansTTL);
 
             String ansAddress = "";
             if(ansType == (short)0x0001){
@@ -402,31 +432,50 @@ public class ThreadServer implements Runnable {
                 position += 2;
                 for (int i = 0; i < 4; i++) {
                     int unsignedValue = buffer.get(position) & 0xFF;
-                    System.out.println("Item "+i+" del address: "+unsignedValue);
                     ansAddress += unsignedValue + ".";
                     //ansAddress += Short.toUnsignedInt(buffer.get(position)) + ".";
                     position++;
                 }
                 ansAddress = ansAddress.substring(0, ansAddress.length() - 1);
             }else if(ansType == (short)0x0005){ //CNAME
-                short tempAddressLengthShort = buffer.getShort(position);
-                int tempAddressLength = Short.toUnsignedInt(tempAddressLengthShort);
+                int tempAddressLength = Short.toUnsignedInt(buffer.getShort(position));
                 System.out.println("es tipo CNAME con length: "+tempAddressLength);
                 position += 2;
-                for (int i = 0; i < tempAddressLength; i++) {
-                    int tempSegmentLength = Short.toUnsignedInt(buffer.getShort(position));
-                    position++;
-                    for(int j=0;j<tempSegmentLength;j++){
-                        ansAddress += String.valueOf(buffer.get(position));
+
+                for (int i = 0; i < tempAddressLength;) {
+                    if(buffer.get(position) == (byte)0xC0){ //En el CNAME viene comprimido
                         position++;
+                        i++;
+                        int tempPosition = buffer.get(position) & 0xFF;//Saltar a inicio de compresion
+
+                        if(buffer.get(tempPosition) == (byte)0x00){ //Se acabó nombre en compresión
+                            ansAddress += ".";
+                            position++;
+                            i++;
+                            break;
+                        }else{
+                            int tempSegmentLength = buffer.get(tempPosition) & 0xFF;
+                            for(int j=0;j<tempSegmentLength;j++){
+                                ansAddress += (char) buffer.get(tempPosition);
+                                tempPosition++;
+                            }
+                        }
+                    }else{ //No viene comprimido
+                        int tempSegmentLength = buffer.get(position) & 0xFF;
+                        position++;
+                        i++;
+                        for(int j=0;j<tempSegmentLength;j++){
+                            ansAddress += (char) buffer.get(position);
+                            position++;
+                            i++;
+                        }
+                        ansAddress += ".";
                     }
-                    ansAddress += ".";
                 }
                 ansAddress = ansAddress.substring(0, ansAddress.length() - 1);
             }
 
             returnResponse.addAnswer(AnswerIndex, answerName, ansType, ansClass, ansTTL, ansAddress.split("\\.").length, ansAddress);
-
             countAnswers--;
         }
         return returnResponse;

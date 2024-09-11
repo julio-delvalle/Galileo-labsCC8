@@ -70,7 +70,7 @@ public class DNSRequest {
         System.out.println("            Name: " + this.queryName);
         System.out.println("            [Name Length: " + this.queryNameLength + "]");
         System.out.println("            [Label Count: " + this.queryLabelCount + "]");
-        System.out.println("            Type: " + getTypeString(this.queryType) + " (" + this.queryType + ") (Host Address)");
+        System.out.println("            Type: " + getTypeString(this.queryType) + " (" + this.queryType + ")");
         System.out.printf("            Class: IN (0x%04x)\n", this.queryClass);
         
     }

@@ -1,0 +1,2613 @@
+240910234010368 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234014058 ThreadServer.run()	INFO: 
+
+
+
+240910234014060 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234014062 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234014063 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234014064 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234014072 ThreadServer.run()	INFO: 
+
+
+
+240910234014074 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234014075 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234014078 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234014079 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234014086 ThreadServer.run()	INFO: 
+
+
+
+240910234014089 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234014090 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234014091 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234014092 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234014099 ThreadServer.run()	INFO: 
+
+
+
+240910234014100 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234014101 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234014102 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234014103 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234014179 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234014192 ThreadServer.run()	INFO: HEXADECIMAL recibido: 82 3e 81 80 0 1 0 4 0 0 0 0 3 77 77 77 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1c 0 1 c0 c 0 1c 0 1 0 0 0 c1 0 10 26 7 f8 b0 40 8 8 5 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 0 c1 0 10 26 7 f8 b0 40 8 8 0 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 0 c1 0 10 26 7 f8 b0 40 8 8 d 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 0 c1 0 10 26 7 f8 b0 40 8 8 9 0 0 0 0 0 0 20 a
+240910234014213 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234014215 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234014259 ThreadServer.run()	INFO: HEXADECIMAL recibido: 44 f6 81 80 0 1 0 c 0 0 0 0 3 77 77 77 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 1 3 0 4 ac d9 a5 ca c0 c 0 1 0 1 0 0 1 3 0 4 8e fa d9 ea c0 c 0 1 0 1 0 0 1 3 0 4 8e fa 40 ea c0 c 0 1 0 1 0 0 1 3 0 4 c0 b2 32 2a c0 c 0 1 0 1 0 0 1 3 0 4 8e fa d9 aa c0 c 0 1 0 1 0 0 1 3 0 4 8e fa d9 ca c0 c 0 1 0 1 0 0 1 3 0 4 8e fa 40 8a c0 c 0 1 0 1 0 0 1 3 0 4 ac d9 2 ca c0 c 0 1 0 1 0 0 1 3 0 4 ac d9 f ca c0 c 0 1 0 1 0 0 1 3 0 4 8e fb 23 ea c0 c 0 1 0 1 0 0 1 3 0 4 8e fa bd 8a c0 c 0 1 0 1 0 0 1 3 0 4 c0 b2 32 4a
+240910234014350 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234014354 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234014489 ThreadServer.run()	INFO: HEXADECIMAL recibido: 44 f6 81 80 0 1 0 e 0 0 0 0 3 77 77 77 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 fc 0 4 ac d9 a5 ca c0 c 0 1 0 1 0 0 0 fc 0 4 c0 b2 32 4a c0 c 0 1 0 1 0 0 0 fc 0 4 8e fa d9 aa c0 c 0 1 0 1 0 0 0 fc 0 4 8e fa bd 8a c0 c 0 1 0 1 0 0 0 fc 0 4 8e fa d9 ea c0 c 0 1 0 1 0 0 0 fc 0 4 8e fa 40 8a c0 c 0 1 0 1 0 0 0 fc 0 4 ac d9 f ca c0 c 0 1 0 1 0 0 0 fc 0 4 8e fa 40 ea c0 c 0 1 0 1 0 0 0 fc 0 4 c0 b2 32 2a c0 c 0 1 0 1 0 0 0 fc 0 4 8e fa d9 ca c0 c 0 1 0 1 0 0 0 fc 0 4 ac d9 2 ca c0 c 0 1 0 1 0 0 0 fc 0 4 ac d9 3 4a c0 c 0 1 0 1 0 0 0 fc 0 4 8e fb 23 ea c0 c 0 1 0 1 0 0 0 fc 0 4 8e fa 40 ca
+240910234014734 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 44f6
+240910234014736 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234014742 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234014751 ThreadServer.run()	INFO: HEXADECIMAL recibido: 82 3e 81 80 0 1 0 4 0 0 0 0 3 77 77 77 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1c 0 1 c0 c 0 1c 0 1 0 0 0 4 0 10 26 7 f8 b0 40 8 8 4 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 0 4 0 10 26 7 f8 b0 40 8 8 b 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 0 4 0 10 26 7 f8 b0 40 8 8 7 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 0 4 0 10 26 7 f8 b0 40 8 8 a 0 0 0 0 0 0 20 a
+240910234014770 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 823e
+240910234014771 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015667 ThreadServer.run()	INFO: 
+
+
+
+240910234015668 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234015669 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234015670 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015671 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015676 ThreadServer.run()	INFO: 
+
+
+
+240910234015677 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234015678 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234015679 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015680 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015686 ThreadServer.run()	INFO: 
+
+
+
+240910234015688 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234015688 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234015689 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015690 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015696 ThreadServer.run()	INFO: 
+
+
+
+240910234015697 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234015698 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234015699 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015700 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015706 ThreadServer.run()	INFO: 
+
+
+
+240910234015707 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234015708 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234015709 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015710 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015716 ThreadServer.run()	INFO: 
+
+
+
+240910234015717 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234015718 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234015719 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015720 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015726 ThreadServer.run()	INFO: 
+
+
+
+240910234015727 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234015728 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234015729 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015730 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015736 ThreadServer.run()	INFO: 
+
+
+
+240910234015738 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234015739 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234015760 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015765 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015779 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234015782 ThreadServer.run()	INFO: HEXADECIMAL recibido: 38 35 81 80 0 1 0 0 0 1 0 0 7 75 73 2d 6f 6e 6c 79 4 67 63 70 70 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 19 0 6 0 1 0 0 1 46 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234015789 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015790 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234015793 ThreadServer.run()	INFO: HEXADECIMAL recibido: ec c9 81 80 0 1 0 0 0 1 0 0 4 61 70 69 33 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 1 b5 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234015799 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015801 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234015807 ThreadServer.run()	INFO: HEXADECIMAL recibido: 44 66 81 80 0 1 0 2 0 0 0 0 7 75 73 2d 6f 6e 6c 79 4 67 63 70 70 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 56 0 4 4b 2 4c 8 c0 c 0 1 0 1 0 0 0 56 0 4 63 53 a5 22
+240910234015816 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015817 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234015820 ThreadServer.run()	INFO: HEXADECIMAL recibido: 38 35 81 80 0 1 0 0 0 1 0 0 7 75 73 2d 6f 6e 6c 79 4 67 63 70 70 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 19 0 6 0 1 0 0 3 41 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234015825 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 3835
+240910234015826 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015827 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234015836 ThreadServer.run()	INFO: HEXADECIMAL recibido: c8 87 81 80 0 1 0 3 0 0 0 0 4 61 70 69 33 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 3c 0 4 22 e0 fe 77 c0 c 0 1 0 1 0 0 0 3c 0 4 12 d1 73 77 c0 c 0 1 0 1 0 0 0 3c 0 4 34 36 6d f3
+240910234015852 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015853 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234015856 ThreadServer.run()	INFO: HEXADECIMAL recibido: ec c9 81 80 0 1 0 0 0 1 0 0 4 61 70 69 33 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 84 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234015864 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: ecc9
+240910234015865 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015870 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234015881 ThreadServer.run()	INFO: HEXADECIMAL recibido: c8 87 81 80 0 1 0 3 0 0 0 0 4 61 70 69 33 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 2a 0 4 34 36 6d f3 c0 c 0 1 0 1 0 0 0 2a 0 4 12 d1 73 77 c0 c 0 1 0 1 0 0 0 2a 0 4 22 e0 fe 77
+240910234015894 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: c887
+240910234015895 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015896 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234015903 ThreadServer.run()	INFO: HEXADECIMAL recibido: 44 66 81 80 0 1 0 2 0 0 0 0 7 75 73 2d 6f 6e 6c 79 4 67 63 70 70 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 e9 0 4 63 53 a5 22 c0 c 0 1 0 1 0 0 0 e9 0 4 4b 2 4c 8
+240910234015913 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 4466
+240910234015914 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015921 ThreadServer.run()	INFO: 
+
+
+
+240910234015923 ThreadServer.run()	INFO: paquete recibido LENGHT: 46
+240910234015924 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 46
+240910234015924 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015925 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015931 ThreadServer.run()	INFO: 
+
+
+
+240910234015932 ThreadServer.run()	INFO: paquete recibido LENGHT: 46
+240910234015933 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 46
+240910234015934 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015935 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015940 ThreadServer.run()	INFO: 
+
+
+
+240910234015942 ThreadServer.run()	INFO: paquete recibido LENGHT: 46
+240910234015942 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 46
+240910234015943 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015944 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015951 ThreadServer.run()	INFO: 
+
+
+
+240910234015953 ThreadServer.run()	INFO: paquete recibido LENGHT: 46
+240910234015955 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 46
+240910234015956 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234015957 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234015991 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016024 ThreadServer.run()	INFO: HEXADECIMAL recibido: 1a 8e 81 80 0 1 0 c 0 0 0 0 d 66 63 6d 63 6f 6e 6e 65 63 74 69 6f 6e a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 3 4a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa 40 ca c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 2 ca c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 aa c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 ca c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa bd 8a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa 40 ea c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 a5 ca c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa 40 8a c0 c 0 1 0 1 0 0 1 2c 0 4 c0 b2 32 2a c0 c 0 1 0 1 0 0 1 2c 0 4 c0 b2 32 4a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 ea
+240910234016061 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016062 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016071 ThreadServer.run()	INFO: HEXADECIMAL recibido: 22 d9 81 80 0 1 0 4 0 0 0 0 d 66 63 6d 63 6f 6e 6e 65 63 74 69 6f 6e a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1c 0 1 c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 e 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 1 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 9 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 0 0 0 0 0 0 0 20 a
+240910234016093 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016094 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016126 ThreadServer.run()	INFO: HEXADECIMAL recibido: 1a 8e 81 80 0 1 0 c 0 0 0 0 d 66 63 6d 63 6f 6e 6e 65 63 74 69 6f 6e a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 a5 ca c0 c 0 1 0 1 0 0 1 2c 0 4 c0 b2 32 2a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa 40 ea c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 2 ca c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 3 4a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa 40 ca c0 c 0 1 0 1 0 0 1 2c 0 4 c0 b2 32 4a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa bd 8a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 ca c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 ea c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 aa c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa 40 8a
+240910234016158 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 1a8e
+240910234016159 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016164 ThreadServer.run()	INFO: 
+
+
+
+240910234016166 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234016166 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234016167 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234016168 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016173 ThreadServer.run()	INFO: 
+
+
+
+240910234016175 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234016175 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234016176 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234016177 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016178 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016184 ThreadServer.run()	INFO: HEXADECIMAL recibido: 22 d9 81 80 0 1 0 4 0 0 0 0 d 66 63 6d 63 6f 6e 6e 65 63 74 69 6f 6e a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1c 0 1 c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 0 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 13 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 5 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 1 0 0 0 0 0 0 20 a
+240910234016198 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 22d9
+240910234016199 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016204 ThreadServer.run()	INFO: 
+
+
+
+240910234016204 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234016205 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234016205 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234016206 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016210 ThreadServer.run()	INFO: 
+
+
+
+240910234016211 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234016212 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234016212 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234016213 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016217 ThreadServer.run()	INFO: 
+
+
+
+240910234016218 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234016219 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234016219 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234016220 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016223 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016225 ThreadServer.run()	INFO: HEXADECIMAL recibido: 93 51 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 3d 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234016230 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016237 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016246 ThreadServer.run()	INFO: HEXADECIMAL recibido: 21 74 81 80 0 1 0 3 0 0 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 f 0 4 22 cd ef ab c0 c 0 1 0 1 0 0 0 f 0 4 3 de 6a 54 c0 c 0 1 0 1 0 0 0 f 0 4 3 e8 dc 45
+240910234016258 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016260 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016267 ThreadServer.run()	INFO: HEXADECIMAL recibido: 21 74 81 80 0 1 0 3 0 0 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 f 0 4 3 de 6a 54 c0 c 0 1 0 1 0 0 0 f 0 4 22 cd ef ab c0 c 0 1 0 1 0 0 0 f 0 4 3 e8 dc 45
+240910234016277 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 2174
+240910234016279 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016280 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016282 ThreadServer.run()	INFO: HEXADECIMAL recibido: 93 51 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 73 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234016288 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 9351
+240910234016289 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016290 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016293 ThreadServer.run()	INFO: HEXADECIMAL recibido: 93 51 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 73 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234016298 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 9351
+240910234016299 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016629 ThreadServer.run()	INFO: 
+
+
+
+240910234016629 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234016630 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234016630 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234016631 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016634 ThreadServer.run()	INFO: 
+
+
+
+240910234016635 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234016635 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234016635 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234016636 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016655 ThreadServer.run()	INFO: 
+
+
+
+240910234016656 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234016657 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234016657 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234016658 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016661 ThreadServer.run()	INFO: 
+
+
+
+240910234016662 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234016663 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234016663 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234016664 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016675 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016691 ThreadServer.run()	INFO: HEXADECIMAL recibido: 8f 8e 81 80 0 1 0 8 0 0 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 5 0 4 2c e3 c1 d7 c0 c 0 1 0 1 0 0 0 5 0 4 23 52 79 c2 c0 c 0 1 0 1 0 0 0 5 0 4 36 94 8a 18 c0 c 0 1 0 1 0 0 0 5 0 4 23 a5 8f 60 c0 c 0 1 0 1 0 0 0 5 0 4 34 18 a6 df c0 c 0 1 0 1 0 0 0 5 0 4 34 20 70 42 c0 c 0 1 0 1 0 0 0 5 0 4 34 1b 92 d c0 c 0 1 0 1 0 0 0 5 0 4 34 58 b2 d9
+240910234016714 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016715 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016717 ThreadServer.run()	INFO: HEXADECIMAL recibido: 97 81 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 e9 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234016722 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016723 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016741 ThreadServer.run()	INFO: HEXADECIMAL recibido: 8f 8e 81 80 0 1 0 8 0 0 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 9 0 4 22 da 18 bf c0 c 0 1 0 1 0 0 0 9 0 4 2c e6 1c 79 c0 c 0 1 0 1 0 0 0 9 0 4 22 d7 69 9 c0 c 0 1 0 1 0 0 0 9 0 4 34 28 73 b2 c0 c 0 1 0 1 0 0 0 9 0 4 22 d3 60 20 c0 c 0 1 0 1 0 0 0 9 0 4 36 da 6 9b c0 c 0 1 0 1 0 0 0 9 0 4 23 9b f2 72 c0 c 0 1 0 1 0 0 0 9 0 4 22 d5 4d e9
+240910234016761 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 8f8e
+240910234016762 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234016763 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234016765 ThreadServer.run()	INFO: HEXADECIMAL recibido: 97 81 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 2 77 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234016769 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 9781
+240910234016770 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234020597 ThreadServer.run()	INFO: 
+
+
+
+240910234020598 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234020598 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234020598 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234020599 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234020602 ThreadServer.run()	INFO: 
+
+
+
+240910234020603 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234020603 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234020603 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234020604 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234020631 ThreadServer.run()	INFO: 
+
+
+
+240910234020632 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234020632 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234020633 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234020634 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234020638 ThreadServer.run()	INFO: 
+
+
+
+240910234020639 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234020640 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234020640 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234020641 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234020646 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234020655 ThreadServer.run()	INFO: HEXADECIMAL recibido: 6b d5 81 80 0 1 0 4 0 0 0 0 4 70 6c 61 79 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 6 0 4 d8 ef 26 df c0 c 0 1 0 1 0 0 0 6 0 4 d8 ef 20 df c0 c 0 1 0 1 0 0 0 6 0 4 d8 ef 22 df c0 c 0 1 0 1 0 0 0 6 0 4 d8 ef 24 df
+240910234020670 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234020671 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234020677 ThreadServer.run()	INFO: HEXADECIMAL recibido: 59 26 81 80 0 1 0 4 0 0 0 0 4 70 6c 61 79 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1c 0 1 c0 c 0 1c 0 1 0 0 0 e1 0 10 20 1 48 60 48 2 0 38 0 0 0 0 0 0 2 23 c0 c 0 1c 0 1 0 0 0 e1 0 10 20 1 48 60 48 2 0 34 0 0 0 0 0 0 2 23 c0 c 0 1c 0 1 0 0 0 e1 0 10 20 1 48 60 48 2 0 32 0 0 0 0 0 0 2 23 c0 c 0 1c 0 1 0 0 0 e1 0 10 20 1 48 60 48 2 0 36 0 0 0 0 0 0 2 23
+240910234020692 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234020693 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234020703 ThreadServer.run()	INFO: HEXADECIMAL recibido: 6b d5 81 80 0 1 0 4 0 0 0 0 4 70 6c 61 79 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 94 0 4 d8 ef 24 df c0 c 0 1 0 1 0 0 0 94 0 4 d8 ef 26 df c0 c 0 1 0 1 0 0 0 94 0 4 d8 ef 22 df c0 c 0 1 0 1 0 0 0 94 0 4 d8 ef 20 df
+240910234020717 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 6bd5
+240910234020718 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234020718 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234020725 ThreadServer.run()	INFO: HEXADECIMAL recibido: 59 26 81 80 0 1 0 4 0 0 0 0 4 70 6c 61 79 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1c 0 1 c0 c 0 1c 0 1 0 0 0 ef 0 10 20 1 48 60 48 2 0 32 0 0 0 0 0 0 2 23 c0 c 0 1c 0 1 0 0 0 ef 0 10 20 1 48 60 48 2 0 36 0 0 0 0 0 0 2 23 c0 c 0 1c 0 1 0 0 0 ef 0 10 20 1 48 60 48 2 0 38 0 0 0 0 0 0 2 23 c0 c 0 1c 0 1 0 0 0 ef 0 10 20 1 48 60 48 2 0 34 0 0 0 0 0 0 2 23
+240910234020739 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 5926
+240910234020740 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234021668 ThreadServer.run()	INFO: 
+
+
+
+240910234021668 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234021669 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234021669 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234021670 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234021674 ThreadServer.run()	INFO: 
+
+
+
+240910234021675 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234021675 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234021676 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234021676 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234021708 ThreadServer.run()	INFO: 
+
+
+
+240910234021709 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234021709 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234021710 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234021710 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234021715 ThreadServer.run()	INFO: 
+
+
+
+240910234021716 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234021716 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234021717 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234021717 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234021720 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234021721 ThreadServer.run()	INFO: HEXADECIMAL recibido: 84 87 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 e4 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234021727 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234021728 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234021749 ThreadServer.run()	INFO: HEXADECIMAL recibido: 28 f1 81 80 0 1 0 8 0 0 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 3c 0 4 36 94 c3 e3 c0 c 0 1 0 1 0 0 0 3c 0 4 23 a2 da 4e c0 c 0 1 0 1 0 0 0 3c 0 4 2c ee e7 bc c0 c 0 1 0 1 0 0 0 3c 0 4 2c e2 cb 8e c0 c 0 1 0 1 0 0 0 3c 0 4 2c ed 37 9b c0 c 0 1 0 1 0 0 0 3c 0 4 34 25 94 e2 c0 c 0 1 0 1 0 0 0 3c 0 4 34 20 70 42 c0 c 0 1 0 1 0 0 0 3c 0 4 34 18 a6 df
+240910234021771 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234021772 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234021773 ThreadServer.run()	INFO: HEXADECIMAL recibido: 84 87 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 e4 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234021778 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 8487
+240910234021779 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234021780 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234021799 ThreadServer.run()	INFO: HEXADECIMAL recibido: 28 f1 81 80 0 1 0 8 0 0 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 3c 0 4 23 a2 da 4e c0 c 0 1 0 1 0 0 0 3c 0 4 2c ed 37 9b c0 c 0 1 0 1 0 0 0 3c 0 4 34 25 94 e2 c0 c 0 1 0 1 0 0 0 3c 0 4 34 20 70 42 c0 c 0 1 0 1 0 0 0 3c 0 4 2c ee e7 bc c0 c 0 1 0 1 0 0 0 3c 0 4 34 18 a6 df c0 c 0 1 0 1 0 0 0 3c 0 4 2c e2 cb 8e c0 c 0 1 0 1 0 0 0 3c 0 4 36 94 c3 e3
+240910234021821 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 28f1
+240910234021822 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234027088 ThreadServer.run()	INFO: 
+
+
+
+240910234027089 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234027089 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234027089 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234027090 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234027114 ThreadServer.run()	INFO: 
+
+
+
+240910234027114 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234027115 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234027115 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234027116 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234027220 ThreadServer.run()	INFO: 
+
+
+
+240910234027221 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234027222 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234027223 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234027223 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234027236 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234027238 ThreadServer.run()	INFO: HEXADECIMAL recibido: 99 e6 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 40 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234027243 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234027244 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234027246 ThreadServer.run()	INFO: HEXADECIMAL recibido: 99 e6 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 40 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234027249 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 99e6
+240910234027250 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234027255 ThreadServer.run()	INFO: 
+
+
+
+240910234027256 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234027257 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234027258 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234027258 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234027294 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234027295 ThreadServer.run()	INFO: HEXADECIMAL recibido: 74 8d 81 80 0 1 0 0 0 1 0 0 7 75 73 2d 6f 6e 6c 79 4 67 63 70 70 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 19 0 6 0 1 0 0 3 84 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234027300 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234027318 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234027319 ThreadServer.run()	INFO: HEXADECIMAL recibido: 74 8d 81 80 0 1 0 0 0 1 0 0 7 75 73 2d 6f 6e 6c 79 4 67 63 70 70 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 19 0 6 0 1 0 0 3 35 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234027325 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 748d
+240910234027326 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234036728 ThreadServer.run()	INFO: 
+
+
+
+240910234036729 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234036730 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234036730 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234036731 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234036784 ThreadServer.run()	INFO: 
+
+
+
+240910234036786 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234036786 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234036787 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234036787 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234036788 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234036790 ThreadServer.run()	INFO: HEXADECIMAL recibido: 81 57 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 3c 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234036796 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234036835 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234036837 ThreadServer.run()	INFO: HEXADECIMAL recibido: 81 57 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 d5 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234036843 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 8157
+240910234036844 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234042561 ThreadServer.run()	INFO: 
+
+
+
+240910234042561 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234042562 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234042562 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234042563 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234042589 ThreadServer.run()	INFO: 
+
+
+
+240910234042590 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234042591 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234042591 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234042592 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234042666 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234042667 ThreadServer.run()	INFO: HEXADECIMAL recibido: 23 7b 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 30 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234042671 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234042672 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234042673 ThreadServer.run()	INFO: HEXADECIMAL recibido: 23 7b 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 2 5d 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234042678 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 237b
+240910234042678 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234050189 ThreadServer.run()	INFO: 
+
+
+
+240910234050190 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234050191 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234050191 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234050192 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234050196 ThreadServer.run()	INFO: 
+
+
+
+240910234050197 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234050197 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234050197 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234050199 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234050225 ThreadServer.run()	INFO: 
+
+
+
+240910234050226 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234050227 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234050227 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234050228 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234050233 ThreadServer.run()	INFO: 
+
+
+
+240910234050235 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234050235 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234050235 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234050236 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234050287 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234050293 ThreadServer.run()	INFO: HEXADECIMAL recibido: da 5b 81 80 0 1 0 3 0 0 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 29 0 4 22 cd ef ab c0 c 0 1 0 1 0 0 0 29 0 4 3 e8 dc 45 c0 c 0 1 0 1 0 0 0 29 0 4 3 de 6a 54
+240910234050303 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234050303 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234050310 ThreadServer.run()	INFO: HEXADECIMAL recibido: da 5b 81 80 0 1 0 3 0 0 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 20 0 4 22 cd ef ab c0 c 0 1 0 1 0 0 0 20 0 4 3 de 6a 54 c0 c 0 1 0 1 0 0 0 20 0 4 3 e8 dc 45
+240910234050319 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: da5b
+240910234050320 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234050320 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234050322 ThreadServer.run()	INFO: HEXADECIMAL recibido: 1e d4 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 50 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234050327 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234050328 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234050329 ThreadServer.run()	INFO: HEXADECIMAL recibido: 1e d4 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 1a 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234050334 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 1ed4
+240910234050335 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056305 ThreadServer.run()	INFO: 
+
+
+
+240910234056306 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234056307 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234056307 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234056307 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056337 ThreadServer.run()	INFO: 
+
+
+
+240910234056337 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234056338 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234056338 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234056339 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056415 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234056416 ThreadServer.run()	INFO: HEXADECIMAL recibido: d8 7c 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 4a 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234056421 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056421 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234056423 ThreadServer.run()	INFO: HEXADECIMAL recibido: d8 7c 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 50 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234056428 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: d87c
+240910234056428 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056787 ThreadServer.run()	INFO: 
+
+
+
+240910234056788 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234056788 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234056788 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234056789 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056805 ThreadServer.run()	INFO: 
+
+
+
+240910234056805 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234056806 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234056806 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234056807 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056811 ThreadServer.run()	INFO: 
+
+
+
+240910234056812 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234056813 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234056813 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234056814 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056818 ThreadServer.run()	INFO: 
+
+
+
+240910234056819 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234056820 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234056820 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234056821 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056831 ThreadServer.run()	INFO: 
+
+
+
+240910234056832 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234056833 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234056833 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234056834 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056838 ThreadServer.run()	INFO: 
+
+
+
+240910234056840 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234056840 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234056840 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234056840 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056841 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234056842 ThreadServer.run()	INFO: HEXADECIMAL recibido: 36 bf 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 2 89 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234056847 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056868 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234056875 ThreadServer.run()	INFO: HEXADECIMAL recibido: 55 ea 81 80 0 1 0 2 0 0 0 0 4 61 70 69 34 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 14 0 4 23 47 a2 18 c0 c 0 1 0 1 0 0 0 14 0 4 d f8 f1 7
+240910234056885 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056885 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234056887 ThreadServer.run()	INFO: HEXADECIMAL recibido: 36 bf 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 28 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234056892 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 36bf
+240910234056892 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056893 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234056895 ThreadServer.run()	INFO: HEXADECIMAL recibido: 97 ee 81 80 0 1 0 0 0 1 0 0 4 61 70 69 34 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 1 3f 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234056900 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056900 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234056906 ThreadServer.run()	INFO: HEXADECIMAL recibido: 55 ea 81 80 0 1 0 2 0 0 0 0 4 61 70 69 34 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 28 0 4 d f8 f1 7 c0 c 0 1 0 1 0 0 0 28 0 4 23 47 a2 18
+240910234056914 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 55ea
+240910234056914 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234056915 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234056916 ThreadServer.run()	INFO: HEXADECIMAL recibido: 97 ee 81 80 0 1 0 0 0 1 0 0 4 61 70 69 34 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 2 44 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234056921 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 97ee
+240910234056922 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234101272 ThreadServer.run()	INFO: 
+
+
+
+240910234101272 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234101272 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234101273 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234101273 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234101310 ThreadServer.run()	INFO: 
+
+
+
+240910234101310 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234101311 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234101311 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234101311 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234101362 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234101363 ThreadServer.run()	INFO: HEXADECIMAL recibido: 8c 1f 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 45 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234101366 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234101382 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234101383 ThreadServer.run()	INFO: HEXADECIMAL recibido: 8c 1f 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 4b 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234101387 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 8c1f
+240910234101388 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234102297 ThreadServer.run()	INFO: 
+
+
+
+240910234102297 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234102298 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234102298 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234102298 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234102323 ThreadServer.run()	INFO: 
+
+
+
+240910234102323 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234102324 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234102324 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234102324 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234102344 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234102345 ThreadServer.run()	INFO: HEXADECIMAL recibido: e9 b3 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 1c 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234102349 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234102370 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234102371 ThreadServer.run()	INFO: HEXADECIMAL recibido: e9 b3 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 bb 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234102374 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: e9b3
+240910234102375 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234112446 ThreadServer.run()	INFO: 
+
+
+
+240910234112447 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234112447 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234112448 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234112448 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234112479 ThreadServer.run()	INFO: 
+
+
+
+240910234112480 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234112480 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234112480 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234112481 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234112494 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234112496 ThreadServer.run()	INFO: HEXADECIMAL recibido: a0 eb 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 b1 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234112499 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234112538 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234112539 ThreadServer.run()	INFO: HEXADECIMAL recibido: a0 eb 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 b1 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234112544 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: a0eb
+240910234112544 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234119876 ThreadServer.run()	INFO: 
+
+
+
+240910234119877 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234119878 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234119878 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234119878 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234119903 ThreadServer.run()	INFO: 
+
+
+
+240910234119904 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234119904 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234119905 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234119906 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234119987 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234119989 ThreadServer.run()	INFO: HEXADECIMAL recibido: ee 17 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 aa 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234119994 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234119996 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234119998 ThreadServer.run()	INFO: HEXADECIMAL recibido: ee 17 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 aa 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234120001 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: ee17
+240910234120002 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234125507 ThreadServer.run()	INFO: 
+
+
+
+240910234125508 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234125508 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234125509 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234125509 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234125514 ThreadServer.run()	INFO: 
+
+
+
+240910234125514 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234125515 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234125515 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234125516 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234125546 ThreadServer.run()	INFO: 
+
+
+
+240910234125547 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234125548 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234125548 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234125549 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234125553 ThreadServer.run()	INFO: 
+
+
+
+240910234125554 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234125555 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234125555 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234125556 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234125625 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234125631 ThreadServer.run()	INFO: HEXADECIMAL recibido: 66 e9 81 80 0 1 0 2 0 0 0 0 8 61 63 74 69 76 69 74 79 7 77 69 6e 64 6f 77 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 5 0 1 0 0 4 b4 0 26 11 61 63 74 69 76 69 74 79 2d 63 6f 6e 73 75 6d 65 72 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 32 0 1 0 1 0 0 0 11 0 4 d 44 e9 9
+240910234125641 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234125642 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234125645 ThreadServer.run()	INFO: HEXADECIMAL recibido: 66 e9 81 80 0 1 0 2 0 0 0 0 8 61 63 74 69 76 69 74 79 7 77 69 6e 64 6f 77 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 5 0 1 0 0 9 b5 0 26 11 61 63 74 69 76 69 74 79 2d 63 6f 6e 73 75 6d 65 72 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 32 0 1 0 1 0 0 0 a 0 4 14 c6 2 b5
+240910234125655 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 66e9
+240910234125656 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234125657 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234125660 ThreadServer.run()	INFO: HEXADECIMAL recibido: e1 ad 81 80 0 1 0 1 0 1 0 0 8 61 63 74 69 76 69 74 79 7 77 69 6e 64 6f 77 73 3 63 6f 6d 0 0 1c 0 1 c0 c 0 5 0 1 0 0 3 f1 0 26 11 61 63 74 69 76 69 74 79 2d 63 6f 6e 73 75 6d 65 72 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 44 0 6 0 1 0 0 0 8 0 2e 3 74 6d 31 6 64 6e 73 2d 74 6d c0 1d a 68 6f 73 74 6d 61 73 74 65 72 c0 44 77 64 96 60 0 0 3 84 0 0 1 2c 0 24 ea 0 0 0 0 1e
+240910234125669 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234125670 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234125673 ThreadServer.run()	INFO: HEXADECIMAL recibido: e1 ad 81 80 0 1 0 1 0 1 0 0 8 61 63 74 69 76 69 74 79 7 77 69 6e 64 6f 77 73 3 63 6f 6d 0 0 1c 0 1 c0 c 0 5 0 1 0 0 3 f 0 26 11 61 63 74 69 76 69 74 79 2d 63 6f 6e 73 75 6d 65 72 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 44 0 6 0 1 0 0 0 4 0 2e 3 74 6d 31 6 64 6e 73 2d 74 6d c0 1d a 68 6f 73 74 6d 61 73 74 65 72 c0 44 77 64 96 60 0 0 3 84 0 0 1 2c 0 24 ea 0 0 0 0 1e
+240910234125682 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: e1ad
+240910234125683 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234125946 ThreadServer.run()	INFO: 
+
+
+
+240910234125947 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234125948 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234125948 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234125949 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234125982 ThreadServer.run()	INFO: 
+
+
+
+240910234125982 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234125984 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234125985 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234125986 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234125994 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234126006 ThreadServer.run()	INFO: HEXADECIMAL recibido: b1 d6 81 80 0 1 0 4 0 0 0 0 4 70 6c 61 79 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 53 0 4 d8 ef 24 df c0 c 0 1 0 1 0 0 0 53 0 4 d8 ef 26 df c0 c 0 1 0 1 0 0 0 53 0 4 d8 ef 20 df c0 c 0 1 0 1 0 0 0 53 0 4 d8 ef 22 df
+240910234126019 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234126032 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234126043 ThreadServer.run()	INFO: HEXADECIMAL recibido: b1 d6 81 80 0 1 0 4 0 0 0 0 4 70 6c 61 79 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 e2 0 4 d8 ef 26 df c0 c 0 1 0 1 0 0 0 e2 0 4 d8 ef 20 df c0 c 0 1 0 1 0 0 0 e2 0 4 d8 ef 24 df c0 c 0 1 0 1 0 0 0 e2 0 4 d8 ef 22 df
+240910234126059 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: b1d6
+240910234126060 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234138271 ThreadServer.run()	INFO: 
+
+
+
+240910234138272 ThreadServer.run()	INFO: paquete recibido LENGHT: 48
+240910234138272 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 48
+240910234138272 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234138273 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234138276 ThreadServer.run()	INFO: 
+
+
+
+240910234138277 ThreadServer.run()	INFO: paquete recibido LENGHT: 48
+240910234138277 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 48
+240910234138277 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234138278 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234138302 ThreadServer.run()	INFO: 
+
+
+
+240910234138303 ThreadServer.run()	INFO: paquete recibido LENGHT: 48
+240910234138303 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 48
+240910234138303 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234138304 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234138308 ThreadServer.run()	INFO: 
+
+
+
+240910234138309 ThreadServer.run()	INFO: paquete recibido LENGHT: 48
+240910234138309 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 48
+240910234138309 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234138310 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234138335 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234138339 ThreadServer.run()	INFO: HEXADECIMAL recibido: ed d7 81 80 0 1 0 3 0 0 0 0 4 73 65 6c 66 6 65 76 65 6e 74 73 4 64 61 74 61 9 6d 69 63 72 6f 73 6f 66 74 3 63 6f 6d 0 0 1 0 1 c0 c 0 5 0 1 0 0 0 5d 0 25 10 73 65 6c 66 2d 65 76 65 6e 74 73 2d 64 61 74 61 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 3c 0 5 0 1 0 0 0 2b 0 2c 10 6f 6e 65 64 73 63 6f 6c 70 72 64 63 75 73 32 33 9 63 65 6e 74 72 61 6c 75 73 8 63 6c 6f 75 64 61 70 70 5 61 7a 75 72 65 c0 27 c0 6d 0 1 0 1 0 0 0 3 0 4 68 d0 10 5c
+240910234138348 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234138349 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234138351 ThreadServer.run()	INFO: HEXADECIMAL recibido: 9d 9d 81 80 0 1 0 2 0 1 0 0 4 73 65 6c 66 6 65 76 65 6e 74 73 4 64 61 74 61 9 6d 69 63 72 6f 73 6f 66 74 3 63 6f 6d 0 0 1c 0 1 c0 c 0 5 0 1 0 0 0 5d 0 25 10 73 65 6c 66 2d 65 76 65 6e 74 73 2d 64 61 74 61 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 3c 0 5 0 1 0 0 0 2b 0 2c 10 6f 6e 65 64 73 63 6f 6c 70 72 64 63 75 73 32 33 9 63 65 6e 74 72 61 6c 75 73 8 63 6c 6f 75 64 61 70 70 5 61 7a 75 72 65 c0 27 c0 7e 0 6 0 1 0 0 0 2b 0 31 7 6e 73 31 2d 32 30 31 9 61 7a 75 72 65 2d 64 6e 73 c0 27 6 6d 73 6e 68 73 74 c0 1d 0 0 27 11 0 0 3 84 0 0 1 2c 0 9 3a 80 0 0 0 3c
+240910234138358 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234138359 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234138362 ThreadServer.run()	INFO: HEXADECIMAL recibido: 9d 9d 81 80 0 1 0 2 0 1 0 0 4 73 65 6c 66 6 65 76 65 6e 74 73 4 64 61 74 61 9 6d 69 63 72 6f 73 6f 66 74 3 63 6f 6d 0 0 1c 0 1 c0 c 0 5 0 1 0 0 0 21 0 25 10 73 65 6c 66 2d 65 76 65 6e 74 73 2d 64 61 74 61 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 3c 0 5 0 1 0 0 0 14 0 2c 10 6f 6e 65 64 73 63 6f 6c 70 72 64 63 75 73 30 31 9 63 65 6e 74 72 61 6c 75 73 8 63 6c 6f 75 64 61 70 70 5 61 7a 75 72 65 c0 27 c0 7e 0 6 0 1 0 0 0 14 0 31 7 6e 73 31 2d 32 30 31 9 61 7a 75 72 65 2d 64 6e 73 c0 27 6 6d 73 6e 68 73 74 c0 1d 0 0 27 11 0 0 3 84 0 0 1 2c 0 9 3a 80 0 0 0 3c
+240910234138369 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 9d9d
+240910234138369 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234138369 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234138373 ThreadServer.run()	INFO: HEXADECIMAL recibido: ed d7 81 80 0 1 0 3 0 0 0 0 4 73 65 6c 66 6 65 76 65 6e 74 73 4 64 61 74 61 9 6d 69 63 72 6f 73 6f 66 74 3 63 6f 6d 0 0 1 0 1 c0 c 0 5 0 1 0 0 0 1a 0 25 10 73 65 6c 66 2d 65 76 65 6e 74 73 2d 64 61 74 61 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 3c 0 5 0 1 0 0 0 21 0 2c 10 6f 6e 65 64 73 63 6f 6c 70 72 64 63 75 73 30 39 9 63 65 6e 74 72 61 6c 75 73 8 63 6c 6f 75 64 61 70 70 5 61 7a 75 72 65 c0 27 c0 6d 0 1 0 1 0 0 0 8 0 4 d 59 b3 9
+240910234138384 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: edd7
+240910234138384 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234156382 ThreadServer.run()	INFO: 
+
+
+
+240910234156383 ThreadServer.run()	INFO: paquete recibido LENGHT: 49
+240910234156383 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 49
+240910234156383 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234156383 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234156387 ThreadServer.run()	INFO: 
+
+
+
+240910234156387 ThreadServer.run()	INFO: paquete recibido LENGHT: 49
+240910234156388 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 49
+240910234156388 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234156388 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234156417 ThreadServer.run()	INFO: 
+
+
+
+240910234156417 ThreadServer.run()	INFO: paquete recibido LENGHT: 49
+240910234156417 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 49
+240910234156418 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234156418 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234156423 ThreadServer.run()	INFO: 
+
+
+
+240910234156424 ThreadServer.run()	INFO: paquete recibido LENGHT: 49
+240910234156424 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 49
+240910234156424 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234156424 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234156479 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234156483 ThreadServer.run()	INFO: HEXADECIMAL recibido: 52 6 81 80 0 1 0 4 0 0 0 0 10 64 72 69 76 65 66 72 6f 6e 74 65 6e 64 2d 70 61 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1c 0 1 c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 a 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 b 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 7 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 14 0 0 0 0 0 0 20 a
+240910234156497 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234156497 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234156523 ThreadServer.run()	INFO: HEXADECIMAL recibido: 95 60 81 80 0 1 0 d 0 0 0 0 10 64 72 69 76 65 66 72 6f 6e 74 65 6e 64 2d 70 61 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 1 2c 0 4 c0 b2 32 4a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa 40 aa c0 c 0 1 0 1 0 0 1 2c 0 4 8e fb 23 ea c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 ea c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa 40 ea c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 3 4a c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 2 ca c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 f ca c0 c 0 1 0 1 0 0 1 2c 0 4 c0 b2 32 2a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 aa c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 a5 ca c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa bd 8a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 ca
+240910234156552 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234156552 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234156557 ThreadServer.run()	INFO: HEXADECIMAL recibido: 52 6 81 80 0 1 0 4 0 0 0 0 10 64 72 69 76 65 66 72 6f 6e 74 65 6e 64 2d 70 61 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1c 0 1 c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 0 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 13 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 1 0 0 0 0 0 0 20 a c0 c 0 1c 0 1 0 0 1 2c 0 10 26 7 f8 b0 40 8 8 5 0 0 0 0 0 0 20 a
+240910234156569 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 5206
+240910234156569 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234156570 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234156594 ThreadServer.run()	INFO: HEXADECIMAL recibido: 95 60 81 80 0 1 0 c 0 0 0 0 10 64 72 69 76 65 66 72 6f 6e 74 65 6e 64 2d 70 61 a 67 6f 6f 67 6c 65 61 70 69 73 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 3 4a c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 a5 ca c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa bd 8a c0 c 0 1 0 1 0 0 1 2c 0 4 c0 b2 32 2a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 aa c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 ca c0 c 0 1 0 1 0 0 1 2c 0 4 ac d9 2 ca c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa 40 ea c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa 40 aa c0 c 0 1 0 1 0 0 1 2c 0 4 c0 b2 32 4a c0 c 0 1 0 1 0 0 1 2c 0 4 8e fa d9 ea c0 c 0 1 0 1 0 0 1 2c 0 4 8e fb 23 ea
+240910234156621 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 9560
+240910234156621 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234201284 ThreadServer.run()	INFO: 
+
+
+
+240910234201285 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234201285 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234201285 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234201286 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234201289 ThreadServer.run()	INFO: 
+
+
+
+240910234201289 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234201290 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234201290 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234201290 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234201322 ThreadServer.run()	INFO: 
+
+
+
+240910234201322 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234201323 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234201323 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234201323 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234201327 ThreadServer.run()	INFO: 
+
+
+
+240910234201327 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234201328 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234201328 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234201328 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234201385 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234201387 ThreadServer.run()	INFO: HEXADECIMAL recibido: d0 7 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 0 fb 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234201392 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234201396 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234201402 ThreadServer.run()	INFO: HEXADECIMAL recibido: 8 f6 81 80 0 1 0 3 0 0 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 25 0 4 3 de 6a 54 c0 c 0 1 0 1 0 0 0 25 0 4 22 cd ef ab c0 c 0 1 0 1 0 0 0 25 0 4 3 e8 dc 45
+240910234201413 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234201415 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234201422 ThreadServer.run()	INFO: HEXADECIMAL recibido: 8 f6 81 80 0 1 0 3 0 0 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 25 0 4 22 cd ef ab c0 c 0 1 0 1 0 0 0 25 0 4 3 e8 dc 45 c0 c 0 1 0 1 0 0 0 25 0 4 3 de 6a 54
+240910234201436 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 08f6
+240910234201437 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234201437 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234201439 ThreadServer.run()	INFO: HEXADECIMAL recibido: d0 7 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 f 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234201444 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: d007
+240910234201445 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234207586 ThreadServer.run()	INFO: 
+
+
+
+240910234207587 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234207587 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234207587 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234207588 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234207591 ThreadServer.run()	INFO: 
+
+
+
+240910234207591 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234207592 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234207592 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234207592 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234207612 ThreadServer.run()	INFO: 
+
+
+
+240910234207614 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234207614 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234207615 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234207615 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234207619 ThreadServer.run()	INFO: 
+
+
+
+240910234207619 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234207619 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234207620 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234207620 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234207642 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234207691 ThreadServer.run()	INFO: HEXADECIMAL recibido: 3 1b 81 80 0 1 0 8 0 0 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 18 0 4 2c e1 47 f9 c0 c 0 1 0 1 0 0 0 18 0 4 36 c9 b1 38 c0 c 0 1 0 1 0 0 0 18 0 4 22 d6 81 50 c0 c 0 1 0 1 0 0 0 18 0 4 34 18 4a 80 c0 c 0 1 0 1 0 0 0 18 0 4 34 59 93 40 c0 c 0 1 0 1 0 0 0 18 0 4 2c ef 15 c1 c0 c 0 1 0 1 0 0 0 18 0 4 23 a1 2 87 c0 c 0 1 0 1 0 0 0 18 0 4 2c ee 58 15
+240910234207709 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234207710 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234207711 ThreadServer.run()	INFO: HEXADECIMAL recibido: 29 6c 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 3 67 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234207716 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234207716 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234207717 ThreadServer.run()	INFO: HEXADECIMAL recibido: 29 6c 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1c 0 1 c0 11 0 6 0 1 0 0 2 8 0 46 7 6e 73 2d 31 32 36 32 9 61 77 73 64 6e 73 2d 32 39 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e c0 1b 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234207722 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 296c
+240910234207722 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234207723 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234207740 ThreadServer.run()	INFO: HEXADECIMAL recibido: 3 1b 81 80 0 1 0 8 0 0 0 0 4 61 70 69 32 9 61 6d 70 6c 69 74 75 64 65 3 63 6f 6d 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 e 0 4 36 94 8a 18 c0 c 0 1 0 1 0 0 0 e 0 4 34 23 9e 18 c0 c 0 1 0 1 0 0 0 e 0 4 2c e2 cb 8e c0 c 0 1 0 1 0 0 0 e 0 4 34 20 70 42 c0 c 0 1 0 1 0 0 0 e 0 4 34 59 98 e5 c0 c 0 1 0 1 0 0 0 e 0 4 36 45 e2 bb c0 c 0 1 0 1 0 0 0 e 0 4 23 a5 8f 60 c0 c 0 1 0 1 0 0 0 e 0 4 34 58 b2 d9
+240910234207757 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 031b
+240910234207758 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234241984 ThreadServer.run()	INFO: 
+
+
+
+240910234241985 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234241985 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234241985 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234241985 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234241988 ThreadServer.run()	INFO: 
+
+
+
+240910234241989 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234241989 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234241990 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234241990 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234242018 ThreadServer.run()	INFO: 
+
+
+
+240910234242019 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234242019 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234242019 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234242019 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234242023 ThreadServer.run()	INFO: 
+
+
+
+240910234242024 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234242024 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234242024 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234242024 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234242091 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234242091 ThreadServer.run()	INFO: HEXADECIMAL recibido: 6e d8 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 2 e7 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234242095 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234242095 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234242096 ThreadServer.run()	INFO: HEXADECIMAL recibido: 6e d8 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 2 e7 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234242099 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 6ed8
+240910234242100 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234242101 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234242107 ThreadServer.run()	INFO: HEXADECIMAL recibido: c2 9f 81 80 0 1 0 3 0 0 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 34 0 4 3 e8 dc 45 c0 c 0 1 0 1 0 0 0 34 0 4 3 de 6a 54 c0 c 0 1 0 1 0 0 0 34 0 4 22 cd ef ab
+240910234242115 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234242116 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234242121 ThreadServer.run()	INFO: HEXADECIMAL recibido: c2 9f 81 80 0 1 0 3 0 0 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 3c 0 4 22 cd ef ab c0 c 0 1 0 1 0 0 0 3c 0 4 3 e8 dc 45 c0 c 0 1 0 1 0 0 0 3c 0 4 3 de 6a 54
+240910234242131 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: c29f
+240910234242132 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234301272 ThreadServer.run()	INFO: 
+
+
+
+240910234301272 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234301272 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234301273 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234301273 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234301309 ThreadServer.run()	INFO: 
+
+
+
+240910234301310 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234301310 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234301310 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234301310 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234301389 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234301390 ThreadServer.run()	INFO: HEXADECIMAL recibido: 31 99 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 2 d3 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234301394 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234301394 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234301395 ThreadServer.run()	INFO: HEXADECIMAL recibido: 31 99 81 80 0 1 0 0 0 1 0 0 4 61 70 69 32 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 2 97 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234301398 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 3199
+240910234301399 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234303208 ThreadServer.run()	INFO: 
+
+
+
+240910234303209 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234303209 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234303209 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234303210 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234303213 ThreadServer.run()	INFO: 
+
+
+
+240910234303214 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234303214 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234303214 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234303215 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234303234 ThreadServer.run()	INFO: 
+
+
+
+240910234303235 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234303235 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234303235 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234303236 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234303239 ThreadServer.run()	INFO: 
+
+
+
+240910234303240 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234303240 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234303241 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234303241 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234303258 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234303263 ThreadServer.run()	INFO: HEXADECIMAL recibido: 30 39 81 80 0 1 0 2 0 0 0 0 4 61 70 69 34 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 d3 0 4 23 47 a2 18 c0 c 0 1 0 1 0 0 0 d3 0 4 d f8 f1 7
+240910234303269 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234303269 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234303270 ThreadServer.run()	INFO: HEXADECIMAL recibido: fe 28 81 80 0 1 0 0 0 1 0 0 4 61 70 69 34 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 1 c6 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234303274 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234303304 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234303305 ThreadServer.run()	INFO: HEXADECIMAL recibido: fe 28 81 80 0 1 0 0 0 1 0 0 4 61 70 69 34 6 63 75 72 73 6f 72 2 73 68 0 0 1c 0 1 c0 11 0 6 0 1 0 0 1 e6 0 49 7 6e 73 2d 31 31 34 33 9 61 77 73 64 6e 73 2d 31 34 3 6f 72 67 0 11 61 77 73 64 6e 73 2d 68 6f 73 74 6d 61 73 74 65 72 6 61 6d 61 7a 6f 6e 3 63 6f 6d 0 0 0 0 1 0 0 1c 20 0 0 3 84 0 12 75 0 0 1 51 80
+240910234303308 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: fe28
+240910234303308 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234303309 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234303312 ThreadServer.run()	INFO: HEXADECIMAL recibido: 30 39 81 80 0 1 0 2 0 0 0 0 4 61 70 69 34 6 63 75 72 73 6f 72 2 73 68 0 0 1 0 1 c0 c 0 1 0 1 0 0 0 d5 0 4 23 47 a2 18 c0 c 0 1 0 1 0 0 0 d5 0 4 d f8 f1 7
+240910234303319 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 3039
+240910234303320 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234304076 ThreadServer.run()	INFO: 
+
+
+
+240910234304077 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234304077 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234304077 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234304078 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234304081 ThreadServer.run()	INFO: 
+
+
+
+240910234304081 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234304082 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234304082 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234304082 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234304108 ThreadServer.run()	INFO: 
+
+
+
+240910234304109 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234304109 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234304109 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234304110 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234304113 ThreadServer.run()	INFO: 
+
+
+
+240910234304114 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234304114 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234304115 ThreadServer.run()	INFO: paquete enviado a DNS 0
+240910234304115 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234304170 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234304173 ThreadServer.run()	INFO: HEXADECIMAL recibido: e3 a3 81 80 0 1 0 2 0 1 0 0 6 6d 6f 62 69 6c 65 6 65 76 65 6e 74 73 4 64 61 74 61 9 6d 69 63 72 6f 73 6f 66 74 3 63 6f 6d 0 0 1c 0 1 c0 c 0 5 0 1 0 0 0 31 0 27 6 6d 6f 62 69 6c 65 6 65 76 65 6e 74 73 4 64 61 74 61 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 3e 0 5 0 1 0 0 0 1 0 2e 10 6f 6e 65 64 73 63 6f 6c 70 72 64 6e 65 75 30 36 b 6e 6f 72 74 68 65 75 72 6f 70 65 8 63 6c 6f 75 64 61 70 70 5 61 7a 75 72 65 c0 29 c0 82 0 6 0 1 0 0 0 1 0 31 7 6e 73 31 2d 32 30 31 9 61 7a 75 72 65 2d 64 6e 73 c0 29 6 6d 73 6e 68 73 74 c0 1f 0 0 27 11 0 0 3 84 0 0 1 2c 0 9 3a 80 0 0 0 3c
+240910234304179 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234304180 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234304183 ThreadServer.run()	INFO: HEXADECIMAL recibido: 49 a2 81 80 0 1 0 3 0 0 0 0 6 6d 6f 62 69 6c 65 6 65 76 65 6e 74 73 4 64 61 74 61 9 6d 69 63 72 6f 73 6f 66 74 3 63 6f 6d 0 0 1 0 1 c0 c 0 5 0 1 0 0 0 31 0 27 6 6d 6f 62 69 6c 65 6 65 76 65 6e 74 73 4 64 61 74 61 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 3e 0 5 0 1 0 0 0 1 0 2e 10 6f 6e 65 64 73 63 6f 6c 70 72 64 6e 65 75 30 36 b 6e 6f 72 74 68 65 75 72 6f 70 65 8 63 6c 6f 75 64 61 70 70 5 61 7a 75 72 65 c0 29 c0 71 0 1 0 1 0 0 0 1 0 4 d 45 ef 4a
+240910234304192 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234304193 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234304197 ThreadServer.run()	INFO: HEXADECIMAL recibido: 49 a2 81 80 0 1 0 3 0 0 0 0 6 6d 6f 62 69 6c 65 6 65 76 65 6e 74 73 4 64 61 74 61 9 6d 69 63 72 6f 73 6f 66 74 3 63 6f 6d 0 0 1 0 1 c0 c 0 5 0 1 0 0 0 31 0 27 6 6d 6f 62 69 6c 65 6 65 76 65 6e 74 73 4 64 61 74 61 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 3e 0 5 0 1 0 0 0 1 0 2e 10 6f 6e 65 64 73 63 6f 6c 70 72 64 6e 65 75 30 36 b 6e 6f 72 74 68 65 75 72 6f 70 65 8 63 6c 6f 75 64 61 70 70 5 61 7a 75 72 65 c0 29 c0 71 0 1 0 1 0 0 0 1 0 4 d 45 ef 4a
+240910234304206 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 49a2
+240910234304207 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234304207 ThreadServer.run()	INFO: source del packet: /8.8.8.8
+240910234304210 ThreadServer.run()	INFO: HEXADECIMAL recibido: e3 a3 81 80 0 1 0 2 0 1 0 0 6 6d 6f 62 69 6c 65 6 65 76 65 6e 74 73 4 64 61 74 61 9 6d 69 63 72 6f 73 6f 66 74 3 63 6f 6d 0 0 1c 0 1 c0 c 0 5 0 1 0 0 0 7 0 27 6 6d 6f 62 69 6c 65 6 65 76 65 6e 74 73 4 64 61 74 61 e 74 72 61 66 66 69 63 6d 61 6e 61 67 65 72 3 6e 65 74 0 c0 3e 0 5 0 1 0 0 0 2f 0 29 10 6f 6e 65 64 73 63 6f 6c 70 72 64 77 75 73 31 36 6 77 65 73 74 75 73 8 63 6c 6f 75 64 61 70 70 5 61 7a 75 72 65 c0 29 c0 82 0 6 0 1 0 0 0 2f 0 30 6 6e 73 31 2d 30 32 9 61 7a 75 72 65 2d 64 6e 73 c0 29 6 6d 73 6e 68 73 74 c0 1f 0 0 27 11 0 0 3 84 0 0 1 2c 0 9 3a 80 0 0 0 3c
+240910234304221 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: e3a3
+240910234304221 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234313541 ThreadServer.run()	INFO: 
+
+
+
+240910234313541 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234313542 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234313542 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234313543 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234313573 ThreadServer.run()	INFO: 
+
+
+
+240910234313574 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234313574 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234313574 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234313575 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234314589 ThreadServer.run()	INFO: 
+
+
+
+240910234314590 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234314590 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234314591 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234314591 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234316602 ThreadServer.run()	INFO: 
+
+
+
+240910234316602 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234316603 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234316603 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234316603 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234317028 ThreadServer.run()	INFO: 
+
+
+
+240910234317028 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234317028 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234317029 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234317029 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234317032 ThreadServer.run()	INFO: 
+
+
+
+240910234317033 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234317033 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234317033 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234317033 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234317059 ThreadServer.run()	INFO: 
+
+
+
+240910234317060 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234317060 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234317061 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234317061 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234317065 ThreadServer.run()	INFO: 
+
+
+
+240910234317065 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234317066 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234317066 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234317067 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234318071 ThreadServer.run()	INFO: 
+
+
+
+240910234318073 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234318074 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234318075 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234318075 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234318082 ThreadServer.run()	INFO: 
+
+
+
+240910234318083 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234318083 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234318084 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234318084 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234320074 ThreadServer.run()	INFO: 
+
+
+
+240910234320075 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234320075 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234320076 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234320076 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234320080 ThreadServer.run()	INFO: 
+
+
+
+240910234320081 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234320081 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234320081 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234320082 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234320610 ThreadServer.run()	INFO: 
+
+
+
+240910234320611 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234320611 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234320611 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234320612 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234321135 ThreadServer.run()	INFO: 
+
+
+
+240910234321136 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234321136 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234321137 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234321137 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234321141 ThreadServer.run()	INFO: 
+
+
+
+240910234321142 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234321142 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234321143 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234321143 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234321160 ThreadServer.run()	INFO: 
+
+
+
+240910234321161 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234321161 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234321162 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234321162 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234321166 ThreadServer.run()	INFO: 
+
+
+
+240910234321166 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234321167 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234321167 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234321167 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234322160 ThreadServer.run()	INFO: 
+
+
+
+240910234322161 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234322161 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234322161 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234322162 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234322165 ThreadServer.run()	INFO: 
+
+
+
+240910234322166 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234322166 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234322166 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234322166 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234324091 ThreadServer.run()	INFO: 
+
+
+
+240910234324091 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234324092 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234324092 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234324092 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234324096 ThreadServer.run()	INFO: 
+
+
+
+240910234324097 ThreadServer.run()	INFO: paquete recibido LENGHT: 38
+240910234324098 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 38
+240910234324098 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234324098 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234324167 ThreadServer.run()	INFO: 
+
+
+
+240910234324168 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234324169 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234324169 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234324170 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234324175 ThreadServer.run()	INFO: 
+
+
+
+240910234324176 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234324176 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234324177 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234324178 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234324621 ThreadServer.run()	INFO: 
+
+
+
+240910234324622 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234324623 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234324623 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234324624 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234324629 ThreadServer.run()	INFO: 
+
+
+
+240910234324630 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234324631 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234324631 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234324632 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234324655 ThreadServer.run()	INFO: 
+
+
+
+240910234324657 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234324657 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234324657 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234324658 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234324664 ThreadServer.run()	INFO: 
+
+
+
+240910234324665 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234324665 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234324666 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234324666 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234325655 ThreadServer.run()	INFO: 
+
+
+
+240910234325656 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234325656 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234325657 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234325657 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234325662 ThreadServer.run()	INFO: 
+
+
+
+240910234325663 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234325663 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234325664 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234325664 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234327658 ThreadServer.run()	INFO: 
+
+
+
+240910234327659 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234327660 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234327660 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234327661 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234327665 ThreadServer.run()	INFO: 
+
+
+
+240910234327666 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234327666 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234327667 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234327667 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234328093 ThreadServer.run()	INFO: 
+
+
+
+240910234328094 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234328094 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234328095 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234328095 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234328148 ThreadServer.run()	INFO: 
+
+
+
+240910234328149 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234328149 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234328150 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234328150 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234328202 ThreadServer.run()	INFO: 
+
+
+
+240910234328203 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234328204 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234328205 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234328206 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234328214 ThreadServer.run()	INFO: 
+
+
+
+240910234328215 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234328215 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234328216 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234328216 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234329153 ThreadServer.run()	INFO: 
+
+
+
+240910234329154 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234329154 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234329154 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234329155 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234331155 ThreadServer.run()	INFO: 
+
+
+
+240910234331156 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234331156 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234331156 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234331157 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234331671 ThreadServer.run()	INFO: 
+
+
+
+240910234331672 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234331672 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234331673 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234331673 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234331678 ThreadServer.run()	INFO: 
+
+
+
+240910234331679 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234331680 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234331680 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234331680 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234332211 ThreadServer.run()	INFO: 
+
+
+
+240910234332212 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234332212 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234332213 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234332213 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234332216 ThreadServer.run()	INFO: 
+
+
+
+240910234332217 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234332217 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234332218 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234332218 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234332242 ThreadServer.run()	INFO: 
+
+
+
+240910234332243 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234332243 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234332244 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234332244 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234332248 ThreadServer.run()	INFO: 
+
+
+
+240910234332249 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234332250 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234332250 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234332250 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234333243 ThreadServer.run()	INFO: 
+
+
+
+240910234333244 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234333244 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234333244 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234333245 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234333248 ThreadServer.run()	INFO: 
+
+
+
+240910234333249 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234333249 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234333250 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234333250 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234335159 ThreadServer.run()	INFO: 
+
+
+
+240910234335160 ThreadServer.run()	INFO: paquete recibido LENGHT: 50
+240910234335160 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 50
+240910234335161 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234335161 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234335250 ThreadServer.run()	INFO: 
+
+
+
+240910234335253 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234335253 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234335253 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234335254 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234335259 ThreadServer.run()	INFO: 
+
+
+
+240910234335260 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234335260 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234335260 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234335262 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234335671 ThreadServer.run()	INFO: 
+
+
+
+240910234335672 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234335672 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234335673 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234335673 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234335677 ThreadServer.run()	INFO: 
+
+
+
+240910234335677 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234335678 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234335678 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234335679 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234335703 ThreadServer.run()	INFO: 
+
+
+
+240910234335704 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234335705 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234335705 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234335706 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234335710 ThreadServer.run()	INFO: 
+
+
+
+240910234335711 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234335712 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234335712 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234335712 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234336717 ThreadServer.run()	INFO: 
+
+
+
+240910234336718 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234336718 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234336718 ThreadServer.run()	INFO: paquete enviado a DNS 1
+240910234336719 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234336723 ThreadServer.run()	INFO: 
+
+
+
+240910234336723 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234336724 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234336728 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234336729 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234338721 ThreadServer.run()	INFO: 
+
+
+
+240910234338722 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234338722 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234338722 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234338723 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234338727 ThreadServer.run()	INFO: 
+
+
+
+240910234338728 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234338728 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234338728 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234338729 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234339269 ThreadServer.run()	INFO: 
+
+
+
+240910234339270 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234339271 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234339271 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234339272 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234339277 ThreadServer.run()	INFO: 
+
+
+
+240910234339278 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234339279 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234339280 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234339280 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234342728 ThreadServer.run()	INFO: 
+
+
+
+240910234342729 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234342729 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234342729 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234342729 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234342733 ThreadServer.run()	INFO: 
+
+
+
+240910234342733 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234342734 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234342734 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234342734 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234343274 ThreadServer.run()	INFO: 
+
+
+
+240910234343275 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234343275 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234343275 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234343276 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234343303 ThreadServer.run()	INFO: 
+
+
+
+240910234343304 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234343304 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234343305 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234343305 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234344305 ThreadServer.run()	INFO: 
+
+
+
+240910234344308 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234344308 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234344309 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234344309 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234346313 ThreadServer.run()	INFO: 
+
+
+
+240910234346314 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234346314 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234346315 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234346315 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234346769 ThreadServer.run()	INFO: 
+
+
+
+240910234346770 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234346770 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234346771 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234346771 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234346799 ThreadServer.run()	INFO: 
+
+
+
+240910234346800 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234346800 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234346801 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234346801 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234347798 ThreadServer.run()	INFO: 
+
+
+
+240910234347799 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234347799 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234347799 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234347800 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234349805 ThreadServer.run()	INFO: 
+
+
+
+240910234349806 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234349808 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234349808 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234349808 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234350334 ThreadServer.run()	INFO: 
+
+
+
+240910234350335 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234350336 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234350336 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234350337 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234353814 ThreadServer.run()	INFO: 
+
+
+
+240910234353814 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234353815 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234353815 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234353815 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234355651 ThreadServer.run()	INFO: 
+
+
+
+240910234355651 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234355652 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234355652 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234355652 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234355682 ThreadServer.run()	INFO: 
+
+
+
+240910234355683 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234355683 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234355684 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234355684 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234356688 ThreadServer.run()	INFO: 
+
+
+
+240910234356688 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234356689 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234356689 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234356690 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234358690 ThreadServer.run()	INFO: 
+
+
+
+240910234358691 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234358691 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234358692 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234358692 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234400099 ThreadServer.run()	INFO: 
+
+
+
+240910234400100 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234400100 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234400100 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234400101 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234400132 ThreadServer.run()	INFO: 
+
+
+
+240910234400133 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234400133 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234400133 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234400134 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234401138 ThreadServer.run()	INFO: 
+
+
+
+240910234401139 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234401139 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234401139 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234401140 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234401283 ThreadServer.run()	INFO: 
+
+
+
+240910234401283 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234401284 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234401284 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234401285 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234401311 ThreadServer.run()	INFO: 
+
+
+
+240910234401311 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234401312 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234401312 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234401312 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234402313 ThreadServer.run()	INFO: 
+
+
+
+240910234402315 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234402315 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234402316 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234402316 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234402703 ThreadServer.run()	INFO: 
+
+
+
+240910234402704 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234402704 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234402705 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234402705 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234403140 ThreadServer.run()	INFO: 
+
+
+
+240910234403141 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234403141 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234403141 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234403142 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234404327 ThreadServer.run()	INFO: 
+
+
+
+240910234404328 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234404328 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234404329 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234404329 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234406709 ThreadServer.run()	INFO: 
+
+
+
+240910234406710 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234406710 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234406711 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234406711 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234406740 ThreadServer.run()	INFO: 
+
+
+
+240910234406741 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234406742 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234406742 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234406743 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234407152 ThreadServer.run()	INFO: 
+
+
+
+240910234407153 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234407153 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234407154 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234407155 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234407774 ThreadServer.run()	INFO: 
+
+
+
+240910234407775 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234407775 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234407776 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234407776 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234408338 ThreadServer.run()	INFO: 
+
+
+
+240910234408339 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234408339 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234408339 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234408340 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234409777 ThreadServer.run()	INFO: 
+
+
+
+240910234409778 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234409778 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234409778 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234409779 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234411955 ThreadServer.run()	INFO: 
+
+
+
+240910234411957 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234411957 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234411957 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234411957 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234411986 ThreadServer.run()	INFO: 
+
+
+
+240910234411987 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234411987 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234411987 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234411988 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234412334 ThreadServer.run()	INFO: 
+
+
+
+240910234412335 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234412336 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234412336 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234412337 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234412362 ThreadServer.run()	INFO: 
+
+
+
+240910234412364 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234412364 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234412364 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234412365 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234412987 ThreadServer.run()	INFO: 
+
+
+
+240910234412988 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234412988 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234412988 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234412989 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234413377 ThreadServer.run()	INFO: 
+
+
+
+240910234413378 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234413379 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234413379 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234413380 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234413781 ThreadServer.run()	INFO: 
+
+
+
+240910234413782 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234413782 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234413782 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234413783 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234414987 ThreadServer.run()	INFO: 
+
+
+
+240910234414988 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234414988 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234414989 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234414989 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234415380 ThreadServer.run()	INFO: 
+
+
+
+240910234415381 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234415381 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234415382 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234415382 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234418994 ThreadServer.run()	INFO: 
+
+
+
+240910234418994 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234418995 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234418995 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234418995 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234419389 ThreadServer.run()	INFO: 
+
+
+
+240910234419390 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234419390 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234419390 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234419391 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234425778 ThreadServer.run()	INFO: 
+
+
+
+240910234425779 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234425779 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234425779 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234425780 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234425810 ThreadServer.run()	INFO: 
+
+
+
+240910234425810 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234425811 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234425811 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234425811 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234426822 ThreadServer.run()	INFO: 
+
+
+
+240910234426823 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234426823 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234426824 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234426824 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234428831 ThreadServer.run()	INFO: 
+
+
+
+240910234428832 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234428832 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234428832 ThreadServer.run()	INFO: paquete enviado a DNS 2
+240910234428833 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234431043 ThreadServer.run()	INFO: 
+
+
+
+240910234431043 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234431045 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234431045 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234431045 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234431048 ThreadServer.run()	INFO: 
+
+
+
+240910234431049 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234431049 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234431049 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234431050 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234431081 ThreadServer.run()	INFO: 
+
+
+
+240910234431082 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234431082 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234431083 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234431083 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234431086 ThreadServer.run()	INFO: 
+
+
+
+240910234431087 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234431087 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234431088 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234431088 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234431892 ThreadServer.run()	INFO: 
+
+
+
+240910234431892 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234431892 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234431892 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234431893 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234431897 ThreadServer.run()	INFO: 
+
+
+
+240910234431897 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234431898 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234431898 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234431898 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234431927 ThreadServer.run()	INFO: 
+
+
+
+240910234431928 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234431929 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234431929 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234431930 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234431933 ThreadServer.run()	INFO: 
+
+
+
+240910234431934 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234431935 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234431935 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234431936 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234431978 ThreadServer.run()	INFO: 
+
+
+
+240910234431979 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234431980 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234431980 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234431980 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234431985 ThreadServer.run()	INFO: 
+
+
+
+240910234431986 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234431986 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234431986 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234431987 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234432006 ThreadServer.run()	INFO: 
+
+
+
+240910234432007 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234432007 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234432007 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234432008 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234432012 ThreadServer.run()	INFO: 
+
+
+
+240910234432013 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234432013 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234432014 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234432014 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234432084 ThreadServer.run()	INFO: 
+
+
+
+240910234432085 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234432086 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234432086 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234432087 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234432091 ThreadServer.run()	INFO: 
+
+
+
+240910234432092 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234432093 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234432093 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234432094 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234432836 ThreadServer.run()	INFO: 
+
+
+
+240910234432836 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234432837 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234432837 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234432838 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234432931 ThreadServer.run()	INFO: 
+
+
+
+240910234432932 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234432932 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234432932 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234432932 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234432937 ThreadServer.run()	INFO: 
+
+
+
+240910234432938 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234432938 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234432938 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234432939 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234433011 ThreadServer.run()	INFO: 
+
+
+
+240910234433011 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234433012 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234433012 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234433013 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234433016 ThreadServer.run()	INFO: 
+
+
+
+240910234433017 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234433017 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234433018 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234433018 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234434097 ThreadServer.run()	INFO: 
+
+
+
+240910234434097 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234434097 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234434098 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234434098 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234434101 ThreadServer.run()	INFO: 
+
+
+
+240910234434102 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234434102 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234434102 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234434102 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234434951 ThreadServer.run()	INFO: 
+
+
+
+240910234434952 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234434952 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234434952 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234434953 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234434957 ThreadServer.run()	INFO: 
+
+
+
+240910234434958 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234434958 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234434959 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234434959 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234435014 ThreadServer.run()	INFO: 
+
+
+
+240910234435015 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234435015 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234435016 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234435016 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234435021 ThreadServer.run()	INFO: 
+
+
+
+240910234435021 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234435022 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234435022 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234435022 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234435050 ThreadServer.run()	INFO: 
+
+
+
+240910234435051 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234435052 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234435052 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234435052 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234435058 ThreadServer.run()	INFO: 
+
+
+
+240910234435059 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234435059 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234435059 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234435060 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234435074 ThreadServer.run()	INFO: 
+
+
+
+240910234435075 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234435075 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234435076 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234435076 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234435080 ThreadServer.run()	INFO: 
+
+
+
+240910234435081 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234435082 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234435082 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234435082 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234435800 ThreadServer.run()	INFO: 
+
+
+
+240910234435800 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234435800 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234435801 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234435801 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234435839 ThreadServer.run()	INFO: 
+
+
+
+240910234435840 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234435840 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234435841 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234435841 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234436077 ThreadServer.run()	INFO: 
+
+
+
+240910234436078 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234436078 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234436078 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234436079 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234436084 ThreadServer.run()	INFO: 
+
+
+
+240910234436085 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234436085 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234436085 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234436086 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234436850 ThreadServer.run()	INFO: 
+
+
+
+240910234436851 ThreadServer.run()	INFO: paquete recibido LENGHT: 37
+240910234436851 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 37
+240910234436851 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234436851 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234438078 ThreadServer.run()	INFO: 
+
+
+
+240910234438078 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234438079 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234438079 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234438079 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234438084 ThreadServer.run()	INFO: 
+
+
+
+240910234438084 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234438085 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234438085 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234438085 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234438111 ThreadServer.run()	INFO: 
+
+
+
+240910234438112 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234438112 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234438112 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234438113 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234438119 ThreadServer.run()	INFO: 
+
+
+
+240910234438119 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234438120 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234438120 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234438120 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234438943 ThreadServer.run()	INFO: 
+
+
+
+240910234438944 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234438944 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234438945 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234438945 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234438950 ThreadServer.run()	INFO: 
+
+
+
+240910234438951 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234438951 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234438952 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234438952 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234439021 ThreadServer.run()	INFO: 
+
+
+
+240910234439022 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234439022 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234439023 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234439023 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234439027 ThreadServer.run()	INFO: 
+
+
+
+240910234439028 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234439028 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234439028 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234439029 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234442089 ThreadServer.run()	INFO: 
+
+
+
+240910234442090 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234442090 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234442091 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234442091 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234442096 ThreadServer.run()	INFO: 
+
+
+
+240910234442097 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234442097 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234442098 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234442098 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234446759 ThreadServer.run()	INFO: 
+
+
+
+240910234446760 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234446760 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234446761 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234446761 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234446794 ThreadServer.run()	INFO: 
+
+
+
+240910234446795 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234446795 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234446796 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234446796 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234447795 ThreadServer.run()	INFO: 
+
+
+
+240910234447795 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234447796 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234447796 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234447796 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234449835 ThreadServer.run()	INFO: 
+
+
+
+240910234449836 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234449836 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234449836 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234449837 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234451417 ThreadServer.run()	INFO: 
+
+
+
+240910234451417 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234451418 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234451418 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234451418 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234451422 ThreadServer.run()	INFO: 
+
+
+
+240910234451422 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234451422 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234451423 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234451423 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234451448 ThreadServer.run()	INFO: 
+
+
+
+240910234451449 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234451449 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234451450 ThreadServer.run()	INFO: paquete enviado a DNS 3
+240910234451450 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234451454 ThreadServer.run()	INFO: 
+
+
+
+240910234451455 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234451455 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234451455 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234451456 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234452457 ThreadServer.run()	INFO: 
+
+
+
+240910234452457 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234452458 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234452458 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234452458 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234452461 ThreadServer.run()	INFO: 
+
+
+
+240910234452462 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234452462 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234452463 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234452464 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234453829 ThreadServer.run()	INFO: 
+
+
+
+240910234453830 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234453830 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234453830 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234453831 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234454472 ThreadServer.run()	INFO: 
+
+
+
+240910234454473 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234454473 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234454473 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234454474 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234454477 ThreadServer.run()	INFO: 
+
+
+
+240910234454478 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234454478 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234454478 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234454478 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234455804 ThreadServer.run()	INFO: 
+
+
+
+240910234455805 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234455805 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234455805 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234455806 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234455844 ThreadServer.run()	INFO: 
+
+
+
+240910234455844 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234455844 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234455845 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234455845 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234456851 ThreadServer.run()	INFO: 
+
+
+
+240910234456852 ThreadServer.run()	INFO: paquete recibido LENGHT: 36
+240910234456852 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 36
+240910234456852 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234456853 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234458475 ThreadServer.run()	INFO: 
+
+
+
+240910234458475 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234458476 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234458476 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234458477 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234458482 ThreadServer.run()	INFO: 
+
+
+
+240910234458483 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234458483 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234458484 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234458484 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234501282 ThreadServer.run()	INFO: 
+
+
+
+240910234501283 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234501283 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234501284 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234501284 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234501308 ThreadServer.run()	INFO: 
+
+
+
+240910234501309 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234501309 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234501309 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234501310 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234502311 ThreadServer.run()	INFO: 
+
+
+
+240910234502312 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234502312 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234502313 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234502313 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234504312 ThreadServer.run()	INFO: 
+
+
+
+240910234504312 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234504313 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234504313 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234504314 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234508324 ThreadServer.run()	INFO: 
+
+
+
+240910234508325 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234508325 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234508325 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234508326 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234509340 ThreadServer.run()	INFO: 
+
+
+
+240910234509340 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234509341 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234509341 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234509341 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234509345 ThreadServer.run()	INFO: 
+
+
+
+240910234509345 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234509345 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234509346 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234509346 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234509371 ThreadServer.run()	INFO: 
+
+
+
+240910234509372 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234509372 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234509372 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234509373 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234509377 ThreadServer.run()	INFO: 
+
+
+
+240910234509378 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234509378 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234509378 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234509380 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234510373 ThreadServer.run()	INFO: 
+
+
+
+240910234510374 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234510375 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234510375 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234510376 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234510381 ThreadServer.run()	INFO: 
+
+
+
+240910234510382 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234510382 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234510382 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234510383 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234512171 ThreadServer.run()	INFO: 
+
+
+
+240910234512172 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234512173 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234512173 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234512174 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234512200 ThreadServer.run()	INFO: 
+
+
+
+240910234512202 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234512202 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234512202 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234512203 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234512330 ThreadServer.run()	INFO: 
+
+
+
+240910234512331 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234512332 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234512332 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234512332 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234512379 ThreadServer.run()	INFO: 
+
+
+
+240910234512380 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234512381 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234512381 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234512382 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234512386 ThreadServer.run()	INFO: 
+
+
+
+240910234512388 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234512388 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234512388 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234512389 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234512393 ThreadServer.run()	INFO: 
+
+
+
+240910234512394 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234512394 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234512394 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234512395 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234513381 ThreadServer.run()	INFO: 
+
+
+
+240910234513382 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234513382 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234513383 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234513384 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234515391 ThreadServer.run()	INFO: 
+
+
+
+240910234515392 ThreadServer.run()	INFO: paquete recibido LENGHT: 32
+240910234515392 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 32
+240910234515393 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234515393 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234516383 ThreadServer.run()	INFO: 
+
+
+
+240910234516384 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234516384 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234516384 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234516385 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910234516389 ThreadServer.run()	INFO: 
+
+
+
+240910234516390 ThreadServer.run()	INFO: paquete recibido LENGHT: 40
+240910234516390 ThreadServer.run()	INFO: paquete recibido creado LENGHT: 40
+240910234516390 ThreadServer.run()	INFO: paquete enviado a DNS 4
+240910234516391 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
