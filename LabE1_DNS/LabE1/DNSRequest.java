@@ -35,7 +35,7 @@ public class DNSRequest {
         this.queryLabelCount = queryLabelCount;
         this.queryType = queryType;
         this.queryClass = queryClass;
-        System.out.println("SE VA A CREAR DNSREQUEST CON DATA.length = "+dataLength);
+        // System.out.println("SE VA A CREAR DNSREQUEST CON DATA.length = "+dataLength);
         this.data = new byte[dataLength];
         System.arraycopy(data, 0, this.data, 0, dataLength);
     }
@@ -81,7 +81,7 @@ public class DNSRequest {
             case 0x01: return "A";
             case 0x05: return "CNAME";
             case 0x10: return "TXT";
-            case 28: return "AAAA";
+            case 0x1c: return "AAAA";
             default: return "UNKNOWN";
         }
     }
@@ -98,6 +98,9 @@ public class DNSRequest {
     }
     public int getLength(){
         return this.data.length;
+    }
+    public String getTransactionID(){
+        return String.format("%04x", this.transactionID);
     }
 
 }

@@ -1,12 +1,7 @@
-import java.io.IOException;
 import java.net.*;
 import java.nio.ByteBuffer;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Random;
 import java.util.logging.Logger;
 
 public class ThreadServer implements Runnable {
@@ -64,22 +59,42 @@ public class ThreadServer implements Runnable {
         listIPv4.put("www.google.com", "8.8.8.8");
     }
 
+
+    class RequestInfo {
+        private InetAddress address;
+        private int port;
+
+        public RequestInfo(InetAddress address, int port) {
+            this.address = address;
+            this.port = port;
+        }
+
+        public InetAddress getAddress() {
+            return address;
+        }
+
+        public int getPort() {
+            return port;
+        }
+    }
+
     @Override
     public void run() {
         byte[] input = new byte[65535];
         DatagramPacket receivePacket = null;
         InetAddress clientAddress = null;
         int clientPort = 0;
+        HashMap<String, RequestInfo> requesters = new HashMap<>();
+        
         while (true) {
             try {
                 LOGGER.info("("+nThreadServer+") > Thread waiting for new client....");
                 receivePacket = new DatagramPacket(input, input.length);
                 socket.receive(receivePacket);
 
-                String receiveMessage = new String(receivePacket.getData());
 
-                // int dnsCounter = 0;
-                int dnsCounter = new Random().nextInt(7);
+                int dnsCounter = 0;
+                // int dnsCounter = new Random().nextInt(7);
                 if(receivePacket.getAddress().toString().equals("/127.0.0.1")){
                     clientAddress = receivePacket.getAddress();
                     clientPort = receivePacket.getPort();
@@ -89,6 +104,8 @@ public class ThreadServer implements Runnable {
                     DNSRequest receivedRequest = formatAndGetDNSRequest(receivePacket.getData(), receivePacket.getLength());
                     receivedRequest.setRecursionDesired();
                     receivedRequest.printDNSRequest();
+
+                    requesters.put(receivedRequest.getTransactionID(), new RequestInfo(receivePacket.getAddress(), receivePacket.getPort()));
 
                     LOGGER.info("\n\n\n");
 
@@ -109,51 +126,48 @@ public class ThreadServer implements Runnable {
                     LOGGER.info("source del packet: "+receivePacket.getAddress().toString());
 
 
-                    DNSResponse receivedResponse = formatAndGetDNSResponse(receivePacket.getData());
+                    DNSResponse receivedResponse = formatAndGetDNSResponse(receivePacket.getData(), receivePacket.getLength());
                     LOGGER.info("HEXADECIMAL recibido: " + bytesToHex(receivePacket.getData(),receivePacket.getLength()));
                     receivedResponse.printDNSResponse();
                     System.out.println("\n\n\n");
 
-                    // LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(dnsPacket.getData(),dnsPacket.getLength()));
-                    // LOGGER.info("Respuesta del Proveedor LENGTH: " + dnsPacket.getLength());
                     
-                    byte[] receivedData = new byte[receivePacket.getLength()];
-                    byte[] receivedDataTemp = receivePacket.getData();
-                    LOGGER.info("receivedData LENGTH: "+receivedData.length);
-                    LOGGER.info("receivedDataTemp LENGTH: "+receivedDataTemp.length);
+                    // byte[] receivedData = new byte[receivePacket.getLength()];
+                    // byte[] receivedDataTemp = receivePacket.getData();
 
-                    for (int i = 0; i < receivePacket.getLength(); i++) {
-                        receivedData[i] = receivedDataTemp[i];
-                    }
+                    // for (int i = 0; i < receivePacket.getLength(); i++) {
+                        // receivedData[i] = receivedDataTemp[i];
+                    // }
                     
-                    LOGGER.info("receivedData LENGTH: "+receivedData.length);
-                    LOGGER.info("receivedData Respuesta: " + bytesToHex(receivedData,receivedData.length));
+                    // byte[] receivedDataFixed = new byte[receivePacket.getLength()-1];
 
-                    byte[] receivedDataFixed = new byte[receivePacket.getLength()-1];
-
-                    boolean changed = false;
-                    if (receivedData[receivedData.length - 1] == (byte) 0xC0) {
+                    // boolean changed = false;
+                    // if (receivedData[receivedData.length - 1] == (byte) 0xC0) {
                         // Handle the case when the last byte is 0xC0
-                        receivedDataFixed = Arrays.copyOf(receivedData, receivedData.length-1);
-                        LOGGER.info("receivedDataFixed CAMBIO: "+receivedDataFixed.length);
-                        changed = true;
-                    }else{
-                        LOGGER.info("receivedDataFixed SIN CAMBIO: "+receivedData.length);
-                    }
+                        // receivedDataFixed = Arrays.copyOf(receivedData, receivedData.length-1);
+                        // LOGGER.info("receivedDataFixed CAMBIO: "+receivedDataFixed.length);
+                        // changed = true;
+                    // }else{
+                        // LOGGER.info("receivedDataFixed SIN CAMBIO: "+receivedData.length);
+                    // }
 
                     // AQUÍ GUARDAR EN MI CACHE
                     // AQUÍ GUARDAR EN MI CACHE
                     // AQUÍ GUARDAR EN MI CACHE
                     // AQUÍ GUARDAR EN MI CACHE
-                    
+
+                    clientAddress = requesters.get(receivedResponse.getTransactionID()).getAddress();
+                    clientPort = requesters.get(receivedResponse.getTransactionID()).getPort();
+                    requesters.remove(receivedResponse.getTransactionID());
 
                     // Envía la respuesta de vuelta al cliente
-                    if(changed){
-                        socket.send(new DatagramPacket(receivedDataFixed, receivedDataFixed.length,clientAddress,clientPort));
-                    }else{
-                        socket.send(new DatagramPacket(receivedData, receivedData.length,clientAddress,clientPort));
-                    }
-
+                    // if(changed){
+                        // socket.send(new DatagramPacket(receivedDataFixed, receivedDataFixed.length,clientAddress,clientPort));
+                    // }else{
+                        // socket.send(new DatagramPacket(receivedData, receivedData.length,clientAddress,clientPort));
+                        // }
+                        
+                    socket.send(new DatagramPacket(receivedResponse.getData(), receivedResponse.getLength(),clientAddress,clientPort));
                 }
 
 
@@ -291,8 +305,10 @@ public class ThreadServer implements Runnable {
     }
 
 
-    private static DNSResponse formatAndGetDNSResponse(byte[] data) {
-        System.out.println("DENTRO DE formatAndGetDNSResponse, con data: " + bytesToHex(data, data.length));
+    private static DNSResponse formatAndGetDNSResponse(byte[] data, int dataLength) {
+        byte[] dataCopy = new byte[dataLength];
+        System.arraycopy(data, 0, dataCopy, 0, dataLength);
+        System.out.println("DENTRO DE formatAndGetDNSResponse, con data: " + bytesToHex(dataCopy, dataCopy.length));
         ByteBuffer buffer = ByteBuffer.wrap(data);
 
         // Gets all the header info
@@ -332,7 +348,7 @@ public class ThreadServer implements Runnable {
 
         
 
-        DNSResponse returnResponse = new DNSResponse(data, transactionID, flags, numQuestions, numAnswerRRs, numAuthorityRRs, numAdditionalRRs,
+        DNSResponse returnResponse = new DNSResponse(dataCopy, dataCopy.length, transactionID, flags, numQuestions, numAnswerRRs, numAuthorityRRs, numAdditionalRRs,
                                         domainName.toString(), domainName.toString().length(),domainNameParts, queryLabelCount, queryType, queryClass);
 
         int countAnswers = (int)numAnswerRRs;
@@ -367,21 +383,39 @@ public class ThreadServer implements Runnable {
             }
 
             System.out.println("position después de obtener el nombre: "+position);
-
+            
             //To get AType and AClass
             short ansType = buffer.getShort(position);
             short ansClass = buffer.getShort(position + 2);
-            position = position+4;
-
+            position += 4;
+            
+            System.out.println("position después de obtener clases: "+position);
             int ansTTL = buffer.getInt(position);
             position += 4;
+            System.out.println("position después de obtener ttl y ttl: "+position+"ttl: "+ansTTL);
 
             String ansAddress = "";
-            if(ansType == 1){
+            if(ansType == (short)0x0001){
+                short tempAddressLengthShort = buffer.getShort(position);
+                int tempAddressLength = Short.toUnsignedInt(tempAddressLengthShort);
+                System.out.println("es tipo A con length: "+tempAddressLength);
+                position += 2;
                 for (int i = 0; i < 4; i++) {
                     System.out.println("Item "+i+" del address: "+buffer.get(position));
-                    ansAddress += (int)buffer.get(position) + ".";
+                    ansAddress += String.valueOf(buffer.get(position)) + ".";
                     position++;
+                }
+                ansAddress = ansAddress.substring(0, ansAddress.length() - 1);
+            }else if(ansType == (short)0x0005){ //CNAME
+                short tempAddressLengthShort = buffer.getShort(position);
+                int tempAddressLength = Short.toUnsignedInt(tempAddressLengthShort);
+                System.out.println("es tipo CNAME con length: "+tempAddressLength);
+                position += 2;
+                for (int i = 0; i < tempAddressLength; i++) {
+                    System.out.println("Item "+i+" del address: "+buffer.get(position));
+                    ansAddress += String.valueOf(buffer.get(position)) + ".";
+                    position++;
+                    if(i > 25){break;}
                 }
                 ansAddress = ansAddress.substring(0, ansAddress.length() - 1);
             }
@@ -393,141 +427,6 @@ public class ThreadServer implements Runnable {
         return returnResponse;
     }
 
-    private static String filterPrintableChars(byte[] data, int length) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < length; i++) {
-            char c = (char) data[i];
-            if (c >= 32 && c <= 126) { // Imprimible ASCII range
-                sb.append(c);
-            } else {
-                sb.append('.');
-            }
-        }
-        return sb.toString();
-    }
-
-    //    Crear un cliente udp, -- iterativo: que primero mande a preguntar a los root A-M, esto regresa un TLD, que es
-//    el servidor que ya sabemos quien tiene la información que estamos pidiendo
-    private static void iterative(byte[] query, int length) throws IOException {
-        int port = 53;
-        DatagramSocket socket = new DatagramSocket(port);
-        byte[] input = new byte[65535];
-        DatagramSocket ds = new DatagramSocket();
-        InetAddress ip = InetAddress.getLocalHost();
-        try {
-            DatagramPacket packet = new DatagramPacket(query, length, InetAddress.getByName("198.41.0.4"), port);
-            ds.send(packet);
-
-            byte[] respuesta = new byte[65535];
-            DatagramPacket receivePacket = new DatagramPacket(respuesta, respuesta.length);
-
-            ds.receive(receivePacket);
-
-            String respuestaS = new String(receivePacket.getData(), 0, receivePacket.getLength());
-            System.out.println("> a.root [" + LocalDate.now() + " " + LocalTime.now() + "] UDP: " + respuestaS);
-            ds.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-    }
-
-    private static byte[] handleQuery(byte[] query, int queryLength) {
-        // Formar una respuesta - Algunos campos son iguales a la consulta
-
-        byte[] response = new byte[512];
-
-        // Copiar el identificador de la consulta a la respuesta
-        response[0] = query[0];
-        response[1] = query[1];
-
-        // Flags: Respuesta estándar, no autoritativa, no truncada, sin errores
-        response[2] = (byte) 0x81; // QR=1, OPCODE=0000, AA=1, TC=0, RD=0
-        response[3] = (byte) 0x80; // RA=1, Z=000, RCODE=0000
-
-        // Número de preguntas: 1
-        response[4] = 0x00;
-        response[5] = 0x01;
-
-        // Número de respuestas: 1
-        response[6] = 0x00;
-        response[7] = 0x01;
-
-        // Número de registros de autoridad: 0
-        response[8] = 0x00;
-        response[9] = 0x00;
-
-        // Número de registros adicionales: 0
-        response[10] = 0x00;
-        response[11] = 0x00;
-
-        // Copiar la sección de preguntas desde la consulta a la respuesta
-        System.arraycopy(query, 12, response, 12, queryLength - 12);
-
-        int responseIndex = queryLength;
-
-        // Respuesta: Puntero al nombre de dominio (0xc00c)
-        response[responseIndex++] = (byte) 0xc0;
-        response[responseIndex++] = 0x0c;
-
-        // Tipo de registro: A (0x0001)
-        response[responseIndex++] = 0x00;
-        response[responseIndex++] = 0x01;
-
-        // Clase: IN (0x0001)
-        response[responseIndex++] = 0x00;
-        response[responseIndex++] = 0x01;
-
-        // TTL (Time to Live): 300 segundos (0x0000012c)
-        response[responseIndex++] = 0x00;
-        response[responseIndex++] = 0x00;
-        response[responseIndex++] = 0x01;
-        response[responseIndex++] = 0x2c;
-
-        // Longitud de datos: 4 bytes (IPv4 address)
-        response[responseIndex++] = 0x00;
-        response[responseIndex++] = 0x04;
-
-        // Dirección IP (por ejemplo, 192.168.1.1)
-        String domainName = extractDomainName(query);
-//      Si se encuentra dentro de mis registros
-//        Dependiendo del QTYPE será la lista en la que lo va a buscar
-        int qType = getQueryType(query);
-        String strResult = "";
-
-        switch (qType) {
-            case A:
-                strResult = listIPv4.get(domainName);
-                break;
-            case CNAME:
-                strResult = listCNAME.get(domainName);
-                break;
-            case TXT:
-                strResult = listTXT.get(domainName);
-                break;
-            case AAAA:
-                strResult = listIPv6.get(domainName);
-                break;
-        }
-
-        if (!strResult.equals("")){
-
-        }else{
-
-//          1. Root Server
-
-//          2. TLD
-
-//          3. Autoritativo
-
-//          4. Almacenarlo en hashmap de addresses
-            response[responseIndex++] = (byte) 8;
-            response[responseIndex++] = (byte) 8;
-            response[responseIndex++] = 8;
-            response[responseIndex++] = 8;
-        }
-        return response;
-    }
 
     public static int getQueryType(byte[] query) {
         ByteBuffer buffer = ByteBuffer.wrap(query);

@@ -44,7 +44,7 @@ public class DNSResponse {
 
 
     // DNSResponse Constructor
-    public DNSResponse(byte[] data, short transactionID, short flags, short numQuestions, short numAnswerRRs,
+    public DNSResponse(byte[] data, int dataLength, short transactionID, short flags, short numQuestions, short numAnswerRRs,
                        short numAuthorityRRs, short numAdditionalRRs, String queryName,
                        int queryNameLength, String[] queryNameParts, int queryLabelCount, short queryType, short queryClass) {
         this.transactionID = transactionID;
@@ -60,7 +60,8 @@ public class DNSResponse {
         this.queryType = queryType;
         this.queryClass = queryClass;
         this.answers = new Answer[numAnswerRRs];
-        this.data = data;
+        this.data = new byte[dataLength];
+        System.arraycopy(data, 0, this.data, 0, dataLength);
     }
 
     // Method to add an answer
@@ -122,12 +123,22 @@ public class DNSResponse {
     // Helper method to convert type code to string
     private String getTypeString(short type) {
         switch (type) {
-            case 0x01: return "A";
-            case 0x05: return "CNAME";
-            case 0x10: return "TXT";
-            case 28: return "AAAA";
+            case (short)0x0001: return "A";
+            case (short)0x0005: return "CNAME";
+            case (short)0x0010: return "TXT";
+            case (short)0x001c: return "AAAA";
             default: return "UNKNOWN";
         }
+    }
+
+    public byte[] getData(){
+        return this.data;
+    }
+    public int getLength(){
+        return this.data.length;
+    }
+    public String getTransactionID(){
+        return String.format("%04x", this.transactionID);
     }
 
 }
