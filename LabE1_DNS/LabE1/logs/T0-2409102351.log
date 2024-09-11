@@ -1,1 +1,1312 @@
 240910235145202 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235147897 ThreadServer.run()	INFO: 
+
+
+
+240910235147900 ThreadServer.run()	INFO: request b761 enviado a DNS 0
+240910235147936 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235147945 ThreadServer.run()	INFO: 
+
+
+
+240910235147947 ThreadServer.run()	INFO: request d780 enviado a DNS 0
+240910235147949 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235147957 ThreadServer.run()	INFO: 
+
+
+
+240910235147959 ThreadServer.run()	INFO: request d780 enviado a DNS 0
+240910235147960 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235147967 ThreadServer.run()	INFO: 
+
+
+
+240910235147968 ThreadServer.run()	INFO: request b761 enviado a DNS 0
+240910235147969 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235148070 ThreadServer.run()	INFO: Se recibió response para el paquete b761 del source: /8.8.8.8
+240910235148073 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235148087 ThreadServer.run()	INFO: Se recibió response para el paquete d780 del source: /8.8.8.8
+240910235148088 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235148099 ThreadServer.run()	INFO: Se recibió response para el paquete d780 del source: /8.8.8.8
+240910235148101 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: d780
+240910235148104 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235148151 ThreadServer.run()	INFO: Se recibió response para el paquete b761 del source: /8.8.8.8
+240910235148152 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: b761
+240910235148154 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235150766 ThreadServer.run()	INFO: 
+
+
+
+240910235150767 ThreadServer.run()	INFO: request 6062 enviado a DNS 0
+240910235150768 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235150805 ThreadServer.run()	INFO: 
+
+
+
+240910235150806 ThreadServer.run()	INFO: request 6062 enviado a DNS 0
+240910235150808 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235150837 ThreadServer.run()	INFO: Se recibió response para el paquete 6062 del source: /8.8.8.8
+240910235150838 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235150861 ThreadServer.run()	INFO: Se recibió response para el paquete 6062 del source: /8.8.8.8
+240910235150862 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 6062
+240910235150863 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235151266 ThreadServer.run()	INFO: 
+
+
+
+240910235151268 ThreadServer.run()	INFO: request 03a7 enviado a DNS 0
+240910235151269 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235151277 ThreadServer.run()	INFO: 
+
+
+
+240910235151278 ThreadServer.run()	INFO: request 8c99 enviado a DNS 0
+240910235151280 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235151299 ThreadServer.run()	INFO: 
+
+
+
+240910235151300 ThreadServer.run()	INFO: request 03a7 enviado a DNS 0
+240910235151301 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235151308 ThreadServer.run()	INFO: 
+
+
+
+240910235151310 ThreadServer.run()	INFO: request 8c99 enviado a DNS 0
+240910235151312 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235151331 ThreadServer.run()	INFO: Se recibió response para el paquete 03a7 del source: /8.8.8.8
+240910235151332 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235151361 ThreadServer.run()	INFO: Se recibió response para el paquete 8c99 del source: /8.8.8.8
+240910235151362 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235151376 ThreadServer.run()	INFO: Se recibió response para el paquete 03a7 del source: /8.8.8.8
+240910235151376 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 03a7
+240910235151377 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235151384 ThreadServer.run()	INFO: Se recibió response para el paquete 8c99 del source: /8.8.8.8
+240910235151384 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 8c99
+240910235151385 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235201274 ThreadServer.run()	INFO: 
+
+
+
+240910235201275 ThreadServer.run()	INFO: request 3bb9 enviado a DNS 0
+240910235201276 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235201308 ThreadServer.run()	INFO: 
+
+
+
+240910235201309 ThreadServer.run()	INFO: request 3bb9 enviado a DNS 0
+240910235201310 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235201326 ThreadServer.run()	INFO: Se recibió response para el paquete 3bb9 del source: /8.8.8.8
+240910235201327 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235201366 ThreadServer.run()	INFO: Se recibió response para el paquete 3bb9 del source: /8.8.8.8
+240910235201366 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 3bb9
+240910235201367 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235201764 ThreadServer.run()	INFO: 
+
+
+
+240910235201765 ThreadServer.run()	INFO: request 9dc1 enviado a DNS 0
+240910235201766 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235201770 ThreadServer.run()	INFO: 
+
+
+
+240910235201771 ThreadServer.run()	INFO: request 69fc enviado a DNS 0
+240910235201771 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235201775 ThreadServer.run()	INFO: 
+
+
+
+240910235201776 ThreadServer.run()	INFO: request aef5 enviado a DNS 0
+240910235201777 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235201828 ThreadServer.run()	INFO: Se recibió response para el paquete 69fc del source: /8.8.8.8
+240910235201829 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235201834 ThreadServer.run()	INFO: Se recibió response para el paquete 9dc1 del source: /8.8.8.8
+240910235201834 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235201844 ThreadServer.run()	INFO: Se recibió response para el paquete aef5 del source: /8.8.8.8
+240910235201845 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235203194 ThreadServer.run()	INFO: 
+
+
+
+240910235203195 ThreadServer.run()	INFO: request c971 enviado a DNS 0
+240910235203195 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235203199 ThreadServer.run()	INFO: 
+
+
+
+240910235203201 ThreadServer.run()	INFO: request 602e enviado a DNS 0
+240910235203202 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235203223 ThreadServer.run()	INFO: 
+
+
+
+240910235203224 ThreadServer.run()	INFO: request c971 enviado a DNS 0
+240910235203224 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235203228 ThreadServer.run()	INFO: 
+
+
+
+240910235203230 ThreadServer.run()	INFO: request 602e enviado a DNS 0
+240910235203231 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235203458 ThreadServer.run()	INFO: Se recibió response para el paquete 602e del source: /8.8.8.8
+240910235203459 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235203474 ThreadServer.run()	INFO: Se recibió response para el paquete c971 del source: /8.8.8.8
+240910235203475 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235203503 ThreadServer.run()	INFO: Se recibió response para el paquete 602e del source: /8.8.8.8
+240910235203504 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 602e
+240910235203505 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235203519 ThreadServer.run()	INFO: Se recibió response para el paquete c971 del source: /8.8.8.8
+240910235203519 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: c971
+240910235203519 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235206302 ThreadServer.run()	INFO: 
+
+
+
+240910235206302 ThreadServer.run()	INFO: request 71fb enviado a DNS 0
+240910235206303 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235206335 ThreadServer.run()	INFO: 
+
+
+
+240910235206336 ThreadServer.run()	INFO: request 71fb enviado a DNS 0
+240910235206337 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235206401 ThreadServer.run()	INFO: Se recibió response para el paquete 71fb del source: /8.8.8.8
+240910235206402 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235206407 ThreadServer.run()	INFO: Se recibió response para el paquete 71fb del source: /8.8.8.8
+240910235206408 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 71fb
+240910235206409 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235215088 ThreadServer.run()	INFO: 
+
+
+
+240910235215089 ThreadServer.run()	INFO: request db11 enviado a DNS 0
+240910235215090 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235215096 ThreadServer.run()	INFO: 
+
+
+
+240910235215097 ThreadServer.run()	INFO: request 9d61 enviado a DNS 0
+240910235215098 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235215104 ThreadServer.run()	INFO: 
+
+
+
+240910235215105 ThreadServer.run()	INFO: request 1422 enviado a DNS 0
+240910235215106 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235215165 ThreadServer.run()	INFO: Se recibió response para el paquete 1422 del source: /8.8.8.8
+240910235215166 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235215175 ThreadServer.run()	INFO: Se recibió response para el paquete 9d61 del source: /8.8.8.8
+240910235215176 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235215183 ThreadServer.run()	INFO: Se recibió response para el paquete db11 del source: /8.8.8.8
+240910235215185 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235217339 ThreadServer.run()	INFO: 
+
+
+
+240910235217340 ThreadServer.run()	INFO: request d3c3 enviado a DNS 0
+240910235217340 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235217344 ThreadServer.run()	INFO: 
+
+
+
+240910235217345 ThreadServer.run()	INFO: request 9334 enviado a DNS 0
+240910235217346 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235217377 ThreadServer.run()	INFO: 
+
+
+
+240910235217377 ThreadServer.run()	INFO: request 9334 enviado a DNS 0
+240910235217378 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235217382 ThreadServer.run()	INFO: 
+
+
+
+240910235217382 ThreadServer.run()	INFO: request d3c3 enviado a DNS 0
+240910235217383 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235217443 ThreadServer.run()	INFO: Se recibió response para el paquete 9334 del source: /8.8.8.8
+240910235217443 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235217447 ThreadServer.run()	INFO: Se recibió response para el paquete 9334 del source: /8.8.8.8
+240910235217448 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 9334
+240910235217449 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235217476 ThreadServer.run()	INFO: Se recibió response para el paquete d3c3 del source: /8.8.8.8
+240910235217477 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235217483 ThreadServer.run()	INFO: Se recibió response para el paquete d3c3 del source: /8.8.8.8
+240910235217484 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: d3c3
+240910235217485 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235218560 ThreadServer.run()	INFO: 
+
+
+
+240910235218561 ThreadServer.run()	INFO: request 5269 enviado a DNS 0
+240910235218562 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235218601 ThreadServer.run()	INFO: 
+
+
+
+240910235218602 ThreadServer.run()	INFO: request 5269 enviado a DNS 0
+240910235218603 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235218644 ThreadServer.run()	INFO: Se recibió response para el paquete 5269 del source: /8.8.8.8
+240910235218645 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235218657 ThreadServer.run()	INFO: Se recibió response para el paquete 5269 del source: /8.8.8.8
+240910235218658 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 5269
+240910235218659 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235243530 ThreadServer.run()	INFO: 
+
+
+
+240910235243531 ThreadServer.run()	INFO: request 638c enviado a DNS 0
+240910235243531 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235243535 ThreadServer.run()	INFO: 
+
+
+
+240910235243536 ThreadServer.run()	INFO: request 182a enviado a DNS 0
+240910235243536 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235243570 ThreadServer.run()	INFO: 
+
+
+
+240910235243571 ThreadServer.run()	INFO: request 638c enviado a DNS 0
+240910235243572 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235243576 ThreadServer.run()	INFO: 
+
+
+
+240910235243577 ThreadServer.run()	INFO: request 182a enviado a DNS 0
+240910235243578 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235243682 ThreadServer.run()	INFO: Se recibió response para el paquete 638c del source: /8.8.8.8
+240910235243683 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235243694 ThreadServer.run()	INFO: Se recibió response para el paquete 182a del source: /8.8.8.8
+240910235243694 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235243719 ThreadServer.run()	INFO: Se recibió response para el paquete 638c del source: /8.8.8.8
+240910235243719 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 638c
+240910235243720 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235243734 ThreadServer.run()	INFO: Se recibió response para el paquete 182a del source: /8.8.8.8
+240910235243735 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 182a
+240910235243735 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235245057 ThreadServer.run()	INFO: 
+
+
+
+240910235245058 ThreadServer.run()	INFO: request 6a3b enviado a DNS 0
+240910235245059 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235245062 ThreadServer.run()	INFO: 
+
+
+
+240910235245063 ThreadServer.run()	INFO: request 0608 enviado a DNS 0
+240910235245063 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235245092 ThreadServer.run()	INFO: 
+
+
+
+240910235245094 ThreadServer.run()	INFO: request 6a3b enviado a DNS 0
+240910235245095 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235245099 ThreadServer.run()	INFO: 
+
+
+
+240910235245100 ThreadServer.run()	INFO: request 0608 enviado a DNS 0
+240910235245100 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235245136 ThreadServer.run()	INFO: Se recibió response para el paquete 6a3b del source: /8.8.8.8
+240910235245137 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235245142 ThreadServer.run()	INFO: Se recibió response para el paquete 0608 del source: /8.8.8.8
+240910235245143 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235245167 ThreadServer.run()	INFO: Se recibió response para el paquete 6a3b del source: /8.8.8.8
+240910235245168 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 6a3b
+240910235245169 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235245175 ThreadServer.run()	INFO: Se recibió response para el paquete 0608 del source: /8.8.8.8
+240910235245176 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 0608
+240910235245176 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235301283 ThreadServer.run()	INFO: 
+
+
+
+240910235301284 ThreadServer.run()	INFO: request 1afb enviado a DNS 0
+240910235301285 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235301288 ThreadServer.run()	INFO: 
+
+
+
+240910235301288 ThreadServer.run()	INFO: request c460 enviado a DNS 0
+240910235301289 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235301323 ThreadServer.run()	INFO: 
+
+
+
+240910235301324 ThreadServer.run()	INFO: request 1afb enviado a DNS 0
+240910235301325 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235301328 ThreadServer.run()	INFO: 
+
+
+
+240910235301329 ThreadServer.run()	INFO: request c460 enviado a DNS 0
+240910235301329 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235301409 ThreadServer.run()	INFO: Se recibió response para el paquete 1afb del source: /8.8.8.8
+240910235301410 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235301421 ThreadServer.run()	INFO: Se recibió response para el paquete 1afb del source: /8.8.8.8
+240910235301421 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 1afb
+240910235301422 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235301427 ThreadServer.run()	INFO: Se recibió response para el paquete c460 del source: /8.8.8.8
+240910235301428 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235301434 ThreadServer.run()	INFO: Se recibió response para el paquete c460 del source: /8.8.8.8
+240910235301434 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: c460
+240910235301435 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235302027 ThreadServer.run()	INFO: 
+
+
+
+240910235302028 ThreadServer.run()	INFO: request a77d enviado a DNS 0
+240910235302029 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235302034 ThreadServer.run()	INFO: 
+
+
+
+240910235302035 ThreadServer.run()	INFO: request 8d55 enviado a DNS 0
+240910235302036 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235302040 ThreadServer.run()	INFO: 
+
+
+
+240910235302042 ThreadServer.run()	INFO: request bb13 enviado a DNS 0
+240910235302043 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235302098 ThreadServer.run()	INFO: Se recibió response para el paquete a77d del source: /8.8.8.8
+240910235302099 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235302117 ThreadServer.run()	INFO: Se recibió response para el paquete 8d55 del source: /8.8.8.8
+240910235302118 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235302126 ThreadServer.run()	INFO: Se recibió response para el paquete bb13 del source: /8.8.8.8
+240910235302127 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235307380 ThreadServer.run()	INFO: 
+
+
+
+240910235307381 ThreadServer.run()	INFO: request b946 enviado a DNS 0
+240910235307381 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235307386 ThreadServer.run()	INFO: 
+
+
+
+240910235307387 ThreadServer.run()	INFO: request 6536 enviado a DNS 0
+240910235307388 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235307393 ThreadServer.run()	INFO: 
+
+
+
+240910235307394 ThreadServer.run()	INFO: request cd36 enviado a DNS 0
+240910235307395 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235307472 ThreadServer.run()	INFO: Se recibió response para el paquete 6536 del source: /8.8.8.8
+240910235307473 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235307488 ThreadServer.run()	INFO: Se recibió response para el paquete b946 del source: /8.8.8.8
+240910235307490 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235307553 ThreadServer.run()	INFO: Se recibió response para el paquete cd36 del source: /8.8.8.8
+240910235307554 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235317708 ThreadServer.run()	INFO: 
+
+
+
+240910235317709 ThreadServer.run()	INFO: request b4c3 enviado a DNS 0
+240910235317709 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235317712 ThreadServer.run()	INFO: 
+
+
+
+240910235317713 ThreadServer.run()	INFO: request 2a56 enviado a DNS 0
+240910235317713 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235317717 ThreadServer.run()	INFO: 
+
+
+
+240910235317718 ThreadServer.run()	INFO: request 22f6 enviado a DNS 0
+240910235317719 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235317805 ThreadServer.run()	INFO: Se recibió response para el paquete b4c3 del source: /8.8.8.8
+240910235317806 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235317817 ThreadServer.run()	INFO: Se recibió response para el paquete 2a56 del source: /8.8.8.8
+240910235317818 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235317823 ThreadServer.run()	INFO: Se recibió response para el paquete 22f6 del source: /8.8.8.8
+240910235317824 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235319814 ThreadServer.run()	INFO: 
+
+
+
+240910235319815 ThreadServer.run()	INFO: request d4bb enviado a DNS 0
+240910235319815 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235319819 ThreadServer.run()	INFO: 
+
+
+
+240910235319820 ThreadServer.run()	INFO: request ac9f enviado a DNS 0
+240910235319821 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235319825 ThreadServer.run()	INFO: 
+
+
+
+240910235319826 ThreadServer.run()	INFO: request efcb enviado a DNS 0
+240910235319827 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235319927 ThreadServer.run()	INFO: 
+
+
+
+240910235319928 ThreadServer.run()	INFO: request 6630 enviado a DNS 0
+240910235319928 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235319932 ThreadServer.run()	INFO: 
+
+
+
+240910235319933 ThreadServer.run()	INFO: request 7fa6 enviado a DNS 0
+240910235319933 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235319937 ThreadServer.run()	INFO: 
+
+
+
+240910235319938 ThreadServer.run()	INFO: request e87c enviado a DNS 0
+240910235319939 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235319962 ThreadServer.run()	INFO: Se recibió response para el paquete ac9f del source: /8.8.8.8
+240910235319962 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235319972 ThreadServer.run()	INFO: Se recibió response para el paquete efcb del source: /8.8.8.8
+240910235319973 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235319987 ThreadServer.run()	INFO: Se recibió response para el paquete d4bb del source: /8.8.8.8
+240910235319987 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235320032 ThreadServer.run()	INFO: Se recibió response para el paquete 7fa6 del source: /8.8.8.8
+240910235320033 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235320047 ThreadServer.run()	INFO: Se recibió response para el paquete 6630 del source: /8.8.8.8
+240910235320047 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235320053 ThreadServer.run()	INFO: Se recibió response para el paquete e87c del source: /8.8.8.8
+240910235320054 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235323452 ThreadServer.run()	INFO: 
+
+
+
+240910235323453 ThreadServer.run()	INFO: request 8c32 enviado a DNS 0
+240910235323453 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235323457 ThreadServer.run()	INFO: 
+
+
+
+240910235323458 ThreadServer.run()	INFO: request 4272 enviado a DNS 0
+240910235323459 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235323463 ThreadServer.run()	INFO: 
+
+
+
+240910235323465 ThreadServer.run()	INFO: request 5d3f enviado a DNS 0
+240910235323465 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235323515 ThreadServer.run()	INFO: Se recibió response para el paquete 8c32 del source: /8.8.8.8
+240910235323516 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235323527 ThreadServer.run()	INFO: Se recibió response para el paquete 4272 del source: /8.8.8.8
+240910235323528 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235323537 ThreadServer.run()	INFO: Se recibió response para el paquete 5d3f del source: /8.8.8.8
+240910235323537 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337084 ThreadServer.run()	INFO: 
+
+
+
+240910235337085 ThreadServer.run()	INFO: request 1eb3 enviado a DNS 0
+240910235337085 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337115 ThreadServer.run()	INFO: 
+
+
+
+240910235337116 ThreadServer.run()	INFO: request 1eb3 enviado a DNS 0
+240910235337116 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337201 ThreadServer.run()	INFO: Se recibió response para el paquete 1eb3 del source: /8.8.8.8
+240910235337202 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337206 ThreadServer.run()	INFO: Se recibió response para el paquete 1eb3 del source: /8.8.8.8
+240910235337206 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 1eb3
+240910235337207 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337585 ThreadServer.run()	INFO: 
+
+
+
+240910235337586 ThreadServer.run()	INFO: request 107a enviado a DNS 0
+240910235337586 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337589 ThreadServer.run()	INFO: 
+
+
+
+240910235337590 ThreadServer.run()	INFO: request 47c5 enviado a DNS 0
+240910235337591 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337594 ThreadServer.run()	INFO: 
+
+
+
+240910235337595 ThreadServer.run()	INFO: request b142 enviado a DNS 0
+240910235337595 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337672 ThreadServer.run()	INFO: Se recibió response para el paquete 107a del source: /8.8.8.8
+240910235337673 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337683 ThreadServer.run()	INFO: Se recibió response para el paquete 47c5 del source: /8.8.8.8
+240910235337683 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337691 ThreadServer.run()	INFO: Se recibió response para el paquete b142 del source: /8.8.8.8
+240910235337692 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337928 ThreadServer.run()	INFO: 
+
+
+
+240910235337929 ThreadServer.run()	INFO: request 7cbc enviado a DNS 0
+240910235337929 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337933 ThreadServer.run()	INFO: 
+
+
+
+240910235337933 ThreadServer.run()	INFO: request 8842 enviado a DNS 0
+240910235337934 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337937 ThreadServer.run()	INFO: 
+
+
+
+240910235337937 ThreadServer.run()	INFO: request 9b27 enviado a DNS 0
+240910235337938 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337958 ThreadServer.run()	INFO: 
+
+
+
+240910235337958 ThreadServer.run()	INFO: request 8842 enviado a DNS 0
+240910235337959 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337962 ThreadServer.run()	INFO: 
+
+
+
+240910235337963 ThreadServer.run()	INFO: request 7cbc enviado a DNS 0
+240910235337963 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337967 ThreadServer.run()	INFO: 
+
+
+
+240910235337967 ThreadServer.run()	INFO: request 9b27 enviado a DNS 0
+240910235337968 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235337999 ThreadServer.run()	INFO: Se recibió response para el paquete 8842 del source: /8.8.8.8
+240910235337999 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235338020 ThreadServer.run()	INFO: Se recibió response para el paquete 7cbc del source: /8.8.8.8
+240910235338021 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235338026 ThreadServer.run()	INFO: Se recibió response para el paquete 9b27 del source: /8.8.8.8
+240910235338026 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235338039 ThreadServer.run()	INFO: Se recibió response para el paquete 7cbc del source: /8.8.8.8
+240910235338040 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 7cbc
+240910235338041 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235338046 ThreadServer.run()	INFO: Se recibió response para el paquete 9b27 del source: /8.8.8.8
+240910235338046 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 9b27
+240910235338047 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235338052 ThreadServer.run()	INFO: Se recibió response para el paquete 8842 del source: /8.8.8.8
+240910235338053 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 8842
+240910235338054 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235338629 ThreadServer.run()	INFO: 
+
+
+
+240910235338630 ThreadServer.run()	INFO: request 62b1 enviado a DNS 0
+240910235338631 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235338638 ThreadServer.run()	INFO: 
+
+
+
+240910235338640 ThreadServer.run()	INFO: request da08 enviado a DNS 0
+240910235338641 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235338647 ThreadServer.run()	INFO: 
+
+
+
+240910235338648 ThreadServer.run()	INFO: request db1c enviado a DNS 0
+240910235338649 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235338727 ThreadServer.run()	INFO: Se recibió response para el paquete db1c del source: /8.8.8.8
+240910235338728 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235338764 ThreadServer.run()	INFO: Se recibió response para el paquete da08 del source: /8.8.8.8
+240910235338765 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235338776 ThreadServer.run()	INFO: Se recibió response para el paquete 62b1 del source: /8.8.8.8
+240910235338776 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344171 ThreadServer.run()	INFO: 
+
+
+
+240910235344171 ThreadServer.run()	INFO: request faa6 enviado a DNS 0
+240910235344172 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344175 ThreadServer.run()	INFO: 
+
+
+
+240910235344176 ThreadServer.run()	INFO: request f923 enviado a DNS 0
+240910235344176 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344202 ThreadServer.run()	INFO: 
+
+
+
+240910235344202 ThreadServer.run()	INFO: request faa6 enviado a DNS 0
+240910235344202 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344207 ThreadServer.run()	INFO: 
+
+
+
+240910235344207 ThreadServer.run()	INFO: request f923 enviado a DNS 0
+240910235344208 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344272 ThreadServer.run()	INFO: Se recibió response para el paquete faa6 del source: /8.8.8.8
+240910235344273 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344279 ThreadServer.run()	INFO: Se recibió response para el paquete f923 del source: /8.8.8.8
+240910235344280 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344288 ThreadServer.run()	INFO: Se recibió response para el paquete faa6 del source: /8.8.8.8
+240910235344288 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: faa6
+240910235344289 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344296 ThreadServer.run()	INFO: Se recibió response para el paquete f923 del source: /8.8.8.8
+240910235344297 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: f923
+240910235344297 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344302 ThreadServer.run()	INFO: 
+
+
+
+240910235344303 ThreadServer.run()	INFO: request 0934 enviado a DNS 0
+240910235344304 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344325 ThreadServer.run()	INFO: 
+
+
+
+240910235344326 ThreadServer.run()	INFO: request 0934 enviado a DNS 0
+240910235344327 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344372 ThreadServer.run()	INFO: Se recibió response para el paquete 0934 del source: /8.8.8.8
+240910235344373 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344379 ThreadServer.run()	INFO: 
+
+
+
+240910235344380 ThreadServer.run()	INFO: request b353 enviado a DNS 0
+240910235344381 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344398 ThreadServer.run()	INFO: Se recibió response para el paquete 0934 del source: /8.8.8.8
+240910235344399 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 0934
+240910235344399 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344403 ThreadServer.run()	INFO: 
+
+
+
+240910235344404 ThreadServer.run()	INFO: request b353 enviado a DNS 0
+240910235344405 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344451 ThreadServer.run()	INFO: Se recibió response para el paquete b353 del source: /8.8.8.8
+240910235344452 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235344486 ThreadServer.run()	INFO: Se recibió response para el paquete b353 del source: /8.8.8.8
+240910235344486 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: b353
+240910235344487 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235401281 ThreadServer.run()	INFO: 
+
+
+
+240910235401282 ThreadServer.run()	INFO: request be94 enviado a DNS 0
+240910235401283 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235401286 ThreadServer.run()	INFO: 
+
+
+
+240910235401286 ThreadServer.run()	INFO: request e4e9 enviado a DNS 0
+240910235401287 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235401320 ThreadServer.run()	INFO: 
+
+
+
+240910235401321 ThreadServer.run()	INFO: request be94 enviado a DNS 0
+240910235401322 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235401325 ThreadServer.run()	INFO: 
+
+
+
+240910235401326 ThreadServer.run()	INFO: request e4e9 enviado a DNS 0
+240910235401327 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235401407 ThreadServer.run()	INFO: Se recibió response para el paquete be94 del source: /8.8.8.8
+240910235401407 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235401411 ThreadServer.run()	INFO: Se recibió response para el paquete e4e9 del source: /8.8.8.8
+240910235401412 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235401416 ThreadServer.run()	INFO: Se recibió response para el paquete e4e9 del source: /8.8.8.8
+240910235401416 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: e4e9
+240910235401417 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235401428 ThreadServer.run()	INFO: Se recibió response para el paquete be94 del source: /8.8.8.8
+240910235401428 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: be94
+240910235401429 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409466 ThreadServer.run()	INFO: 
+
+
+
+240910235409467 ThreadServer.run()	INFO: request ebba enviado a DNS 0
+240910235409467 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409471 ThreadServer.run()	INFO: 
+
+
+
+240910235409472 ThreadServer.run()	INFO: request c228 enviado a DNS 0
+240910235409473 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409476 ThreadServer.run()	INFO: 
+
+
+
+240910235409477 ThreadServer.run()	INFO: request 14d1 enviado a DNS 0
+240910235409478 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409580 ThreadServer.run()	INFO: Se recibió response para el paquete ebba del source: /8.8.8.8
+240910235409581 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409589 ThreadServer.run()	INFO: Se recibió response para el paquete c228 del source: /8.8.8.8
+240910235409590 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409596 ThreadServer.run()	INFO: Se recibió response para el paquete 14d1 del source: /8.8.8.8
+240910235409597 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409604 ThreadServer.run()	INFO: 
+
+
+
+240910235409605 ThreadServer.run()	INFO: request be36 enviado a DNS 0
+240910235409606 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409611 ThreadServer.run()	INFO: 
+
+
+
+240910235409612 ThreadServer.run()	INFO: request 6f15 enviado a DNS 0
+240910235409612 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409636 ThreadServer.run()	INFO: 
+
+
+
+240910235409637 ThreadServer.run()	INFO: request 6f15 enviado a DNS 0
+240910235409637 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409642 ThreadServer.run()	INFO: 
+
+
+
+240910235409643 ThreadServer.run()	INFO: request be36 enviado a DNS 0
+240910235409643 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409838 ThreadServer.run()	INFO: 
+
+
+
+240910235409838 ThreadServer.run()	INFO: request 2fba enviado a DNS 0
+240910235409839 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409842 ThreadServer.run()	INFO: 
+
+
+
+240910235409842 ThreadServer.run()	INFO: request c179 enviado a DNS 0
+240910235409843 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409846 ThreadServer.run()	INFO: 
+
+
+
+240910235409847 ThreadServer.run()	INFO: request 3750 enviado a DNS 0
+240910235409848 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409896 ThreadServer.run()	INFO: Se recibió response para el paquete 2fba del source: /8.8.8.8
+240910235409896 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409902 ThreadServer.run()	INFO: Se recibió response para el paquete 3750 del source: /8.8.8.8
+240910235409903 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409912 ThreadServer.run()	INFO: Se recibió response para el paquete c179 del source: /8.8.8.8
+240910235409913 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409968 ThreadServer.run()	INFO: Se recibió response para el paquete 6f15 del source: /8.8.8.8
+240910235409968 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409973 ThreadServer.run()	INFO: Se recibió response para el paquete be36 del source: /8.8.8.8
+240910235409974 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235409981 ThreadServer.run()	INFO: Se recibió response para el paquete 6f15 del source: /8.8.8.8
+240910235409982 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 6f15
+240910235409982 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235410011 ThreadServer.run()	INFO: Se recibió response para el paquete be36 del source: /8.8.8.8
+240910235410011 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: be36
+240910235410012 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235416712 ThreadServer.run()	INFO: 
+
+
+
+240910235416712 ThreadServer.run()	INFO: request 52f8 enviado a DNS 0
+240910235416712 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235416715 ThreadServer.run()	INFO: 
+
+
+
+240910235416716 ThreadServer.run()	INFO: request f9d8 enviado a DNS 0
+240910235416716 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235416719 ThreadServer.run()	INFO: 
+
+
+
+240910235416720 ThreadServer.run()	INFO: request 103c enviado a DNS 0
+240910235416720 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235416834 ThreadServer.run()	INFO: Se recibió response para el paquete f9d8 del source: /8.8.8.8
+240910235416835 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235416841 ThreadServer.run()	INFO: Se recibió response para el paquete 52f8 del source: /8.8.8.8
+240910235416842 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235416846 ThreadServer.run()	INFO: Se recibió response para el paquete 103c del source: /8.8.8.8
+240910235416847 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235420911 ThreadServer.run()	INFO: 
+
+
+
+240910235420912 ThreadServer.run()	INFO: request 003f enviado a DNS 0
+240910235420912 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235421041 ThreadServer.run()	INFO: Se recibió response para el paquete 003f del source: /8.8.8.8
+240910235421042 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235423956 ThreadServer.run()	INFO: 
+
+
+
+240910235423957 ThreadServer.run()	INFO: request 8dbe enviado a DNS 0
+240910235423957 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235423960 ThreadServer.run()	INFO: 
+
+
+
+240910235423960 ThreadServer.run()	INFO: request c8d9 enviado a DNS 0
+240910235423961 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235423987 ThreadServer.run()	INFO: 
+
+
+
+240910235423988 ThreadServer.run()	INFO: request c8d9 enviado a DNS 0
+240910235423988 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235423991 ThreadServer.run()	INFO: 
+
+
+
+240910235423992 ThreadServer.run()	INFO: request 8dbe enviado a DNS 0
+240910235423992 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235424085 ThreadServer.run()	INFO: Se recibió response para el paquete 8dbe del source: /8.8.8.8
+240910235424085 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235424097 ThreadServer.run()	INFO: Se recibió response para el paquete 8dbe del source: /8.8.8.8
+240910235424097 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 8dbe
+240910235424098 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235424109 ThreadServer.run()	INFO: Se recibió response para el paquete c8d9 del source: /8.8.8.8
+240910235424109 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235424119 ThreadServer.run()	INFO: Se recibió response para el paquete c8d9 del source: /8.8.8.8
+240910235424119 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: c8d9
+240910235424120 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235426064 ThreadServer.run()	INFO: 
+
+
+
+240910235426065 ThreadServer.run()	INFO: request 9907 enviado a DNS 0
+240910235426065 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235426068 ThreadServer.run()	INFO: 
+
+
+
+240910235426068 ThreadServer.run()	INFO: request b03c enviado a DNS 0
+240910235426069 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235426072 ThreadServer.run()	INFO: 
+
+
+
+240910235426072 ThreadServer.run()	INFO: request 0d1a enviado a DNS 0
+240910235426072 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235426185 ThreadServer.run()	INFO: Se recibió response para el paquete 9907 del source: /8.8.8.8
+240910235426186 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235426193 ThreadServer.run()	INFO: Se recibió response para el paquete b03c del source: /8.8.8.8
+240910235426194 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235426200 ThreadServer.run()	INFO: Se recibió response para el paquete 0d1a del source: /8.8.8.8
+240910235426201 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235440790 ThreadServer.run()	INFO: 
+
+
+
+240910235440791 ThreadServer.run()	INFO: request 5647 enviado a DNS 0
+240910235440791 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235440795 ThreadServer.run()	INFO: 
+
+
+
+240910235440795 ThreadServer.run()	INFO: request 32af enviado a DNS 0
+240910235440795 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235440821 ThreadServer.run()	INFO: 
+
+
+
+240910235440822 ThreadServer.run()	INFO: request 32af enviado a DNS 0
+240910235440822 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235440826 ThreadServer.run()	INFO: 
+
+
+
+240910235440826 ThreadServer.run()	INFO: request 5647 enviado a DNS 0
+240910235440826 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235440923 ThreadServer.run()	INFO: Se recibió response para el paquete 5647 del source: /8.8.8.8
+240910235440923 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235440927 ThreadServer.run()	INFO: Se recibió response para el paquete 32af del source: /8.8.8.8
+240910235440927 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235440933 ThreadServer.run()	INFO: Se recibió response para el paquete 5647 del source: /8.8.8.8
+240910235440933 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 5647
+240910235440934 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235440938 ThreadServer.run()	INFO: Se recibió response para el paquete 32af del source: /8.8.8.8
+240910235440938 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 32af
+240910235440938 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235441754 ThreadServer.run()	INFO: 
+
+
+
+240910235441754 ThreadServer.run()	INFO: request 0001 enviado a DNS 0
+240910235441755 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235441853 ThreadServer.run()	INFO: Se recibió response para el paquete 0001 del source: /8.8.8.8
+240910235441853 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235441857 ThreadServer.run()	INFO: 
+
+
+
+240910235441858 ThreadServer.run()	INFO: request 0002 enviado a DNS 0
+240910235441858 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235441975 ThreadServer.run()	INFO: Se recibió response para el paquete 0002 del source: /8.8.8.8
+240910235441976 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235441983 ThreadServer.run()	INFO: 
+
+
+
+240910235441984 ThreadServer.run()	INFO: request 0003 enviado a DNS 0
+240910235441985 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235442089 ThreadServer.run()	INFO: Se recibió response para el paquete 0003 del source: /8.8.8.8
+240910235442089 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235442156 ThreadServer.run()	INFO: 
+
+
+
+240910235442157 ThreadServer.run()	INFO: request 3d53 enviado a DNS 0
+240910235442157 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235442160 ThreadServer.run()	INFO: 
+
+
+
+240910235442161 ThreadServer.run()	INFO: request 5e5a enviado a DNS 0
+240910235442161 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235442188 ThreadServer.run()	INFO: 
+
+
+
+240910235442189 ThreadServer.run()	INFO: request 5e5a enviado a DNS 0
+240910235442189 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235442193 ThreadServer.run()	INFO: 
+
+
+
+240910235442193 ThreadServer.run()	INFO: request 3d53 enviado a DNS 0
+240910235442193 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235442241 ThreadServer.run()	INFO: Se recibió response para el paquete 5e5a del source: /8.8.8.8
+240910235442242 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235442246 ThreadServer.run()	INFO: Se recibió response para el paquete 5e5a del source: /8.8.8.8
+240910235442246 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 5e5a
+240910235442247 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235442254 ThreadServer.run()	INFO: Se recibió response para el paquete 3d53 del source: /8.8.8.8
+240910235442255 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235442261 ThreadServer.run()	INFO: Se recibió response para el paquete 3d53 del source: /8.8.8.8
+240910235442261 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 3d53
+240910235442261 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235501272 ThreadServer.run()	INFO: 
+
+
+
+240910235501272 ThreadServer.run()	INFO: request bbbd enviado a DNS 0
+240910235501273 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235501276 ThreadServer.run()	INFO: 
+
+
+
+240910235501276 ThreadServer.run()	INFO: request bdf5 enviado a DNS 0
+240910235501277 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235501307 ThreadServer.run()	INFO: 
+
+
+
+240910235501307 ThreadServer.run()	INFO: request bdf5 enviado a DNS 0
+240910235501308 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235501311 ThreadServer.run()	INFO: 
+
+
+
+240910235501312 ThreadServer.run()	INFO: request bbbd enviado a DNS 0
+240910235501312 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235501399 ThreadServer.run()	INFO: Se recibió response para el paquete bdf5 del source: /8.8.8.8
+240910235501400 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235501411 ThreadServer.run()	INFO: Se recibió response para el paquete bbbd del source: /8.8.8.8
+240910235501412 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235501425 ThreadServer.run()	INFO: Se recibió response para el paquete bbbd del source: /8.8.8.8
+240910235501426 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: bbbd
+240910235501427 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235501431 ThreadServer.run()	INFO: Se recibió response para el paquete bdf5 del source: /8.8.8.8
+240910235501431 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: bdf5
+240910235501432 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235501983 ThreadServer.run()	INFO: 
+
+
+
+240910235501984 ThreadServer.run()	INFO: request fb57 enviado a DNS 0
+240910235501984 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235501988 ThreadServer.run()	INFO: 
+
+
+
+240910235501988 ThreadServer.run()	INFO: request d050 enviado a DNS 0
+240910235501988 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235501991 ThreadServer.run()	INFO: 
+
+
+
+240910235501992 ThreadServer.run()	INFO: request ad09 enviado a DNS 0
+240910235501992 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235502040 ThreadServer.run()	INFO: Se recibió response para el paquete fb57 del source: /8.8.8.8
+240910235502040 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235502044 ThreadServer.run()	INFO: Se recibió response para el paquete ad09 del source: /8.8.8.8
+240910235502044 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235502057 ThreadServer.run()	INFO: Se recibió response para el paquete d050 del source: /8.8.8.8
+240910235502058 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235517989 ThreadServer.run()	INFO: 
+
+
+
+240910235517990 ThreadServer.run()	INFO: request 3968 enviado a DNS 0
+240910235517990 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235517993 ThreadServer.run()	INFO: 
+
+
+
+240910235517994 ThreadServer.run()	INFO: request 22a7 enviado a DNS 0
+240910235517994 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235517997 ThreadServer.run()	INFO: 
+
+
+
+240910235517997 ThreadServer.run()	INFO: request 085c enviado a DNS 0
+240910235517998 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235518109 ThreadServer.run()	INFO: Se recibió response para el paquete 3968 del source: /8.8.8.8
+240910235518110 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235518119 ThreadServer.run()	INFO: Se recibió response para el paquete 22a7 del source: /8.8.8.8
+240910235518120 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235518130 ThreadServer.run()	INFO: Se recibió response para el paquete 085c del source: /8.8.8.8
+240910235518131 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521548 ThreadServer.run()	INFO: 
+
+
+
+240910235521548 ThreadServer.run()	INFO: request 1507 enviado a DNS 0
+240910235521548 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521551 ThreadServer.run()	INFO: 
+
+
+
+240910235521552 ThreadServer.run()	INFO: request 9c9f enviado a DNS 0
+240910235521552 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521581 ThreadServer.run()	INFO: 
+
+
+
+240910235521581 ThreadServer.run()	INFO: request 1507 enviado a DNS 0
+240910235521582 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521585 ThreadServer.run()	INFO: 
+
+
+
+240910235521585 ThreadServer.run()	INFO: request 9c9f enviado a DNS 0
+240910235521586 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521604 ThreadServer.run()	INFO: Se recibió response para el paquete 1507 del source: /8.8.8.8
+240910235521604 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521607 ThreadServer.run()	INFO: 
+
+
+
+240910235521608 ThreadServer.run()	INFO: request d5b5 enviado a DNS 0
+240910235521609 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521619 ThreadServer.run()	INFO: Se recibió response para el paquete 9c9f del source: /8.8.8.8
+240910235521619 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521641 ThreadServer.run()	INFO: Se recibió response para el paquete 1507 del source: /8.8.8.8
+240910235521642 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 1507
+240910235521642 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521646 ThreadServer.run()	INFO: 
+
+
+
+240910235521647 ThreadServer.run()	INFO: request d5b5 enviado a DNS 0
+240910235521647 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521655 ThreadServer.run()	INFO: Se recibió response para el paquete 9c9f del source: /8.8.8.8
+240910235521655 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 9c9f
+240910235521656 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521659 ThreadServer.run()	INFO: 
+
+
+
+240910235521659 ThreadServer.run()	INFO: request d5b5 enviado a DNS 0
+240910235521659 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521665 ThreadServer.run()	INFO: Se recibió response para el paquete d5b5 del source: /8.8.8.8
+240910235521665 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521668 ThreadServer.run()	INFO: 
+
+
+
+240910235521669 ThreadServer.run()	INFO: request 0edb enviado a DNS 0
+240910235521669 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521702 ThreadServer.run()	INFO: 
+
+
+
+240910235521703 ThreadServer.run()	INFO: request 0edb enviado a DNS 0
+240910235521703 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521710 ThreadServer.run()	INFO: Se recibió response para el paquete d5b5 del source: /8.8.8.8
+240910235521711 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: d5b5
+240910235521711 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521714 ThreadServer.run()	INFO: 
+
+
+
+240910235521714 ThreadServer.run()	INFO: request 0edb enviado a DNS 0
+240910235521715 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521720 ThreadServer.run()	INFO: Se recibió response para el paquete d5b5 del source: /8.8.8.8
+240910235521720 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: d5b5
+240910235521721 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521724 ThreadServer.run()	INFO: Se recibió response para el paquete 0edb del source: /8.8.8.8
+240910235521725 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521727 ThreadServer.run()	INFO: 
+
+
+
+240910235521728 ThreadServer.run()	INFO: request 0edb enviado a DNS 0
+240910235521728 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521754 ThreadServer.run()	INFO: Se recibió response para el paquete 0edb del source: /8.8.8.8
+240910235521755 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521764 ThreadServer.run()	INFO: Se recibió response para el paquete 0edb del source: /8.8.8.8
+240910235521764 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 0edb
+240910235521764 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235521776 ThreadServer.run()	INFO: Se recibió response para el paquete 0edb del source: /8.8.8.8
+240910235521777 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 0edb
+240910235521777 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522388 ThreadServer.run()	INFO: 
+
+
+
+240910235522389 ThreadServer.run()	INFO: request bd12 enviado a DNS 0
+240910235522389 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522392 ThreadServer.run()	INFO: 
+
+
+
+240910235522393 ThreadServer.run()	INFO: request 90fd enviado a DNS 0
+240910235522393 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522409 ThreadServer.run()	INFO: 
+
+
+
+240910235522409 ThreadServer.run()	INFO: request 2e53 enviado a DNS 0
+240910235522409 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522412 ThreadServer.run()	INFO: 
+
+
+
+240910235522413 ThreadServer.run()	INFO: request fb0a enviado a DNS 0
+240910235522413 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522416 ThreadServer.run()	INFO: 
+
+
+
+240910235522417 ThreadServer.run()	INFO: request bd12 enviado a DNS 0
+240910235522418 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522421 ThreadServer.run()	INFO: 
+
+
+
+240910235522421 ThreadServer.run()	INFO: request 90fd enviado a DNS 0
+240910235522422 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522447 ThreadServer.run()	INFO: 
+
+
+
+240910235522448 ThreadServer.run()	INFO: request fb0a enviado a DNS 0
+240910235522448 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522451 ThreadServer.run()	INFO: 
+
+
+
+240910235522452 ThreadServer.run()	INFO: request 2e53 enviado a DNS 1
+240910235522452 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522522 ThreadServer.run()	INFO: Se recibió response para el paquete bd12 del source: /8.8.8.8
+240910235522523 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522527 ThreadServer.run()	INFO: Se recibió response para el paquete 90fd del source: /8.8.8.8
+240910235522527 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522540 ThreadServer.run()	INFO: Se recibió response para el paquete 2e53 del source: /8.8.8.8
+240910235522541 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522544 ThreadServer.run()	INFO: 
+
+
+
+240910235522544 ThreadServer.run()	INFO: request 4ae7 enviado a DNS 1
+240910235522545 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522550 ThreadServer.run()	INFO: Se recibió response para el paquete bd12 del source: /8.8.8.8
+240910235522550 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: bd12
+240910235522551 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522555 ThreadServer.run()	INFO: Se recibió response para el paquete 90fd del source: /8.8.8.8
+240910235522555 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: 90fd
+240910235522555 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522568 ThreadServer.run()	INFO: Se recibió response para el paquete fb0a del source: /8.8.8.8
+240910235522568 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522576 ThreadServer.run()	INFO: 
+
+
+
+240910235522577 ThreadServer.run()	INFO: request 4ae7 enviado a DNS 1
+240910235522578 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522582 ThreadServer.run()	INFO: 
+
+
+
+240910235522583 ThreadServer.run()	INFO: request 4ae7 enviado a DNS 1
+240910235522583 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522600 ThreadServer.run()	INFO: Se recibió response para el paquete fb0a del source: /8.8.8.8
+240910235522601 ThreadServer.run()	INFO: No se encontró el cliente para el ID de transacción: fb0a
+240910235522601 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522605 ThreadServer.run()	INFO: 
+
+
+
+240910235522606 ThreadServer.run()	INFO: request b79a enviado a DNS 1
+240910235522607 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522610 ThreadServer.run()	INFO: 
+
+
+
+240910235522611 ThreadServer.run()	INFO: request a718 enviado a DNS 1
+240910235522612 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522616 ThreadServer.run()	INFO: 
+
+
+
+240910235522617 ThreadServer.run()	INFO: request a718 enviado a DNS 1
+240910235522617 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522621 ThreadServer.run()	INFO: 
+
+
+
+240910235522622 ThreadServer.run()	INFO: request b79a enviado a DNS 1
+240910235522622 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235522626 ThreadServer.run()	INFO: 
+
+
+
+240910235522627 ThreadServer.run()	INFO: request 4ae7 enviado a DNS 1
+240910235522628 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235523610 ThreadServer.run()	INFO: 
+
+
+
+240910235523611 ThreadServer.run()	INFO: request b79a enviado a DNS 1
+240910235523611 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235523614 ThreadServer.run()	INFO: 
+
+
+
+240910235523615 ThreadServer.run()	INFO: request a718 enviado a DNS 1
+240910235523615 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235525617 ThreadServer.run()	INFO: 
+
+
+
+240910235525617 ThreadServer.run()	INFO: request a718 enviado a DNS 1
+240910235525618 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235525621 ThreadServer.run()	INFO: 
+
+
+
+240910235525622 ThreadServer.run()	INFO: request b79a enviado a DNS 1
+240910235525623 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235526614 ThreadServer.run()	INFO: 
+
+
+
+240910235526614 ThreadServer.run()	INFO: request 4ae7 enviado a DNS 1
+240910235526615 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235529626 ThreadServer.run()	INFO: 
+
+
+
+240910235529626 ThreadServer.run()	INFO: request a718 enviado a DNS 1
+240910235529627 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240910235529632 ThreadServer.run()	INFO: 
+
+
+
+240910235529632 ThreadServer.run()	INFO: request b79a enviado a DNS 1
+240910235529633 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
