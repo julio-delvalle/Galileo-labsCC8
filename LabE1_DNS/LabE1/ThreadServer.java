@@ -401,8 +401,10 @@ public class ThreadServer implements Runnable {
                 System.out.println("es tipo A con length: "+tempAddressLength);
                 position += 2;
                 for (int i = 0; i < 4; i++) {
-                    System.out.println("Item "+i+" del address: "+buffer.get(position));
-                    ansAddress += String.valueOf(buffer.get(position)) + ".";
+                    int unsignedValue = buffer.get(position) & 0xFF;
+                    System.out.println("Item "+i+" del address: "+unsignedValue);
+                    ansAddress += unsignedValue + ".";
+                    //ansAddress += Short.toUnsignedInt(buffer.get(position)) + ".";
                     position++;
                 }
                 ansAddress = ansAddress.substring(0, ansAddress.length() - 1);
@@ -412,10 +414,13 @@ public class ThreadServer implements Runnable {
                 System.out.println("es tipo CNAME con length: "+tempAddressLength);
                 position += 2;
                 for (int i = 0; i < tempAddressLength; i++) {
-                    System.out.println("Item "+i+" del address: "+buffer.get(position));
-                    ansAddress += String.valueOf(buffer.get(position)) + ".";
+                    int tempSegmentLength = Short.toUnsignedInt(buffer.getShort(position));
                     position++;
-                    if(i > 25){break;}
+                    for(int j=0;j<tempSegmentLength;j++){
+                        ansAddress += String.valueOf(buffer.get(position));
+                        position++;
+                    }
+                    ansAddress += ".";
                 }
                 ansAddress = ansAddress.substring(0, ansAddress.length() - 1);
             }
