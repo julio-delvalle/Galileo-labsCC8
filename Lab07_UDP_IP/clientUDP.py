@@ -25,6 +25,7 @@ myIp = gethostbyname(gethostname())
 myPort = 3001
 
 print(f"My IP: {myIp}, My Port: {myPort}")
+print()
 
 message = ""
 
@@ -36,8 +37,6 @@ IPHeaderVersion = 4
 IPHeaderIHL = 5
 # Combine IPHeaderVersion and IPHeaderIHL into a single hex value
 IPHeaderVersionIHL = struct.pack('!B', (IPHeaderVersion << 4) | IPHeaderIHL)
-print("IPHeaderVersionIHL: ", type(IPHeaderVersionIHL))
-print("IPHeaderVersionIHL: ", IPHeaderVersionIHL)
 IPHeaderTOS = struct.pack('!B', 0)
 IPHeaderTotalLength = struct.pack('!H', IPHeaderIHL + 20)
 IPHeaderIdentification = struct.pack('!H', 43690)
@@ -46,22 +45,17 @@ IPHeaderIdentification = struct.pack('!H', 43690)
 IPHeaderFlags = b'000' #3 bits en 0
 IPHeaderFragmentOffset = b'0000000000000' #13 bits en 0
 FlagsAndFragmentOffset = int(IPHeaderFlags + IPHeaderFragmentOffset, 2)
-print("FlagsAndFragmentOffset: ", type(FlagsAndFragmentOffset))
 
 IPHeaderTTL = 255 #255 Time To Live
 IPHeaderProtocol = 17 #UDP
-print("IPHeaderProtocol: ", IPHeaderProtocol)
 
 
 while(message != 'EXIT'):
-    message = input('Mensaje:')
-
+    message = input('Mensaje: ')
 
 
     # VARIABLES IPV4
     IPHeaderChecksum = 0 # ====== CAMBIAR?? ======
-    print("MyIp: ", myIp)
-    print("Server: ", serverName)
     splitMyIp = myIp.split('.')
     IPHeaderSourceIP = b''
     for i in splitMyIp: # Separa la ip en bytes, y los une en un solo byte string
@@ -72,7 +66,6 @@ while(message != 'EXIT'):
         IPHeaderDestinationIP = IPHeaderDestinationIP+struct.pack('!B', int(i))
 
     # B Byte, H Halfword, I Integer, Q Quadruple
-    # IPHeader = struct.pack('!BBHII2sHHIQQ',
     # print("IPHeaderVersionIHL: ", IPHeaderVersionIHL)
     # print("IPHeaderTOS: ", IPHeaderTOS)
     # print("IPHeaderTotalLength: ", IPHeaderTotalLength)
@@ -95,22 +88,21 @@ while(message != 'EXIT'):
                             IPHeaderSourceIP, #4 bytes
                             IPHeaderDestinationIP) #4 bytes
 
-    print("IPHeaderType: ", type(IPHeader)) 
-    print("IP Header: ", "".join("{:02x}".format(c) for c in IPHeader)) #Imprime en formato HEX
+    # print("IP Header: ", "".join("{:02x}".format(c) for c in IPHeader)) #Imprime en formato HEX
 
 
     # UDP Header
     UDPchecksum = 0
-    print("My Port: ", myPort)
-    print("Server Port: ", serverPort)
-    print("Message Length: ", len(message))
-    print("UDP Checksum: ", UDPchecksum)
-    UDPHeader = struct.pack('!HHHH', myPort, serverPort, len(message), UDPchecksum) #tipo 'bytes'
-    # print("UDPHeaderType: ", type(UDPHeader)) 
-    print("UDP Header: ", "".join("{:02x}".format(c) for c in UDPHeader)) #Imprime en formato HEX
+    UDPHeaderLength = 8 + len(message)
+    UDPHeader = struct.pack('!HHHH', myPort, serverPort, UDPHeaderLength, UDPchecksum) #tipo 'bytes'
+    # print("UDP Header: ", "".join("{:02x}".format(c) for c in UDPHeader)) #Imprime en formato HEX
 
 
-    packet = IPHeader + UDPHeader
+                    
+    print("> server: ",serverName," message: ", message)
+
+
+    packet = IPHeader + UDPHeader + message.encode()
 
     clientSocket.sendto(packet, (serverName, serverPort))
 
