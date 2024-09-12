@@ -54,9 +54,17 @@ my $UDP_checksum = 0;
 ## http://perldoc.perl.org/functions/pack.html
 ## Empaquetado de IP - RFC 791
 my $IP_header = pack(
-'H2 B8 n n B16 h2 c n a4 a4', $IP_version . $IP_IHL, $IP_ToS, $IP_TotalLength,
-$IP_Frag_ID, $IP_Frag_Flags . $IP_Frag_Offset, $IP_TTL, $IP_Protocol,
-$IP_checksum, $srcIP, $dstIP
+'H2 B8 n n B16 h2 c n a4 a4', 
+$IP_version . $IP_IHL,
+ $IP_ToS,
+ $IP_TotalLength,
+ $IP_Frag_ID,
+ $IP_Frag_Flags . $IP_Frag_Offset,
+ $IP_TTL,
+ $IP_Protocol,
+ $IP_checksum,
+ $srcIP,
+ $dstIP
 );
 print "IP_header: $IP_header\n";
 ## Empaquetado de UDP - RFC 768

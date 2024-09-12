@@ -30,8 +30,6 @@ print()
 message = ""
 
 
-
-
 #ESTAS VARIABLES SON FIJAS PARA IPV4
 IPHeaderVersion = 4
 IPHeaderIHL = 5
@@ -54,7 +52,7 @@ while(message != 'EXIT'):
     message = input('Mensaje: ')
 
 
-    # VARIABLES IPV4
+    # ========== IPV4 ==========
     IPHeaderChecksum = 0 # ====== CAMBIAR?? ======
     splitMyIp = myIp.split('.')
     IPHeaderSourceIP = b''
@@ -66,16 +64,6 @@ while(message != 'EXIT'):
         IPHeaderDestinationIP = IPHeaderDestinationIP+struct.pack('!B', int(i))
 
     # B Byte, H Halfword, I Integer, Q Quadruple
-    # print("IPHeaderVersionIHL: ", IPHeaderVersionIHL)
-    # print("IPHeaderTOS: ", IPHeaderTOS)
-    # print("IPHeaderTotalLength: ", IPHeaderTotalLength)
-    # print("IPHeaderIdentification: ", IPHeaderIdentification)
-    # print("FlagsAndFragmentOffset: ", FlagsAndFragmentOffset)
-    # print("IPHeaderTTL: ", IPHeaderTTL)
-    # print("IPHeaderProtocol: ", IPHeaderProtocol)
-    # print("IPHeaderChecksum: ", IPHeaderChecksum)
-    # print("IPHeaderSourceIP: ", IPHeaderSourceIP)
-    # print("IPHeaderDestinationIP: ", IPHeaderDestinationIP)
     IPHeader = struct.pack('!ss2s2sHBBH4s4s',
                             IPHeaderVersionIHL, #1 byte
                             IPHeaderTOS, #1 byte
@@ -90,8 +78,7 @@ while(message != 'EXIT'):
 
     # print("IP Header: ", "".join("{:02x}".format(c) for c in IPHeader)) #Imprime en formato HEX
 
-
-    # UDP Header
+    # ========== UDP Header ==========
     UDPchecksum = 0
     UDPHeaderLength = 8 + len(message)
     UDPHeader = struct.pack('!HHHH', myPort, serverPort, UDPHeaderLength, UDPchecksum) #tipo 'bytes'
