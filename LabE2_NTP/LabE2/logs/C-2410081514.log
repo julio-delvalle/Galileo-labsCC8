@@ -1,0 +1,42 @@
+241008151436210 NTPClient.main()	INFO: Hello, CLIENT NTP!
+
+
+241008151441109 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008151441110 NTPClient.main()	INFO: Server: time.asdfsdf.com
+241008151441114 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008151441115 NTPClient.main()	INFO: Version Number: 3 (011)
+241008151441116 NTPClient.main()	INFO: Mode: 3 (011)
+241008151441118 NTPClient.main()	INFO: Stratum: 0
+241008151441119 NTPClient.main()	INFO: Poll Interval: 10
+241008151441119 NTPClient.main()	INFO: Precision: -10
+241008151441119 NTPClient.main()	INFO: ============================================================
+
+241008151441121 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000001000000000000000000000000000000000000000000000000000000000000000000000000
+241008151446257 NTPClient.main()	WARNING: El servidor tardó mucho en responder. Cambiando de servidor.
+241008151446258 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008151446258 NTPClient.main()	INFO: Server: time.windows.com
+241008151446259 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008151446259 NTPClient.main()	INFO: Version Number: 3 (011)
+241008151446260 NTPClient.main()	INFO: Mode: 3 (011)
+241008151446260 NTPClient.main()	INFO: Stratum: 0
+241008151446261 NTPClient.main()	INFO: Poll Interval: 10
+241008151446261 NTPClient.main()	INFO: Precision: -10
+241008151446261 NTPClient.main()	INFO: ============================================================
+
+241008151446263 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000001000000000000000000000000000000000000000000000000000000000000000000000000
+241008151446361 NTPClient.main()	INFO: time.windows.com > 1c030ae90000006c000006701942e605eab01e599d4c91a90000000000000000eab01f46b55cdacceab01f46b55cfe07
+241008151446362 NTPClient.main()	INFO: ===== RESPUESTA RECIBIDA: =====
+241008151446362 NTPClient.main()	INFO: Server: time.windows.com
+241008151446363 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008151446364 NTPClient.main()	INFO: Version Number: 3 (011)
+241008151446364 NTPClient.main()	INFO: Mode: 4 (100)
+241008151446365 NTPClient.main()	INFO: Stratum: 3
+241008151446365 NTPClient.main()	INFO: Poll Interval: 10
+241008151446366 NTPClient.main()	INFO: Precision: -23
+241008151446366 NTPClient.main()	INFO: Root Delay: 108
+241008151446367 NTPClient.main()	INFO: Root Dispersion: 1648
+241008151446368 NTPClient.main()	INFO: Reference ID: 1942e605
+241008151446368 NTPClient.main()	INFO: Reference Timestamp: eab01e599d4c91a9
+241008151446369 NTPClient.main()	INFO: Origin Timestamp: 0000000000000000
+241008151446370 NTPClient.main()	INFO: Receive Timestamp: eab01f46b55cdacc
+241008151446371 NTPClient.main()	WARNING: Error al recibir el paquete: Unsupported field: YearOfEra

@@ -1,0 +1,36 @@
+241008154512837 NTPClient.main()	INFO: Hello, CLIENT NTP!
+
+
+241008154514628 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008154514629 NTPClient.main()	INFO: Server: time.windows.com
+241008154514634 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008154514635 NTPClient.main()	INFO: Version Number: 3 (011)
+241008154514636 NTPClient.main()	INFO: Mode: 3 (011)
+241008154514638 NTPClient.main()	INFO: Stratum: 0
+241008154514639 NTPClient.main()	INFO: Poll Interval: 10
+241008154514639 NTPClient.main()	INFO: Precision: -10
+241008154514640 NTPClient.main()	INFO: ============================================================
+
+241008154514642 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000001000000000000000000000000000000000000000000000000000000000000000000000000
+241008154514734 NTPClient.main()	INFO: time.windows.com > 1c030ae90000005e000005ce1942e601eab02659b9a9633b0000000000000000eab0266b19a93fffeab0266b19a97254
+241008154514735 NTPClient.main()	INFO: ===== RESPUESTA RECIBIDA: =====
+241008154514736 NTPClient.main()	INFO: Server: time.windows.com
+241008154514736 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008154514737 NTPClient.main()	INFO: Version Number: 3 (011)
+241008154514737 NTPClient.main()	INFO: Mode: 4 (100)
+241008154514738 NTPClient.main()	INFO: Stratum: 3
+241008154514738 NTPClient.main()	INFO: Poll Interval: 10
+241008154514739 NTPClient.main()	INFO: Precision: -23
+241008154514739 NTPClient.main()	INFO: Root Delay: 94
+241008154514740 NTPClient.main()	INFO: Root Dispersion: 1486
+241008154514740 NTPClient.main()	INFO: Reference ID: 1942e601
+241008154514741 NTPClient.main()	INFO: Reference Timestamp: eab02659b9a9633b
+241008154514741 NTPClient.main()	INFO: Origin Timestamp: 0000000000000000
+241008154514742 NTPClient.main()	INFO: Receive Timestamp: eab0266b19a93fff
+241008154514744 NTPClient.main()	INFO: Transmit Timestamp (UTC): 2024-10-08 21:45:15.100 UTC
+241008154514756 NTPClient.main()	INFO: Transmit Timestamp (Local): 2024-10-08 15:45:15.100 CST
+241008154514757 NTPClient.main()	INFO: Transmit Timestamp: 2024-10-08 21:45:15.100 Z
+241008154514763 NTPClient.main()	INFO: Transmit Timestamp: eab0266b19a97254 (3937412715.430535252)
+241008154514768 NTPClient.main()	INFO: Transmit Timestamp: 1728423915.100241799 (2024-10-08T21:45:15.100241799)
+241008154514769 NTPClient.main()	INFO: ============================================================
+

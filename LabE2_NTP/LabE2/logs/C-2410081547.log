@@ -1,0 +1,44 @@
+241008154746681 NTPClient.main()	INFO: Hello, CLIENT NTP!
+
+
+241008154748150 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008154748150 NTPClient.main()	INFO: Server: time.windows.com
+241008154748155 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008154748156 NTPClient.main()	INFO: Version Number: 3 (011)
+241008154748157 NTPClient.main()	INFO: Mode: 3 (011)
+241008154748159 NTPClient.main()	INFO: Stratum: 0
+241008154748160 NTPClient.main()	INFO: Poll Interval: 10
+241008154748160 NTPClient.main()	INFO: Precision: -10
+241008154748161 NTPClient.main()	INFO: ============================================================
+
+241008154748163 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000001000000000000000000000000000000000000000000000000000000000000000000000000
+241008154748259 NTPClient.main()	INFO: time.windows.com > 1c030ae90000005e000006421942e601eab02659bc21583f0000000000000000eab027049ff84449eab027049ff86fe8
+241008154748260 NTPClient.main()	INFO: ===== RESPUESTA RECIBIDA: =====
+241008154748261 NTPClient.main()	INFO: Server: time.windows.com
+241008154748262 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008154748264 NTPClient.main()	INFO: Version Number: 3 (011)
+241008154748265 NTPClient.main()	INFO: Mode: 4 (100)
+241008154748266 NTPClient.main()	INFO: Stratum: 3
+241008154748267 NTPClient.main()	INFO: Poll Interval: 10
+241008154748268 NTPClient.main()	INFO: Precision: -23
+241008154748269 NTPClient.main()	INFO: Root Delay: 94
+241008154748269 NTPClient.main()	INFO: Root Dispersion: 1602
+241008154748270 NTPClient.main()	INFO: Reference ID: 1942e601
+241008154748271 NTPClient.main()	INFO: Reference Timestamp: eab02659bc21583f
+241008154748272 NTPClient.main()	INFO: Origin Timestamp: 0000000000000000
+241008154748273 NTPClient.main()	INFO: Receive Timestamp: eab027049ff84449
+241008154748276 NTPClient.main()	INFO: Transmit Timestamp (UTC): 2024-10-08 21:47:48.624 UTC
+241008154748291 NTPClient.main()	INFO: Transmit Timestamp (Local): 2024-10-08 15:47:48.624 CST
+241008154748292 NTPClient.main()	INFO: ============================================================
+
+241008155931118 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008155931119 NTPClient.main()	INFO: Server: time.windows.com
+241008155931119 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008155931119 NTPClient.main()	INFO: Version Number: 3 (011)
+241008155931120 NTPClient.main()	INFO: Mode: 3 (011)
+241008155931120 NTPClient.main()	INFO: Stratum: 0
+241008155931121 NTPClient.main()	INFO: Poll Interval: 10
+241008155931121 NTPClient.main()	INFO: Precision: -10
+241008155931122 NTPClient.main()	INFO: ============================================================
+
+241008155931123 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000001000000000000000000000000000000000000000000000000000000000000000000000000

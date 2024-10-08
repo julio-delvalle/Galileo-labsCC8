@@ -1,0 +1,61 @@
+241008155934754 NTPClient.main()	INFO: Hello, CLIENT NTP!
+
+
+241008155943625 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008155943627 NTPClient.main()	INFO: Server: time.windows.com
+241008155943635 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008155943636 NTPClient.main()	INFO: Version Number: 3 (011)
+241008155943637 NTPClient.main()	INFO: Mode: 3 (011)
+241008155943641 NTPClient.main()	INFO: Stratum: 0
+241008155943642 NTPClient.main()	INFO: Poll Interval: 10
+241008155943643 NTPClient.main()	INFO: Precision: -10
+241008155943643 NTPClient.main()	INFO: ============================================================
+
+241008155943645 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000001000000000000000000000000000000000000000000000000000000000000000000000000
+241008155943748 NTPClient.main()	INFO: time.windows.com > 1c030ae90000005e000008611942e601eab02659be05e7a00000000000000000eab029d01e05c96deab029d01e05f50c
+241008155943749 NTPClient.main()	INFO: ===== RESPUESTA RECIBIDA: =====
+241008155943750 NTPClient.main()	INFO: Server: time.windows.com
+241008155943750 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008155943751 NTPClient.main()	INFO: Version Number: 3 (011)
+241008155943752 NTPClient.main()	INFO: Mode: 4 (100)
+241008155943752 NTPClient.main()	INFO: Stratum: 3
+241008155943753 NTPClient.main()	INFO: Poll Interval: 10
+241008155943753 NTPClient.main()	INFO: Precision: -23
+241008155943754 NTPClient.main()	INFO: Root Delay: 94
+241008155943754 NTPClient.main()	INFO: Root Dispersion: 2145
+241008155943755 NTPClient.main()	INFO: Reference ID: 1942e601
+241008155943756 NTPClient.main()	INFO: Reference Timestamp: eab02659be05e7a0
+241008155943756 NTPClient.main()	INFO: Origin Timestamp: 0000000000000000
+241008155943757 NTPClient.main()	INFO: Receive Timestamp: eab029d01e05c96d
+241008155943766 NTPClient.main()	INFO: Transmit Timestamp: 2024-10-08 15:59:44.117 CST
+241008155943766 NTPClient.main()	INFO: ============================================================
+
+241008155957818 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008155957819 NTPClient.main()	INFO: Server: time.windows.com
+241008155957819 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008155957820 NTPClient.main()	INFO: Version Number: 3 (011)
+241008155957820 NTPClient.main()	INFO: Mode: 3 (011)
+241008155957821 NTPClient.main()	INFO: Stratum: 0
+241008155957821 NTPClient.main()	INFO: Poll Interval: 10
+241008155957821 NTPClient.main()	INFO: Precision: -10
+241008155957822 NTPClient.main()	INFO: ============================================================
+
+241008155957823 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000001000000000000000000000000000000000000000000000000000000000000000000000000
+241008155957945 NTPClient.main()	INFO: time.windows.com > 1c030ae90000005e0000086c1942e601eab02659bd1dbca90000000000000000eab029de511570aaeab029de51159593
+241008155957946 NTPClient.main()	INFO: ===== RESPUESTA RECIBIDA: =====
+241008155957947 NTPClient.main()	INFO: Server: time.windows.com
+241008155957947 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008155957947 NTPClient.main()	INFO: Version Number: 3 (011)
+241008155957948 NTPClient.main()	INFO: Mode: 4 (100)
+241008155957948 NTPClient.main()	INFO: Stratum: 3
+241008155957948 NTPClient.main()	INFO: Poll Interval: 10
+241008155957948 NTPClient.main()	INFO: Precision: -23
+241008155957949 NTPClient.main()	INFO: Root Delay: 94
+241008155957949 NTPClient.main()	INFO: Root Dispersion: 2156
+241008155957950 NTPClient.main()	INFO: Reference ID: 1942e601
+241008155957950 NTPClient.main()	INFO: Reference Timestamp: eab02659bd1dbca9
+241008155957950 NTPClient.main()	INFO: Origin Timestamp: 0000000000000000
+241008155957951 NTPClient.main()	INFO: Receive Timestamp: eab029de511570aa
+241008155957951 NTPClient.main()	INFO: Transmit Timestamp: 2024-10-08 21:59:58.316 UTC
+241008155957952 NTPClient.main()	INFO: ============================================================
+

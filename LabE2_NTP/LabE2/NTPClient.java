@@ -9,7 +9,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.logging.*;
@@ -22,8 +24,8 @@ public class NTPClient {
 
 
     private static final String[] NTP_SERVERS = {
-        "time.asdfsdf.com", // Windows Time
         "time.windows.com", // Windows Time
+        "time.asdfsdf.com", // --- INCORRECT SERVER TO TEST TIMEOUT ---
         "time.google.com", // Google Time
         "time.apple.com", // Apple Time
         "time.cloudflare.com", // Cloudflare Time
@@ -62,10 +64,7 @@ public class NTPClient {
             //Scanner for reading keyboard input:
             Scanner keyboard = new Scanner(System.in);
 
-            
-            //For formating date and time:
-            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");  
-
+        
 
             if(protocol == 2){
                 // Crear paquete UDP
@@ -79,7 +78,10 @@ public class NTPClient {
 
                 
                 String myIP = InetAddress.getLocalHost().getHostAddress();
-                
+                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS z");
+                ZoneId zoneId = ZoneId.systemDefault();
+
+
                 //Para recibir respuesta de server:
                 byte[] receiveData = new byte[48];
                 DatagramPacket receivePacket;
@@ -203,6 +205,25 @@ public class NTPClient {
                         }
 
 
+                        // =========== ZONA HORARIA PARA VISUALIZAR LA RESPUESTA ===========
+                        System.out.print("\nIngrese la zona horaria para visualizar la respuesta\n o presione ENTER para default (local): ");
+                        try{
+                            String userInput = keyboard.nextLine();
+                            if(!userInput.isEmpty()){
+                                zoneId = ZoneId.of(userInput);
+                            }
+                        }catch(Exception e){
+                            System.out.println("Zona horaria no válida. Usando valor default (local).");
+                            zoneId = ZoneId.systemDefault();
+                        }
+
+                        if(zoneId.equals(ZoneId.of("UTC"))){
+                            dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS 'UTC'");  
+                        }else{
+                            dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS z");
+                        }
+
+
                     }
 
                     // Convertir a bits los primeros 3 campos para combinarlos.
@@ -265,6 +286,11 @@ public class NTPClient {
                         int responsePollInterval = receivePacket.getData()[2] & 0xFF;
                         int responsePrecision = (int)receivePacket.getData()[3];
 
+
+                        //Variables para convertir el timestamp:
+                        long unsignedValueTime;
+                        long unsignedValueFraction;
+
                         System.out.println();
                         LOGGER.info("===== RESPUESTA RECIBIDA: =====");
                         LOGGER.info("Server: "+server);
@@ -297,12 +323,33 @@ public class NTPClient {
 
 
 
+
+
+
+
                         StringBuilder responseReferenceTimestampBuilder = new StringBuilder();
                         for (int i = 16; i <= 23; i++) {
                             responseReferenceTimestampBuilder.append(String.format("%02x", receivePacket.getData()[i] & 0xFF));
                         }
                         String responseReferenceTimestamp = responseReferenceTimestampBuilder.toString();
-                        LOGGER.info("Reference Timestamp: " + responseReferenceTimestamp);
+
+                        unsignedValueTime = Long.parseLong(responseReferenceTimestamp.substring(0, 8), 16);
+                        unsignedValueFraction = Long.parseLong(responseReferenceTimestamp.substring(8), 16);
+
+                        long timeFromEpoch = unsignedValueTime - 2208988800L;
+                        long fractionFromEpoch = (long)(unsignedValueFraction/4294967295.0*1000*1000*1000); //Se multiplica 3 veces, para pasar de mili -> micro -> nano -> picoSegundos
+                            
+                        LocalDateTime referenceTimestamp = LocalDateTime.ofEpochSecond(timeFromEpoch, (int)fractionFromEpoch, ZoneOffset.UTC);
+                        ZonedDateTime utcDateTime = referenceTimestamp.atZone(ZoneOffset.UTC); //Agregarle zona UTC a transmitTimestamp
+                        
+                        // Pasar a la zona horaria especificada
+                        ZonedDateTime newZoneDateTime = utcDateTime.withZoneSameInstant(zoneId);
+                        String formattedLocalDateTime = newZoneDateTime.format(dtf);
+
+                        LOGGER.info("Reference Timestamp: " + formattedLocalDateTime);
+
+
+
 
 
 
@@ -312,7 +359,24 @@ public class NTPClient {
                             responseOriginTimestampBuilder.append(String.format("%02x", receivePacket.getData()[i] & 0xFF));
                         }
                         String responseOriginTimestamp = responseOriginTimestampBuilder.toString();
-                        LOGGER.info("Origin Timestamp: " + responseOriginTimestamp);
+
+                        unsignedValueTime = Long.parseLong(responseOriginTimestamp.substring(0, 8), 16);
+                        unsignedValueFraction = Long.parseLong(responseOriginTimestamp.substring(8), 16);
+
+                        timeFromEpoch = unsignedValueTime - 2208988800L;
+                        fractionFromEpoch = (long)(unsignedValueFraction/4294967295.0*1000*1000*1000); //Se multiplica 3 veces, para pasar de mili -> micro -> nano -> picoSegundos
+                            
+                        LocalDateTime originTimestamp = LocalDateTime.ofEpochSecond(timeFromEpoch, (int)fractionFromEpoch, ZoneOffset.UTC);
+                        utcDateTime = originTimestamp.atZone(ZoneOffset.UTC); //Agregarle zona UTC a transmitTimestamp
+                        
+                        // Pasar a la zona horaria especificada
+                        newZoneDateTime = utcDateTime.withZoneSameInstant(zoneId);
+                        formattedLocalDateTime = newZoneDateTime.format(dtf);
+
+                        LOGGER.info("Origin Timestamp: " + formattedLocalDateTime);
+
+
+
 
 
 
@@ -322,28 +386,50 @@ public class NTPClient {
                             responseReceiveTimestampBuilder.append(String.format("%02x", receivePacket.getData()[i] & 0xFF));
                         }
                         String responseReceiveTimestamp = responseReceiveTimestampBuilder.toString();
-                        LOGGER.info("Receive Timestamp: " + responseReceiveTimestamp);
+
+                        unsignedValueTime = Long.parseLong(responseReceiveTimestamp.substring(0, 8), 16);
+                        unsignedValueFraction = Long.parseLong(responseReceiveTimestamp.substring(8), 16);
+
+                        timeFromEpoch = unsignedValueTime - 2208988800L;
+                        fractionFromEpoch = (long)(unsignedValueFraction/4294967295.0*1000*1000*1000); //Se multiplica 3 veces, para pasar de mili -> micro -> nano -> picoSegundos
+                            
+                        LocalDateTime receiveTimestamp = LocalDateTime.ofEpochSecond(timeFromEpoch, (int)fractionFromEpoch, ZoneOffset.UTC);
+                        utcDateTime = receiveTimestamp.atZone(ZoneOffset.UTC); //Agregarle zona UTC a transmitTimestamp
+                        
+                        // Pasar a la zona horaria especificada
+                        newZoneDateTime = utcDateTime.withZoneSameInstant(zoneId);
+                        formattedLocalDateTime = newZoneDateTime.format(dtf);
+
+                        LOGGER.info("Receive Timestamp: " + formattedLocalDateTime);
 
 
 
+
+
+
+                        // =========== TRANSMIT TIMESTAMP ===========
 
                         StringBuilder responseTransmitTimestampBuilder = new StringBuilder();
                         for (int i = 40; i <= 47; i++) {
                             responseTransmitTimestampBuilder.append(String.format("%02x", receivePacket.getData()[i] & 0xFF));
                         }
                         String responseTransmitTimestamp = responseTransmitTimestampBuilder.toString();
-                        long unsignedValueTime = Long.parseLong(responseTransmitTimestamp.substring(0, 8), 16);
-                        long unsignedValueFraction = Long.parseLong(responseTransmitTimestamp.substring(8), 16);
+                        unsignedValueTime = Long.parseLong(responseTransmitTimestamp.substring(0, 8), 16);
+                        unsignedValueFraction = Long.parseLong(responseTransmitTimestamp.substring(8), 16);
 
-                        // 1900 a 1970: https://stackoverflow.com/questions/5206857/convert-ntp-timestamp-to-utc
-                        long timeFromEpoch = unsignedValueTime - 2208988800L;
-                        long fractionFromEpoch = (long)(unsignedValueFraction/4294967295.0*1000*1000*1000); //Se multiplica 3 veces, para pasar de mili -> micro -> nano -> picoSegundos
-                        LOGGER.info("Transmit Timestamp: " + responseTransmitTimestamp + " (" + unsignedValueTime + "." + unsignedValueFraction + ")");
-                        LOGGER.info("Transmit Timestamp: " + timeFromEpoch + "." + fractionFromEpoch + " (" + LocalDateTime.ofEpochSecond(timeFromEpoch, (int)fractionFromEpoch, ZoneOffset.UTC) + ")");
-
-                        LOGGER.info("============================================================\n");
-
+                        timeFromEpoch = unsignedValueTime - 2208988800L;
+                        fractionFromEpoch = (long)(unsignedValueFraction/4294967295.0*1000*1000*1000); //Se multiplica 3 veces, para pasar de mili -> micro -> nano -> picoSegundos
                         
+                        LocalDateTime transmitTimestamp = LocalDateTime.ofEpochSecond(timeFromEpoch, (int)fractionFromEpoch, ZoneOffset.UTC);
+                        utcDateTime = transmitTimestamp.atZone(ZoneOffset.UTC); //Agregarle zona UTC a transmitTimestamp
+                        
+                        // Pasar a la zona horaria especificada
+                        newZoneDateTime = utcDateTime.withZoneSameInstant(zoneId);
+                        formattedLocalDateTime = newZoneDateTime.format(dtf);
+                        LOGGER.info("Transmit Timestamp: " + formattedLocalDateTime);
+                        LOGGER.info("============================================================");
+                        LOGGER.info("Hora del dispositivo: "+ZonedDateTime.now().withZoneSameInstant(ZoneId.systemDefault()).format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS z"))+"\n");
+
                         esperandoRespuesta = false;
                     }catch(SocketTimeoutException e){
                         LOGGER.log(Level.WARNING, "El servidor tardó mucho en responder. Cambiando de servidor.");
