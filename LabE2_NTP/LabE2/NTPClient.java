@@ -9,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.logging.*;
@@ -22,9 +23,9 @@ public class NTPClient {
 
     private static final String[] NTP_SERVERS = {
         "time.asdfsdf.com", // Windows Time
+        "time.windows.com", // Windows Time
         "time.google.com", // Google Time
         "time.apple.com", // Apple Time
-        "time.windows.com", // Windows Time
         "time.cloudflare.com", // Cloudflare Time
         "cern.ch", // CERN Time
         "time.nist.gov", // NIST Time
@@ -331,8 +332,14 @@ public class NTPClient {
                             responseTransmitTimestampBuilder.append(String.format("%02x", receivePacket.getData()[i] & 0xFF));
                         }
                         String responseTransmitTimestamp = responseTransmitTimestampBuilder.toString();
-                        long unsignedValue = Long.parseLong(responseTransmitTimestamp.substring(0, 8), 16);
-                        LOGGER.info("Transmit Timestamp: " + responseTransmitTimestamp + " (" + unsignedValue + ")");
+                        long unsignedValueTime = Long.parseLong(responseTransmitTimestamp.substring(0, 8), 16);
+                        long unsignedValueFraction = Long.parseLong(responseTransmitTimestamp.substring(8), 16);
+
+                        // 1900 a 1970: https://stackoverflow.com/questions/5206857/convert-ntp-timestamp-to-utc
+                        long timeFromEpoch = unsignedValueTime - 2208988800L;
+                        long fractionFromEpoch = (long)(unsignedValueFraction/4294967295.0*1000*1000*1000); //Se multiplica 3 veces, para pasar de mili -> micro -> nano -> picoSegundos
+                        LOGGER.info("Transmit Timestamp: " + responseTransmitTimestamp + " (" + unsignedValueTime + "." + unsignedValueFraction + ")");
+                        LOGGER.info("Transmit Timestamp: " + timeFromEpoch + "." + fractionFromEpoch + " (" + LocalDateTime.ofEpochSecond(timeFromEpoch, (int)fractionFromEpoch, ZoneOffset.UTC) + ")");
 
                         LOGGER.info("============================================================\n");
 
