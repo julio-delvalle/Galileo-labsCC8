@@ -1,0 +1,7 @@
+241008024704881 NTPClient.main()	INFO: Hello, CLIENT NTP!
+
+
+241008025104171 NTPClient.main()	INFO: 
+===== Se enviará paquete NTP con los siguientes valores: =====
+
+241008025104172 NTPClient.main()	INFO: Server: time.asdfsdf.com

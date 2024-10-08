@@ -1,0 +1,741 @@
+241008031718240 NTPClient.main()	INFO: Hello, CLIENT NTP!
+
+
+241008031719971 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031719971 NTPClient.main()	INFO: Server: time.asdfsdf.com
+241008031719976 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031719977 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031719977 NTPClient.main()	INFO: Mode: 3 (011)
+241008031719980 NTPClient.main()	INFO: Stratum: 0
+241008031719981 NTPClient.main()	INFO: Poll Interval: 10
+241008031719981 NTPClient.main()	INFO: Precision: -10
+241008031719982 NTPClient.main()	INFO: ============================================================
+
+241008031719984 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725088 NTPClient.main()	WARNING: El servidor tardó mucho en responder. Cambiando de servidor.
+241008031725089 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725089 NTPClient.main()	INFO: Server: time.google.com
+241008031725090 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725090 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725090 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725091 NTPClient.main()	INFO: Stratum: 0
+241008031725091 NTPClient.main()	INFO: Poll Interval: 10
+241008031725091 NTPClient.main()	INFO: Precision: -10
+241008031725092 NTPClient.main()	INFO: ============================================================
+
+241008031725093 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725161 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772531f126580000000000000000eaaf772531f12659eaaf772531f1265b
+241008031725162 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725163 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725163 NTPClient.main()	INFO: Server: time.google.com
+241008031725164 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725164 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725164 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725165 NTPClient.main()	INFO: Stratum: 0
+241008031725165 NTPClient.main()	INFO: Poll Interval: 10
+241008031725165 NTPClient.main()	INFO: Precision: -10
+241008031725166 NTPClient.main()	INFO: ============================================================
+
+241008031725167 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725234 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772544d0cc9b0000000000000000eaaf772544d0cc9ceaaf772544d0cc9e
+241008031725234 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725235 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725235 NTPClient.main()	INFO: Server: time.google.com
+241008031725236 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725236 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725236 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725237 NTPClient.main()	INFO: Stratum: 0
+241008031725237 NTPClient.main()	INFO: Poll Interval: 10
+241008031725237 NTPClient.main()	INFO: Precision: -10
+241008031725238 NTPClient.main()	INFO: ============================================================
+
+241008031725239 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725302 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772556ccc9970000000000000000eaaf772556ccc998eaaf772556ccc99a
+241008031725302 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725303 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725303 NTPClient.main()	INFO: Server: time.google.com
+241008031725304 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725304 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725304 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725305 NTPClient.main()	INFO: Stratum: 0
+241008031725305 NTPClient.main()	INFO: Poll Interval: 10
+241008031725305 NTPClient.main()	INFO: Precision: -10
+241008031725306 NTPClient.main()	INFO: ============================================================
+
+241008031725307 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725370 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7725683a58d50000000000000000eaaf7725683a58d6eaaf7725683a58d8
+241008031725371 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725371 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725372 NTPClient.main()	INFO: Server: time.google.com
+241008031725372 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725372 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725373 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725373 NTPClient.main()	INFO: Stratum: 0
+241008031725373 NTPClient.main()	INFO: Poll Interval: 10
+241008031725374 NTPClient.main()	INFO: Precision: -10
+241008031725374 NTPClient.main()	INFO: ============================================================
+
+241008031725375 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725438 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772579ab6cb20000000000000000eaaf772579ab6cb3eaaf772579ab6cb5
+241008031725438 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725439 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725439 NTPClient.main()	INFO: Server: time.google.com
+241008031725440 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725440 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725440 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725441 NTPClient.main()	INFO: Stratum: 0
+241008031725441 NTPClient.main()	INFO: Poll Interval: 10
+241008031725441 NTPClient.main()	INFO: Precision: -10
+241008031725442 NTPClient.main()	INFO: ============================================================
+
+241008031725442 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725504 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf77258ab465690000000000000000eaaf77258ab4656aeaaf77258ab4656c
+241008031725505 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725506 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725506 NTPClient.main()	INFO: Server: time.google.com
+241008031725506 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725507 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725507 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725508 NTPClient.main()	INFO: Stratum: 0
+241008031725508 NTPClient.main()	INFO: Poll Interval: 10
+241008031725508 NTPClient.main()	INFO: Precision: -10
+241008031725509 NTPClient.main()	INFO: ============================================================
+
+241008031725511 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725574 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf77259c80ad1e0000000000000000eaaf77259c80ad1feaaf77259c80ad21
+241008031725575 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725575 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725576 NTPClient.main()	INFO: Server: time.google.com
+241008031725576 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725577 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725577 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725578 NTPClient.main()	INFO: Stratum: 0
+241008031725578 NTPClient.main()	INFO: Poll Interval: 10
+241008031725578 NTPClient.main()	INFO: Precision: -10
+241008031725579 NTPClient.main()	INFO: ============================================================
+
+241008031725580 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725643 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7725ae4cd1c70000000000000000eaaf7725ae4cd1c8eaaf7725ae4cd1ca
+241008031725644 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725645 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725646 NTPClient.main()	INFO: Server: time.google.com
+241008031725646 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725647 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725647 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725647 NTPClient.main()	INFO: Stratum: 0
+241008031725648 NTPClient.main()	INFO: Poll Interval: 10
+241008031725648 NTPClient.main()	INFO: Precision: -10
+241008031725649 NTPClient.main()	INFO: ============================================================
+
+241008031725649 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725711 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7725bfb476530000000000000000eaaf7725bfb47654eaaf7725bfb47656
+241008031725712 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725712 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725712 NTPClient.main()	INFO: Server: time.google.com
+241008031725713 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725713 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725713 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725714 NTPClient.main()	INFO: Stratum: 0
+241008031725714 NTPClient.main()	INFO: Poll Interval: 10
+241008031725714 NTPClient.main()	INFO: Precision: -10
+241008031725715 NTPClient.main()	INFO: ============================================================
+
+241008031725716 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725787 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7725d33682b60000000000000000eaaf7725d33682b7eaaf7725d33682b9
+241008031725788 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725788 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725789 NTPClient.main()	INFO: Server: time.google.com
+241008031725789 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725790 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725790 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725790 NTPClient.main()	INFO: Stratum: 0
+241008031725791 NTPClient.main()	INFO: Poll Interval: 10
+241008031725791 NTPClient.main()	INFO: Precision: -10
+241008031725791 NTPClient.main()	INFO: ============================================================
+
+241008031725792 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725863 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7725e6b534760000000000000000eaaf7725e6b53477eaaf7725e6b53479
+241008031725864 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725865 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725865 NTPClient.main()	INFO: Server: time.google.com
+241008031725865 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725866 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725866 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725867 NTPClient.main()	INFO: Stratum: 0
+241008031725867 NTPClient.main()	INFO: Poll Interval: 10
+241008031725867 NTPClient.main()	INFO: Precision: -10
+241008031725868 NTPClient.main()	INFO: ============================================================
+
+241008031725868 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725932 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7725f80402750000000000000000eaaf7725f8040276eaaf7725f8040278
+241008031725932 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725933 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725933 NTPClient.main()	INFO: Server: time.google.com
+241008031725933 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725934 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031725934 NTPClient.main()	INFO: Mode: 3 (011)
+241008031725934 NTPClient.main()	INFO: Stratum: 0
+241008031725934 NTPClient.main()	INFO: Poll Interval: 10
+241008031725935 NTPClient.main()	INFO: Precision: -10
+241008031725935 NTPClient.main()	INFO: ============================================================
+
+241008031725935 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031725997 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772608f9e7d00000000000000000eaaf772608f9e7d1eaaf772608f9e7d3
+241008031725998 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031725998 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031725999 NTPClient.main()	INFO: Server: time.google.com
+241008031725999 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031725999 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726000 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726000 NTPClient.main()	INFO: Stratum: 0
+241008031726000 NTPClient.main()	INFO: Poll Interval: 10
+241008031726000 NTPClient.main()	INFO: Precision: -10
+241008031726001 NTPClient.main()	INFO: ============================================================
+
+241008031726001 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726064 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772619dfa9650000000000000000eaaf772619dfa966eaaf772619dfa968
+241008031726064 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726065 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726065 NTPClient.main()	INFO: Server: time.google.com
+241008031726066 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726066 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726066 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726067 NTPClient.main()	INFO: Stratum: 0
+241008031726067 NTPClient.main()	INFO: Poll Interval: 10
+241008031726067 NTPClient.main()	INFO: Precision: -10
+241008031726067 NTPClient.main()	INFO: ============================================================
+
+241008031726068 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726130 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf77262ac55c4b0000000000000000eaaf77262ac55c4ceaaf77262ac55c4e
+241008031726130 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726131 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726131 NTPClient.main()	INFO: Server: time.google.com
+241008031726132 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726132 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726132 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726132 NTPClient.main()	INFO: Stratum: 0
+241008031726133 NTPClient.main()	INFO: Poll Interval: 10
+241008031726133 NTPClient.main()	INFO: Precision: -10
+241008031726133 NTPClient.main()	INFO: ============================================================
+
+241008031726134 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726197 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf77263b9969d90000000000000000eaaf77263b9969daeaaf77263b9969dc
+241008031726198 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726199 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726200 NTPClient.main()	INFO: Server: time.google.com
+241008031726200 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726201 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726201 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726202 NTPClient.main()	INFO: Stratum: 0
+241008031726202 NTPClient.main()	INFO: Poll Interval: 10
+241008031726203 NTPClient.main()	INFO: Precision: -10
+241008031726203 NTPClient.main()	INFO: ============================================================
+
+241008031726205 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726268 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf77264e0ff5590000000000000000eaaf77264e0ff55aeaaf77264e0ff55c
+241008031726269 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726270 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726270 NTPClient.main()	INFO: Server: time.google.com
+241008031726271 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726272 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726272 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726273 NTPClient.main()	INFO: Stratum: 0
+241008031726274 NTPClient.main()	INFO: Poll Interval: 10
+241008031726274 NTPClient.main()	INFO: Precision: -10
+241008031726275 NTPClient.main()	INFO: ============================================================
+
+241008031726276 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726344 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772661bc41c10000000000000000eaaf772661bc41c2eaaf772661bc41c4
+241008031726345 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726346 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726346 NTPClient.main()	INFO: Server: time.google.com
+241008031726347 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726347 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726348 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726348 NTPClient.main()	INFO: Stratum: 0
+241008031726349 NTPClient.main()	INFO: Poll Interval: 10
+241008031726349 NTPClient.main()	INFO: Precision: -10
+241008031726350 NTPClient.main()	INFO: ============================================================
+
+241008031726351 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726416 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7726740cc5ce0000000000000000eaaf7726740cc5cfeaaf7726740cc5d1
+241008031726417 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726417 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726418 NTPClient.main()	INFO: Server: time.google.com
+241008031726418 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726419 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726419 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726420 NTPClient.main()	INFO: Stratum: 0
+241008031726421 NTPClient.main()	INFO: Poll Interval: 10
+241008031726421 NTPClient.main()	INFO: Precision: -10
+241008031726422 NTPClient.main()	INFO: ============================================================
+
+241008031726423 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726485 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772685e4de3a0000000000000000eaaf772685e4de3beaaf772685e4de3d
+241008031726486 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726487 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726487 NTPClient.main()	INFO: Server: time.google.com
+241008031726488 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726488 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726489 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726489 NTPClient.main()	INFO: Stratum: 0
+241008031726490 NTPClient.main()	INFO: Poll Interval: 10
+241008031726490 NTPClient.main()	INFO: Precision: -10
+241008031726491 NTPClient.main()	INFO: ============================================================
+
+241008031726492 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726562 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7726998573f10000000000000000eaaf7726998573f2eaaf7726998573f4
+241008031726563 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726564 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726564 NTPClient.main()	INFO: Server: time.google.com
+241008031726565 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726565 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726566 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726566 NTPClient.main()	INFO: Stratum: 0
+241008031726567 NTPClient.main()	INFO: Poll Interval: 10
+241008031726567 NTPClient.main()	INFO: Precision: -10
+241008031726568 NTPClient.main()	INFO: ============================================================
+
+241008031726569 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726632 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7726ab80f2e90000000000000000eaaf7726ab80f2eaeaaf7726ab80f2ec
+241008031726633 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726633 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726634 NTPClient.main()	INFO: Server: time.google.com
+241008031726634 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726635 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726636 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726636 NTPClient.main()	INFO: Stratum: 0
+241008031726636 NTPClient.main()	INFO: Poll Interval: 10
+241008031726636 NTPClient.main()	INFO: Precision: -10
+241008031726636 NTPClient.main()	INFO: ============================================================
+
+241008031726637 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726699 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7726bca460d30000000000000000eaaf7726bca460d4eaaf7726bca460d6
+241008031726700 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726701 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726701 NTPClient.main()	INFO: Server: time.google.com
+241008031726702 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726702 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726703 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726703 NTPClient.main()	INFO: Stratum: 0
+241008031726703 NTPClient.main()	INFO: Poll Interval: 10
+241008031726704 NTPClient.main()	INFO: Precision: -10
+241008031726704 NTPClient.main()	INFO: ============================================================
+
+241008031726705 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726767 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7726ce055e190000000000000000eaaf7726ce055e1aeaaf7726ce055e1c
+241008031726768 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726769 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726770 NTPClient.main()	INFO: Server: time.google.com
+241008031726771 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726771 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726772 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726772 NTPClient.main()	INFO: Stratum: 0
+241008031726773 NTPClient.main()	INFO: Poll Interval: 10
+241008031726773 NTPClient.main()	INFO: Precision: -10
+241008031726774 NTPClient.main()	INFO: ============================================================
+
+241008031726775 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726846 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7726e2379bf70000000000000000eaaf7726e2379bf8eaaf7726e2379bfa
+241008031726846 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726847 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726847 NTPClient.main()	INFO: Server: time.google.com
+241008031726848 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726848 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726849 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726849 NTPClient.main()	INFO: Stratum: 0
+241008031726849 NTPClient.main()	INFO: Poll Interval: 10
+241008031726850 NTPClient.main()	INFO: Precision: -10
+241008031726850 NTPClient.main()	INFO: ============================================================
+
+241008031726851 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726914 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7726f391fcdf0000000000000000eaaf7726f391fce0eaaf7726f391fce2
+241008031726915 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726916 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726916 NTPClient.main()	INFO: Server: time.google.com
+241008031726917 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726917 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726918 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726918 NTPClient.main()	INFO: Stratum: 0
+241008031726919 NTPClient.main()	INFO: Poll Interval: 10
+241008031726919 NTPClient.main()	INFO: Precision: -10
+241008031726920 NTPClient.main()	INFO: ============================================================
+
+241008031726921 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031726985 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7727059f094c0000000000000000eaaf7727059f094deaaf7727059f094f
+241008031726986 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031726987 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031726988 NTPClient.main()	INFO: Server: time.google.com
+241008031726989 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031726989 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031726989 NTPClient.main()	INFO: Mode: 3 (011)
+241008031726990 NTPClient.main()	INFO: Stratum: 0
+241008031726991 NTPClient.main()	INFO: Poll Interval: 10
+241008031726991 NTPClient.main()	INFO: Precision: -10
+241008031726991 NTPClient.main()	INFO: ============================================================
+
+241008031726992 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727057 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7727180dc34f0000000000000000eaaf7727180dc350eaaf7727180dc352
+241008031727058 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727059 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727059 NTPClient.main()	INFO: Server: time.google.com
+241008031727060 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727060 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727061 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727061 NTPClient.main()	INFO: Stratum: 0
+241008031727062 NTPClient.main()	INFO: Poll Interval: 10
+241008031727062 NTPClient.main()	INFO: Precision: -10
+241008031727062 NTPClient.main()	INFO: ============================================================
+
+241008031727063 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727126 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772729e0e6080000000000000000eaaf772729e0e609eaaf772729e0e60b
+241008031727127 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727128 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727128 NTPClient.main()	INFO: Server: time.google.com
+241008031727129 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727129 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727130 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727130 NTPClient.main()	INFO: Stratum: 0
+241008031727131 NTPClient.main()	INFO: Poll Interval: 10
+241008031727132 NTPClient.main()	INFO: Precision: -10
+241008031727133 NTPClient.main()	INFO: ============================================================
+
+241008031727134 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727207 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf77273ea9d7010000000000000000eaaf77273ea9d702eaaf77273ea9d704
+241008031727208 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727209 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727210 NTPClient.main()	INFO: Server: time.google.com
+241008031727210 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727211 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727211 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727212 NTPClient.main()	INFO: Stratum: 0
+241008031727212 NTPClient.main()	INFO: Poll Interval: 10
+241008031727213 NTPClient.main()	INFO: Precision: -10
+241008031727213 NTPClient.main()	INFO: ============================================================
+
+241008031727215 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727287 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7727516285960000000000000000eaaf772751628597eaaf772751628599
+241008031727288 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727289 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727290 NTPClient.main()	INFO: Server: time.google.com
+241008031727290 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727291 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727291 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727292 NTPClient.main()	INFO: Stratum: 0
+241008031727292 NTPClient.main()	INFO: Poll Interval: 10
+241008031727293 NTPClient.main()	INFO: Precision: -10
+241008031727293 NTPClient.main()	INFO: ============================================================
+
+241008031727294 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727358 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf77276542adf90000000000000000eaaf77276542adfaeaaf77276542adfc
+241008031727359 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727360 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727360 NTPClient.main()	INFO: Server: time.google.com
+241008031727361 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727361 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727361 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727362 NTPClient.main()	INFO: Stratum: 0
+241008031727362 NTPClient.main()	INFO: Poll Interval: 10
+241008031727363 NTPClient.main()	INFO: Precision: -10
+241008031727363 NTPClient.main()	INFO: ============================================================
+
+241008031727364 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727426 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772776b7fb900000000000000000eaaf772776b7fb91eaaf772776b7fb93
+241008031727427 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727428 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727428 NTPClient.main()	INFO: Server: time.google.com
+241008031727428 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727429 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727429 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727429 NTPClient.main()	INFO: Stratum: 0
+241008031727430 NTPClient.main()	INFO: Poll Interval: 10
+241008031727430 NTPClient.main()	INFO: Precision: -10
+241008031727430 NTPClient.main()	INFO: ============================================================
+
+241008031727431 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727494 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf77278813f7980000000000000000eaaf77278813f799eaaf77278813f79b
+241008031727494 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727494 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727495 NTPClient.main()	INFO: Server: time.google.com
+241008031727495 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727495 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727495 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727496 NTPClient.main()	INFO: Stratum: 0
+241008031727496 NTPClient.main()	INFO: Poll Interval: 10
+241008031727496 NTPClient.main()	INFO: Precision: -10
+241008031727496 NTPClient.main()	INFO: ============================================================
+
+241008031727496 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727560 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772798e103cf0000000000000000eaaf772798e103d0eaaf772798e103d2
+241008031727560 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727561 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727561 NTPClient.main()	INFO: Server: time.google.com
+241008031727562 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727562 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727562 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727563 NTPClient.main()	INFO: Stratum: 0
+241008031727563 NTPClient.main()	INFO: Poll Interval: 10
+241008031727563 NTPClient.main()	INFO: Precision: -10
+241008031727564 NTPClient.main()	INFO: ============================================================
+
+241008031727564 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727638 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7727acf3bc2c0000000000000000eaaf7727acf3bc2deaaf7727acf3bc2f
+241008031727638 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727639 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727639 NTPClient.main()	INFO: Server: time.google.com
+241008031727639 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727639 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727639 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727640 NTPClient.main()	INFO: Stratum: 0
+241008031727640 NTPClient.main()	INFO: Poll Interval: 10
+241008031727640 NTPClient.main()	INFO: Precision: -10
+241008031727640 NTPClient.main()	INFO: ============================================================
+
+241008031727641 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727704 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7727bdfd1f4e0000000000000000eaaf7727bdfd1f4feaaf7727bdfd1f51
+241008031727705 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727705 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727706 NTPClient.main()	INFO: Server: time.google.com
+241008031727706 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727706 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727707 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727707 NTPClient.main()	INFO: Stratum: 0
+241008031727707 NTPClient.main()	INFO: Poll Interval: 10
+241008031727707 NTPClient.main()	INFO: Precision: -10
+241008031727708 NTPClient.main()	INFO: ============================================================
+
+241008031727708 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727772 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7727cf0f0ade0000000000000000eaaf7727cf0f0adfeaaf7727cf0f0ae1
+241008031727772 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727773 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727773 NTPClient.main()	INFO: Server: time.google.com
+241008031727773 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727773 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727774 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727774 NTPClient.main()	INFO: Stratum: 0
+241008031727775 NTPClient.main()	INFO: Poll Interval: 10
+241008031727775 NTPClient.main()	INFO: Precision: -10
+241008031727775 NTPClient.main()	INFO: ============================================================
+
+241008031727776 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727846 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7727e0278c710000000000000000eaaf7727e0278c72eaaf7727e0278c74
+241008031727846 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727847 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727847 NTPClient.main()	INFO: Server: time.google.com
+241008031727848 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727848 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727849 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727849 NTPClient.main()	INFO: Stratum: 0
+241008031727849 NTPClient.main()	INFO: Poll Interval: 10
+241008031727850 NTPClient.main()	INFO: Precision: -10
+241008031727850 NTPClient.main()	INFO: ============================================================
+
+241008031727850 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727913 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7727f332938f0000000000000000eaaf7727f3329390eaaf7727f3329392
+241008031727913 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727913 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727913 NTPClient.main()	INFO: Server: time.google.com
+241008031727914 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727914 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727914 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727914 NTPClient.main()	INFO: Stratum: 0
+241008031727915 NTPClient.main()	INFO: Poll Interval: 10
+241008031727915 NTPClient.main()	INFO: Precision: -10
+241008031727915 NTPClient.main()	INFO: ============================================================
+
+241008031727916 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031727978 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf77280400bba10000000000000000eaaf77280400bba2eaaf77280400bba4
+241008031727979 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031727979 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031727979 NTPClient.main()	INFO: Server: time.google.com
+241008031727980 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031727980 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031727980 NTPClient.main()	INFO: Mode: 3 (011)
+241008031727980 NTPClient.main()	INFO: Stratum: 0
+241008031727980 NTPClient.main()	INFO: Poll Interval: 10
+241008031727981 NTPClient.main()	INFO: Precision: -10
+241008031727981 NTPClient.main()	INFO: ============================================================
+
+241008031727981 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728044 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf772814c081520000000000000000eaaf772814c08153eaaf772814c08155
+241008031728044 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728045 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728045 NTPClient.main()	INFO: Server: time.google.com
+241008031728046 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728046 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728046 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728047 NTPClient.main()	INFO: Stratum: 0
+241008031728047 NTPClient.main()	INFO: Poll Interval: 10
+241008031728047 NTPClient.main()	INFO: Precision: -10
+241008031728047 NTPClient.main()	INFO: ============================================================
+
+241008031728048 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728110 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf772825c824000000000000000000eaaf772825c82401eaaf772825c82403
+241008031728110 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728111 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728111 NTPClient.main()	INFO: Server: time.google.com
+241008031728111 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728111 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728112 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728112 NTPClient.main()	INFO: Stratum: 0
+241008031728112 NTPClient.main()	INFO: Poll Interval: 10
+241008031728112 NTPClient.main()	INFO: Precision: -10
+241008031728113 NTPClient.main()	INFO: ============================================================
+
+241008031728113 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728175 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf7728367add440000000000000000eaaf7728367add45eaaf7728367add47
+241008031728175 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728175 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728176 NTPClient.main()	INFO: Server: time.google.com
+241008031728176 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728176 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728176 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728176 NTPClient.main()	INFO: Stratum: 0
+241008031728177 NTPClient.main()	INFO: Poll Interval: 10
+241008031728177 NTPClient.main()	INFO: Precision: -10
+241008031728177 NTPClient.main()	INFO: ============================================================
+
+241008031728177 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728239 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf772846d8943b0000000000000000eaaf772846d8943ceaaf772846d8943e
+241008031728239 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728239 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728240 NTPClient.main()	INFO: Server: time.google.com
+241008031728240 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728240 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728240 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728241 NTPClient.main()	INFO: Stratum: 0
+241008031728241 NTPClient.main()	INFO: Poll Interval: 10
+241008031728241 NTPClient.main()	INFO: Precision: -10
+241008031728241 NTPClient.main()	INFO: ============================================================
+
+241008031728242 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728307 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf772857409a490000000000000000eaaf772857409a4aeaaf772857409a4c
+241008031728308 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728308 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728308 NTPClient.main()	INFO: Server: time.google.com
+241008031728309 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728309 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728309 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728309 NTPClient.main()	INFO: Stratum: 0
+241008031728309 NTPClient.main()	INFO: Poll Interval: 10
+241008031728309 NTPClient.main()	INFO: Precision: -10
+241008031728310 NTPClient.main()	INFO: ============================================================
+
+241008031728310 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728371 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf772868a61b4a0000000000000000eaaf772868a61b4beaaf772868a61b4d
+241008031728371 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728371 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728372 NTPClient.main()	INFO: Server: time.google.com
+241008031728372 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728372 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728372 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728373 NTPClient.main()	INFO: Stratum: 0
+241008031728373 NTPClient.main()	INFO: Poll Interval: 10
+241008031728373 NTPClient.main()	INFO: Precision: -10
+241008031728373 NTPClient.main()	INFO: ============================================================
+
+241008031728374 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728437 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf77287981550f0000000000000000eaaf772879815510eaaf772879815512
+241008031728437 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728438 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728438 NTPClient.main()	INFO: Server: time.google.com
+241008031728438 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728438 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728438 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728439 NTPClient.main()	INFO: Stratum: 0
+241008031728439 NTPClient.main()	INFO: Poll Interval: 10
+241008031728439 NTPClient.main()	INFO: Precision: -10
+241008031728439 NTPClient.main()	INFO: ============================================================
+
+241008031728439 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728502 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf77288a17decf0000000000000000eaaf77288a17ded0eaaf77288a17ded2
+241008031728502 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728502 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728503 NTPClient.main()	INFO: Server: time.google.com
+241008031728503 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728503 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728503 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728503 NTPClient.main()	INFO: Stratum: 0
+241008031728504 NTPClient.main()	INFO: Poll Interval: 10
+241008031728504 NTPClient.main()	INFO: Precision: -10
+241008031728504 NTPClient.main()	INFO: ============================================================
+
+241008031728504 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728567 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf77289abb81300000000000000000eaaf77289abb8131eaaf77289abb8133
+241008031728567 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728568 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728568 NTPClient.main()	INFO: Server: time.google.com
+241008031728568 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728568 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728569 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728569 NTPClient.main()	INFO: Stratum: 0
+241008031728569 NTPClient.main()	INFO: Poll Interval: 10
+241008031728569 NTPClient.main()	INFO: Precision: -10
+241008031728569 NTPClient.main()	INFO: ============================================================
+
+241008031728570 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728631 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf7728ab3a36cb0000000000000000eaaf7728ab3a36cceaaf7728ab3a36ce
+241008031728632 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728632 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728633 NTPClient.main()	INFO: Server: time.google.com
+241008031728633 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728633 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728633 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728633 NTPClient.main()	INFO: Stratum: 0
+241008031728634 NTPClient.main()	INFO: Poll Interval: 10
+241008031728634 NTPClient.main()	INFO: Precision: -10
+241008031728634 NTPClient.main()	INFO: ============================================================
+
+241008031728635 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728699 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf7728bca4d77e0000000000000000eaaf7728bca4d77feaaf7728bca4d781
+241008031728699 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728701 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728701 NTPClient.main()	INFO: Server: time.google.com
+241008031728701 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728701 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728702 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728702 NTPClient.main()	INFO: Stratum: 0
+241008031728703 NTPClient.main()	INFO: Poll Interval: 10
+241008031728703 NTPClient.main()	INFO: Precision: -10
+241008031728704 NTPClient.main()	INFO: ============================================================
+
+241008031728704 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728767 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf7728ce0afd8d0000000000000000eaaf7728ce0afd8eeaaf7728ce0afd90
+241008031728768 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728768 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728768 NTPClient.main()	INFO: Server: time.google.com
+241008031728769 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728769 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728769 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728769 NTPClient.main()	INFO: Stratum: 0
+241008031728769 NTPClient.main()	INFO: Poll Interval: 10
+241008031728770 NTPClient.main()	INFO: Precision: -10
+241008031728770 NTPClient.main()	INFO: ============================================================
+
+241008031728770 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728835 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf7728df7a143d0000000000000000eaaf7728df7a143eeaaf7728df7a1440
+241008031728835 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728836 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728836 NTPClient.main()	INFO: Server: time.google.com
+241008031728836 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728836 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728836 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728836 NTPClient.main()	INFO: Stratum: 0
+241008031728837 NTPClient.main()	INFO: Poll Interval: 10
+241008031728837 NTPClient.main()	INFO: Precision: -10
+241008031728837 NTPClient.main()	INFO: ============================================================
+
+241008031728837 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008031728899 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000006474f4f47eaaf7728efe4863f0000000000000000eaaf7728efe48640eaaf7728efe48642
+241008031728900 NTPClient.main()	WARNING: Error al recibir el paquete: Range [3, 6) out of bounds for length 5
+241008031728900 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008031728900 NTPClient.main()	INFO: Server: time.google.com
+241008031728900 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008031728901 NTPClient.main()	INFO: Version Number: 3 (011)
+241008031728901 NTPClient.main()	INFO: Mode: 3 (011)
+241008031728901 NTPClient.main()	INFO: Stratum: 0
+241008031728901 NTPClient.main()	INFO: Poll Interval: 10
+241008031728901 NTPClient.main()	INFO: Precision: -10
+241008031728901 NTPClient.main()	INFO: ============================================================
+
+241008031728923 NTPClient.main()	INFO: Paquete NTP enviado: 1b000af60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000

@@ -1,0 +1,41 @@
+241008033804933 NTPClient.main()	INFO: Hello, CLIENT NTP!
+
+
+241008033823637 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008033823638 NTPClient.main()	INFO: Server: time.asdfsdf.com
+241008033823643 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008033823643 NTPClient.main()	INFO: Version Number: 3 (011)
+241008033823644 NTPClient.main()	INFO: Mode: 3 (011)
+241008033823647 NTPClient.main()	INFO: Stratum: 0
+241008033823648 NTPClient.main()	INFO: Poll Interval: 10
+241008033823648 NTPClient.main()	INFO: Precision: 0
+241008033823649 NTPClient.main()	INFO: ============================================================
+
+241008033823651 NTPClient.main()	INFO: Paquete NTP enviado: 1b000a000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000
+241008033828744 NTPClient.main()	WARNING: El servidor tardó mucho en responder. Cambiando de servidor.
+241008033828745 NTPClient.main()	INFO: ===== Se enviará paquete NTP con los siguientes valores: =====
+241008033828745 NTPClient.main()	INFO: Server: time.google.com
+241008033828746 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008033828746 NTPClient.main()	INFO: Version Number: 3 (011)
+241008033828746 NTPClient.main()	INFO: Mode: 3 (011)
+241008033828747 NTPClient.main()	INFO: Stratum: 0
+241008033828747 NTPClient.main()	INFO: Poll Interval: 10
+241008033828748 NTPClient.main()	INFO: Precision: 0
+241008033828748 NTPClient.main()	INFO: ============================================================
+
+241008033828749 NTPClient.main()	INFO: Paquete NTP enviado: 1b000a000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000
+241008033828816 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000005474f4f47eaaf7c14dce0a4620000000000000000eaaf7c14dce0a463eaaf7c14dce0a465
+241008033828817 NTPClient.main()	INFO: ===== RESPUESTA RECIBIDA: =====
+241008033828817 NTPClient.main()	INFO: Server: time.google.com
+241008033828818 NTPClient.main()	INFO: Leap Indicator: 0 (00)
+241008033828818 NTPClient.main()	INFO: Version Number: 3 (011)
+241008033828819 NTPClient.main()	INFO: Mode: 4 (100)
+241008033828819 NTPClient.main()	INFO: Stratum: 1
+241008033828820 NTPClient.main()	INFO: Poll Interval: 10
+241008033828820 NTPClient.main()	INFO: Precision: -20
+241008033828821 NTPClient.main()	INFO: Root Delay: 0
+241008033828821 NTPClient.main()	INFO: Root Dispersion: 5
+241008033828822 NTPClient.main()	INFO: Reference ID: 474F4F47
+241008033828822 NTPClient.main()	INFO: Reference Timestamp: EAAF7C14DCE0A462
+241008033828823 NTPClient.main()	INFO: ============================================================
+

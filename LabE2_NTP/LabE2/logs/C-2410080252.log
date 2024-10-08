@@ -1,0 +1,33 @@
+241008025234982 NTPClient.main()	INFO: Hello, CLIENT NTP!
+
+
+241008025323295 NTPClient.main()	INFO: 
+===== Se enviará paquete NTP con los siguientes valores: =====
+
+241008025323297 NTPClient.main()	INFO: Server: time.asdfsdf.com
+241008025323301 NTPClient.main()	INFO: Leap Indicator: 2 (10)
+241008025323302 NTPClient.main()	INFO: Version Number: 3 (011)
+241008025323303 NTPClient.main()	INFO: Mode: 3 (011)
+241008025323305 NTPClient.main()	INFO: Stratum: 2
+241008025323306 NTPClient.main()	INFO: Poll Interval: 10
+241008025323306 NTPClient.main()	INFO: Precision: -23
+241008025323307 NTPClient.main()	INFO: 
+============================================================
+
+241008025323309 NTPClient.main()	INFO: 9b020ae90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008025328409 NTPClient.main()	WARNING: El servidor tardó mucho en responder. Cambiando de servidor.
+241008025328410 NTPClient.main()	INFO: 
+===== Se enviará paquete NTP con los siguientes valores: =====
+
+241008025328410 NTPClient.main()	INFO: Server: time.google.com
+241008025328411 NTPClient.main()	INFO: Leap Indicator: 2 (10)
+241008025328411 NTPClient.main()	INFO: Version Number: 3 (011)
+241008025328411 NTPClient.main()	INFO: Mode: 3 (011)
+241008025328412 NTPClient.main()	INFO: Stratum: 2
+241008025328412 NTPClient.main()	INFO: Poll Interval: 10
+241008025328413 NTPClient.main()	INFO: Precision: -23
+241008025328413 NTPClient.main()	INFO: 
+============================================================
+
+241008025328415 NTPClient.main()	INFO: 9b020ae90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+241008025328483 NTPClient.main()	INFO: time.google.com > 1c010aec0000000000000007474f4f47eaaf718881028b6b0000000000000000eaaf718881028b6ceaaf718881028b6e
