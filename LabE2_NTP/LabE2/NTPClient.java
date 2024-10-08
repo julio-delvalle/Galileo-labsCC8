@@ -24,8 +24,8 @@ public class NTPClient {
 
 
     private static final String[] NTP_SERVERS = {
-        "time.windows.com", // Windows Time
         "time.asdfsdf.com", // --- INCORRECT SERVER TO TEST TIMEOUT ---
+        "time.windows.com", // Windows Time
         "time.google.com", // Google Time
         "time.apple.com", // Apple Time
         "time.cloudflare.com", // Cloudflare Time
