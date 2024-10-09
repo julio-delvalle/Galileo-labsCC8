@@ -39,12 +39,16 @@ if __name__ == "__main__":
     ##### el mismo ejemplo 3 del documento del Laboratorio
 
 
-    stepsCalcs = [
-        (0, "7, a", "3, a", "7, a", "a"),
-        (1, "7, a", "3, a", "5, c", "c"),
-        (2, "6, d", "3, a", "5, c", "d"),
-        (3, "6, d", "3, a", "5, c", "b"),
-    ] ##### Puedes implementar tu propia estructura.
+    ##### Parsear lo que recibo de stepsCalcs al formato que tiene este:
+    # stepsCalcs = [
+    #     (0, "7, a", "3, a", "7, a", "a"),
+    #     (1, "7, a", "3, a", "5, c", "c"),
+    #     (2, "6, d", "3, a", "5, c", "d"),
+    #     (3, "6, d", "3, a", "5, c", "b"),
+    # ] 
+
+    for step in stepsCalcs:
+        print(step)
 
 
 
