@@ -80,6 +80,7 @@ def init (initNode, routeDict):
 		print("se agrega a nPrima: ", minNode)
 		if(len(nPrima) == len(allNodes)):
 			lastTableRow = prevTableRow.copy()
+			lastTableRow['iter'] = iterationCounter
 			lastTableRow['addedNode'] = minNode
 			stepsCalcs.append(lastTableRow)
 			break
