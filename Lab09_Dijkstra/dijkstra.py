@@ -79,6 +79,9 @@ def init (initNode, routeDict):
 		prevRowNodeAdded = minNode
 		print("se agrega a nPrima: ", minNode)
 		if(len(nPrima) == len(allNodes)):
+			lastTableRow = prevTableRow.copy()
+			lastTableRow['addedNode'] = minNode
+			stepsCalcs.append(lastTableRow)
 			break
 		currentNode = minNode
 

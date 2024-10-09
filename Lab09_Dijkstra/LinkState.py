@@ -47,13 +47,21 @@ if __name__ == "__main__":
     #     (3, "6, d", "3, a", "5, c", "b"),
     # ] 
 
+    stepsCalcsFormatted = []
+
     for step in stepsCalcs:
-        print(step)
+        iter_num = step['iter']
+        nodes = [key for key in step.keys() if key not in ['iter', 'addedNode']]
+        nodes.sort()
+        node_strings = [f"{step[node][0]}, {step[node][1]}" for node in nodes]
+        added_node = step['addedNode']
+        formatted_step = (iter_num, *node_strings, added_node)
+        stepsCalcsFormatted.append(formatted_step)
 
 
 
     # Imprime los Pasos generados del Algoritmo
-    show.stepsCalculatingRoute(initNode, routeDict, stepsCalcs)
+    show.stepsCalculatingRoute(initNode, routeDict, stepsCalcsFormatted)
 
 
 
