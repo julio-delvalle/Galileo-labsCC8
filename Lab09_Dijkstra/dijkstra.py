@@ -33,16 +33,39 @@ Función donde Inicia la Ejecución del Algoritmo de Dijkstra
 Retorna una Estructura 
 '''
 def init (initNode, routeDict):
-	print("Implementar / Eliminar ")
+
+	print("\n ======== INICIO ALGORITMO DIJKSTRA ======== \n")
+	print(routeDict)
+
+	allNodes = []
+	currentNode = initNode
+	for key in routeDict:
+		allNodes.append(key)
+	allNodes.sort()
 
 
 
+	# Inicialización :
+	nPrima = []
+	nPrima.append(initNode)
+
+
+	tableRow = []
+	tableRow.append(0) #iteración 0
+
+	for node in allNodes:
+		if(routeDict[currentNode].containsKey(node)):
+			print("vecino: ", routeDict[currentNode][node])
+			tableRow.append(routeDict[currentNode][node])
+		else:
+			tableRow.append(float('inf'))
 
 
 
+	print(nPrima)
 
 
-
+	print("\n ======== FIN ALGORITMO DIJKSTRA ======== \n")
 
 
 
